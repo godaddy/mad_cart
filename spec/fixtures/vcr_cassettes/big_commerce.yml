@@ -1,0 +1,162 @@
+--- 
+- !ruby/struct:VCR::HTTPInteraction 
+  request: !ruby/struct:VCR::Request 
+    method: :get
+    uri: https://admin:87dfe7fdfb5696e99aa2123c9abadf54ba35fabe@store-cr4wsh4.mybigcommerce.com:443/api/v2/time.json
+    body: 
+    headers: 
+      user-agent: 
+      - Faraday v0.8.6
+      authorization: 
+      - Basic YWRtaW46ODdkZmU3ZmRmYjU2OTZlOTlhYTIxMjNjOWFiYWRmNTRiYTM1ZmFiZQ==
+  response: !ruby/struct:VCR::Response 
+    status: !ruby/struct:VCR::ResponseStatus 
+      code: 200
+      message: OK
+    headers: 
+      x-powered-by: 
+      - PleskLin
+      content-type: 
+      - application/json
+      x-bc-apilimit-remaining: 
+      - "19998"
+      server: 
+      - Apache
+      date: 
+      - Fri, 19 Apr 2013 13:52:57 GMT
+      transfer-encoding: 
+      - chunked
+      x-bc-store-version: 
+      - 7.5.18
+    body: "{\"time\":1366379577}"
+    http_version: "1.1"
+- !ruby/struct:VCR::HTTPInteraction 
+  request: !ruby/struct:VCR::Request 
+    method: :get
+    uri: https://test:test@store-cr4wsh4.mybigcommerce.com:443/api/v2/time.json
+    body: 
+    headers: 
+      user-agent: 
+      - Faraday v0.8.6
+      authorization: 
+      - Basic dGVzdDp0ZXN0
+  response: !ruby/struct:VCR::Response 
+    status: !ruby/struct:VCR::ResponseStatus 
+      code: 401
+      message: Unauthorized
+    headers: 
+      x-powered-by: 
+      - PleskLin
+      content-type: 
+      - application/json
+      www-authenticate: 
+      - Basic
+      date: 
+      - Fri, 19 Apr 2013 13:56:08 GMT
+      server: 
+      - Apache
+      x-bc-store-version: 
+      - 7.5.18
+      transfer-encoding: 
+      - chunked
+    body: "[{\"status\":401,\"message\":\"The specified credentials were invalid.\"}]"
+    http_version: "1.1"
+- !ruby/struct:VCR::HTTPInteraction 
+  request: !ruby/struct:VCR::Request 
+    method: :get
+    uri: https://admin:0ff0e3939f5f160f36047cf0caa6f699fe24bdeb@store-cr4wsh4.mybigcommerce.com:443/api/v2/customers.json
+    body: 
+    headers: 
+      user-agent: 
+      - Faraday v0.8.6
+      authorization: 
+      - Basic YWRtaW46MGZmMGUzOTM5ZjVmMTYwZjM2MDQ3Y2YwY2FhNmY2OTlmZTI0YmRlYg==
+  response: !ruby/struct:VCR::Response 
+    status: !ruby/struct:VCR::ResponseStatus 
+      code: 200
+      message: OK
+    headers: 
+      x-powered-by: 
+      - PleskLin
+      last-modified: 
+      - Fri, 26 Apr 2013 09:18:26 GMT
+      x-bc-apilimit-remaining: 
+      - "19997"
+      content-type: 
+      - application/json
+      date: 
+      - Fri, 26 Apr 2013 09:25:03 GMT
+      server: 
+      - Apache
+      x-bc-store-version: 
+      - 7.5.20
+      transfer-encoding: 
+      - chunked
+    body: "[{\"id\":1,\"company\":\"CompanyNAME\",\"first_name\":\"First\",\"last_name\":\"Customer\",\"email\":\"this@email.com\",\"phone\":\"\",\"date_created\":\"Fri, 26 Apr 2013 09:18:26 +0000\",\"date_modified\":\"Fri, 26 Apr 2013 09:18:26 +0000\",\"store_credit\":\"1000.0000\",\"registration_ip_address\":\"196.209.229.215\",\"customer_group_id\":0,\"notes\":\"\",\"addresses\":{\"url\":\"https:\\/\\/store-cr4wsh4.mybigcommerce.com\\/api\\/v2\\/customers\\/1\\/addresses.json\",\"resource\":\"\\/customers\\/1\\/addresses\"}}]"
+    http_version: "1.1"
+- !ruby/struct:VCR::HTTPInteraction 
+  request: !ruby/struct:VCR::Request 
+    method: :get
+    uri: https://admin:0ff0e3939f5f160f36047cf0caa6f699fe24bdeb@store-cr4wsh4.mybigcommerce.com:443/api/v2/customers.json?min_id=1
+    body: 
+    headers: 
+      user-agent: 
+      - Faraday v0.8.6
+      authorization: 
+      - Basic YWRtaW46MGZmMGUzOTM5ZjVmMTYwZjM2MDQ3Y2YwY2FhNmY2OTlmZTI0YmRlYg==
+  response: !ruby/struct:VCR::Response 
+    status: !ruby/struct:VCR::ResponseStatus 
+      code: 200
+      message: OK
+    headers: 
+      x-powered-by: 
+      - PleskLin
+      last-modified: 
+      - Fri, 26 Apr 2013 12:16:30 GMT
+      content-type: 
+      - application/json
+      x-bc-apilimit-remaining: 
+      - "19999"
+      server: 
+      - Apache
+      date: 
+      - Mon, 29 Apr 2013 18:49:46 GMT
+      transfer-encoding: 
+      - chunked
+      x-bc-store-version: 
+      - 7.5.20
+    body: "[{\"id\":1,\"company\":\"CompanyNAME\",\"first_name\":\"First\",\"last_name\":\"Customer\",\"email\":\"this@email.com\",\"phone\":\"\",\"date_created\":\"Fri, 26 Apr 2013 09:18:26 +0000\",\"date_modified\":\"Fri, 26 Apr 2013 12:16:30 +0000\",\"store_credit\":\"1000.0000\",\"registration_ip_address\":\"196.209.229.215\",\"customer_group_id\":0,\"notes\":\"\",\"addresses\":{\"url\":\"https:\\/\\/store-cr4wsh4.mybigcommerce.com\\/api\\/v2\\/customers\\/1\\/addresses.json\",\"resource\":\"\\/customers\\/1\\/addresses\"}}]"
+    http_version: "1.1"
+- !ruby/struct:VCR::HTTPInteraction 
+  request: !ruby/struct:VCR::Request 
+    method: :get
+    uri: https://admin:0ff0e3939f5f160f36047cf0caa6f699fe24bdeb@store-cr4wsh4.mybigcommerce.com:443/api/v2/customers.json?min_id=1
+    body: 
+    headers: 
+      user-agent: 
+      - Faraday v0.8.6
+      authorization: 
+      - Basic YWRtaW46MGZmMGUzOTM5ZjVmMTYwZjM2MDQ3Y2YwY2FhNmY2OTlmZTI0YmRlYg==
+  response: !ruby/struct:VCR::Response 
+    status: !ruby/struct:VCR::ResponseStatus 
+      code: 200
+      message: OK
+    headers: 
+      x-powered-by: 
+      - PleskLin
+      last-modified: 
+      - Fri, 26 Apr 2013 12:16:30 GMT
+      content-type: 
+      - application/json
+      x-bc-apilimit-remaining: 
+      - "19998"
+      server: 
+      - Apache
+      date: 
+      - Mon, 29 Apr 2013 18:49:48 GMT
+      transfer-encoding: 
+      - chunked
+      x-bc-store-version: 
+      - 7.5.20
+    body: "[{\"id\":1,\"company\":\"CompanyNAME\",\"first_name\":\"First\",\"last_name\":\"Customer\",\"email\":\"this@email.com\",\"phone\":\"\",\"date_created\":\"Fri, 26 Apr 2013 09:18:26 +0000\",\"date_modified\":\"Fri, 26 Apr 2013 12:16:30 +0000\",\"store_credit\":\"1000.0000\",\"registration_ip_address\":\"196.209.229.215\",\"customer_group_id\":0,\"notes\":\"\",\"addresses\":{\"url\":\"https:\\/\\/store-cr4wsh4.mybigcommerce.com\\/api\\/v2\\/customers\\/1\\/addresses.json\",\"resource\":\"\\/customers\\/1\\/addresses\"}}]"
+    http_version: "1.1"
