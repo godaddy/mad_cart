@@ -108,7 +108,7 @@ store.products.each{|p| MyProduct.create!(p.attributes) }
 
 ## Contributing
 
-See the (Contributor's Guide)(https://github.com/madmimi/mad_cart/wiki/Contributor's-Guide) for info on the store integration API.
+See the [Contributor's Guide](https://github.com/madmimi/mad_cart/wiki/Contributor's-Guide) for info on the store integration API.
 
 1. Fork it
 2. Create your feature branch (`git checkout -b my-new-feature`)
