@@ -43,8 +43,7 @@ module MadCart
                           "in your initialize method should you require it.") if init_args_missing?
 
         raise(ArgumentError,"Missing connection arguments: " +
-                            "#{(self.class.required_connection_args - @init_args.keys)
-                            .join(', ')}") unless self.class.required_connection_args.all? {|req| @init_args.include?(req) }
+                            "#{(self.class.required_connection_args - @init_args.keys).join(', ')}") unless self.class.required_connection_args.all? {|req| @init_args.include?(req) }
       end
       private :validate_connection_args!
 
