@@ -1,10 +1,24 @@
 module MadCart
   module Store
     class BigCommerce
+      class InvalidStore < StandardError; end;
+      class ServerError < StandardError; end;
+      class InvalidCredentials < StandardError; end;
+      
       include MadCart::Store::Base
 
       create_connection_with :create_connection, :requires => [:api_key, :store_url, :username]
       fetch :customers, :with => :get_customer_hashes
+      
+      def valid?
+        check_for_errors do
+          connection.get('time.json')
+        end
+        return true
+        
+      rescue InvalidCredentials => e
+        return false
+      end
 
       private
 

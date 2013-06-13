@@ -49,6 +49,34 @@ describe MadCart::Store::BigCommerce do
       end
 
     end
+    
+    describe "validating credentials" do
+      
+      it "succeeds if it can get time.json from big commerce" do
+        VCR.use_cassette('big_commerce', :record => :new_episodes) do
+          api = MadCart::Store::BigCommerce.new(
+            :api_key => '0ff0e3939f5f160f36047cf0caa6f699fe24bdeb',
+            :store_url => 'store-cr4wsh4.mybigcommerce.com',
+            :username => 'admin'
+          )
+
+          api.should be_valid
+        end
+      end
+      
+      it "fails if it cannot get time.json from big commerce" do
+        VCR.use_cassette('big_commerce', :record => :new_episodes) do
+          api = MadCart::Store::BigCommerce.new(
+            :api_key => 'an-invalid-key',
+            :store_url => 'store-cr4wsh4.mybigcommerce.com',
+            :username => 'admin'
+          )
+
+          api.should_not be_valid
+        end
+      end
+      
+    end
   end
 
 end
