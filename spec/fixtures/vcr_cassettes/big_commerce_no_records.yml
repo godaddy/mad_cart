@@ -1,0 +1,32 @@
+--- 
+- !ruby/struct:VCR::HTTPInteraction 
+  request: !ruby/struct:VCR::Request 
+    method: :get
+    uri: https://admin:0ff0e3939f5f160f36047cf0caa6f699fe24bdeb@store-cr4wsh4.mybigcommerce.com:443/api/v2/customers.json?min_id=1
+    body: 
+    headers: 
+      user-agent: 
+      - Faraday v0.8.6
+      authorization: 
+      - Basic YWRtaW46MGZmMGUzOTM5ZjVmMTYwZjM2MDQ3Y2YwY2FhNmY2OTlmZTI0YmRlYg==
+  response: !ruby/struct:VCR::Response 
+    status: !ruby/struct:VCR::ResponseStatus 
+      code: 204
+      message: No Content
+    headers: 
+      x-powered-by: 
+      - PleskLin
+      x-bc-apilimit-remaining: 
+      - "19999"
+      content-type: 
+      - application/json
+      date: 
+      - Fri, 26 Apr 2013 09:12:36 GMT
+      server: 
+      - Apache
+      content-length: 
+      - "0"
+      x-bc-store-version: 
+      - 7.5.20
+    body: 
+    http_version: "1.1"
