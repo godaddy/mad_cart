@@ -1,6 +1,7 @@
 module MadCart
   module Store
     class SetupError < StandardError; end
+    class InvalidStore < StandardError; end
     module Base
 
       def self.included(base)

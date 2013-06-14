@@ -3,7 +3,7 @@
   request: !ruby/struct:VCR::Request
     method: :get
     uri: http://openapi.etsy.com:80/v2/shops/a_made_up_store?api_key=a_made_up_key
-    body:
+    body: 
     headers:
       accept-encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
@@ -91,7 +91,7 @@
   request: !ruby/struct:VCR::Request
     method: :get
     uri: http://openapi.etsy.com:80/v2/shops/8162357/listings/active?api_key=a_made_up_key&includes=Images
-    body:
+    body: 
     headers:
       accept-encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
@@ -124,7 +124,7 @@
   request: !ruby/struct:VCR::Request
     method: :get
     uri: http://openapi.etsy.com:80/v2/listings/151692123/images?api_key=a_made_up_key
-    body:
+    body: 
     headers:
       accept-encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
@@ -148,4 +148,35 @@
       content-type:
       - application/json
     body: ! '{"count":1,"results":[{"listing_image_id":460947101,"hex_code":"AFACAE","red":175,"green":172,"blue":174,"hue":320,"saturation":1,"brightness":68,"is_black_and_white":false,"creation_tsz":1369058006,"listing_id":151692123,"rank":1,"url_75x75":"http:\/\/img1.etsystatic.com\/015\/0\/8162357\/il_75x75.460947101_fvba.jpg","url_170x135":"http:\/\/img1.etsystatic.com\/015\/0\/8162357\/il_170x135.460947101_fvba.jpg","url_570xN":"http:\/\/img1.etsystatic.com\/015\/0\/8162357\/il_570xN.460947101_fvba.jpg","url_fullxfull":"http:\/\/img1.etsystatic.com\/015\/0\/8162357\/il_fullxfull.460947101_fvba.jpg","full_height":830,"full_width":591}],"params":{"listing_id":"151692123"},"type":"ListingImage","pagination":{}}'
+    http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://openapi.etsy.com:80/v2/shops/a_made_up_store?api_key=4j3amz573gly866229iixzri
+    body: 
+    headers:
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 404
+      message: Not Found
+    headers:
+      date:
+      - Wed, 12 Jun 2013 14:36:16 GMT
+      server:
+      - Apache
+      x-ratelimit-limit:
+      - '10000'
+      x-ratelimit-remaining:
+      - '9989'
+      x-error-detail:
+      - ! '''a_made_up_store'' is not a valid shop name'
+      x-etsy-request-uuid:
+      - JJrD7othikfNdHLpi6dij92l2_G9
+      content-length:
+      - '42'
+      content-type:
+      - text/plain;charset=UTF-8
+    body: ! '''a_made_up_store'' is not a valid shop name'
     http_version: '1.1'

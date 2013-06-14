@@ -31,7 +31,13 @@ module MadCart
       def create_connection(args)
         ::Etsy.api_key = args[:api_key] if !::Etsy.api_key || (::Etsy.api_key != args[:api_key])
         ::Etsy.environment = :production
-        return ::Etsy::Shop.find(args[:store_name]).first
+        store = ::Etsy::Shop.find(args[:store_name])
+        if store.is_a? Array
+          return store.first
+        else 
+          raise InvalidStore if store.nil?
+          return store
+        end
       end
 
     end
