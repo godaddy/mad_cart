@@ -9,6 +9,10 @@ module MadCart
       create_connection_with :create_connection, :requires => [:store_name, :api_key]
       fetch :products, :with => :get_products
       format :products, :with => :format_products
+      
+      def valid?
+        connection ? true : false
+      end
 
       private
       def get_products

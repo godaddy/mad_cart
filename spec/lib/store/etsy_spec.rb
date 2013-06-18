@@ -39,6 +39,27 @@ describe MadCart::Store::Etsy do
         end
       end
 
+      context "validating credentials" do
+
+        it "succeeds if it can get a connection object" do
+          VCR.use_cassette('etsy_store_listings', :record => :new_episodes) do
+            api = MadCart::Store::Etsy.new(:store_name => 'a_made_up_store')
+
+            api.should be_valid
+          end
+        end
+
+        it "fails if it cannot get a connection object" do
+          VCR.use_cassette('etsy_store_listings', :record => :new_episodes) do
+            api = MadCart::Store::Etsy.new(:store_name => 'a_made_up_store')
+            api.stub!(:create_connection).and_return(nil)
+
+            api.should_not be_valid
+          end
+        end
+
+      end
+
     end
 
   end
