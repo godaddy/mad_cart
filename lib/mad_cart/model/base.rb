@@ -3,36 +3,48 @@ module MadCart
     module Base
       def initialize(args={})
         self.additional_attributes = {}
-
-        self.class.required_attrs.each do |attr|
-          raise(ArgumentError, "missing argument: #{attr}") if !args.keys.map{|a| a.to_s }.include? attr
-        end
-
-        args.each do |k,v|
-          if self.class.exposed_attributes.include? k.to_s
-            define_included_attribute_accessors unless self.respond_to?(k)
-            self.send("#{k}=", v) unless v.nil?
-          else
-            self.additional_attributes[k.to_s] = v unless v.nil?
-          end
-        end
+        check_required_attributes(args)
+        args.each { |k,v| set_attribute(k, v) }
       end
 
       def self.included(base)
-        base.extend(ClassMethods)
+        base.extend ClassMethods
         base.class_eval do
-          include(AttributeMapper)
-          include(InheritableAttributes)
+          include AttributeMapper
+          include InheritableAttributes
           attr_accessor :additional_attributes
           inheritable_attributes :required_attrs
         end
       end
 
       def define_included_attribute_accessors
-        self.class.class_eval do
+        klass.class_eval do
           attr_accessor(*included_attributes)
         end
       end
+
+      def check_required_attributes(args)
+        keys = args.keys.map{|a| a.to_s }
+        klass.required_attrs.each do |attr|
+          raise(ArgumentError, "missing argument: #{attr}") if !keys.include?(attr)
+        end
+      end
+      private :check_required_attributes
+
+      def set_attribute(key, value)
+        if klass.exposed_attributes.include? key.to_s
+          define_included_attribute_accessors unless self.respond_to?(key)
+          self.send("#{key}=", value) unless value.nil?
+        else
+          self.additional_attributes[key.to_s] = value unless value.nil?
+        end
+      end
+      private :set_attribute
+
+      def klass
+        self.class
+      end
+      private :klass
 
       module ClassMethods
         def required_attributes(*args)
