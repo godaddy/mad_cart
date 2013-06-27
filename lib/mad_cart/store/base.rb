@@ -131,8 +131,8 @@ module MadCart
         private :parse_delegate
 
         def define_method_for(model)
-          define_method model do
-            fetch_result = execute_delegate(self.class.fetch_delegates[model])
+          define_method model do |*args|
+            fetch_result = execute_delegate(self.class.fetch_delegates[model], *args)
             formatted_result = if self.class.format_delegates[model]
                                  fetch_result.map{|r| execute_delegate(self.class.format_delegates[model], r)}
                                else

@@ -11,12 +11,12 @@ module MadCart
       format :products, :with => :format_products
       
       def valid?
-        connection ? true : false
+        self.connection ? true : false
       end
 
       private
-      def get_products
-        connection.listings(:active, {:includes => 'Images'})
+      def get_products(options={})
+        connection.listings(:active, product_options(options))
       end
 
       def format_products(listing)
@@ -43,7 +43,13 @@ module MadCart
           return store
         end
       end
-
+      
+      def product_options(options)
+        prod_options = options.clone
+        prod_options[:page] ||= 1
+        
+        return prod_options
+      end
     end
   end
 end

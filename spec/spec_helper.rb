@@ -27,10 +27,12 @@ end
 VCR.config do |c|
   c.cassette_library_dir = 'spec/fixtures/vcr_cassettes'
   c.stub_with :fakeweb
+  # c.default_cassette_options = { :record => :new_episodes }
 end
 
 
 # helper methods
 def clear_config
+  # Re-initialize the MadCart::Configuration singleton instance
   Singleton.__init__(MadCart::Configuration)
 end
