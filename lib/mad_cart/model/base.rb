@@ -14,12 +14,13 @@ module MadCart
           include InheritableAttributes
           attr_accessor :additional_attributes
           inheritable_attributes :required_attrs
+          attr_accessor *exposed_attributes
         end
       end
 
-      def define_included_attribute_accessors
+      def define_attribute_accessors
         klass.class_eval do
-          attr_accessor(*included_attributes)
+          attr_accessor(*exposed_attributes)
         end
       end
 
@@ -32,11 +33,13 @@ module MadCart
       private :check_required_attributes
 
       def set_attribute(key, value)
-        if klass.exposed_attributes.include? key.to_s
-          define_included_attribute_accessors unless self.respond_to?(key)
-          self.send("#{key}=", value) unless value.nil?
+        attr_name = klass.map_attribute_name(key)
+        
+        if klass.exposed_attributes.include? attr_name.to_s
+          define_attribute_accessors unless self.respond_to?(attr_name)
+          self.send("#{attr_name}=", value) unless value.nil?
         else
-          self.additional_attributes[key.to_s] = value unless value.nil?
+          self.additional_attributes[attr_name.to_s] = value unless value.nil?
         end
       end
       private :set_attribute
@@ -49,15 +52,15 @@ module MadCart
       module ClassMethods
         def required_attributes(*args)
           @required_attrs = args.map{|a| a.to_s }
-          attr_accessor(*args)
+          attr_accessor *args
         end
 
         def exposed_attributes
-          (self.required_attrs || []) + (included_attributes || []).map{|a| a.to_s }
+          ((self.required_attrs || []) + included_attributes + mapped_attributes).uniq.map{|a| a.to_s } - unmapped_attributes.map{|a| a.to_s }
         end
 
         def included_attributes
-          MadCart.config.included_attributes[self.to_s.demodulize.underscore.pluralize.to_sym]
+          MadCart.config.included_attributes[self.to_s.demodulize.underscore.pluralize.to_sym] || []
         end
       end
     end
