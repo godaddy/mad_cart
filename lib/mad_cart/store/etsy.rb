@@ -27,8 +27,8 @@ module MadCart
            :price => "#{listing.price} #{listing.currency}".to_money.format,
            :url => listing.url,
            :currency_code => listing.currency,
-           :image_url => listing.image.full,
-           :square_image_url => listing.image.square
+           :image_url => listing.result["MainImage"]["url_570xN"],
+           :square_image_url => listing.result["MainImage"]["url_75x75"]
         }
       end
 

@@ -41,8 +41,8 @@ module MadCart
       private :klass
 
       def execute_delegate(delegate, *args)
-        return delegate.call(*args) if delegate.is_a?(Proc)
         return self.send(delegate, *args) if delegate.is_a?(Symbol)
+        return delegate.call(*args) if delegate.is_a?(Proc)
 
         raise ArgumentError, "Invalid delegate" # if not returned by now
       end
@@ -134,7 +134,8 @@ module MadCart
           define_method model do |*args|
             fetch_result = execute_delegate(self.class.fetch_delegates[model], *args)
             formatted_result = if self.class.format_delegates[model]
-                                 fetch_result.map{|r| execute_delegate(self.class.format_delegates[model], r)}
+                                 formatter = self.class.format_delegates[model]
+                                 fetch_result.map{|r| execute_delegate(formatter, r)}
                                else
                                  fetch_result
                                end
