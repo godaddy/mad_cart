@@ -126,7 +126,7 @@ module MadCart
           return arg[:with] if arg.is_a?(Hash) && arg[:with]
 
           raise ArgumentError, "Invalid delegate for #{method}: "\
-            "#{args.first.class}. Use Proc or Symbol. "
+            "#{arg.first.class}. Use Proc or Symbol. "
         end
         private :parse_delegate
 

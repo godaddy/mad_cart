@@ -9,6 +9,7 @@ module MadCart
 
       create_connection_with :create_connection, :requires => [:api_key, :store_url, :username]
       fetch :customers, :with => :get_customer_hashes
+      fetch :products, :with => :get_products
       
       def valid?
         check_for_errors do
@@ -24,6 +25,17 @@ module MadCart
 
       def make_customer_request(params={:min_id => 1})
         parse_response { connection.get('customers.json', params) }
+      end
+      
+      def get_products(options={})
+        product_hashes = connection.get('products.json', options).try(:body)
+        return [] unless product_hashes
+        
+        product_hashes.map do |p|
+          images = connection.get("#{product_hashes.first["images"]["resource"][1..-1]}.json").try(:body)
+          p.merge(:image_square_url => images.find{|i| i["is_thumbnail"] }["image_file"],
+                  :image_url => images.sort{|i| i["sort_order"] }.find{|i| !i["is_thumbnail"] }["image_file"])
+        end
       end
 
       def get_customer_hashes
@@ -47,7 +59,7 @@ module MadCart
       def parse_response(&block)
         response = check_for_errors &block
         return [] if empty_body?(response)
-        return JSON.parse(response.body)
+        return response.body
       end
 
       def check_for_errors(&block)
@@ -76,6 +88,7 @@ module MadCart
       def create_connection(args={})
         @connection = Faraday.new(:url => api_url_for(args[:store_url]))
         @connection.basic_auth(args[:username], args[:api_key])
+        @connection.response :json
         @connection
       end
     end

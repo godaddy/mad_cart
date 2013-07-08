@@ -5,6 +5,7 @@ require 'singleton'
 # gems
 require 'active_support/core_ext'
 require 'faraday'
+require 'faraday_middleware'
 
 # core
 require 'mad_cart/configuration'

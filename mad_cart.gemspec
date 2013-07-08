@@ -23,6 +23,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'json', '~> 1.7.7'
   spec.add_development_dependency "rspec"
   spec.add_development_dependency "faraday"
+  spec.add_development_dependency "faraday_middleware"
   spec.add_development_dependency "vcr", "~> 1.0"
   spec.add_development_dependency "fakeweb"
   spec.add_development_dependency "simplecov"

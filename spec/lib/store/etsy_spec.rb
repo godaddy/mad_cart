@@ -28,9 +28,10 @@ describe MadCart::Store::Etsy do
       it "returns products" do
         VCR.use_cassette('etsy_store_listings') do
           api = MadCart::Store::Etsy.new(:store_name => 'FabBeads')
-          api.products.size.should == 25 # the etsy product limit
+          products = api.products(:includes => "MainImage")
+          products.size.should == 25 # the etsy product limit
 
-          first_product = api.products.first
+          first_product = products.first
 
           first_product.should be_a(MadCart::Model::Product)
           first_product.name.should_not be_nil

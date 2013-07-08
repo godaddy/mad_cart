@@ -2378,3 +2378,357 @@
       - text/plain;charset=UTF-8
     body: ! '''MadeUpStore'' is not a valid shop name'
     http_version: '1.1'
+- !ruby/struct:VCR::HTTPInteraction
+  request: !ruby/struct:VCR::Request
+    method: :get
+    uri: http://openapi.etsy.com:80/v2/shops/5262404/listings/active?page=1&api_key=4j3amz573gly866229iixzri&includes=MainImage
+    body: 
+    headers:
+      accept-encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response: !ruby/struct:VCR::Response
+    status: !ruby/struct:VCR::ResponseStatus
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Mon, 08 Jul 2013 14:03:28 GMT
+      server:
+      - Apache
+      set-cookie:
+      - uaid=uaid%3DKGYaJCFq6l981I2X8c-IjxagR72I%26_now%3D1373292208%26_slt%3D1bNzpfKR%26_kid%3D1%26_ver%3D1%26_mac%3DpZPN17ivqO4p-wDve9OOeNmx-kGRiz6Z6o-xyLguszw.;
+        expires=Wed, 08-Jul-2015 14:03:28 GMT; path=/; domain=.etsy.com; httponly
+      x-ratelimit-limit:
+      - '10000'
+      x-ratelimit-remaining:
+      - '9995'
+      x-etsy-request-uuid:
+      - 6tk7omqfHh_2NwFOptZwrx8y1UoS
+      transfer-encoding:
+      - chunked
+      content-type:
+      - application/json
+    body: ! '{"count":1207,"results":[{"listing_id":127395352,"state":"active","user_id":5682253,"category_id":69176111,"title":"Greek
+      Cast Metal Pyramid Meandros Spiral Pendant, Bronze Patina, 18-MM 2-Pc. M180","description":"This
+      is a lovely pyramid or triangle-shaped, cast metal Meandros pendant in the gorgeous
+      bronze patina finish. The hole goes across the top and is 2mm. It looks especially
+      nice with Mykonos ceramic beads.This would be great as a focal on necklaces.\r\n\r\nCast
+      metal findings, made in Mykonos Greece. Mykonos Castings start with a lead-free
+      base metal, but are then coated with copper and finished (in the same way their
+      Metalized Ceramics are finished) with fine metals (pure copper, fine silver
+      and 24k gold). \r\n\r\nSIZE: 6x20 mm (.24 x .79 inch)\r\nHole: 2 mm\r\n\r\nCOLOR:
+      bronze patina\r\n\r\nSHAPE: triangle\r\n\r\nQUANTITY: 2\r\n\r\nPRICE: $2.25\r\n\r\nMADE
+      IN: Mykonos, Greece\r\n\r\nFor more bronze patina: http:\/\/www.etsy.com\/shop\/FabBeads\/search?search_query=bronze+mykonos&order=date_desc&view_type=list&ref=shop_search","creation_tsz":1373289057,"ending_tsz":1383919857,"original_creation_tsz":1364149891,"last_modified_tsz":1373289057,"price":"2.25","currency_code":"USD","quantity":7,"tags":["mykonos","greek","cast
+      metal","mykonos metal bead","pendant","mykonos pendant","greek pendant","bronze","bronze
+      patina","bronze pendant","triangle","pyramid","meandros pendant"],"category_path":["Supplies","Bead","Metal"],"category_path_ids":[69150433,69151309,69176111],"materials":["cast
+      lead free metal"],"shop_section_id":5578372,"featured_rank":0,"state_tsz":1364149891,"url":"http:\/\/www.etsy.com\/listing\/127395352\/greek-cast-metal-pyramid-meandros-spiral?utm_source=madmimi&utm_medium=api&utm_campaign=api","views":73,"num_favorers":13,"processing_min":1,"processing_max":2,"who_made":"someone_else","is_supply":"true","when_made":"2010_2013","is_private":false,"recipient":null,"occasion":null,"style":null,"non_taxable":false,"is_digital":false,"file_data":"","has_variations":false,"MainImage":{"listing_image_id":441547422,"hex_code":null,"red":null,"green":null,"blue":null,"hue":null,"saturation":null,"brightness":null,"is_black_and_white":null,"creation_tsz":null,"listing_id":127395352,"rank":null,"url_75x75":"http:\/\/img2.etsystatic.com\/016\/0\/5262404\/il_75x75.441547422_2gwf.jpg","url_170x135":"http:\/\/img2.etsystatic.com\/016\/0\/5262404\/il_170x135.441547422_2gwf.jpg","url_570xN":"http:\/\/img2.etsystatic.com\/016\/0\/5262404\/il_570xN.441547422_2gwf.jpg","url_fullxfull":"http:\/\/img2.etsystatic.com\/016\/0\/5262404\/il_fullxfull.441547422_2gwf.jpg","full_height":null,"full_width":null}},{"listing_id":106500076,"state":"active","user_id":5682253,"category_id":68912616,"title":"Mykonos
+      Greek Ceramic Donut Pendant 25 mm Mellow Speckle 2 Pieces M136","description":"These  great
+      Mykonos Greek ceramic donut disk pendants in Mellow Speckle are fab as focals
+      in  necklace designs.\r\n\r\nHandmade ceramic beads, dyed terracotta, kiln fired;
+      made in Mykonos Greece.\r\nI&#39;ve shown  a design idea in the last photo.\r\n\r\nSIZE:
+      25 mm, 6.5 mm hole\r\n\r\nCOLOR: mellow speckle\r\n\r\nSHAPE: round, donut shaped\r\n\r\nQUANTITY:
+      2\r\n\r\nPRICE: $2.50\r\n\r\nMADE IN: Mykonos, Greece\r\n\r\nFor more Mellow
+      Speckle: http:\/\/www.etsy.com\/shop\/FabBeads\/search?search_query=mellow+speckle&order=date_desc&view_type=list&ref=shop_search\r\n\r\nFor
+      more donut beads: http:\/\/www.etsy.com\/shop\/FabBeads\/search?search_query=mykonos+greek+donut&order=date_desc&view_type=list&ref=shop_search\r\n\r\nFor
+      donut bails: http:\/\/www.etsy.com\/shop\/FabBeads\/search?search_query=donut+bail&order=date_desc&view_type=list&ref=shop_search","creation_tsz":1373289057,"ending_tsz":1383919857,"original_creation_tsz":1344569280,"last_modified_tsz":1373289057,"price":"2.50","currency_code":"USD","quantity":29,"tags":["mykonos","greek","greek
+      ceramic beads","mykonos beads","ceramic beads","greek beads","donut","disk","mykonos
+      donut disk","donut pendant","ceramic donut bead","blue","mellow speckle"],"category_path":["Supplies","Bead","Ceramic"],"category_path_ids":[69150433,69151309,68912616],"materials":["ceramic"],"shop_section_id":5578372,"featured_rank":0,"state_tsz":1358225214,"url":"http:\/\/www.etsy.com\/listing\/106500076\/mykonos-greek-ceramic-donut-pendant-25?utm_source=madmimi&utm_medium=api&utm_campaign=api","views":213,"num_favorers":19,"processing_min":1,"processing_max":2,"who_made":"someone_else","is_supply":"true","when_made":"2010_2013","is_private":false,"recipient":null,"occasion":null,"style":null,"non_taxable":false,"is_digital":false,"file_data":"","has_variations":false,"MainImage":{"listing_image_id":364339966,"hex_code":null,"red":null,"green":null,"blue":null,"hue":null,"saturation":null,"brightness":null,"is_black_and_white":null,"creation_tsz":null,"listing_id":106500076,"rank":null,"url_75x75":"http:\/\/img2.etsystatic.com\/008\/0\/5262404\/il_75x75.364339966_r5lw.jpg","url_170x135":"http:\/\/img2.etsystatic.com\/008\/0\/5262404\/il_170x135.364339966_r5lw.jpg","url_570xN":"http:\/\/img2.etsystatic.com\/008\/0\/5262404\/il_570xN.364339966_r5lw.jpg","url_fullxfull":"http:\/\/img2.etsystatic.com\/008\/0\/5262404\/il_fullxfull.364339966_r5lw.jpg","full_height":null,"full_width":null}},{"listing_id":129323912,"state":"active","user_id":5682253,"category_id":69176111,"title":"Greek
+      Metal Green Patina Teardrop Spiral Bead, 5 MM, 12 Pieces M187","description":"These
+      small, teardrop shaped cast metal beads in the green patina finish have a spiral
+      design and are great paired with Mykonos ceramic beads. They have a small hole
+      and sit very well on a headpin.\r\n\r\nCast metal beads, made in Mykonos Greece.
+      Mykonos Castings start with a lead-free base metal. Green Patinaed Copper is
+      created by applying a chemical patina to rich copper plating. Nickel free.\r\n\r\nI&#39;ve
+      shown a design idea in the last photo.\r\n\r\nSIZE: 5 mm\r\n\r\nCOLOR: green
+      patina\r\n\r\nSHAPE: teardrop with spiral design\r\n\r\nQUANTITY: 12\r\n\r\nPRICE:
+      $3.50\r\n\r\nMADE IN: Mykonos, Greece\r\n\r\nTo see more Mykonos Green Patina:
+      http:\/\/www.etsy.com\/shop\/FabBeads\/search?search_query=green+patina&order=date_desc&view_type=list&ref=shop_search\r\n\r\nFor
+      more spiral pattern: https:\/\/www.etsy.com\/shop\/FabBeads\/search?search_query=mykonos+spiral&order=date_desc&view_type=list&ref=shop_search","creation_tsz":1373289056,"ending_tsz":1383919856,"original_creation_tsz":1365912000,"last_modified_tsz":1373289056,"price":"3.50","currency_code":"USD","quantity":17,"tags":["mykonos","greek","mykonos
+      beads","mykonos metal bead","canada","green patina","green patina bead","spiral","spiral
+      bead","copper bead","greek bead","teardrop","teardrop bead"],"category_path":["Supplies","Bead","Metal"],"category_path_ids":[69150433,69151309,69176111],"materials":["cast
+      metal"],"shop_section_id":5578372,"featured_rank":0,"state_tsz":1365912000,"url":"http:\/\/www.etsy.com\/listing\/129323912\/greek-metal-green-patina-teardrop-spiral?utm_source=madmimi&utm_medium=api&utm_campaign=api","views":93,"num_favorers":21,"processing_min":1,"processing_max":2,"who_made":"someone_else","is_supply":"true","when_made":"2010_2013","is_private":false,"recipient":null,"occasion":null,"style":null,"non_taxable":false,"is_digital":false,"file_data":"","has_variations":false,"MainImage":{"listing_image_id":448676947,"hex_code":null,"red":null,"green":null,"blue":null,"hue":null,"saturation":null,"brightness":null,"is_black_and_white":null,"creation_tsz":null,"listing_id":129323912,"rank":null,"url_75x75":"http:\/\/img3.etsystatic.com\/010\/0\/5262404\/il_75x75.448676947_691u.jpg","url_170x135":"http:\/\/img3.etsystatic.com\/010\/0\/5262404\/il_170x135.448676947_691u.jpg","url_570xN":"http:\/\/img3.etsystatic.com\/010\/0\/5262404\/il_570xN.448676947_691u.jpg","url_fullxfull":"http:\/\/img3.etsystatic.com\/010\/0\/5262404\/il_fullxfull.448676947_691u.jpg","full_height":null,"full_width":null}},{"listing_id":127383749,"state":"active","user_id":5682253,"category_id":69176111,"title":"Greek
+      Casting Fish Barrel Bead, Antique Pewter, 15x30 MM, M171","description":"This
+      is a beautiful, cast metal, large tube bead in the antique pewter finish. The
+      fish design has so much detail and goes right around the bead. The hole is 10
+      mm. This would be great as a focal, simply strung on a chain or leather cord.\r\n\r\nI&#39;ve
+      shown it on a chain in one of the photos.\r\n\r\nCast metal findings, made in
+      Mykonos Greece. Mykonos Castings start with a lead-free base metal, but are
+      then coated with copper and finished (in the same way their Metalized Ceramics
+      are finished) with fine metals (pure copper, fine silver and 24k gold). \r\n\r\nSIZE:
+      15 x 30 mm (.59 x 1.18 inch)\r\n\r\nCOLOR: antique pewter\r\n\r\nSHAPE: tube\r\n\r\nQUANTITY:
+      1\r\n\r\nPRICE: $3.50\r\n\r\nMADE IN: Mykonos, Greece\r\n\r\nFor more Greek
+      pendants: https:\/\/www.etsy.com\/shop\/FabBeads\/search?search_query=mykonos+pendant&order=date_desc&view_type=list&ref=shop_search","creation_tsz":1373289056,"ending_tsz":1383919856,"original_creation_tsz":1364143178,"last_modified_tsz":1373289056,"price":"3.50","currency_code":"USD","quantity":16,"tags":["mykonos","greek","mykonos
+      beads","cast metal","mykonos metal bead","pendant","antique silver","tube bead","metal
+      tube bead","focal tube bead","fish","antique pewter","barrel bead"],"category_path":["Supplies","Bead","Metal"],"category_path_ids":[69150433,69151309,69176111],"materials":["cast
+      lead free metal"],"shop_section_id":5578372,"featured_rank":0,"state_tsz":1364143178,"url":"http:\/\/www.etsy.com\/listing\/127383749\/greek-casting-fish-barrel-bead-antique?utm_source=madmimi&utm_medium=api&utm_campaign=api","views":91,"num_favorers":11,"processing_min":1,"processing_max":2,"who_made":"someone_else","is_supply":"true","when_made":"2010_2013","is_private":false,"recipient":null,"occasion":null,"style":null,"non_taxable":false,"is_digital":false,"file_data":"","has_variations":false,"MainImage":{"listing_image_id":441509981,"hex_code":null,"red":null,"green":null,"blue":null,"hue":null,"saturation":null,"brightness":null,"is_black_and_white":null,"creation_tsz":null,"listing_id":127383749,"rank":null,"url_75x75":"http:\/\/img1.etsystatic.com\/015\/0\/5262404\/il_75x75.441509981_ja0g.jpg","url_170x135":"http:\/\/img1.etsystatic.com\/015\/0\/5262404\/il_170x135.441509981_ja0g.jpg","url_570xN":"http:\/\/img1.etsystatic.com\/015\/0\/5262404\/il_570xN.441509981_ja0g.jpg","url_fullxfull":"http:\/\/img1.etsystatic.com\/015\/0\/5262404\/il_fullxfull.441509981_ja0g.jpg","full_height":null,"full_width":null}},{"listing_id":106496457,"state":"active","user_id":5682253,"category_id":68912616,"title":"Greek
+      Ceramic Skinny Spike Beads 30 mm Autumn Rust 12 Pieces M117","description":"These
+      Mykonos Greek ceramic skinny spike beads are really nice. They&#39;re in the
+      Autumn Rust finish. These make excellent earring beads.\r\n\r\nHandmade ceramic
+      beads, dyed terracotta, kiln fired; made in Mykonos Greece.\r\n\r\nSIZE: 30
+      mm (1.18 inch)\r\n\r\nCOLOR: Autumn Rust\r\n\r\nSHAPE: spike\r\n\r\nQUANTITY:
+      12\r\n\r\nPRICE: $3.50\r\n\r\nMADE IN: Mykonos, Greece\r\n\r\nFor more Autumn
+      Rust: http:\/\/www.etsy.com\/shop\/FabBeads\/search?search_query=autumn+rust&order=date_desc&view_type=list&ref=shop_search\r\n\r\nTo
+      see more spike beads: http:\/\/www.etsy.com\/shop\/FabBeads\/search?search_query=mykonos+spike&order=date_desc&view_type=list&ref=shop_search","creation_tsz":1373289055,"ending_tsz":1383919855,"original_creation_tsz":1344566285,"last_modified_tsz":1373289055,"price":"3.50","currency_code":"USD","quantity":23,"tags":["mykonos","greek","greek
+      ceramic beads","mykonos beads","metalized","spike","skinny spike","skinny spike
+      bead","earring component","ceramic spike bead","autumn rust","autumn rust bead","spike
+      bead"],"category_path":["Supplies","Bead","Ceramic"],"category_path_ids":[69150433,69151309,68912616],"materials":["ceramic"],"shop_section_id":5578372,"featured_rank":0,"state_tsz":1364007643,"url":"http:\/\/www.etsy.com\/listing\/106496457\/greek-ceramic-skinny-spike-beads-30-mm?utm_source=madmimi&utm_medium=api&utm_campaign=api","views":545,"num_favorers":98,"processing_min":1,"processing_max":2,"who_made":"someone_else","is_supply":"true","when_made":"2010_2013","is_private":false,"recipient":null,"occasion":null,"style":null,"non_taxable":false,"is_digital":false,"file_data":"","has_variations":false,"MainImage":{"listing_image_id":364336269,"hex_code":null,"red":null,"green":null,"blue":null,"hue":null,"saturation":null,"brightness":null,"is_black_and_white":null,"creation_tsz":null,"listing_id":106496457,"rank":null,"url_75x75":"http:\/\/img1.etsystatic.com\/007\/0\/5262404\/il_75x75.364336269_evwr.jpg","url_170x135":"http:\/\/img1.etsystatic.com\/007\/0\/5262404\/il_170x135.364336269_evwr.jpg","url_570xN":"http:\/\/img1.etsystatic.com\/007\/0\/5262404\/il_570xN.364336269_evwr.jpg","url_fullxfull":"http:\/\/img1.etsystatic.com\/007\/0\/5262404\/il_fullxfull.364336269_evwr.jpg","full_height":null,"full_width":null}},{"listing_id":98186137,"state":"active","user_id":5682253,"category_id":68912616,"title":"Mykonos
+      8mm Round Washer Greek Ceramic Beads Teal Blue 25 Pieces M17","description":"These
+      are great Mykonos Greek ceramic, 8 mm round washer beads in lovely teal blue.
+      These make excellent spacer beads and look great paired with glass beads. The
+      2.5 mm hole makes them great for stringing on cord or leather too.\r\n\r\nHandmade
+      ceramic beads, dyed terracotta, kiln fired; made in Mykonos Greece.\r\nI&#39;ve
+      shown a design idea in the last photo.\r\n\r\nSIZE: 8 mm, 2.5 mm hole; the thickness
+      is pretty uniform on these, at about 2 to 3 mm.\r\n\r\nCOLOR: Teal blue\r\n\r\nSHAPE:
+      round, washer shaped\r\n\r\nQUANTITY: 25\r\n\r\nPRICE: $2.25\r\n\r\nMADE IN:
+      Mykonos, Greece\r\n\r\nTo see more 8 mm round washer beads: http:\/\/www.etsy.com\/shop\/FabBeads\/search?search_query=8mm+round+washer&search_submit=&search_type=user_shop_ttt_id_5262404&shopname=FabBeads","creation_tsz":1373289055,"ending_tsz":1383919855,"original_creation_tsz":1335143384,"last_modified_tsz":1373289055,"price":"2.25","currency_code":"USD","quantity":37,"tags":["mykonos","greek","greek
+      ceramic beads","mykonos beads","ceramic beads","terracotta","spacer bead","round
+      washer","8 mm","teal blue","blue","ceramic washer bead","greek washer bead"],"category_path":["Supplies","Bead","Ceramic"],"category_path_ids":[69150433,69151309,68912616],"materials":["ceramic"],"shop_section_id":5578372,"featured_rank":0,"state_tsz":1358226380,"url":"http:\/\/www.etsy.com\/listing\/98186137\/mykonos-8mm-round-washer-greek-ceramic?utm_source=madmimi&utm_medium=api&utm_campaign=api","views":119,"num_favorers":20,"processing_min":1,"processing_max":2,"who_made":"someone_else","is_supply":"true","when_made":"2010_2013","is_private":false,"recipient":null,"occasion":null,"style":null,"non_taxable":false,"is_digital":false,"file_data":"","has_variations":false,"MainImage":{"listing_image_id":331127710,"hex_code":null,"red":null,"green":null,"blue":null,"hue":null,"saturation":null,"brightness":null,"is_black_and_white":null,"creation_tsz":null,"listing_id":98186137,"rank":null,"url_75x75":"http:\/\/img2.etsystatic.com\/000\/0\/5262404\/il_75x75.331127710.jpg","url_170x135":"http:\/\/img2.etsystatic.com\/000\/0\/5262404\/il_170x135.331127710.jpg","url_570xN":"http:\/\/img2.etsystatic.com\/000\/0\/5262404\/il_570xN.331127710.jpg","url_fullxfull":"http:\/\/img2.etsystatic.com\/000\/0\/5262404\/il_fullxfull.331127710.jpg","full_height":null,"full_width":null}},{"listing_id":156115178,"state":"active","user_id":5682253,"category_id":69172175,"title":"Tiny
+      Scalloped Beadcap, TierraCast Pewter, 4MM, Brass Ox, 25 Pc. TB27","description":"These
+      are really nice quality, tiny 4mm scalloped bead caps in Brass Ox. Great caps
+      for small Swarovski bicones or small teardrop beads.\r\n\r\nTierraCast beads
+      and findings are artisan-crafted, precious metal plated, lead free pewter components.
+      They are beautiful, consistent and meet all standards regarding lead content
+      in metal.\r\n\r\nAll castings are electroplated using precious metals: fine
+      silver, 22 karat gold, rhodium or copper.\r\n\r\nPRICE: $4.75\r\n\r\nQUANTITY:
+      25\r\n\r\nSIZE:Height: 2mm\r\nWidth: 3.5mm\r\nHole ID: 1mm\r\n\r\nFINISH:Brass
+      Ox is plated in brass and then oxidized. Also known as antiqued brass.\r\n\r\n\r\nMADE
+      IN: USA\r\n\r\nFor more Tierracast bead caps: http:\/\/www.etsy.com\/shop\/FabBeads\/search?search_query=tierracast+bead+cap&order=date_desc&view_type=list&ref=shop_search\r\n\r\nTIERRACAST
+      PEWTER: Uses a &quot;lead free&quot; tin alloy that exceeds the stringent California
+      standards for lead content and complies with the standards for pewter in contact
+      with food. \r\n\r\nFor more info about TierraCast safety compliance https:\/\/www.etsy.com\/your\/shops\/FabBeads\/policies","creation_tsz":1373261085,"ending_tsz":1383891885,"original_creation_tsz":1373261085,"last_modified_tsz":1373261085,"price":"4.75","currency_code":"USD","quantity":7,"tags":["pewter","tierracast","canada","bead
+      cap","pewter bead cap","tierracast bead cap","small bead cap","scalloped bead
+      cap","tiny bead cap","brass ox bead cap","brass ox","antique brass"],"category_path":["Supplies","Commercial","Findings"],"category_path_ids":[69150433,69151163,69172175],"materials":["lead
+      free pewter","copper"],"shop_section_id":5407043,"featured_rank":0,"state_tsz":1373261085,"url":"http:\/\/www.etsy.com\/listing\/156115178\/tiny-scalloped-beadcap-tierracast-pewter?utm_source=madmimi&utm_medium=api&utm_campaign=api","views":12,"num_favorers":0,"processing_min":1,"processing_max":2,"who_made":"someone_else","is_supply":"true","when_made":"2010_2013","is_private":false,"recipient":null,"occasion":null,"style":null,"non_taxable":false,"is_digital":false,"file_data":"","has_variations":false,"MainImage":{"listing_image_id":477433119,"hex_code":null,"red":null,"green":null,"blue":null,"hue":null,"saturation":null,"brightness":null,"is_black_and_white":null,"creation_tsz":null,"listing_id":156115178,"rank":null,"url_75x75":"http:\/\/img3.etsystatic.com\/024\/0\/5262404\/il_75x75.477433119_fnun.jpg","url_170x135":"http:\/\/img3.etsystatic.com\/024\/0\/5262404\/il_170x135.477433119_fnun.jpg","url_570xN":"http:\/\/img3.etsystatic.com\/024\/0\/5262404\/il_570xN.477433119_fnun.jpg","url_fullxfull":"http:\/\/img3.etsystatic.com\/024\/0\/5262404\/il_fullxfull.477433119_fnun.jpg","full_height":null,"full_width":null}},{"listing_id":156111610,"state":"active","user_id":5682253,"category_id":68912752,"title":"Czech
+      Glass Button Pendant Tulip, Red, Gold, 27mm With Pendant Converter C318","description":"This
+      amazing, medium-size, hand painted, Czech glass button is gorgeous red with
+      gold. It features a beautiful tulip pattern in gold.\r\n\r\nCzech glass buttons
+      are still made by hand by skilled artisans in the Czech Republic, many with
+      vintage molds. They are hand painted and many are detailed with 24 karat gold.
+      They have a metal shank.\r\n\r\nThis button includes a gold plated brass pendant
+      converter. It has two loops on the back for even hanging. You&#39;ll need to
+      file the center hole larger, or snip off the shank loop and then just glue the
+      converter to the button back.\r\n\r\nIf you leave the shank on, buttons can
+      be used in wire wrapped rings, bracelets, bead weaving, as a toggle clasp with
+      a loop of seed beads, a purse clasp, or as a button on clothing (hand wash garments).\r\n\r\n\r\nSIZE:
+      27 mm (1.06 inch)\r\n\r\nCOLOR: red\/gold\r\n\r\nSHAPE: round\r\n\r\nQUANTITY:
+      1\r\n\r\nPRICE: $7.\r\n\r\nMADE IN: Czech Republic\r\n\r\nFor more Czech glass
+      buttons: https:\/\/www.etsy.com\/shop\/FabBeads\/search?search_query=glass+button&order=date_desc&view_type=list&ref=shop_search","creation_tsz":1373256453,"ending_tsz":1383887253,"original_creation_tsz":1373256453,"last_modified_tsz":1373256503,"price":"7.00","currency_code":"USD","quantity":10,"tags":["czech","pendant
+      converter","gold","fabbeads","pendant","czech glass button","glass button","button
+      pendant","red","red button","red glass button","red czech button","tulip"],"category_path":["Supplies","Button","Glass"],"category_path_ids":[69150433,69151235,68912752],"materials":["glass"],"shop_section_id":5407060,"featured_rank":3,"state_tsz":1373256453,"url":"http:\/\/www.etsy.com\/listing\/156111610\/czech-glass-button-pendant-tulip-red?utm_source=madmimi&utm_medium=api&utm_campaign=api","views":18,"num_favorers":1,"processing_min":1,"processing_max":2,"who_made":"someone_else","is_supply":"true","when_made":"2010_2013","is_private":false,"recipient":null,"occasion":null,"style":null,"non_taxable":false,"is_digital":false,"file_data":"","has_variations":false,"MainImage":{"listing_image_id":477415611,"hex_code":null,"red":null,"green":null,"blue":null,"hue":null,"saturation":null,"brightness":null,"is_black_and_white":null,"creation_tsz":null,"listing_id":156111610,"rank":null,"url_75x75":"http:\/\/img3.etsystatic.com\/022\/0\/5262404\/il_75x75.477415611_dtc8.jpg","url_170x135":"http:\/\/img3.etsystatic.com\/022\/0\/5262404\/il_170x135.477415611_dtc8.jpg","url_570xN":"http:\/\/img3.etsystatic.com\/022\/0\/5262404\/il_570xN.477415611_dtc8.jpg","url_fullxfull":"http:\/\/img3.etsystatic.com\/022\/0\/5262404\/il_fullxfull.477415611_dtc8.jpg","full_height":null,"full_width":null}},{"listing_id":111536699,"state":"active","user_id":5682253,"category_id":69171721,"title":"Embossed
+      Brass Bird, Cherry Blossom Pendant E48","description":"This is a large, round,
+      Vintaj aged brass pendant which I&#39;ve embossed with a bird and cherry blossom
+      pattern. After embossing, the pendant is hand sanded and buffed, so the design
+      stands out from the darkened brass background. The piece is then protected with
+      wax to preserve the finish.\r\n\r\nNote: there are slight variations of color
+      and patterns on these pendants, no two are exactly the same, due to the nature
+      of handmade. \r\n\r\nTo see the full line of embossed pendants and charms: http:\/\/www.etsy.com\/shop\/FabBeads\/search?search_query=e&search_submit=&search_type=user_shop_ttt_id_5262404&shopname=FabBeads\r\n\r\nPRICE:
+      $2.75\r\n\r\nQUANTITY: 1\r\n\r\nSIZE: 34 mm (1.34 inch)\r\n\r\nFINISH: 100%
+      natural aged brass patina, finished with micro-crystalline wax polish\r\n\r\nMADE
+      IN: USA","creation_tsz":1373255945,"ending_tsz":1383886745,"original_creation_tsz":1373255945,"last_modified_tsz":1373255945,"price":"2.75","currency_code":"USD","quantity":2,"tags":["brass","vintaj","round","pendant","canada","embossed
+      pendant","round brass pendant","embossed","flower","vintaj pendant","vintaj
+      embossed","bird pendant","cherry blossom"],"category_path":["Supplies","Handmade","Findings"],"category_path_ids":[69150433,69151267,69171721],"materials":["brass"],"shop_section_id":5407046,"featured_rank":0,"state_tsz":1373255945,"url":"http:\/\/www.etsy.com\/listing\/111536699\/embossed-brass-bird-cherry-blossom?utm_source=madmimi&utm_medium=api&utm_campaign=api","views":13,"num_favorers":0,"processing_min":1,"processing_max":2,"who_made":"i_did","is_supply":"true","when_made":"2010_2013","is_private":false,"recipient":"women","occasion":null,"style":["Woodland"],"non_taxable":false,"is_digital":false,"file_data":"","has_variations":false,"MainImage":{"listing_image_id":477414411,"hex_code":null,"red":null,"green":null,"blue":null,"hue":null,"saturation":null,"brightness":null,"is_black_and_white":null,"creation_tsz":null,"listing_id":111536699,"rank":null,"url_75x75":"http:\/\/img3.etsystatic.com\/022\/0\/5262404\/il_75x75.477414411_sxae.jpg","url_170x135":"http:\/\/img3.etsystatic.com\/022\/0\/5262404\/il_170x135.477414411_sxae.jpg","url_570xN":"http:\/\/img3.etsystatic.com\/022\/0\/5262404\/il_570xN.477414411_sxae.jpg","url_fullxfull":"http:\/\/img3.etsystatic.com\/022\/0\/5262404\/il_fullxfull.477414411_sxae.jpg","full_height":null,"full_width":null}},{"listing_id":67884843,"state":"active","user_id":5682253,"category_id":68912752,"title":"Czech
+      Glass Button Flower Matte Teal Gold 18mm With Pendant Converter C180","description":"This
+      amazing, small, hand painted Czech glass flower button is matte teal green with
+      a metallic gold shimmer. It features a beautiful flower design.\r\n\r\nCzech
+      glass buttons are still made by hand by skilled artisans in the Czech Republic,
+      many with vintage molds. They are hand painted and have a metal shank.\r\n\r\nThis
+      button includes a gold plated brass pendant converter. It has two loops on the
+      back for even hanging. You&#39;ll need to file the center hole larger, or snip
+      off the shank loop and then just glue the converter to the button back.\r\n\r\nIf
+      you leave the shank on, buttons can be used in wire wrapped rings, bracelets,
+      bead weaving, as a toggle clasp with a loop of seed beads, a purse clasp, or
+      as a button on clothing (hand wash garments).\r\n\r\nThe photos that show 2
+      buttons are to show the different colors of this button as it moves. This listing
+      is for one button.\r\n\r\nSIZE: 18 mm (.71 inch)\r\n\r\nCOLOR: teal green\/gold\r\n\r\nSHAPE:
+      round\r\n\r\nQUANTITY: 1\r\n\r\nPRICE: $4.50\r\n\r\nMADE IN: Czech Republic\r\n\r\nFor
+      more Czech glass buttons: https:\/\/www.etsy.com\/shop\/FabBeads\/search?search_query=glass+button&order=date_desc&view_type=list&ref=shop_search","creation_tsz":1373252847,"ending_tsz":1383883647,"original_creation_tsz":1297393256,"last_modified_tsz":1373256697,"price":"4.50","currency_code":"USD","quantity":11,"tags":["commercial","czech","pendant
+      converter","gold","teal","flower","18 mm","czech glass button","flower button","18
+      mm button","teal glass button","flower glass button","button converter"],"category_path":["Supplies","Button","Glass"],"category_path_ids":[69150433,69151235,68912752],"materials":["glass"],"shop_section_id":5407060,"featured_rank":0,"state_tsz":1358225144,"url":"http:\/\/www.etsy.com\/listing\/67884843\/czech-glass-button-flower-matte-teal?utm_source=madmimi&utm_medium=api&utm_campaign=api","views":1240,"num_favorers":142,"processing_min":1,"processing_max":2,"who_made":"someone_else","is_supply":"true","when_made":"2010_2013","is_private":false,"recipient":null,"occasion":null,"style":null,"non_taxable":false,"is_digital":false,"file_data":"","has_variations":false,"MainImage":{"listing_image_id":216271437,"hex_code":null,"red":null,"green":null,"blue":null,"hue":null,"saturation":null,"brightness":null,"is_black_and_white":null,"creation_tsz":null,"listing_id":67884843,"rank":null,"url_75x75":"http:\/\/img1.etsystatic.com\/000\/0\/5262404\/il_75x75.216271437.jpg","url_170x135":"http:\/\/img1.etsystatic.com\/000\/0\/5262404\/il_170x135.216271437.jpg","url_570xN":"http:\/\/img1.etsystatic.com\/000\/0\/5262404\/il_570xN.216271437.jpg","url_fullxfull":"http:\/\/img1.etsystatic.com\/000\/0\/5262404\/il_fullxfull.216271437.jpg","full_height":null,"full_width":null}},{"listing_id":67864601,"state":"active","user_id":5682253,"category_id":68912752,"title":"Czech
+      Glass Button Dragonfly Aqua Gold 31mm With Pendant Converter C172","description":"This
+      amazing, large, 31 mm, hand painted Czech glass dragonfly button in translucent
+      aqua features a beautiful gold dragonfly.\r\n\r\nCzech glass buttons are still
+      made by hand by skilled artisans in the Czech Republic, many with vintage molds.
+      They are hand painted and many are detailed with 24 karat gold or platinum.
+      They have a metal shank.\r\n\r\nThis button includes a gold plated brass pendant
+      converter. It has two loops on the back for even hanging. You&#39;ll need to
+      file the center hole larger, or snip off the shank loop and then just glue the
+      converter to the button back.\r\n\r\nIf you leave the shank on, buttons can
+      be used in wire wrapped rings, bracelets, bead weaving, as a toggle clasp with
+      a loop of seed beads, a purse clasp, or as a button on clothing (hand wash garments).\r\n\r\nThe
+      photos that show 2 buttons are to show the different colors of this button as
+      it moves. This listing is for one button.\r\n\r\nSIZE: 31 mm (1.22 inch)\r\n\r\nCOLOR:
+      aqua, gold\r\n\r\nSHAPE: round\r\n\r\nQUANTITY: 1\r\n\r\nPRICE: $7.00\r\n\r\nMADE
+      IN: Czech Republic\r\n\r\nFor more Czech glass buttons: https:\/\/www.etsy.com\/shop\/FabBeads\/search?search_query=glass+button&order=date_desc&view_type=list&ref=shop_search","creation_tsz":1373252847,"ending_tsz":1383883647,"original_creation_tsz":1297375303,"last_modified_tsz":1373256600,"price":"7.00","currency_code":"USD","quantity":2,"tags":["commercial","czech","round","pendant
+      converter","dragonfly","gold","aqua","blue","large","fabbeads","czech glass
+      button","dragonfly button","aqua button"],"category_path":["Supplies","Button","Glass"],"category_path_ids":[69150433,69151235,68912752],"materials":["glass"],"shop_section_id":5407060,"featured_rank":0,"state_tsz":1358223031,"url":"http:\/\/www.etsy.com\/listing\/67864601\/czech-glass-button-dragonfly-aqua-gold?utm_source=madmimi&utm_medium=api&utm_campaign=api","views":801,"num_favorers":80,"processing_min":1,"processing_max":2,"who_made":"someone_else","is_supply":"true","when_made":"2010_2013","is_private":false,"recipient":null,"occasion":null,"style":null,"non_taxable":false,"is_digital":false,"file_data":"","has_variations":false,"MainImage":{"listing_image_id":216188167,"hex_code":null,"red":null,"green":null,"blue":null,"hue":null,"saturation":null,"brightness":null,"is_black_and_white":null,"creation_tsz":null,"listing_id":67864601,"rank":null,"url_75x75":"http:\/\/img3.etsystatic.com\/000\/0\/5262404\/il_75x75.216188167.jpg","url_170x135":"http:\/\/img3.etsystatic.com\/000\/0\/5262404\/il_170x135.216188167.jpg","url_570xN":"http:\/\/img3.etsystatic.com\/000\/0\/5262404\/il_570xN.216188167.jpg","url_fullxfull":"http:\/\/img3.etsystatic.com\/000\/0\/5262404\/il_fullxfull.216188167.jpg","full_height":null,"full_width":null}},{"listing_id":62025962,"state":"active","user_id":5682253,"category_id":69172175,"title":"Antique
+      Gold Dragonfly Pendant Trinity Brass AG69","description":"This delightful brass
+      dragonfly in antiqued gold would be great as a connector or as a stunning pendant!
+      Or you can curl his tail to suspend a jewel.\r\n\r\nThese are exceptional quality
+      nickel-free brass stampings and findings, made in the USA; many styles are still
+      made using the original dies of yesteryear.\r\n \r\nPRICE: $3.75\r\n\r\nQUANTITY:
+      1\r\n\r\nSIZE: 47 x 35 mm (1 7\/8 w x 1 \u00bd inches h)\r\n\r\nFINISH: Trinity
+      Antique Gold is a beautiful rich gold with a shiny finish. This finish is achieved
+      through oxidation and is not plated. It is a very elegant and sophisticated
+      finish. A special non-chemical process is done to the brass to achieve it&#39;s
+      beautiful shine. A non-toxic lacquer is applied to protect the finish. \r\n
+      \r\nMADE IN: USA","creation_tsz":1373241497,"ending_tsz":1383872297,"original_creation_tsz":1289930866,"last_modified_tsz":1373241497,"price":"3.75","currency_code":"USD","quantity":5,"tags":["brass","dragonfly","connector","wrap","pendant","gold","antique
+      gold","link","canada","trinity brass","brass dragonfly","gold dragonfly","dragonfly
+      pendant"],"category_path":["Supplies","Commercial","Findings"],"category_path_ids":[69150433,69151163,69172175],"materials":["brass"],"shop_section_id":5407046,"featured_rank":0,"state_tsz":1358223036,"url":"http:\/\/www.etsy.com\/listing\/62025962\/antique-gold-dragonfly-pendant-trinity?utm_source=madmimi&utm_medium=api&utm_campaign=api","views":487,"num_favorers":58,"processing_min":1,"processing_max":2,"who_made":"someone_else","is_supply":"true","when_made":"2010_2013","is_private":false,"recipient":null,"occasion":null,"style":null,"non_taxable":false,"is_digital":false,"file_data":"","has_variations":false,"MainImage":{"listing_image_id":193570339,"hex_code":null,"red":null,"green":null,"blue":null,"hue":null,"saturation":null,"brightness":null,"is_black_and_white":null,"creation_tsz":null,"listing_id":62025962,"rank":null,"url_75x75":"http:\/\/img3.etsystatic.com\/000\/0\/5262404\/il_75x75.193570339.jpg","url_170x135":"http:\/\/img3.etsystatic.com\/000\/0\/5262404\/il_170x135.193570339.jpg","url_570xN":"http:\/\/img3.etsystatic.com\/000\/0\/5262404\/il_570xN.193570339.jpg","url_fullxfull":"http:\/\/img3.etsystatic.com\/000\/0\/5262404\/il_fullxfull.193570339.jpg","full_height":null,"full_width":null}},{"listing_id":155934449,"state":"active","user_id":5682253,"category_id":69176111,"title":"Goddess
+      Pendant, Pewter, Mykonos Casting, 50x20 MM, M232","description":"This is a beautiful,
+      double-sided, cast goddess pendant in the pewter finish. This piece blends very
+      well with antiqued silver.The hole goes through the head and is about 2.5 mm.
+      This would be great as a focal on a necklace.\r\n\r\nI&#39;ve shown a design
+      idea in the last photo.\r\n\r\nCast metal findings, made in Mykonos Greece.
+      Mykonos Castings start with a lead-free base metal, but are then coated with
+      copper and finished (in the same way their Metalized Ceramics are finished)
+      with fine metals (pure copper, fine silver and 24k gold). \r\n\r\nAlso available
+      in bronze: https:\/\/www.etsy.com\/listing\/129325542\/goddess-pendant-bronze-patina-mykonos\r\nAnd
+      Green Patina: https:\/\/www.etsy.com\/ca\/listing\/127385830\/goddess-pendant-green-patina-mykonos?ref=shop_home_active&ga_search_query=m177\r\n\r\nSIZE:
+      50x20 mm (1.97 x .79 inch)\r\nHole: 2.5 mm\r\n\r\nCOLOR: pewter\r\n\r\nSHAPE:
+      goddess\r\n\r\nQUANTITY: 1\r\n\r\nPRICE: $2.75\r\n\r\nMADE IN: Mykonos, Greece\r\n\r\nTo
+      see more Mykonos pendants: https:\/\/www.etsy.com\/shop\/FabBeads\/search?search_query=mykonos+pendant&order=date_desc&view_type=list&ref=shop_search","creation_tsz":1373241496,"ending_tsz":1383872296,"original_creation_tsz":1373068546,"last_modified_tsz":1373241496,"price":"2.75","currency_code":"USD","quantity":11,"tags":["mykonos","greek","mykonos
+      beads","cast metal","mykonos metal bead","pendant","greek pendant","goddess","goddess
+      pendant","greek goddess","pewter","silver","pewter goddess"],"category_path":["Supplies","Bead","Metal"],"category_path_ids":[69150433,69151309,69176111],"materials":["cast
+      lead free metal","silver"],"shop_section_id":5578372,"featured_rank":2,"state_tsz":1373068546,"url":"http:\/\/www.etsy.com\/listing\/155934449\/goddess-pendant-pewter-mykonos-casting?utm_source=madmimi&utm_medium=api&utm_campaign=api","views":12,"num_favorers":1,"processing_min":1,"processing_max":2,"who_made":"someone_else","is_supply":"true","when_made":"2010_2013","is_private":false,"recipient":null,"occasion":null,"style":null,"non_taxable":false,"is_digital":false,"file_data":"","has_variations":false,"MainImage":{"listing_image_id":476697630,"hex_code":null,"red":null,"green":null,"blue":null,"hue":null,"saturation":null,"brightness":null,"is_black_and_white":null,"creation_tsz":null,"listing_id":155934449,"rank":null,"url_75x75":"http:\/\/img2.etsystatic.com\/024\/0\/5262404\/il_75x75.476697630_g1f8.jpg","url_170x135":"http:\/\/img2.etsystatic.com\/024\/0\/5262404\/il_170x135.476697630_g1f8.jpg","url_570xN":"http:\/\/img2.etsystatic.com\/024\/0\/5262404\/il_570xN.476697630_g1f8.jpg","url_fullxfull":"http:\/\/img2.etsystatic.com\/024\/0\/5262404\/il_fullxfull.476697630_g1f8.jpg","full_height":null,"full_width":null}},{"listing_id":155927040,"state":"active","user_id":5682253,"category_id":69176111,"title":"Seahorse
+      Pendant, Bronze Patina, Mykonos Casting M237","description":"This is a really
+      beautiful cast metal seahorse pendant now available in the Bronze Patina finish!
+      It has lots of detail and is the same on both sides. This pendant would look
+      especially nice with Mykonos ceramic beads and would be great as a focal on
+      a necklace design. I&#39;ve shown a design idea in the last photo.\r\n\r\nCast
+      metal findings, made in Mykonos Greece. Mykonos Castings start with a lead-free
+      base metal, but are then coated with copper and finished (in the same way their
+      Metalized Ceramics are finished) with fine metals (pure copper, fine silver
+      and 24k gold). \r\n\r\nSIZE: 40 x 17 mm (1.57 x .67 inch)\r\n\r\nCOLOR: Bronze
+      patina\r\n\r\nSHAPE: seahorse\r\n\r\nQUANTITY: 1\r\n\r\nPRICE: $3 \r\n\r\nMADE
+      IN: Mykonos, Greece\r\n\r\nFor more Bronze Patina: https:\/\/www.etsy.com\/shop\/FabBeads\/search?search_query=bronze+patina&order=date_desc&view_type=list&ref=shop_search","creation_tsz":1373241496,"ending_tsz":1383872296,"original_creation_tsz":1373067407,"last_modified_tsz":1373256500,"price":"3.00","currency_code":"USD","quantity":17,"tags":["mykonos","greek","mykonos
+      beads","cast metal","pendant","mykonos pendant","greek pendant","seahorse","seahorse
+      pendant","pewter seahorse","canada","bronze","bronze pendant"],"category_path":["Supplies","Bead","Metal"],"category_path_ids":[69150433,69151309,69176111],"materials":["cast
+      metal"],"shop_section_id":5578372,"featured_rank":5,"state_tsz":1373067407,"url":"http:\/\/www.etsy.com\/listing\/155927040\/seahorse-pendant-bronze-patina-mykonos?utm_source=madmimi&utm_medium=api&utm_campaign=api","views":9,"num_favorers":0,"processing_min":1,"processing_max":2,"who_made":"someone_else","is_supply":"true","when_made":"2010_2013","is_private":false,"recipient":null,"occasion":null,"style":null,"non_taxable":false,"is_digital":false,"file_data":"","has_variations":false,"MainImage":{"listing_image_id":476693374,"hex_code":null,"red":null,"green":null,"blue":null,"hue":null,"saturation":null,"brightness":null,"is_black_and_white":null,"creation_tsz":null,"listing_id":155927040,"rank":null,"url_75x75":"http:\/\/img2.etsystatic.com\/024\/0\/5262404\/il_75x75.476693374_7tqk.jpg","url_170x135":"http:\/\/img2.etsystatic.com\/024\/0\/5262404\/il_170x135.476693374_7tqk.jpg","url_570xN":"http:\/\/img2.etsystatic.com\/024\/0\/5262404\/il_570xN.476693374_7tqk.jpg","url_fullxfull":"http:\/\/img2.etsystatic.com\/024\/0\/5262404\/il_fullxfull.476693374_7tqk.jpg","full_height":null,"full_width":null}},{"listing_id":155926664,"state":"active","user_id":5682253,"category_id":69176111,"title":"Seahorse
+      Pendant, Green Patina, Mykonos Casting M236","description":"This is a really
+      beautiful cast metal seahorse pendant now available in the Green Patina finish!
+      It has lots of detail and is the same on both sides. This pendant would look
+      especially nice with Mykonos ceramic beads and would be great as a focal on
+      a necklace design. I&#39;ve shown a design idea in the last photo.\r\n\r\nCast
+      metal findings, made in Mykonos Greece. Mykonos Castings start with a lead-free
+      base metal, but are then coated with copper and finished (in the same way their
+      Metalized Ceramics are finished) with fine metals (pure copper, fine silver
+      and 24k gold). \r\n\r\nSIZE: 40 x 17 mm (1.57 x .67 inch)\r\n\r\nCOLOR: green
+      patina\r\n\r\nSHAPE: seahorse\r\n\r\nQUANTITY: 1\r\n\r\nPRICE: $3 \r\n\r\nMADE
+      IN: Mykonos, Greece\r\n\r\nFor more Green Patina: https:\/\/www.etsy.com\/shop\/FabBeads\/search?search_query=green+patina&order=date_desc&view_type=list&ref=shop_search","creation_tsz":1373241496,"ending_tsz":1383872296,"original_creation_tsz":1373067097,"last_modified_tsz":1373241496,"price":"3.00","currency_code":"USD","quantity":16,"tags":["mykonos","greek","mykonos
+      beads","cast metal","pendant","mykonos pendant","greek pendant","seahorse","seahorse
+      pendant","pewter seahorse","canada","green patina","green patina pendant"],"category_path":["Supplies","Bead","Metal"],"category_path_ids":[69150433,69151309,69176111],"materials":["cast
+      metal","copper"],"shop_section_id":5578372,"featured_rank":0,"state_tsz":1373067097,"url":"http:\/\/www.etsy.com\/listing\/155926664\/seahorse-pendant-green-patina-mykonos?utm_source=madmimi&utm_medium=api&utm_campaign=api","views":17,"num_favorers":4,"processing_min":1,"processing_max":2,"who_made":"someone_else","is_supply":"true","when_made":"2010_2013","is_private":false,"recipient":null,"occasion":null,"style":null,"non_taxable":false,"is_digital":false,"file_data":"","has_variations":false,"MainImage":{"listing_image_id":476715561,"hex_code":null,"red":null,"green":null,"blue":null,"hue":null,"saturation":null,"brightness":null,"is_black_and_white":null,"creation_tsz":null,"listing_id":155926664,"rank":null,"url_75x75":"http:\/\/img1.etsystatic.com\/021\/0\/5262404\/il_75x75.476715561_3e3i.jpg","url_170x135":"http:\/\/img1.etsystatic.com\/021\/0\/5262404\/il_170x135.476715561_3e3i.jpg","url_570xN":"http:\/\/img1.etsystatic.com\/021\/0\/5262404\/il_570xN.476715561_3e3i.jpg","url_fullxfull":"http:\/\/img1.etsystatic.com\/021\/0\/5262404\/il_fullxfull.476715561_3e3i.jpg","full_height":null,"full_width":null}},{"listing_id":62734521,"state":"active","user_id":5682253,"category_id":69172175,"title":"Large
+      Dragonfly Pendant Antique Silver Trinity Brass AS13","description":"This beautiful,
+      large, brass dragonfly pendant has an intricate pattern embossed on it&#39;s
+      wings. It would make a wonderful connector for a pendant too, just attach 2
+      jump rings to the top and curl his tail to suspend the pendant. Or you can wrap
+      his wings around a sparkling glass jewel.\r\n\r\nThis is an exceptional quality
+      nickel-free brass stamping, made in the USA; many styles are still made using
+      the original dies of yesteryear.\r\n\r\nPRICE: $4.50\r\n\r\nQUANTITY: 1\r\n\r\nSIZE:
+      50 mm(2 inches) W x 40 mm(1 \u00bd inches) L\r\n\r\nFINISH: Antique Silver;
+      this quality finish uses real silver, and is expertly plated by one of the best
+      platers in the industry. It is then antiqued to enhance the rich detail of the
+      piece, and then finished with a protective lacquer to protect it from tarnishing.
+      This color has a beautiful shine finish.\r\n\r\nMADE IN: USA\r\n\r\nAlso available
+      in Antique gold, item #AG19. You can search by item number in the search bar.","creation_tsz":1373241495,"ending_tsz":1383872295,"original_creation_tsz":1290483042,"last_modified_tsz":1373241495,"price":"4.50","currency_code":"USD","quantity":6,"tags":["brass","dragonfly","silver","antique
+      silver","connector","pendant","canada","fabbeads","trinity brass","silver dragonfly","dragonfly
+      pendant","silver plated","large dragonfly"],"category_path":["Supplies","Commercial","Findings"],"category_path_ids":[69150433,69151163,69172175],"materials":["brass","silver"],"shop_section_id":5407046,"featured_rank":0,"state_tsz":1369918015,"url":"http:\/\/www.etsy.com\/listing\/62734521\/large-dragonfly-pendant-antique-silver?utm_source=madmimi&utm_medium=api&utm_campaign=api","views":851,"num_favorers":112,"processing_min":1,"processing_max":2,"who_made":"someone_else","is_supply":"true","when_made":"2010_2013","is_private":false,"recipient":null,"occasion":null,"style":null,"non_taxable":false,"is_digital":false,"file_data":"","has_variations":false,"MainImage":{"listing_image_id":195942324,"hex_code":null,"red":null,"green":null,"blue":null,"hue":null,"saturation":null,"brightness":null,"is_black_and_white":null,"creation_tsz":null,"listing_id":62734521,"rank":null,"url_75x75":"http:\/\/img0.etsystatic.com\/000\/0\/5262404\/il_75x75.195942324.jpg","url_170x135":"http:\/\/img0.etsystatic.com\/000\/0\/5262404\/il_170x135.195942324.jpg","url_570xN":"http:\/\/img0.etsystatic.com\/000\/0\/5262404\/il_570xN.195942324.jpg","url_fullxfull":"http:\/\/img0.etsystatic.com\/000\/0\/5262404\/il_fullxfull.195942324.jpg","full_height":null,"full_width":null}},{"listing_id":102264123,"state":"active","user_id":5682253,"category_id":69172175,"title":"Sand
+      Dollar Charm Antique Pewter 4 Pc. AP70","description":"These are  great lightweight
+      sand dollar charms in antiqued pewter-plated brass. Perfect for beach or ocean
+      themed designs. Layer and cluster \u2013 create necklaces, bracelets and earrings!
+      \r\n\r\nThis finish matches the larger sand dollar pendants: https:\/\/www.etsy.com\/listing\/99328731\/sand-dollar-pendant-antique-pewter-brass?ga_search_query=sand%2Bdollar\r\n\r\nPRICE:
+      $4\r\n\r\nQUANTITY: 4\r\n\r\nSIZE: 16 mm\r\n\r\nFINISH:Antique Pewter is polished
+      and antiqued, not plated. This cast antiqued pewter finish is slightly grayer
+      than the brighter antiqued silver plate but blends very well with it and does
+      not tarnish.\r\n\r\nMADE IN: USA\r\n\r\nFor more sand dollar charms and pendants:
+      http:\/\/www.etsy.com\/shop\/FabBeads\/search?search_query=sand+dollar&order=date_desc&view_type=list&ref=shop_search\r\n\r\nFor
+      more shell themed items: https:\/\/www.etsy.com\/shop\/FabBeads\/search?search_query=seashell&order=date_desc&view_type=list&ref=shop_search","creation_tsz":1373223688,"ending_tsz":1383854488,"original_creation_tsz":1339870265,"last_modified_tsz":1373259009,"price":"4.00","currency_code":"USD","quantity":6,"tags":["charm","sand
+      dollar","beach","seashell","brass","silver","canada","fabbeads","silver sand
+      dollar","antique pewter","pewter sand dollar","beach charm","sand dollar charm"],"category_path":["Supplies","Commercial","Findings"],"category_path_ids":[69150433,69151163,69172175],"materials":["brass"],"shop_section_id":5407046,"featured_rank":0,"state_tsz":1358226466,"url":"http:\/\/www.etsy.com\/listing\/102264123\/sand-dollar-charm-antique-pewter-4-pc?utm_source=madmimi&utm_medium=api&utm_campaign=api","views":442,"num_favorers":43,"processing_min":1,"processing_max":2,"who_made":"someone_else","is_supply":"true","when_made":"2010_2013","is_private":false,"recipient":null,"occasion":null,"style":null,"non_taxable":false,"is_digital":false,"file_data":"","has_variations":false,"MainImage":{"listing_image_id":345922181,"hex_code":null,"red":null,"green":null,"blue":null,"hue":null,"saturation":null,"brightness":null,"is_black_and_white":null,"creation_tsz":null,"listing_id":102264123,"rank":null,"url_75x75":"http:\/\/img1.etsystatic.com\/000\/0\/5262404\/il_75x75.345922181.jpg","url_170x135":"http:\/\/img1.etsystatic.com\/000\/0\/5262404\/il_170x135.345922181.jpg","url_570xN":"http:\/\/img1.etsystatic.com\/000\/0\/5262404\/il_570xN.345922181.jpg","url_fullxfull":"http:\/\/img1.etsystatic.com\/000\/0\/5262404\/il_fullxfull.345922181.jpg","full_height":null,"full_width":null}},{"listing_id":102168163,"state":"active","user_id":5682253,"category_id":69176111,"title":"Mykonos
+      Casting Starfish Charm, Bronze 4 Pieces M90","description":"These are really
+      nice quality, double-sided, lightweight starfish charms in the Bronze Patina
+      finish. They&#39;d be fab in earrings, necklaces or bracelets.\r\n\r\nI&#39;ve
+      shown design ideas in the last photos.\r\n\r\nCast metal beads, made in Mykonos
+      Greece. Mykonos Castings start with a lead-free base metal, but are then coated
+      with copper and finished (in the same way their Metalized Ceramics are finished)
+      with fine metals (pure copper, fine silver and 24k gold). \r\n\r\nTo see more
+      Mykonos bronze: http:\/\/www.etsy.com\/shop\/FabBeads\/search?search_query=mykonos+bronze&order=date_desc&view_type=list&ref=shop_search\r\n\r\nSIZE:
+      14 x 18 mm (.55 x .71 inch)\r\n\r\nCOLOR: bronze\r\n\r\nSHAPE: starfish\r\n\r\nQUANTITY:
+      4\r\n\r\nPRICE: $3.25\r\n\r\nMADE IN: Mykonos, Greece","creation_tsz":1373223688,"ending_tsz":1383854488,"original_creation_tsz":1339724106,"last_modified_tsz":1373223688,"price":"3.25","currency_code":"USD","quantity":9,"tags":["mykonos","greek","mykonos
+      beads","cast metal","mykonos metal bead","bronze","charm","bronze charm","greek
+      bronze charm","starfish","starfish charm","bronze starfish","beach charm"],"category_path":["Supplies","Bead","Metal"],"category_path_ids":[69150433,69151309,69176111],"materials":["cast
+      meatal","lead free","bronze"],"shop_section_id":5578372,"featured_rank":0,"state_tsz":1358224138,"url":"http:\/\/www.etsy.com\/listing\/102168163\/mykonos-casting-starfish-charm-bronze-4?utm_source=madmimi&utm_medium=api&utm_campaign=api","views":193,"num_favorers":15,"processing_min":1,"processing_max":2,"who_made":"someone_else","is_supply":"true","when_made":"2010_2013","is_private":false,"recipient":null,"occasion":null,"style":null,"non_taxable":false,"is_digital":false,"file_data":"","has_variations":false,"MainImage":{"listing_image_id":345679192,"hex_code":null,"red":null,"green":null,"blue":null,"hue":null,"saturation":null,"brightness":null,"is_black_and_white":null,"creation_tsz":null,"listing_id":102168163,"rank":null,"url_75x75":"http:\/\/img0.etsystatic.com\/000\/0\/5262404\/il_75x75.345679192.jpg","url_170x135":"http:\/\/img0.etsystatic.com\/000\/0\/5262404\/il_170x135.345679192.jpg","url_570xN":"http:\/\/img0.etsystatic.com\/000\/0\/5262404\/il_570xN.345679192.jpg","url_fullxfull":"http:\/\/img0.etsystatic.com\/000\/0\/5262404\/il_fullxfull.345679192.jpg","full_height":null,"full_width":null}},{"listing_id":114867494,"state":"active","user_id":5682253,"category_id":69172175,"title":"Sand
+      Dollar Charm Antique Copper 4 Pc. AC137","description":"These are  great lightweight
+      sand dollar charms in antiqued copper-plated brass. Perfect for beach or ocean
+      themed designs. Layer and cluster \u2013 create necklaces, bracelets and earrings!
+      \r\n\r\nPRICE: $4\r\n\r\nQUANTITY: 4\r\n\r\nSIZE: 16 mm\r\n\r\nFINISH: Antique
+      Copper; copper plating that has been oxidized. \r\n\r\nMADE IN: USA\r\n\r\nFor
+      more sand dollar charms and pendants: http:\/\/www.etsy.com\/shop\/FabBeads\/search?search_query=sand+dollar&order=date_desc&view_type=list&ref=shop_search","creation_tsz":1373223687,"ending_tsz":1383854487,"original_creation_tsz":1352777982,"last_modified_tsz":1373223687,"price":"4.00","currency_code":"USD","quantity":22,"tags":["charm","sand
+      dollar","beach","ocean","seashell","brass","canada","fabbeads","beach charm","copper","antique
+      copper","copper sand dollar","sand dollar charm"],"category_path":["Supplies","Commercial","Findings"],"category_path_ids":[69150433,69151163,69172175],"materials":["brass"],"shop_section_id":5407046,"featured_rank":0,"state_tsz":1362702649,"url":"http:\/\/www.etsy.com\/listing\/114867494\/sand-dollar-charm-antique-copper-4-pc?utm_source=madmimi&utm_medium=api&utm_campaign=api","views":119,"num_favorers":28,"processing_min":1,"processing_max":2,"who_made":"someone_else","is_supply":"true","when_made":"2010_2013","is_private":false,"recipient":null,"occasion":null,"style":null,"non_taxable":false,"is_digital":false,"file_data":"","has_variations":false,"MainImage":{"listing_image_id":394833707,"hex_code":null,"red":null,"green":null,"blue":null,"hue":null,"saturation":null,"brightness":null,"is_black_and_white":null,"creation_tsz":null,"listing_id":114867494,"rank":null,"url_75x75":"http:\/\/img3.etsystatic.com\/008\/0\/5262404\/il_75x75.394833707_d9fe.jpg","url_170x135":"http:\/\/img3.etsystatic.com\/008\/0\/5262404\/il_170x135.394833707_d9fe.jpg","url_570xN":"http:\/\/img3.etsystatic.com\/008\/0\/5262404\/il_570xN.394833707_d9fe.jpg","url_fullxfull":"http:\/\/img3.etsystatic.com\/008\/0\/5262404\/il_fullxfull.394833707_d9fe.jpg","full_height":null,"full_width":null}},{"listing_id":59674220,"state":"active","user_id":5682253,"category_id":69150433,"title":"Flat
+      Oval Antique Silver Chain Soldered 9mm 3&#39; AS164","description":"This is
+      fabulous quality lead & nickel-free solid brass chain, with large, flat, 9 mm
+      oval links, plated with silver and then antiqued. This lightweight chain has
+      soldered links making it strong and durable.Your designs deserve the best chain\r\n\r\nSTYLE\/SIZE:
+      5 x 9 mm flat oval links (note: measurement is for inside the link)\r\n\r\nPRICE:
+      $4.25\r\n\r\nQUANTITY: 3 feet (91 cm)\r\n\r\nFINISH: Antique Silver, sometimes
+      called Silver Ox is a real silver plating that has been oxidized or antiqued.\r\n\r\nPlease
+      convo to inquire about the full 50-foot spool discount.","creation_tsz":1373218991,"ending_tsz":1383849791,"original_creation_tsz":1287773643,"last_modified_tsz":1373218991,"price":"4.25","currency_code":"USD","quantity":8,"tags":["chain","soldered","oval","flat","brass","silver
+      plated","antique silver","large","9 mm","canada","flat oval chain","soldered
+      chain","antique silver chain"],"category_path":["Supplies"],"category_path_ids":[69150433],"materials":["brass","silver"],"shop_section_id":5407051,"featured_rank":0,"state_tsz":1366214267,"url":"http:\/\/www.etsy.com\/listing\/59674220\/flat-oval-antique-silver-chain-soldered?utm_source=madmimi&utm_medium=api&utm_campaign=api","views":3060,"num_favorers":218,"processing_min":1,"processing_max":2,"who_made":"someone_else","is_supply":"true","when_made":"2010_2013","is_private":false,"recipient":null,"occasion":null,"style":null,"non_taxable":false,"is_digital":false,"file_data":"","has_variations":false,"MainImage":{"listing_image_id":185671718,"hex_code":null,"red":null,"green":null,"blue":null,"hue":null,"saturation":null,"brightness":null,"is_black_and_white":null,"creation_tsz":null,"listing_id":59674220,"rank":null,"url_75x75":"http:\/\/img2.etsystatic.com\/000\/0\/5262404\/il_75x75.185671718.jpg","url_170x135":"http:\/\/img2.etsystatic.com\/000\/0\/5262404\/il_170x135.185671718.jpg","url_570xN":"http:\/\/img2.etsystatic.com\/000\/0\/5262404\/il_570xN.185671718.jpg","url_fullxfull":"http:\/\/img2.etsystatic.com\/000\/0\/5262404\/il_fullxfull.185671718.jpg","full_height":null,"full_width":null}},{"listing_id":111739077,"state":"active","user_id":5682253,"category_id":69172175,"title":"Deco
+      Fan Bail, Gold, JBB, 17 Mm 2-Pc. AG219","description":"This gold plated brass
+      bail has a fan shape. Made in Israel by JBB, this lead and nickel free bail
+      is great quality.\r\n\r\nPRICE: $2.50\r\n\r\nQUANTITY: 2\r\n\r\nSIZE: 7 x 17
+      mm (.28 x .67 inch)\r\n\r\nFINISH: Gold plated brass\r\n\r\nMADE IN: Israel","creation_tsz":1373214591,"ending_tsz":1383845391,"original_creation_tsz":1349846120,"last_modified_tsz":1373214591,"price":"2.50","currency_code":"USD","quantity":8,"tags":["brass","bail","jbb","brass
+      bail","canada","fabbeads","jbb bail","jbb brass bail","silver","deco fan bail","gold","gold
+      bail","fan bail"],"category_path":["Supplies","Commercial","Findings"],"category_path_ids":[69150433,69151163,69172175],"materials":["brass"],"shop_section_id":5407051,"featured_rank":0,"state_tsz":1358226183,"url":"http:\/\/www.etsy.com\/listing\/111739077\/deco-fan-bail-gold-jbb-17-mm-2-pc-ag219?utm_source=madmimi&utm_medium=api&utm_campaign=api","views":78,"num_favorers":7,"processing_min":1,"processing_max":2,"who_made":"someone_else","is_supply":"true","when_made":"2010_2013","is_private":false,"recipient":null,"occasion":null,"style":null,"non_taxable":false,"is_digital":false,"file_data":"","has_variations":false,"MainImage":{"listing_image_id":383396056,"hex_code":null,"red":null,"green":null,"blue":null,"hue":null,"saturation":null,"brightness":null,"is_black_and_white":null,"creation_tsz":null,"listing_id":111739077,"rank":null,"url_75x75":"http:\/\/img0.etsystatic.com\/005\/0\/5262404\/il_75x75.383396056_mt9u.jpg","url_170x135":"http:\/\/img0.etsystatic.com\/005\/0\/5262404\/il_170x135.383396056_mt9u.jpg","url_570xN":"http:\/\/img0.etsystatic.com\/005\/0\/5262404\/il_570xN.383396056_mt9u.jpg","url_fullxfull":"http:\/\/img0.etsystatic.com\/005\/0\/5262404\/il_fullxfull.383396056_mt9u.jpg","full_height":null,"full_width":null}},{"listing_id":46410112,"state":"active","user_id":5682253,"category_id":68908108,"title":"Lampwork
+      Dichroic Glass Cabochon, Gold B74","description":"Handmade in the flame of a
+      torch by glass artist Nathan Kjernisted, this amazing boro glass cabochon has
+      a black back and the predominant dichroic color is gold with a secondary color
+      of green.  Each cab has a predominant color with at least one or two other colors
+      that flash as it moves. They sparkle in low light and are brilliant in sunlight!\r\n\r\n&#39;Starburst&#39;
+      cabs are made with dichroic glass, one of the most amazing materials being used
+      by glass artists today. Dichroic glass transmits and reflects wavelengths of
+      light, creating an effect similar to the iridescence observed in nature\u2019s
+      fire opals, dragonfly wings and hummingbird feathers. The depth and play of
+      colour as the pieces move in the light is remarkable. \r\n\r\nAs an experienced
+      lampworker, Nathan&#39;s cabochons are innovative works of glass art. They are
+      shaped perfectly round with a flat, smooth, fire-polished back and a domed clear
+      lense on the front.\r\n\r\nReady for your jewelry designs, they can be bezel
+      set, wrapped with wire, seed beads or filigree, or you can  glue on an Aanraku
+      bail.\r\n\r\nThis cabochon is made with Borosilicate (or Boro) glass, commonly
+      known as Pyrex, which is more than twice as strong as regular soda lime glass.
+      It has been properly annealed for strength and durability, which means it has
+      been slowly cooled to room temperature in a digitally controlled kiln.\r\n\r\nI&#39;ve
+      shown a sample of other starbust cabs and a filigree design in the last two
+      photos. \r\n\r\nPRICE: $16.50\r\n\r\nQUANTITY: 1\r\n\r\nCOLOR: gold\/green\r\n\r\nSIZE:
+      22 mm (.87 inch)\r\n\r\nHANDMADE IN: Canada","creation_tsz":1373214590,"ending_tsz":1383845390,"original_creation_tsz":1273254984,"last_modified_tsz":1373214590,"price":"16.50","currency_code":"USD","quantity":1,"tags":["cabochon","cab","glass","lampwork","boro","borosilicate","round","gold","green","dichroic","lampwork
+      cabochon","glass cabochon","dichroic glass"],"category_path":["Supplies","Handmade","Bead"],"category_path_ids":[69150433,69151267,68908108],"materials":["glass","boro"],"shop_section_id":5407055,"featured_rank":0,"state_tsz":1358225648,"url":"http:\/\/www.etsy.com\/listing\/46410112\/lampwork-dichroic-glass-cabochon-gold?utm_source=madmimi&utm_medium=api&utm_campaign=api","views":529,"num_favorers":36,"processing_min":1,"processing_max":2,"who_made":"collective","is_supply":"true","when_made":"2010_2013","is_private":false,"recipient":null,"occasion":null,"style":null,"non_taxable":false,"is_digital":false,"file_data":"","has_variations":false,"MainImage":{"listing_image_id":142720599,"hex_code":null,"red":null,"green":null,"blue":null,"hue":null,"saturation":null,"brightness":null,"is_black_and_white":null,"creation_tsz":null,"listing_id":46410112,"rank":null,"url_75x75":"http:\/\/img3.etsystatic.com\/000\/0\/5262404\/il_75x75.142720599.jpg","url_170x135":"http:\/\/img3.etsystatic.com\/000\/0\/5262404\/il_170x135.142720599.jpg","url_570xN":"http:\/\/img3.etsystatic.com\/000\/0\/5262404\/il_570xN.142720599.jpg","url_fullxfull":"http:\/\/img3.etsystatic.com\/000\/0\/5262404\/il_fullxfull.142720599.jpg","full_height":null,"full_width":null}},{"listing_id":123391048,"state":"active","user_id":5682253,"category_id":69175915,"title":"Czech
+      Glass Druk Beads 6mm Round, Purple Metallic 30 Pc. C276","description":"These
+      6 mm, round Czech glass druk beads in purple picasso have a beautiful marbled
+      effect. These versatile beads have a unique, amazing color.\r\n\r\nSIZE: 6 mm\r\n\r\nCOLOR:
+      purple metallic\r\n\r\nSHAPE: round\r\n\r\nQUANTITY: 30\r\n\r\nPRICE: $2.50\r\n\r\nMADE
+      IN: Czech Republic\r\n\r\nFor more 6 mm round glass beads: http:\/\/www.etsy.com\/shop\/FabBeads\/search?search_query=6+mm+round+glass+bead&order=date_desc&view_type=list&ref=shop_search","creation_tsz":1373193074,"ending_tsz":1383823874,"original_creation_tsz":1360638153,"last_modified_tsz":1373193074,"price":"2.50","currency_code":"USD","quantity":31,"tags":["glass","czech","round","6
+      mm","canada","czech glass beads","round glass bead","6 mm round bead","druk
+      bead","6 mm druk bead","purple metallic","purple","purple glass bead"],"category_path":["Supplies","Bead","Glass"],"category_path_ids":[69150433,69151309,69175915],"materials":["glass"],"shop_section_id":5407060,"featured_rank":0,"state_tsz":1360638153,"url":"http:\/\/www.etsy.com\/listing\/123391048\/czech-glass-druk-beads-6mm-round-purple?utm_source=madmimi&utm_medium=api&utm_campaign=api","views":43,"num_favorers":4,"processing_min":1,"processing_max":2,"who_made":"someone_else","is_supply":"true","when_made":"2010_2013","is_private":false,"recipient":null,"occasion":null,"style":null,"non_taxable":false,"is_digital":false,"file_data":"","has_variations":false,"MainImage":{"listing_image_id":426703362,"hex_code":null,"red":null,"green":null,"blue":null,"hue":null,"saturation":null,"brightness":null,"is_black_and_white":null,"creation_tsz":null,"listing_id":123391048,"rank":null,"url_75x75":"http:\/\/img2.etsystatic.com\/010\/0\/5262404\/il_75x75.426703362_39m9.jpg","url_170x135":"http:\/\/img2.etsystatic.com\/010\/0\/5262404\/il_170x135.426703362_39m9.jpg","url_570xN":"http:\/\/img2.etsystatic.com\/010\/0\/5262404\/il_570xN.426703362_39m9.jpg","url_fullxfull":"http:\/\/img2.etsystatic.com\/010\/0\/5262404\/il_fullxfull.426703362_39m9.jpg","full_height":null,"full_width":null}},{"listing_id":65012339,"state":"active","user_id":5682253,"category_id":69172175,"title":"SeahorseToggle
+      Clasp Antiqued Pewter AP46","description":"This is a delightful seahorse toggle
+      clasp in lead-free antiqued pewter, perfect for your beach themed jewelry.\r\n\r\nThese
+      solid pewter charms and findings are made of an alloy containing tin and copper.  Nickel
+      free and lead-compliant (complies with all regulations under the CPSIA and California
+      Prop. 65). They are cast from well-carved originals and have excellent details.\r\n\r\nPRICE:
+      $2.50\r\n\r\nQUANTITY: 1\r\n\r\nSIZE: Toggle: 19 mm (.8 inch) with ring\r\nSeahorse
+      toggle bar: 25 mm (1 inch)\r\n\r\nFINISH: Antique Pewter is polished and antiqued,
+      not plated. This cast antiqued pewter finish is slightly grayer than the brighter
+      antiqued silver plate but blends very well with it.\r\n\r\nMADE IN: USA","creation_tsz":1373193074,"ending_tsz":1383823874,"original_creation_tsz":1293767991,"last_modified_tsz":1373193074,"price":"2.50","currency_code":"USD","quantity":37,"tags":["clasp","pewter","antiqued","lead
+      free","silver","toggle","ocean","beach","canada","sea horse","pewter toggle
+      clasp","seahorse clasp","toggle clasp"],"category_path":["Supplies","Commercial","Findings"],"category_path_ids":[69150433,69151163,69172175],"materials":["pewter"],"shop_section_id":5407051,"featured_rank":0,"state_tsz":1372218494,"url":"http:\/\/www.etsy.com\/listing\/65012339\/seahorsetoggle-clasp-antiqued-pewter?utm_source=madmimi&utm_medium=api&utm_campaign=api","views":1771,"num_favorers":342,"processing_min":1,"processing_max":2,"who_made":"someone_else","is_supply":"true","when_made":"2010_2013","is_private":false,"recipient":null,"occasion":null,"style":null,"non_taxable":false,"is_digital":false,"file_data":"","has_variations":false,"MainImage":{"listing_image_id":204619970,"hex_code":null,"red":null,"green":null,"blue":null,"hue":null,"saturation":null,"brightness":null,"is_black_and_white":null,"creation_tsz":null,"listing_id":65012339,"rank":null,"url_75x75":"http:\/\/img2.etsystatic.com\/000\/0\/5262404\/il_75x75.204619970.jpg","url_170x135":"http:\/\/img2.etsystatic.com\/000\/0\/5262404\/il_170x135.204619970.jpg","url_570xN":"http:\/\/img2.etsystatic.com\/000\/0\/5262404\/il_570xN.204619970.jpg","url_fullxfull":"http:\/\/img2.etsystatic.com\/000\/0\/5262404\/il_fullxfull.204619970.jpg","full_height":null,"full_width":null}},{"listing_id":106809770,"state":"active","user_id":5682253,"category_id":69175915,"title":"Czech
+      Glass Saucer Beads, Aqua Blue Picasso, 13x9 MM 6-Pieces C240","description":"These
+      are really great, large, Czech glass saucer beads in aqua blue picasso, perfect
+      for earrings. The picasso finish gives them a golden cast. The faceted  band
+      around the center has a lot of sparkle. I&#39;ve shown an example of similar
+      beads used in an earring design in the last photo.\r\n\r\nSIZE: 13x9 mm\r\n\r\nCOLOR:
+      Aqua Blue Picasso\r\n\r\nSHAPE: saucer\r\n\r\nQUANTITY: 6\r\n\r\nPRICE: $3.75\r\n\r\nMADE
+      IN: Czech Republic","creation_tsz":1373193073,"ending_tsz":1383823873,"original_creation_tsz":1344913144,"last_modified_tsz":1373193073,"price":"3.75","currency_code":"USD","quantity":4,"tags":["glass","czech","czech
+      glass beads","glass bead","fire polished bead","picasso","saucer","saucer bead","large","glass
+      saucer bead","aqua","aqua blue","aqua picasso"],"category_path":["Supplies","Bead","Glass"],"category_path_ids":[69150433,69151309,69175915],"materials":["glass"],"shop_section_id":5407060,"featured_rank":0,"state_tsz":1371916368,"url":"http:\/\/www.etsy.com\/listing\/106809770\/czech-glass-saucer-beads-aqua-blue?utm_source=madmimi&utm_medium=api&utm_campaign=api","views":336,"num_favorers":46,"processing_min":1,"processing_max":2,"who_made":"someone_else","is_supply":"true","when_made":"2010_2013","is_private":false,"recipient":null,"occasion":null,"style":null,"non_taxable":false,"is_digital":false,"file_data":"","has_variations":false,"MainImage":{"listing_image_id":365483056,"hex_code":null,"red":null,"green":null,"blue":null,"hue":null,"saturation":null,"brightness":null,"is_black_and_white":null,"creation_tsz":null,"listing_id":106809770,"rank":null,"url_75x75":"http:\/\/img0.etsystatic.com\/001\/0\/5262404\/il_75x75.365483056_5vi2.jpg","url_170x135":"http:\/\/img0.etsystatic.com\/001\/0\/5262404\/il_170x135.365483056_5vi2.jpg","url_570xN":"http:\/\/img0.etsystatic.com\/001\/0\/5262404\/il_570xN.365483056_5vi2.jpg","url_fullxfull":"http:\/\/img0.etsystatic.com\/001\/0\/5262404\/il_fullxfull.365483056_5vi2.jpg","full_height":null,"full_width":null}}],"params":{"limit":25,"offset":0,"page":"1","shop_id":"5262404","keywords":null,"sort_on":"created","sort_order":"down","min_price":null,"max_price":null,"color":null,"color_accuracy":0,"tags":null,"category":null,"translate_keywords":"false","include_private":0},"type":"Listing","pagination":{"effective_limit":25,"effective_offset":0,"next_offset":25,"effective_page":1,"next_page":2}}'
+    http_version: '1.1'
