@@ -11,6 +11,7 @@ end
 
 require "mad_cart"
 require 'vcr'
+require 'webmock/rspec'
 
 RSpec.configure do |config|
   config.treat_symbols_as_metadata_keys_with_true_values = true
@@ -22,12 +23,15 @@ RSpec.configure do |config|
   # the seed, which is printed after each run.
   #     --seed 1234
   config.order = 'random'
+
+  config.include WebMock::API
 end
 
-VCR.config do |c|
+VCR.configure do |c|
   c.cassette_library_dir = 'spec/fixtures/vcr_cassettes'
-  c.stub_with :fakeweb
-  # c.default_cassette_options = { :record => :new_episodes }
+  c.hook_into :webmock
+  #c.default_cassette_options = { :record => :new_episodes }
+  c.debug_logger = File.open('vcr.log', 'w')
 end
 
 

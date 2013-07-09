@@ -31,10 +31,26 @@ module MadCart
         product_hashes = connection.get('products.json', options).try(:body)
         return [] unless product_hashes
         
+        responses = []
+        connection.in_parallel do
+          product_hashes.each do |p|
+            url =  p["images"]["resource"][1..-1]
+            responses << connection.get("#{url}.json")#.try(:body)
+          end
+        end
+        
+        images = responses.map &:body
+
         product_hashes.map do |p|
-          images = connection.get("#{product_hashes.first["images"]["resource"][1..-1]}.json").try(:body)
-          p.merge(:image_square_url => images.find{|i| i["is_thumbnail"] }["image_file"],
-                  :image_url => images.sort{|i| i["sort_order"] }.find{|i| !i["is_thumbnail"] }["image_file"])
+
+          product_images = images.find { |i| i.first['product_id'] == p['id'] }
+          thumbnail = product_images.find { |i| i["is_thumbnail"] }
+          image     = product_images.sort{|i| i["sort_order"] }.find { |i| i["is_thumbnail"] }
+
+          p.merge({ 
+            :image_square_url => thumbnail['image_file'],
+            :image_url => image['image_file'],
+          })
         end
       end
 
@@ -89,6 +105,7 @@ module MadCart
         @connection = Faraday.new(:url => api_url_for(args[:store_url]))
         @connection.basic_auth(args[:username], args[:api_key])
         @connection.response :json
+        @connection.adapter :typhoeus
         @connection
       end
     end

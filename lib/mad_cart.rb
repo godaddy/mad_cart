@@ -6,6 +6,8 @@ require 'singleton'
 require 'active_support/core_ext'
 require 'faraday'
 require 'faraday_middleware'
+require 'typhoeus'
+require 'typhoeus/adapters/faraday'
 
 # core
 require 'mad_cart/configuration'
