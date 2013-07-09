@@ -31,15 +31,24 @@ module MadCart
         product_hashes = connection.get('products.json', options).try(:body)
         return [] unless product_hashes
         
-        responses = []
-        connection.in_parallel do
-          product_hashes.each do |p|
-            url =  p["images"]["resource"][1..-1]
-            responses << connection.get("#{url}.json")#.try(:body)
+        hydra = Typhoeus::Hydra.hydra
+
+        responses = [] 
+        product_hashes.each do |product|
+          url = "#{connection.url_prefix}/#{product["images"]["resource"][1..-1]}.json"
+          request = Typhoeus::Request.new(url, :headers => connection.headers)
+
+          request.on_complete do |response|
+            responses << response
           end
+
+          hydra.queue request
+
         end
-        
-        images = responses.map &:body
+
+        hydra.run
+
+        images = responses.map { |r| JSON.parse(r.body) }
 
         product_hashes.map do |p|
 

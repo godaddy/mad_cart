@@ -30,8 +30,8 @@ end
 VCR.configure do |c|
   c.cassette_library_dir = 'spec/fixtures/vcr_cassettes'
   c.hook_into :webmock
-  #c.default_cassette_options = { :record => :new_episodes }
-  c.debug_logger = File.open('vcr.log', 'w')
+  c.default_cassette_options = { :record => :new_episodes }
+  #c.debug_logger = File.open('vcr.log', 'w')
 end
 
 
