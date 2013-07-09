@@ -35,18 +35,12 @@ module MadCart
 
         responses = [] 
         product_hashes.each do |product|
-          url = "#{connection.url_prefix}/#{product["images"]["resource"][1..-1]}.json"
-          request = Typhoeus::Request.new(url, :headers => connection.headers)
-
-          request.on_complete do |response|
-            responses << response
+          threads << Thread.new do
+            url = "/#{product["images"]["resource"][1..-1]}.json"
+            responses << parse_response { connection.get(url) }
           end
-
-          hydra.queue request
-
         end
-
-        hydra.run
+        threads.each { |t| t.join }                
 
         images = responses.map { |r| JSON.parse(r.body) }
 
@@ -114,7 +108,7 @@ module MadCart
         @connection = Faraday.new(:url => api_url_for(args[:store_url]))
         @connection.basic_auth(args[:username], args[:api_key])
         @connection.response :json
-        @connection.adapter :typhoeus
+        @connection.adapter Faraday.default_adapter
         @connection
       end
     end
