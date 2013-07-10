@@ -28,6 +28,22 @@ describe MadCart::Store::Base do
       o = MyModel.new(:name => 'whiskey', :description => 'tasty', :discarded => 'property', :old_name => 'is included')
       o.attributes.should == {"name" => 'whiskey', "description" => 'tasty', "new_name" => 'is included'}
     end
+    
+    it "allows two sources to map to the same model" do
+      MadCart.configure do |config|
+        config.include_attributes :my_models => [:new_name]
+        config.attribute_map :my_models, :old_name => :new_name
+      end
+      
+      source_a = {:name => 'whiskey', :description => 'tasty', :discarded => 'property', :old_name => 'has been renamed'}
+      source_b = {:name => 'whiskey', :description => 'tasty', :discarded => 'property', :new_name => 'is included'}
+      
+      model_a = MyModel.new(source_a)
+      model_a.attributes.should == {"name" => 'whiskey', "description" => 'tasty', "new_name" => 'has been renamed'}
+      
+      model_b = MyModel.new(source_b)
+      model_b.attributes.should == {"name" => 'whiskey', "description" => 'tasty', "new_name" => 'is included'}
+    end
   end
 
 end
