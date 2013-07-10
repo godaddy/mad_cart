@@ -31,18 +31,14 @@ module MadCart
         product_hashes = connection.get('products.json', options).try(:body)
         return [] unless product_hashes
         
-        hydra = Typhoeus::Hydra.hydra
-
-        responses = [] 
+        threads, images = [], []
         product_hashes.each do |product|
           threads << Thread.new do
-            url = "/#{product["images"]["resource"][1..-1]}.json"
-            responses << parse_response { connection.get(url) }
+            url = "#{product["images"]["resource"][1..-1]}.json"
+            images << parse_response { connection.get(url) }
           end
         end
         threads.each { |t| t.join }                
-
-        images = responses.map { |r| JSON.parse(r.body) }
 
         product_hashes.map do |p|
 
@@ -108,6 +104,7 @@ module MadCart
         @connection = Faraday.new(:url => api_url_for(args[:store_url]))
         @connection.basic_auth(args[:username], args[:api_key])
         @connection.response :json
+        @connection.response :logger 
         @connection.adapter Faraday.default_adapter
         @connection
       end
