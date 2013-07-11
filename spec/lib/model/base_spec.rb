@@ -31,18 +31,18 @@ describe MadCart::Store::Base do
     
     it "allows two sources to map to the same model" do
       MadCart.configure do |config|
-        config.include_attributes :my_models => [:new_name]
-        config.attribute_map :my_models, :old_name => :new_name
+        config.include_attributes :my_models => [:external_id]
+        config.attribute_map :my_models, :id => :external_id
       end
       
-      source_a = {:name => 'whiskey', :description => 'tasty', :discarded => 'property', :old_name => 'has been renamed'}
-      source_b = {:name => 'whiskey', :description => 'tasty', :discarded => 'property', :new_name => 'is included'}
+      source_a = {:name => 'whiskey', :description => 'tasty', :discarded => 'property', :id => 'has been renamed'}
+      source_b = {:name => 'whiskey', :description => 'tasty', :discarded => 'property', :external_id => 'is included'}
       
       model_a = MyModel.new(source_a)
-      model_a.attributes.should == {"name" => 'whiskey', "description" => 'tasty', "new_name" => 'has been renamed'}
+      model_a.attributes.should == {"name" => 'whiskey', "description" => 'tasty', "external_id" => 'has been renamed'}
       
       model_b = MyModel.new(source_b)
-      model_b.attributes.should == {"name" => 'whiskey', "description" => 'tasty', "new_name" => 'is included'}
+      model_b.attributes.should == {"name" => 'whiskey', "description" => 'tasty', "external_id" => 'is included'}
     end
   end
 

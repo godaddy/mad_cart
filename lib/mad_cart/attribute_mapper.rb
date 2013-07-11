@@ -15,7 +15,7 @@ module MadCart
     
     module ClassMethods
       def map_attribute_name(name)
-        mapping_hash[name] || name
+        mapping_hash[name.to_sym] || mapping_hash[name.to_s] || name
       end
       
       def mapping_hash

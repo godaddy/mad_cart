@@ -53,6 +53,17 @@ describe MadCart::Store::BigCommerce do
       end  
       
     end
+
+    context "count" do
+
+      it "returns how many products there are" do
+        VCR.use_cassette('big_commerce') do
+          api = MadCart::Store::BigCommerce.new(valid_credentials)
+          api.products_count.should == 45
+        end
+      end
+
+    end
     
   end
 

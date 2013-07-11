@@ -21,6 +21,10 @@ module MadCart
         return false
       end
 
+      def products_count
+        (parse_response { connection.get('products/count.json') })["count"]
+      end
+
       private
 
       def make_customer_request(params={:min_id => 1})
@@ -34,8 +38,10 @@ module MadCart
         threads, images = [], []
         product_hashes.each do |product|
           threads << Thread.new do
-            url = "#{product["images"]["resource"][1..-1]}.json"
-            images << parse_response { connection.get(url) }
+            if product["images"]
+              url = "#{product["images"]["resource"][1..-1]}.json"
+              images << parse_response { connection.get(url) }
+            end
           end
         end
         threads.each { |t| t.join }                
@@ -43,12 +49,13 @@ module MadCart
         product_hashes.map do |p|
 
           product_images = images.find { |i| i.first['product_id'] == p['id'] }
+          puts product_images.inspect
           thumbnail = product_images.find { |i| i["is_thumbnail"] }
           image     = product_images.sort_by{|i| i["sort_order"] }.find { |i| i["is_thumbnail"] }
 
           p.merge({ 
-            :image_square_url => thumbnail['image_file'],
-            :image_url => image['image_file'],
+            :image_square_url => connection.build_url("/product_images/#{thumbnail['image_file']}").to_s,
+            :image_url        => connection.build_url("/product_images/#{image['image_file']}").to_s,
           })
         end
       end
@@ -104,6 +111,7 @@ module MadCart
         @connection = Faraday.new(:url => api_url_for(args[:store_url]))
         @connection.basic_auth(args[:username], args[:api_key])
         @connection.response :json
+        @connection.response :logger
         @connection.adapter Faraday.default_adapter
         @connection
       end

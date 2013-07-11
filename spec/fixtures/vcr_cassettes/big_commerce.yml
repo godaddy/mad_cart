@@ -12722,4 +12722,306 @@ http_interactions:
         24 Sep 2012 05:49:04 +0000"}]'
     http_version: 
   recorded_at: Wed, 10 Jul 2013 08:20:13 GMT
+- request:
+    method: get
+    uri: https://admin:an-invalid-key@store-cr4wsh4.mybigcommerce.com/api/v2/time.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.8.7
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Date:
+      - Thu, 11 Jul 2013 15:13:59 GMT
+      Server:
+      - Apache
+      Www-Authenticate:
+      - Basic
+      X-Bc-Store-Version:
+      - 7.5.31
+      X-Powered-By:
+      - PleskLin
+      Transfer-Encoding:
+      - chunked
+      Content-Type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '[{"status":401,"message":"The specified credentials were invalid."}]'
+    http_version: 
+  recorded_at: Thu, 11 Jul 2013 15:13:59 GMT
+- request:
+    method: get
+    uri: https://admin:an-invalid-key@store-cr4wsh4.mybigcommerce.com/api/v2/time.json
+    body:
+      encoding: US-ASCII
+      string: ! '[{"status":401,"message":"The specified credentials were invalid."}]'
+    headers:
+      User-Agent:
+      - Faraday v0.8.7
+      Accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Date:
+      - Thu, 11 Jul 2013 15:14:00 GMT
+      Server:
+      - Apache
+      Www-Authenticate:
+      - Basic
+      X-Bc-Store-Version:
+      - 7.5.31
+      X-Powered-By:
+      - PleskLin
+      Transfer-Encoding:
+      - chunked
+      Content-Type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '[{"status":401,"message":"The specified credentials were invalid."}]'
+    http_version: 
+  recorded_at: Thu, 11 Jul 2013 15:14:01 GMT
+- request:
+    method: get
+    uri: https://admin:0ff0e3939f5f160f36047cf0caa6f699fe24bdeb@store-cr4wsh4.mybigcommerce.com/api/v2/time.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.8.7
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 11 Jul 2013 15:14:04 GMT
+      Server:
+      - Apache
+      X-Bc-Apilimit-Remaining:
+      - '19999'
+      X-Bc-Store-Version:
+      - 7.5.31
+      X-Powered-By:
+      - PleskLin
+      Transfer-Encoding:
+      - chunked
+      Content-Type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"time":1373555644}'
+    http_version: 
+  recorded_at: Thu, 11 Jul 2013 15:14:05 GMT
+- request:
+    method: get
+    uri: https://admin:0ff0e3939f5f160f36047cf0caa6f699fe24bdeb@store-cr4wsh4.mybigcommerce.com/api/v2/time.json
+    body:
+      encoding: US-ASCII
+      string: ! '{"time":1373555644}'
+    headers:
+      User-Agent:
+      - Faraday v0.8.7
+      Accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 11 Jul 2013 15:14:06 GMT
+      Server:
+      - Apache
+      X-Bc-Apilimit-Remaining:
+      - '19998'
+      X-Bc-Store-Version:
+      - 7.5.31
+      X-Powered-By:
+      - PleskLin
+      Transfer-Encoding:
+      - chunked
+      Content-Type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '{"time":1373555647}'
+    http_version: 
+  recorded_at: Thu, 11 Jul 2013 15:14:07 GMT
+- request:
+    method: get
+    uri: https://admin:0ff0e3939f5f160f36047cf0caa6f699fe24bdeb@store-cr4wsh4.mybigcommerce.com/api/v2/customers.json?min_id=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.8.7
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 11 Jul 2013 15:14:10 GMT
+      Server:
+      - Apache
+      X-Bc-Apilimit-Remaining:
+      - '19997'
+      X-Bc-Store-Version:
+      - 7.5.31
+      Last-Modified:
+      - Fri, 26 Apr 2013 12:16:30 GMT
+      X-Powered-By:
+      - PleskLin
+      Transfer-Encoding:
+      - chunked
+      Content-Type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '[{"id":1,"company":"CompanyNAME","first_name":"First","last_name":"Customer","email":"this@email.com","phone":"","date_created":"Fri,
+        26 Apr 2013 09:18:26 +0000","date_modified":"Fri, 26 Apr 2013 12:16:30 +0000","store_credit":"1000.0000","registration_ip_address":"196.209.229.215","customer_group_id":0,"notes":"","addresses":{"url":"https:\/\/store-cr4wsh4.mybigcommerce.com\/api\/v2\/customers\/1\/addresses.json","resource":"\/customers\/1\/addresses"}}]'
+    http_version: 
+  recorded_at: Thu, 11 Jul 2013 15:14:10 GMT
+- request:
+    method: get
+    uri: https://admin:0ff0e3939f5f160f36047cf0caa6f699fe24bdeb@store-cr4wsh4.mybigcommerce.com/api/v2/customers.json?min_id=1
+    body:
+      encoding: US-ASCII
+      string: ! '[{"id":1,"company":"CompanyNAME","first_name":"First","last_name":"Customer","email":"this@email.com","phone":"","date_created":"Fri,
+        26 Apr 2013 09:18:26 +0000","date_modified":"Fri, 26 Apr 2013 12:16:30 +0000","store_credit":"1000.0000","registration_ip_address":"196.209.229.215","customer_group_id":0,"notes":"","addresses":{"url":"https:\/\/store-cr4wsh4.mybigcommerce.com\/api\/v2\/customers\/1\/addresses.json","resource":"\/customers\/1\/addresses"}}]'
+    headers:
+      User-Agent:
+      - Faraday v0.8.7
+      Accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 11 Jul 2013 15:14:11 GMT
+      Server:
+      - Apache
+      X-Bc-Apilimit-Remaining:
+      - '19996'
+      X-Bc-Store-Version:
+      - 7.5.31
+      Last-Modified:
+      - Fri, 26 Apr 2013 12:16:30 GMT
+      X-Powered-By:
+      - PleskLin
+      Transfer-Encoding:
+      - chunked
+      Content-Type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '[{"id":1,"company":"CompanyNAME","first_name":"First","last_name":"Customer","email":"this@email.com","phone":"","date_created":"Fri,
+        26 Apr 2013 09:18:26 +0000","date_modified":"Fri, 26 Apr 2013 12:16:30 +0000","store_credit":"1000.0000","registration_ip_address":"196.209.229.215","customer_group_id":0,"notes":"","addresses":{"url":"https:\/\/store-cr4wsh4.mybigcommerce.com\/api\/v2\/customers\/1\/addresses.json","resource":"\/customers\/1\/addresses"}}]'
+    http_version: 
+  recorded_at: Thu, 11 Jul 2013 15:14:12 GMT
+- request:
+    method: get
+    uri: https://admin:0ff0e3939f5f160f36047cf0caa6f699fe24bdeb@store-cr4wsh4.mybigcommerce.com/api/v2/customers.json?min_id=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.8.7
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 11 Jul 2013 15:14:13 GMT
+      Server:
+      - Apache
+      X-Bc-Apilimit-Remaining:
+      - '19995'
+      X-Bc-Store-Version:
+      - 7.5.31
+      Last-Modified:
+      - Fri, 26 Apr 2013 12:16:30 GMT
+      X-Powered-By:
+      - PleskLin
+      Transfer-Encoding:
+      - chunked
+      Content-Type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '[{"id":1,"company":"CompanyNAME","first_name":"First","last_name":"Customer","email":"this@email.com","phone":"","date_created":"Fri,
+        26 Apr 2013 09:18:26 +0000","date_modified":"Fri, 26 Apr 2013 12:16:30 +0000","store_credit":"1000.0000","registration_ip_address":"196.209.229.215","customer_group_id":0,"notes":"","addresses":{"url":"https:\/\/store-cr4wsh4.mybigcommerce.com\/api\/v2\/customers\/1\/addresses.json","resource":"\/customers\/1\/addresses"}}]'
+    http_version: 
+  recorded_at: Thu, 11 Jul 2013 15:14:13 GMT
+- request:
+    method: get
+    uri: https://admin:0ff0e3939f5f160f36047cf0caa6f699fe24bdeb@store-cr4wsh4.mybigcommerce.com/api/v2/customers.json?min_id=1
+    body:
+      encoding: US-ASCII
+      string: ! '[{"id":1,"company":"CompanyNAME","first_name":"First","last_name":"Customer","email":"this@email.com","phone":"","date_created":"Fri,
+        26 Apr 2013 09:18:26 +0000","date_modified":"Fri, 26 Apr 2013 12:16:30 +0000","store_credit":"1000.0000","registration_ip_address":"196.209.229.215","customer_group_id":0,"notes":"","addresses":{"url":"https:\/\/store-cr4wsh4.mybigcommerce.com\/api\/v2\/customers\/1\/addresses.json","resource":"\/customers\/1\/addresses"}}]'
+    headers:
+      User-Agent:
+      - Faraday v0.8.7
+      Accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 11 Jul 2013 15:14:15 GMT
+      Server:
+      - Apache
+      X-Bc-Apilimit-Remaining:
+      - '19994'
+      X-Bc-Store-Version:
+      - 7.5.31
+      Last-Modified:
+      - Fri, 26 Apr 2013 12:16:30 GMT
+      X-Powered-By:
+      - PleskLin
+      Transfer-Encoding:
+      - chunked
+      Content-Type:
+      - application/json
+    body:
+      encoding: US-ASCII
+      string: ! '[{"id":1,"company":"CompanyNAME","first_name":"First","last_name":"Customer","email":"this@email.com","phone":"","date_created":"Fri,
+        26 Apr 2013 09:18:26 +0000","date_modified":"Fri, 26 Apr 2013 12:16:30 +0000","store_credit":"1000.0000","registration_ip_address":"196.209.229.215","customer_group_id":0,"notes":"","addresses":{"url":"https:\/\/store-cr4wsh4.mybigcommerce.com\/api\/v2\/customers\/1\/addresses.json","resource":"\/customers\/1\/addresses"}}]'
+    http_version: 
+  recorded_at: Thu, 11 Jul 2013 15:14:16 GMT
 recorded_with: VCR 2.5.0
