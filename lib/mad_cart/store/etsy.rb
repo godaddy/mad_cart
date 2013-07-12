@@ -9,10 +9,14 @@ module MadCart
       create_connection_with :create_connection, :requires => [:store_name, :api_key]
       fetch :products, :with => :get_products
       format :products, :with => :format_products
+      
+      def valid?
+        self.connection ? true : false
+      end
 
       private
-      def get_products
-        connection.listings(:active, {:includes => 'Images'})
+      def get_products(options={})
+        connection.listings(:active, product_options(options))
       end
 
       def format_products(listing)
@@ -23,8 +27,8 @@ module MadCart
            :price => "#{listing.price} #{listing.currency}".to_money.format,
            :url => listing.url,
            :currency_code => listing.currency,
-           :image_url => listing.image.full,
-           :square_image_url => listing.image.square
+           :image_url => listing.result["MainImage"].try(:[], "url_570xN"),
+           :square_image_url => listing.result["MainImage"].try(:[], "url_75x75")
         }
       end
 
@@ -39,7 +43,13 @@ module MadCart
           return store
         end
       end
-
+      
+      def product_options(options)
+        prod_options = options.clone
+        prod_options[:page] ||= 1
+        
+        return prod_options
+      end
     end
   end
 end
