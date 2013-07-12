@@ -49,7 +49,6 @@ module MadCart
         product_hashes.map do |p|
 
           product_images = images.find { |i| i.first['product_id'] == p['id'] }
-          puts product_images.inspect
           thumbnail = product_images.find { |i| i["is_thumbnail"] }
           image     = product_images.sort_by{|i| i["sort_order"] }.find { |i| i["is_thumbnail"] }
 
@@ -111,7 +110,6 @@ module MadCart
         @connection = Faraday.new(:url => api_url_for(args[:store_url]))
         @connection.basic_auth(args[:username], args[:api_key])
         @connection.response :json
-        @connection.response :logger
         @connection.adapter Faraday.default_adapter
         @connection
       end
