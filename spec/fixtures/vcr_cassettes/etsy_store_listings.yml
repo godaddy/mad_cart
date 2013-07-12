@@ -1,182 +1,600 @@
 ---
-- !ruby/struct:VCR::HTTPInteraction
-  request: !ruby/struct:VCR::Request
-    method: :get
-    uri: http://openapi.etsy.com:80/v2/shops/a_made_up_store?api_key=a_made_up_key
-    body: 
+http_interactions:
+- request:
+    method: get
+    uri: http://openapi.etsy.com/v2/shops/FabBeads?api_key=4j3amz573gly866229iixzri
+    body:
+      encoding: US-ASCII
+      string: ''
     headers:
-      accept-encoding:
+      Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-  response: !ruby/struct:VCR::Response
-    status: !ruby/struct:VCR::ResponseStatus
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
       code: 200
       message: OK
     headers:
-      date:
-      - Mon, 20 May 2013 14:02:33 GMT
-      server:
+      Date:
+      - Tue, 09 Jul 2013 09:21:40 GMT
+      Server:
       - Apache
-      x-ratelimit-limit:
+      Set-Cookie:
+      - uaid=uaid%3D0xZHKFdTZj2d-obNXytEtrtlluFH%26_now%3D1373361700%26_slt%3DTzN8s2CE%26_kid%3D1%26_ver%3D1%26_mac%3DOoOV5AfxMFiZcTpaY9kOZkHAj1-18cuYCmSiU5pH5GY.;
+        expires=Thu, 09-Jul-2015 09:21:40 GMT; path=/; domain=.etsy.com; httponly
+      X-Ratelimit-Limit:
       - '10000'
-      x-ratelimit-remaining:
-      - '9995'
-      x-etsy-request-uuid:
-      - fmXCM0-rdgOKgfdhGTqzKBoyTSh6
-      transfer-encoding:
+      X-Ratelimit-Remaining:
+      - '9996'
+      X-Etsy-Request-Uuid:
+      - BSH4_XDuZy50kJ5XREd4yR_M7jv7
+      X-Cnection:
+      - close
+      Transfer-Encoding:
       - chunked
-      content-type:
+      Content-Type:
       - application/json
-    body: ! '{"count":50100,"results":[{"shop_id":8162357,"shop_name":"MooreArtworks","user_id":33722493,"creation_tsz":1369058364,"title":"","announcement":"","currency_code":"GBP","is_vacation":false,"vacation_message":null,"sale_message":"","last_updated_tsz":1369058364,"listing_active_count":1,"login_name":"mooreartworks","accepts_custom_requests":true,"policy_welcome":null,"policy_payment":0,"policy_shipping":null,"policy_refunds":0,"policy_additional":null,"policy_seller_info":null,"policy_updated_tsz":0,"vacation_autoreply":null,"url":"http:\/\/www.etsy.com\/shop\/MooreArtworks?utm_source=madmimi&utm_medium=api&utm_campaign=api","image_url_760x100":null,"num_favorers":0,"has_tax_preferences":false,"languages":["en-US"]},{"shop_id":8162323,"shop_name":"ingeborgJuliane","user_id":33721518,"creation_tsz":1369057906,"title":null,"announcement":null,"currency_code":"EUR","is_vacation":false,"vacation_message":null,"sale_message":null,"last_updated_tsz":1369057906,"listing_active_count":2,"login_name":"ingeborgJuliane","accepts_custom_requests":true,"policy_welcome":"","policy_payment":"\r\n\r\n\r\n\r\n\r\n","policy_shipping":"Die
-      Ware wird durch die \u00d6sterreichische Post AG versandt. ","policy_refunds":"Widerrufsrecht\r\n\r\nSie
-      k\u00f6nnen Ihre Vertragserkl\u00e4rung innerhalb von 14 Tagen ohne Angabe von
-      Gr\u00fcnden in Textform\r\n (z. B. Brief, Fax, E-Mail) oder \u2013 wenn Ihnen
-      die Sache vor Fristablauf \u00fcberlassen wird \u2013 durch R\u00fccksendung\r\n
-      der Sache widerrufen. Die Frist beginnt nach Lieferung der Ware. Zur \r\nWahrung
-      der Widerrufsfrist gen\u00fcgt die rechtzeitige Absendung des Widerrufs oder
-      der Sache.\r\n Der Widerruf ist zu richten an: \r\nAnja Venier \r\nKandlgasse
-      19-21\/18 \r\n1070 Wien \r\n\u00d6sterreich\r\n\r\n","policy_additional":"Urheberrecht\r\n
-      \r\nDie durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten
-      unterliegen dem \u00f6sterreichischen Urheberrecht. Die Vervielf\u00e4ltigung,
-      Bearbeitung, Verbreitung und jede Art der Verwertung au\u00dferhalb der Grenzen
-      des Urheberrechtes bed\u00fcrfen der schriftlichen Zustimmung des jeweiligen
-      Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur f\u00fcr
-      den privaten, nicht kommerziellen Gebrauch gestattet. ","policy_seller_info":"Anja
-      Venier \r\nKandlgasse 19-21\/18 \r\n1070 Wien \r\n\u00d6sterreich\r\n","policy_updated_tsz":1369057621,"vacation_autoreply":null,"url":"http:\/\/www.etsy.com\/shop\/ingeborgJuliane?utm_source=madmimi&utm_medium=api&utm_campaign=api","image_url_760x100":"http:\/\/img3.etsystatic.com\/014\/0\/8162323\/iusb_760x100.11872891_apen.jpg","num_favorers":0,"has_tax_preferences":false,"languages":["de"]},{"shop_id":8162261,"shop_name":"ShowItOffDesigns","user_id":17700257,"creation_tsz":1369058506,"title":"Fun
-      with Art and Crafts","announcement":"Welcome to my shop. I hope you enjoy browsing.  ","currency_code":"USD","is_vacation":false,"vacation_message":null,"sale_message":"Thanks
-      for purchasing from Show It Off Designs.  I look forward to creating for you!!","last_updated_tsz":1369058506,"listing_active_count":5,"login_name":"ShowIfOffDesigns","accepts_custom_requests":true,"policy_welcome":null,"policy_payment":0,"policy_shipping":null,"policy_refunds":0,"policy_additional":null,"policy_seller_info":null,"policy_updated_tsz":0,"vacation_autoreply":null,"url":"http:\/\/www.etsy.com\/shop\/ShowItOffDesigns?utm_source=madmimi&utm_medium=api&utm_campaign=api","image_url_760x100":null,"num_favorers":0,"has_tax_preferences":false,"languages":["en-US"]},{"shop_id":8162245,"shop_name":"Stupidcheaptees","user_id":33721603,"creation_tsz":1369055762,"title":"","announcement":"","currency_code":"USD","is_vacation":false,"vacation_message":null,"sale_message":"","last_updated_tsz":1369055762,"listing_active_count":2,"login_name":"Stupidcheaptees","accepts_custom_requests":true,"policy_welcome":null,"policy_payment":0,"policy_shipping":null,"policy_refunds":0,"policy_additional":null,"policy_seller_info":null,"policy_updated_tsz":0,"vacation_autoreply":null,"url":"http:\/\/www.etsy.com\/shop\/Stupidcheaptees?utm_source=madmimi&utm_medium=api&utm_campaign=api","image_url_760x100":"http:\/\/img1.etsystatic.com\/011\/0\/8162245\/iusb_760x100.11872837_4f10.jpg","num_favorers":0,"has_tax_preferences":false,"languages":["en-US"]},{"shop_id":8162239,"shop_name":"Davesyouneverknow","user_id":33533928,"creation_tsz":1369057893,"title":"","announcement":"","currency_code":"USD","is_vacation":false,"vacation_message":null,"sale_message":"","last_updated_tsz":1369057893,"listing_active_count":1,"login_name":"dcurliss","accepts_custom_requests":true,"policy_welcome":null,"policy_payment":0,"policy_shipping":null,"policy_refunds":0,"policy_additional":null,"policy_seller_info":null,"policy_updated_tsz":0,"vacation_autoreply":null,"url":"http:\/\/www.etsy.com\/shop\/Davesyouneverknow?utm_source=madmimi&utm_medium=api&utm_campaign=api","image_url_760x100":null,"num_favorers":0,"has_tax_preferences":false,"languages":["en-US"]},{"shop_id":8162217,"shop_name":"firstloungeberlin","user_id":33721343,"creation_tsz":1369056958,"title":"n\u00e4hen
-      mit Herz","announcement":"Wir werden in K\u00fcrze unsere N\u00e4hanleitungen
-      mit Schnittmuster als eBook hier anbieten. \r\nHabt ein wenig Geduld.","currency_code":"EUR","is_vacation":false,"vacation_message":null,"sale_message":"","last_updated_tsz":1369056959,"listing_active_count":1,"login_name":"firstloungeberlin","accepts_custom_requests":true,"policy_welcome":"first
-      lounge berlin\u00ae steht f\u00fcr Freiheit und ein positives Lebensgef\u00fchl
-      in Verbindung mit Kreativit\u00e4t, Individualit\u00e4t und Leidenschaft, gelockt
-      von der urbanen Vielfalt Berlins, seinem Streetstyle, Retro-Elementen und von
-      dem geilen Leben.\r\nDie zwei B\u00e4ren symbolisieren Selbstverwirklichung,
-      Meinungsfreiheit und freie Sexualit\u00e4t. \r\n \r\nVon 2007 bis 2011 war unser
-      Gesch\u00e4ft in Berlin Prenzlauer Berg.\r\nIn der Grossstadt Berlin wurden
-      die expressionistischen Lieblingsteile, in Miniauflagen, von einem kleinen Team
-      handverlesen entwickelt und hergestellt. Die Material- und Stoffkombinationen
-      sind bunt, vielf\u00e4ltig und auffallend. Der Look ist unkonventionell, einzigartig
-      und unkompliziert.\r\nDas Fashionlabel first lounge berlin\u00ae bietet selbst
-      entwickelte und designte N\u00e4hanleitungen mit Schnittmustern in Form von
-      eBooks (elektronischen B\u00fcchern) an.","policy_payment":"Zahlung mittels
-      Paypal.\r\nDie MWSt ist enthalten (soweit erhoben f\u00fcr die Schweiz und Liechtenstein).\r\nAlle
-      Preise sind Endpreise.","policy_shipping":"F\u00fcr eBooks fallen keine Versandkosten
-      an.\r\nBei Paypal Zahlung kann der Artikel sofort runtergeladen werden.","policy_refunds":"Ein
-      Widerruf bei eBooks ist ausgeschlossen.\r\nF\u00fcr Fehler in den eBooks und
-      dadurch entstandene Sch\u00e4den wird nicht gehaftet.\r\nUnsere eBooks sind
-      mehrfach von verschiedenen Personen verwendet worden und so auf Funktion gepr\u00fcft.","policy_additional":"Wenn
-      Du unsere Schnitte gerne Gewerblich nutzen m\u00f6chtest schreibe uns formlos\r\nwegen
-      Deines Wunsches an. contact@swisscotrade.com","policy_seller_info":"firstloungeberlin.com
-      ist ein Produkt der\r\n\r\nSWISSCO Trade AG\r\nWeid 1065\r\n9428 Walzenhausen\r\nSchweiz\r\n\r\ncontact@swisscotrade.com\r\n\r\nUID:
-      CHE-448.642.966\r\nMWSt: 772 134\r\nRegister Nr.: CH-320.3.068.708-5","policy_updated_tsz":1369055677,"vacation_autoreply":null,"url":"http:\/\/www.etsy.com\/shop\/firstloungeberlin?utm_source=madmimi&utm_medium=api&utm_campaign=api","image_url_760x100":"http:\/\/img3.etsystatic.com\/012\/0\/8162217\/iusb_760x100.11872759_5x98.jpg","num_favorers":0,"has_tax_preferences":false,"languages":["de"]},{"shop_id":8162205,"shop_name":"Industrealchic","user_id":33721233,"creation_tsz":1369055270,"title":"","announcement":"","currency_code":"USD","is_vacation":false,"vacation_message":null,"sale_message":"","last_updated_tsz":1369055968,"listing_active_count":1,"login_name":"jaronhirschi","accepts_custom_requests":true,"policy_welcome":null,"policy_payment":0,"policy_shipping":null,"policy_refunds":0,"policy_additional":null,"policy_seller_info":null,"policy_updated_tsz":0,"vacation_autoreply":null,"url":"http:\/\/www.etsy.com\/shop\/Industrealchic?utm_source=madmimi&utm_medium=api&utm_campaign=api","image_url_760x100":null,"num_favorers":0,"has_tax_preferences":false,"languages":["en-US"]},{"shop_id":8162203,"shop_name":"JosieHadley","user_id":33721245,"creation_tsz":1369054146,"title":"","announcement":"","currency_code":"CAD","is_vacation":false,"vacation_message":null,"sale_message":"","last_updated_tsz":1369054146,"listing_active_count":1,"login_name":"josephinehadley","accepts_custom_requests":true,"policy_welcome":null,"policy_payment":0,"policy_shipping":null,"policy_refunds":0,"policy_additional":null,"policy_seller_info":null,"policy_updated_tsz":0,"vacation_autoreply":null,"url":"http:\/\/www.etsy.com\/shop\/JosieHadley?utm_source=madmimi&utm_medium=api&utm_campaign=api","image_url_760x100":null,"num_favorers":0,"has_tax_preferences":false,"languages":["en-US"]},{"shop_id":8162199,"shop_name":"PinatasbyLisa","user_id":33721203,"creation_tsz":1369055626,"title":"","announcement":"","currency_code":"USD","is_vacation":false,"vacation_message":null,"sale_message":"","last_updated_tsz":1369055626,"listing_active_count":1,"login_name":"lisagalvin3","accepts_custom_requests":true,"policy_welcome":null,"policy_payment":0,"policy_shipping":null,"policy_refunds":0,"policy_additional":null,"policy_seller_info":null,"policy_updated_tsz":0,"vacation_autoreply":null,"url":"http:\/\/www.etsy.com\/shop\/PinatasbyLisa?utm_source=madmimi&utm_medium=api&utm_campaign=api","image_url_760x100":null,"num_favorers":0,"has_tax_preferences":false,"languages":["en-US"]},{"shop_id":8162181,"shop_name":"DECENTuk","user_id":33721025,"creation_tsz":1369053390,"title":"","announcement":"","currency_code":"GBP","is_vacation":false,"vacation_message":null,"sale_message":"","last_updated_tsz":1369053390,"listing_active_count":1,"login_name":"MakeYourselfDecent","accepts_custom_requests":true,"policy_welcome":null,"policy_payment":0,"policy_shipping":null,"policy_refunds":0,"policy_additional":null,"policy_seller_info":null,"policy_updated_tsz":0,"vacation_autoreply":null,"url":"http:\/\/www.etsy.com\/shop\/DECENTuk?utm_source=madmimi&utm_medium=api&utm_campaign=api","image_url_760x100":"http:\/\/img1.etsystatic.com\/009\/0\/8162181\/iusb_760x100.11872721_tafl.jpg","num_favorers":0,"has_tax_preferences":false,"languages":["en-US"]},{"shop_id":8162151,"shop_name":"BehindTheWoods","user_id":33718517,"creation_tsz":1369056240,"title":"","announcement":"","currency_code":"GBP","is_vacation":false,"vacation_message":null,"sale_message":"","last_updated_tsz":1369056240,"listing_active_count":7,"login_name":"Radiantmoth","accepts_custom_requests":true,"policy_welcome":null,"policy_payment":0,"policy_shipping":null,"policy_refunds":0,"policy_additional":null,"policy_seller_info":null,"policy_updated_tsz":0,"vacation_autoreply":null,"url":"http:\/\/www.etsy.com\/shop\/BehindTheWoods?utm_source=madmimi&utm_medium=api&utm_campaign=api","image_url_760x100":"http:\/\/img0.etsystatic.com\/011\/0\/8162151\/iusb_760x100.11873972_ceg2.jpg","num_favorers":0,"has_tax_preferences":false,"languages":["en-US"]},{"shop_id":8162139,"shop_name":"Nicole2B","user_id":16083289,"creation_tsz":1369053144,"title":"Jewlry
-      that makes you happy","announcement":"","currency_code":"EUR","is_vacation":false,"vacation_message":null,"sale_message":"","last_updated_tsz":1369053144,"listing_active_count":1,"login_name":"Nicole2b","accepts_custom_requests":true,"policy_welcome":"Zo\u2019n
-      vier jaar geleden begon Nicole Buurman kettingen en armbanden te maken, gewoon
-      voor haarzelf, omdat zij in winkels niet kon vinden wat zij zocht. De kettingen
-      vielen vanaf het begin erg in de smaak bij vriendinnen. Zo begon het en kwam
-      er steeds meer interesse voor de verfrissende ontwerpen van Nicole. Inmiddels
-      is de uit de hand gelopen hobby van Nicole uitgegroeid tot een eigen bedrijf
-      Nicole2b. Nicole2b betekent: Nicole to be, maar de 2b\u2019s zijn ook een verwijzing
-      naar haar achternaam Buurman en haar meisjesnaam Boterenbrood !!\r\nNicole2b
-      levert vooral Delfts blauwe sieraden aan het buitenland en elk seizoen een nieuwe
-      collectie kettingen voor diverse dames modezaken.","policy_payment":"Bij voorkeur
-      Ideal","policy_shipping":"Gratis","policy_refunds":"","policy_additional":"","policy_seller_info":"","policy_updated_tsz":1369051430,"vacation_autoreply":null,"url":"http:\/\/www.etsy.com\/shop\/Nicole2B?utm_source=madmimi&utm_medium=api&utm_campaign=api","image_url_760x100":"http:\/\/img3.etsystatic.com\/014\/0\/8162139\/iusb_760x100.11872715_mzok.jpg","num_favorers":0,"has_tax_preferences":false,"languages":["nl"]},{"shop_id":8162121,"shop_name":"ScratchedDesigns","user_id":33719622,"creation_tsz":1369051450,"title":"","announcement":"","currency_code":"USD","is_vacation":false,"vacation_message":null,"sale_message":"","last_updated_tsz":1369051450,"listing_active_count":2,"login_name":"jasonww99","accepts_custom_requests":true,"policy_welcome":null,"policy_payment":0,"policy_shipping":null,"policy_refunds":0,"policy_additional":null,"policy_seller_info":null,"policy_updated_tsz":0,"vacation_autoreply":null,"url":"http:\/\/www.etsy.com\/shop\/ScratchedDesigns?utm_source=madmimi&utm_medium=api&utm_campaign=api","image_url_760x100":null,"num_favorers":0,"has_tax_preferences":false,"languages":["en-US"]},{"shop_id":8162119,"shop_name":"ProspectPalace","user_id":33719646,"creation_tsz":1369051876,"title":"","announcement":"","currency_code":"USD","is_vacation":false,"vacation_message":null,"sale_message":"\u0411\u043e\u043b\u044c\u0448\u043e\u0435
-      \u0441\u043f\u0430\u0441\u0438\u0431\u043e! Thanks for checking out &quot;Picture
-      Show,&quot; and please feel free to let me know what you think of it.\r\n\r\nJeff
-      Tompkins","last_updated_tsz":1369051876,"listing_active_count":1,"login_name":"tompkinsjeff","accepts_custom_requests":true,"policy_welcome":null,"policy_payment":0,"policy_shipping":null,"policy_refunds":0,"policy_additional":null,"policy_seller_info":null,"policy_updated_tsz":0,"vacation_autoreply":null,"url":"http:\/\/www.etsy.com\/shop\/ProspectPalace?utm_source=madmimi&utm_medium=api&utm_campaign=api","image_url_760x100":null,"num_favorers":0,"has_tax_preferences":false,"languages":["en-US"]},{"shop_id":8162105,"shop_name":"darksummer","user_id":20833938,"creation_tsz":1369054754,"title":"","announcement":"","currency_code":"EUR","is_vacation":false,"vacation_message":null,"sale_message":"","last_updated_tsz":1369054754,"listing_active_count":1,"login_name":"auraee","accepts_custom_requests":true,"policy_welcome":null,"policy_payment":0,"policy_shipping":null,"policy_refunds":0,"policy_additional":null,"policy_seller_info":null,"policy_updated_tsz":0,"vacation_autoreply":null,"url":"http:\/\/www.etsy.com\/shop\/darksummer?utm_source=madmimi&utm_medium=api&utm_campaign=api","image_url_760x100":"http:\/\/img0.etsystatic.com\/011\/0\/8162105\/iusb_760x100.11873732_80m9.jpg","num_favorers":0,"has_tax_preferences":false,"languages":["en-US"]},{"shop_id":8162103,"shop_name":"THEPROUDBUFFALO","user_id":33719532,"creation_tsz":1369055763,"title":"","announcement":"","currency_code":"USD","is_vacation":false,"vacation_message":null,"sale_message":"","last_updated_tsz":1369055763,"listing_active_count":11,"login_name":"larosa313","accepts_custom_requests":true,"policy_welcome":null,"policy_payment":0,"policy_shipping":null,"policy_refunds":0,"policy_additional":null,"policy_seller_info":null,"policy_updated_tsz":0,"vacation_autoreply":null,"url":"http:\/\/www.etsy.com\/shop\/THEPROUDBUFFALO?utm_source=madmimi&utm_medium=api&utm_campaign=api","image_url_760x100":null,"num_favorers":0,"has_tax_preferences":false,"languages":["en-US"]},{"shop_id":8162091,"shop_name":"ROCKURWORLDVINTAGE","user_id":33720097,"creation_tsz":1369049783,"title":"","announcement":"","currency_code":"USD","is_vacation":false,"vacation_message":null,"sale_message":"","last_updated_tsz":1369049783,"listing_active_count":1,"login_name":"davidlowe3","accepts_custom_requests":true,"policy_welcome":null,"policy_payment":0,"policy_shipping":null,"policy_refunds":0,"policy_additional":null,"policy_seller_info":null,"policy_updated_tsz":0,"vacation_autoreply":null,"url":"http:\/\/www.etsy.com\/shop\/ROCKURWORLDVINTAGE?utm_source=madmimi&utm_medium=api&utm_campaign=api","image_url_760x100":"http:\/\/img1.etsystatic.com\/015\/0\/8162091\/iusb_760x100.11872589_pbfg.jpg","num_favorers":0,"has_tax_preferences":false,"languages":["en-US"]},{"shop_id":8162085,"shop_name":"ScribedArt","user_id":33719240,"creation_tsz":1369050255,"title":"","announcement":"","currency_code":"GBP","is_vacation":false,"vacation_message":null,"sale_message":"","last_updated_tsz":1369050255,"listing_active_count":3,"login_name":"ScribedArt","accepts_custom_requests":true,"policy_welcome":null,"policy_payment":0,"policy_shipping":null,"policy_refunds":0,"policy_additional":null,"policy_seller_info":null,"policy_updated_tsz":0,"vacation_autoreply":null,"url":"http:\/\/www.etsy.com\/shop\/ScribedArt?utm_source=madmimi&utm_medium=api&utm_campaign=api","image_url_760x100":null,"num_favorers":0,"has_tax_preferences":false,"languages":["en-US"]},{"shop_id":8162075,"shop_name":"PattisGems","user_id":10080051,"creation_tsz":1369049629,"title":"","announcement":"","currency_code":"USD","is_vacation":false,"vacation_message":null,"sale_message":"","last_updated_tsz":1369049629,"listing_active_count":1,"login_name":"pattisbeads","accepts_custom_requests":true,"policy_welcome":"","policy_payment":"PayPal
-      payment within 24 hrs of purchase.","policy_shipping":"Shipping first class
-      USPS.","policy_refunds":"Refunds within 7 days of purchase.","policy_additional":"","policy_seller_info":"Contact
-      email address: wvrnc@yahoo.com","policy_updated_tsz":1369049613,"vacation_autoreply":null,"url":"http:\/\/www.etsy.com\/shop\/PattisGems?utm_source=madmimi&utm_medium=api&utm_campaign=api","image_url_760x100":null,"num_favorers":0,"has_tax_preferences":false,"languages":["en-US"]},{"shop_id":8162071,"shop_name":"Prettyears21","user_id":33719152,"creation_tsz":1369049296,"title":"","announcement":"","currency_code":"USD","is_vacation":false,"vacation_message":null,"sale_message":"","last_updated_tsz":1369049296,"listing_active_count":10,"login_name":"Prettyears21","accepts_custom_requests":true,"policy_welcome":null,"policy_payment":0,"policy_shipping":null,"policy_refunds":0,"policy_additional":null,"policy_seller_info":null,"policy_updated_tsz":0,"vacation_autoreply":null,"url":"http:\/\/www.etsy.com\/shop\/Prettyears21?utm_source=madmimi&utm_medium=api&utm_campaign=api","image_url_760x100":null,"num_favorers":0,"has_tax_preferences":false,"languages":["en-US"]},{"shop_id":8162067,"shop_name":"DianeLevittDesigns","user_id":32544549,"creation_tsz":1369049370,"title":"","announcement":"","currency_code":"GBP","is_vacation":false,"vacation_message":null,"sale_message":"","last_updated_tsz":1369049370,"listing_active_count":2,"login_name":"artydi","accepts_custom_requests":true,"policy_welcome":null,"policy_payment":0,"policy_shipping":null,"policy_refunds":0,"policy_additional":null,"policy_seller_info":null,"policy_updated_tsz":0,"vacation_autoreply":null,"url":"http:\/\/www.etsy.com\/shop\/DianeLevittDesigns?utm_source=madmimi&utm_medium=api&utm_campaign=api","image_url_760x100":"http:\/\/img3.etsystatic.com\/010\/0\/8162067\/iusb_760x100.11872739_1ler.jpg","num_favorers":0,"has_tax_preferences":false,"languages":["en-US"]},{"shop_id":8162053,"shop_name":"NiceAndHandy","user_id":33718980,"creation_tsz":1369047486,"title":"","announcement":"","currency_code":"EUR","is_vacation":false,"vacation_message":null,"sale_message":"","last_updated_tsz":1369047486,"listing_active_count":2,"login_name":"yannbuydens","accepts_custom_requests":true,"policy_welcome":null,"policy_payment":0,"policy_shipping":null,"policy_refunds":0,"policy_additional":null,"policy_seller_info":null,"policy_updated_tsz":0,"vacation_autoreply":null,"url":"http:\/\/www.etsy.com\/shop\/NiceAndHandy?utm_source=madmimi&utm_medium=api&utm_campaign=api","image_url_760x100":null,"num_favorers":0,"has_tax_preferences":false,"languages":["en-US"]},{"shop_id":8162047,"shop_name":"considerart","user_id":33718930,"creation_tsz":1369046392,"title":"","announcement":"","currency_code":"GBP","is_vacation":false,"vacation_message":null,"sale_message":"","last_updated_tsz":1369046392,"listing_active_count":1,"login_name":"considerart","accepts_custom_requests":true,"policy_welcome":null,"policy_payment":0,"policy_shipping":null,"policy_refunds":0,"policy_additional":null,"policy_seller_info":null,"policy_updated_tsz":0,"vacation_autoreply":null,"url":"http:\/\/www.etsy.com\/shop\/considerart?utm_source=madmimi&utm_medium=api&utm_campaign=api","image_url_760x100":"http:\/\/img0.etsystatic.com\/009\/0\/8162047\/iusb_760x100.11873568_dmt1.jpg","num_favorers":0,"has_tax_preferences":false,"languages":["en-US"]},{"shop_id":8162019,"shop_name":"YukisDollhouse","user_id":33718766,"creation_tsz":1369052802,"title":"Crocheted
-      Dolls by Yuki","announcement":"","currency_code":"EUR","is_vacation":false,"vacation_message":null,"sale_message":"","last_updated_tsz":1369052802,"listing_active_count":3,"login_name":"Yuki87","accepts_custom_requests":true,"policy_welcome":null,"policy_payment":0,"policy_shipping":null,"policy_refunds":0,"policy_additional":null,"policy_seller_info":null,"policy_updated_tsz":0,"vacation_autoreply":null,"url":"http:\/\/www.etsy.com\/shop\/YukisDollhouse?utm_source=madmimi&utm_medium=api&utm_campaign=api","image_url_760x100":"http:\/\/img3.etsystatic.com\/012\/0\/8162019\/iusb_760x100.11872487_1t08.jpg","num_favorers":1,"has_tax_preferences":false,"languages":["de"]},{"shop_id":8162001,"shop_name":"secondlifelights","user_id":33236634,"creation_tsz":1369047138,"title":null,"announcement":null,"currency_code":"EUR","is_vacation":false,"vacation_message":null,"sale_message":null,"last_updated_tsz":1369047138,"listing_active_count":1,"login_name":"Johnvermeulen","accepts_custom_requests":true,"policy_welcome":null,"policy_payment":0,"policy_shipping":null,"policy_refunds":0,"policy_additional":null,"policy_seller_info":null,"policy_updated_tsz":0,"vacation_autoreply":null,"url":"http:\/\/www.etsy.com\/shop\/secondlifelights?utm_source=madmimi&utm_medium=api&utm_campaign=api","image_url_760x100":null,"num_favorers":0,"has_tax_preferences":false,"languages":["nl"]}],"params":{"shop_name":null,"limit":25,"offset":0,"page":null,"lat":null,"lon":null,"distance_max":35},"type":"Shop","pagination":{"effective_limit":25,"effective_offset":0,"next_offset":25,"effective_page":1,"next_page":2}}'
-    http_version: '1.1'
-- !ruby/struct:VCR::HTTPInteraction
-  request: !ruby/struct:VCR::Request
-    method: :get
-    uri: http://openapi.etsy.com:80/v2/shops/8162357/listings/active?api_key=a_made_up_key&includes=Images
-    body: 
+    body:
+      encoding: US-ASCII
+      string: ! '{"count":1,"results":[{"shop_id":5262404,"shop_name":"FabBeads","user_id":5682253,"creation_tsz":1204836050,"title":"Trinity
+        Brass, Glass Beads, Tierracast, Chain, Mykonos","announcement":"$2 Flat rate
+        shipping within Canada! Buy Canadian and save on shipping.\r\n\r\nTrinity
+        Brass findings, charms, pendants & connectors, Tierracast pewter,\r\nCzech
+        glass beads, rhinestones & buttons, chain, copper, Vintaj brass, Mykonos ceramic
+        beads, handmade lampwork and more!\r\n\r\nLike my Facebook page and click
+        the &#39;My Etsy Shop&#39; tab there for an instant coupon https:\/\/www.facebook.com\/FabBeads\r\n\r\n***I
+        have changed my listings to reflect actual stock available, so you will be
+        able to purchase multiples without asking for reserved listings.\r\n\r\n***Canadian
+        Buyers will be charged applicable sales tax at checkout. \r\n\r\n***Feel free
+        to convo with questions about the products, or tips on how to use them. I
+        answer every conversation very quickly.***\r\n\r\n***Looking for something
+        in particular? Just type in key words or the item number in the search bar
+        on my home page.\r\n\r\n***I have great shipping prices. Flat rates of $2
+        to Canada, $3.50 to the US and $6 internationally for most items. Check out
+        my Shop Policies page for more details.\r\n\r\n***I&#39;ll include a FREE
+        GIFT that compliments your order when you order 5 or more items (that includes
+        multiples of one item).\r\n\r\n***If you&#39;re new to Etsy, click this link
+        http:\/\/www.etsy.com\/help\/article\/339 for step by step instructions on
+        how to purchase.\r\n\r\n***For finished jewelry, check out my other shop:
+        Http:\/\/brass lass.etsy.com\r\n\r\n*** Facebook page https:\/\/www.facebook.com\/FabBeads","currency_code":"USD","is_vacation":false,"vacation_message":"Hi,\r\nThe
+        shop is temporarily closed while I move. I&#39;ll reopen on Tuesday Jan. 19.
+        Sorry for the inconvenience. \r\n\r\nI&#39;ve got lots of great new items
+        from Trinity Brass coming next week, so be sure to check back. I&#39;ll have
+        chain, jump rings, eye pins and head pins, clasps, connectors and earwires
+        in Trinity Vintage Patina Brass as well as some fantastic new settings in
+        AG, AS & VP. \r\n\r\nI&#39;ve got hammered ring clasps and the Bead Pod toggles
+        coming in all 3 colors too! For all you fans of the floral bouquet pendant,
+        the antique silver will be back in stock next week. Also, the leaf bead caps
+        in antique silver will be back in stock too.","sale_message":"Thank you for
+        your order. Orders generally ship within one or two business days. \r\n\r\nApproximate
+        shipping times (please take into account that holidays can delay packages
+        by a few days):\r\n\r\nCANADA; Delivery time: 3 to 8 days, depending on how
+        far you are from BC and how remote you are.\r\n\r\nUSA: Average delivery time:
+        4 to 6 business days, depending on how far you are from BC, Canada. Please
+        note that sometimes it can take longer.\r\n\r\nEVERYWHERE ELSE: Delivery time:
+        1 to 3 weeks, depending on how far away you are from BC, Canada and delays
+        by customs.\r\n\r\nTo keep up to date on new items in the shop, like my Facebook
+        page at the link on my homepage, or copy and paste: https:\/\/www.facebook.com\/FabBeads\r\n\r\nPlease
+        contact me if you have any problems with your order at all. If you can, please
+        leave feedback when you receive it so I know that it arrived safely. Check
+        back often to see what&#39;s new in the shop, I&#39;m always adding new and
+        exciting things. \r\n\r\nHappy designing!\r\nShannon\r\nemail: FabBeads@shaw.ca\r\nhttp:\/\/FabBeads.etsy.com\r\nFacebook:
+        https:\/\/www.facebook.com\/FabBeads","last_updated_tsz":1373353934,"listing_active_count":1204,"login_name":"FabBeads","accepts_custom_requests":false,"policy_welcome":"Thanks
+        for checking out Fab Beads. Please check back often, I will be adding new
+        and exciting jewelery components all the time.\r\n\r\nDon&#39;t hesitate to
+        convo me with questions about the products or for tips on how to use them.
+        I am happy to share my knowledge with anyone who asks. Many of the items in
+        this shop have examples shown of design ideas. Feel free to use those designs
+        for inspiration.\r\n\r\nABOUT TIERRACAST PEWTER:\r\n\r\nTraditional bench
+        jewelry techniques and state-of-the-art technologies are used to carefully
+        create each of their unique designs. They draw from decades of jewelry experience,
+        history and ideas from their customers to deliver components you can&#39;t
+        find anywhere else.\r\n\r\nTierraCast uses a &quot;lead free&quot; tin alloy
+        that exceeds the stringent California standards for lead content and complies
+        with the standards for pewter in contact with food.\r\n\r\nTierraCast uses
+        &quot;Britannia&quot; casting alloy for all cast pewter findings. This alloy
+        containing tin, antimony, and copper, is considered &quot;Lead Free&quot;
+        by the metals industry and the jewelry trade as it complies with the USDA
+        standard of less than .05% (or 500 parts per million) lead content in pewter
+        in contact with food. This alloy also complies with California Health & Safety
+        Code section 25214.1 \u2013 25214.3 that requires lead below 100 ppm and cadmium
+        below 300 ppm.\r\n\r\nTierraCast silver and gold plated cast pewter components
+        also meet the eu nickel directive\r\n\r\nSOME INTERESTING FACTS FROM THE TIERRACAST
+        WEBSITE:\r\n\r\nUnfortunately, many jewelry components are made of metal containing
+        substantial and sometimes alarming amounts of lead. Tests that we have run
+        on other cast jewelry components yield lead contents as noted in the chart
+        below.\r\n\u00a0\r\nBRITANNIA PEWTER: \r\nLead content as a % of total .025%\r\nLead
+        content in parts per million: 40 to 250 PPM\r\nSafety Assessment: \u201clead
+        free\u201d Safe enough for eating utensils\r\n\r\nPEWTER: \r\nLead content
+        as a % of total: 8%\r\nLead content in parts per million: 80,000 PPM\r\nSafety
+        Assessment: Meets definition of pewter\r\n\r\nCAST METAL: \r\nLead content
+        as a % of total: 60% - 94%\r\nLead content in parts per million: 600,000 ppm
+        - 940,000 ppm\r\nSafety Assessment: Not pewter, most likely a foreign source,
+        be wary\r\n\r\nLead can used in pewter alloys because it is easy to cast and
+        less expensive than tin. However, lead is a known toxin that accumulates in
+        the body causing numerous physical ailments. In recent decades, focus on this
+        problem has resulted in the elimination of lead in gasoline and paint. Now
+        there is increasing concern and discussion about lead content in metal alloys
+        used in items that come in contact with people, particularly children. This
+        has led to the recall of millions of metal jewelry items that were manufactured
+        overseas.\r\n\r\nTierraCast takes the issues concerning lead very seriously
+        and buys only pewter that is routinely tested to comply with stringent FDA
+        limits. This way, we protect our clients, ourselves and our environment from
+        exposure to lead. We continue to research this issue and will share what we
+        learn as more information becomes available.","policy_payment":"Instant Transfers,
+        Credit Cards and E-checks via PayPal. You do not need a PayPal account to
+        use this system, and PayPal securely accepts all major credit cards.\r\n\r\nCanadian
+        Buyers will be charged sales tax at checkout. It will be whatever the applicable
+        tax is for your province: HST in BC, New Brunswick, Newfoundland and Labrador,
+        Nova Scotia, and Ontario and GST only in all other provinces. No tax will
+        be charged on orders from Quebec.","policy_shipping":"Orders are shipped within
+        2 business days of payment and are shipped to the address specified in your
+        PayPal account. If it differs from your Etsy account, I will contact you to
+        confirm.\r\n\r\nAll items are carefully packaged and secured for shipping
+        in a bubble mailer. I have chosen the most cost effective shipping method
+        that gets your order to you in a reasonable amount of time.\r\n\r\nBecause
+        of the low shipping costs, orders are not insured or traceable. If you do
+        not receive your order in a reasonable amount of time, please contact me and
+        I will discuss it with you. If it has been more than 4 weeks since your order
+        shipped, it&#39;s likely that I will re-send it. I will not re-send orders
+        to Russia or Italy, due to the high incidence of lost parcels to those countries,
+        unless insurance has been purchased.\r\n\r\n**LOW COST SHIPPING\r\n\r\nJust
+        a reminder, packages are not insured or traceable with this shipping option.
+        However, if this is a concern for you, please see my insured shipping rates
+        after the low cost shipping section.\r\n\r\nFor most items: \r\n\r\n**CANADA:\r\n$2
+        (0 for additional items)\r\nSent oversize letter mail.\r\n \r\nDelivery time:
+        3 to 8 days, depending on how far you are from BC and how remote you are.\r\n\r\n**USA:\r\n$3.50
+        (0 for additional items)\r\nSent US light packet airmail.\r\n\r\nDelivery
+        time: 4 to 7 business days, depending on how far you are from BC, Canada.
+        \r\n\r\n**INTERNATIONAL:\r\n$6 (0 for additional items)\r\nSent International
+        light packet airmail.\r\n\r\nDelivery time: 1 to 4 weeks, depending on how
+        far away you are from BC, Canada and delays by customs. \r\n\r\nIf you prefer
+        to have your package insured against loss or damage and traceable, please
+        convo and request upgraded shipping and I will send you a price quote and
+        then a PayPal invoice for the difference. \r\n\r\n**CUSTOMS:\r\n\r\nCustoms
+        duties and fees for US and International, if any, are up to the buyer and
+        not the responsibility of seller.","policy_refunds":"I want you to be happy
+        with your purchase, and will do whatever it takes to make it right if you&#39;re
+        not. If you have any problems or concerns, please convo me.","policy_additional":"Do
+        you have questions, comments, or special requests? Just start an Etsy conversation
+        (convo), I\u2019d love to hear from you.\r\n\r\nIf you get a chance, check
+        out my other Etsy shop:  \r\nhttp:\/\/BrassLass.etsy.com ","policy_seller_info":"","policy_updated_tsz":1372444196,"vacation_autoreply":"Hi,\r\nThanks
+        for your convo. I&#39;m moving this weekend and will reopen the shop on Tues.,
+        Jan. 19. I will answer any convos then, so feel free to leave me a message.\r\nBest
+        regards,\r\nShannon","url":"http:\/\/www.etsy.com\/shop\/FabBeads?utm_source=madmimi&utm_medium=api&utm_campaign=api","image_url_760x100":"http:\/\/img1.etsystatic.com\/002\/0\/5262404\/iusb_760x100.9575047_dirb.jpg","num_favorers":10296,"has_tax_preferences":true,"languages":["en-US"]}],"params":{"shop_id":"FabBeads"},"type":"Shop","pagination":{}}'
+    http_version: 
+  recorded_at: Tue, 09 Jul 2013 09:21:41 GMT
+- request:
+    method: get
+    uri: http://openapi.etsy.com/v2/shops/5262404/listings/active?api_key=4j3amz573gly866229iixzri&includes=MainImage&page=1
+    body:
+      encoding: US-ASCII
+      string: ''
     headers:
-      accept-encoding:
+      Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-  response: !ruby/struct:VCR::Response
-    status: !ruby/struct:VCR::ResponseStatus
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
       code: 200
       message: OK
     headers:
-      date:
-      - Mon, 20 May 2013 14:02:36 GMT
-      server:
+      Date:
+      - Tue, 09 Jul 2013 09:21:41 GMT
+      Server:
       - Apache
-      x-ratelimit-limit:
+      Set-Cookie:
+      - uaid=uaid%3DlJXlZLiDKf5Ob_two7ny99vBK_mp%26_now%3D1373361701%26_slt%3Db0IPuoHh%26_kid%3D1%26_ver%3D1%26_mac%3DMvoj8hNNtwUBaGTnP2JYifgcsWSeot9Yy_10rfPPYBA.;
+        expires=Thu, 09-Jul-2015 09:21:41 GMT; path=/; domain=.etsy.com; httponly
+      X-Ratelimit-Limit:
       - '10000'
-      x-ratelimit-remaining:
-      - '9994'
-      x-etsy-request-uuid:
-      - s0SWfeXxnqkZwOP1ZSntQNfIcf-Q
-      content-length:
-      - '2232'
-      content-type:
+      X-Ratelimit-Remaining:
+      - '9995'
+      X-Etsy-Request-Uuid:
+      - 62W-lmsA2mxvWILYaEmKzdZv8jx0
+      X-Cnection:
+      - close
+      Transfer-Encoding:
+      - chunked
+      Content-Type:
       - application/json
-    body: ! '{"count":1,"results":[{"listing_id":151692123,"state":"active","user_id":33722493,"category_id":68924504,"title":"A4
-      original pencil drawing on high quality 180gsm paper","description":"297 x 210
-      mm or 11 3\/4 x 8 1\/4 inch (A4)\r\nContemporary portrait of a modern woman
-      in pencil.","creation_tsz":1369058364.06,"ending_tsz":1379649600,"original_creation_tsz":1369058364.06,"last_modified_tsz":1369058553.69,"price":"45.00","currency_code":"GBP","quantity":"1","tags":["original","artwork","pencil","contemporary","modern","portrait","fine
-      art","drawing","equestrian","female","woman","sketch","moore"],"category_path":["Art","Drawing","Pencil"],"category_path_ids":[68887312,68891842,68924504],"materials":["pencil"],"shop_section_id":null,"featured_rank":0,"state_tsz":1369058364.06,"url":"http:\/\/www.etsy.com\/listing\/151692123\/a4-original-pencil-drawing-on-high?utm_source=madmimi&utm_medium=api&utm_campaign=api","views":0,"num_favorers":0,"processing_min":1,"processing_max":2,"who_made":"i_did","is_supply":"false","when_made":"2010_2013","is_private":false,"recipient":null,"occasion":null,"style":["Traditional","Modern"],"non_taxable":false,"is_digital":false,"file_data":"","has_variations":false,"Images":[{"listing_image_id":460947101,"hex_code":"AFACAE","red":175,"green":172,"blue":174,"hue":320,"saturation":1,"brightness":68,"is_black_and_white":false,"creation_tsz":1369058006,"listing_id":151692123,"rank":1,"url_75x75":"http:\/\/img1.etsystatic.com\/015\/0\/8162357\/il_75x75.460947101_fvba.jpg","url_170x135":"http:\/\/img1.etsystatic.com\/015\/0\/8162357\/il_170x135.460947101_fvba.jpg","url_570xN":"http:\/\/img1.etsystatic.com\/015\/0\/8162357\/il_570xN.460947101_fvba.jpg","url_fullxfull":"http:\/\/img1.etsystatic.com\/015\/0\/8162357\/il_fullxfull.460947101_fvba.jpg","full_height":830,"full_width":591}]}],"params":{"limit":25,"offset":0,"page":null,"shop_id":"8162357","keywords":null,"sort_on":"created","sort_order":"down","min_price":null,"max_price":null,"color":null,"color_accuracy":0,"tags":null,"category":null,"translate_keywords":"false","include_private":0},"type":"Listing","pagination":{"effective_limit":25,"effective_offset":0,"next_offset":null,"effective_page":1,"next_page":null}}'
-    http_version: '1.1'
-- !ruby/struct:VCR::HTTPInteraction
-  request: !ruby/struct:VCR::Request
-    method: :get
-    uri: http://openapi.etsy.com:80/v2/listings/151692123/images?api_key=a_made_up_key
-    body: 
+    body:
+      encoding: US-ASCII
+      string: ! '{"count":1204,"results":[{"listing_id":58430266,"state":"active","user_id":5682253,"category_id":69172175,"title":"Calla
+        Lily Pendant Connector Antique Gold Trinity Brass 2 Pc. AG58","description":"These
+        antique gold Calla Lily stampings are really nice! Very art nouveau. You could
+        use them as a pendant, perhaps dangling a crystal in the centre. They would
+        make great connectors too. A focal centerpiece perhaps? There are lots of
+        places where you can attach a jump ring and use your imagination to design
+        something really special! They would make a great pair of earrings too. So
+        many possibilities.\r\n\r\nThese are also available in antique silver, item
+        #AS25. You can search this shop by item number in the search bar.\r\n\r\nFrom
+        Trinity Brass Co., these are exceptional quality lead & nickel-free brass
+        stampings and findings, made in the USA.\r\n\r\nPRICE: $2.75\r\n\r\nQUANTITY:
+        2\r\n\r\nSIZE: 1 1\/8\u201d w x 1 \u00bd\u201d l\r\n\r\nFINISH: Trinity Antique
+        Gold is  a beautiful rich gold with a shiny finish. This finish is achieved
+        through oxidation and is not plated. It is a very elegant and sophisticated
+        finish. A special non-chemical process is done to the brass to achieve it&#39;s
+        beautiful shine. A non-toxic lacquer is applied to protect the finish. \r\n\r\nMADE
+        IN: USA","creation_tsz":1373353934,"ending_tsz":1383984734,"original_creation_tsz":1286549681,"last_modified_tsz":1373353934,"price":"2.75","currency_code":"USD","quantity":12,"tags":["connector","pendant","brass","gold","antique
+        gold","flower","calla lily","canada","lily","calla lily stamping","trinity
+        brass","gold calla lily","calla lily pendant"],"category_path":["Supplies","Commercial","Findings"],"category_path_ids":[69150433,69151163,69172175],"materials":["brass"],"shop_section_id":5407046,"featured_rank":0,"state_tsz":1362284107,"url":"http:\/\/www.etsy.com\/listing\/58430266\/calla-lily-pendant-connector-antique?utm_source=madmimi&utm_medium=api&utm_campaign=api","views":485,"num_favorers":63,"processing_min":1,"processing_max":2,"who_made":"someone_else","is_supply":"true","when_made":"2010_2013","is_private":false,"recipient":null,"occasion":null,"style":null,"non_taxable":false,"is_digital":false,"file_data":"","has_variations":false,"MainImage":{"listing_image_id":181508078,"hex_code":null,"red":null,"green":null,"blue":null,"hue":null,"saturation":null,"brightness":null,"is_black_and_white":null,"creation_tsz":null,"listing_id":58430266,"rank":null,"url_75x75":"http:\/\/img0.etsystatic.com\/000\/0\/5262404\/il_75x75.181508078.jpg","url_170x135":"http:\/\/img0.etsystatic.com\/000\/0\/5262404\/il_170x135.181508078.jpg","url_570xN":"http:\/\/img0.etsystatic.com\/000\/0\/5262404\/il_570xN.181508078.jpg","url_fullxfull":"http:\/\/img0.etsystatic.com\/000\/0\/5262404\/il_fullxfull.181508078.jpg","full_height":null,"full_width":null}},{"listing_id":62776650,"state":"active","user_id":5682253,"category_id":69172175,"title":"Hand
+        Holding Ring Connector Antique Pewter 2 Pc. AP28","description":"This antique
+        pewter hand with ring connector is great for suspending a bead or pendant.
+        One side is the front of the hand and the other side is the back of the hand,
+        so you can use which ever side you prefer.\r\n\r\nAlso available in Antique
+        Gold, item # AG136. http:\/\/www.etsy.com\/listing\/62482804\/hand-holding-ring-connector-antique-gold\r\n\r\nMatching
+        clasps: http:\/\/www.etsy.com\/shop\/FabBeads\/search?search_query=hand+hook+and+eye+clasp&order=date_desc&view_type=list&ref=shop_search\r\n\r\nThese
+        solid pewter charms and findings are made of an alloy containing tin and copper.  Nickel
+        free and lead-compliant (complies with all regulations under the CPSIA and
+        California Prop. 65). They are cast from well-carved originals and have excellent
+        details.\r\n\r\nPRICE: $2.75\r\n\r\nQUANTITY: 2\r\n\r\nSIZE: 11 mm x 25 mm
+        (.43 x .98 inch)\r\n\r\nFINISH: Antique Pewter is polished and antiqued, not
+        plated. This cast antiqued pewter finish is slightly grayer than the brighter
+        antiqued silver plate but blends very well with it and does not tarnish.\r\n\r\nMADE
+        IN: USA","creation_tsz":1373353933,"ending_tsz":1383984733,"original_creation_tsz":1290531185,"last_modified_tsz":1373353933,"price":"2.75","currency_code":"USD","quantity":25,"tags":["connector","link","hand","ring","pewter","lead
+        free","silver","canada","fabbeads","fatima","hand holding ring","hand ring
+        connector","pewter connector"],"category_path":["Supplies","Commercial","Findings"],"category_path_ids":[69150433,69151163,69172175],"materials":["pewter"],"shop_section_id":5407048,"featured_rank":0,"state_tsz":1362604013,"url":"http:\/\/www.etsy.com\/listing\/62776650\/hand-holding-ring-connector-antique?utm_source=madmimi&utm_medium=api&utm_campaign=api","views":3560,"num_favorers":604,"processing_min":1,"processing_max":2,"who_made":"someone_else","is_supply":"true","when_made":"2010_2013","is_private":false,"recipient":null,"occasion":null,"style":null,"non_taxable":false,"is_digital":false,"file_data":"","has_variations":false,"MainImage":{"listing_image_id":196083325,"hex_code":null,"red":null,"green":null,"blue":null,"hue":null,"saturation":null,"brightness":null,"is_black_and_white":null,"creation_tsz":null,"listing_id":62776650,"rank":null,"url_75x75":"http:\/\/img1.etsystatic.com\/000\/0\/5262404\/il_75x75.196083325.jpg","url_170x135":"http:\/\/img1.etsystatic.com\/000\/0\/5262404\/il_170x135.196083325.jpg","url_570xN":"http:\/\/img1.etsystatic.com\/000\/0\/5262404\/il_570xN.196083325.jpg","url_fullxfull":"http:\/\/img1.etsystatic.com\/000\/0\/5262404\/il_fullxfull.196083325.jpg","full_height":null,"full_width":null}},{"listing_id":62482804,"state":"active","user_id":5682253,"category_id":69172175,"title":"Hand
+        Holding Ring Connector Antique Gold  2 Pc. AG136","description":"This antique
+        gold pewter hand  with ring connector would be a fabulous way to suspend a
+        bead or pendant. One side is the front of the hand and the other side is the
+        back of the hand, so you can use whichever side you prefer.\r\n\r\nAlso available
+        in antique pewter, item #AP28. http:\/\/www.etsy.com\/listing\/62776650\/hand-holding-ring-connector-antique\r\n\r\nMatching
+        clasps: http:\/\/www.etsy.com\/shop\/FabBeads\/search?search_query=hand+hook+and+eye+clasp&order=date_desc&view_type=list&ref=shop_search\r\n\r\nThese
+        solid pewter charms and findings are made of an alloy containing tin and copper.  Nickel
+        free and lead-compliant (complies with all regulations under the CPSIA and
+        California Prop. 65). They are cast from well-carved originals and have excellent
+        detail.\r\n\r\nPRICE: $2.75\r\n\r\nQUANTITY: 2\r\n\r\nSIZE: 11 mm x 25 mm
+        (.43 x .98 inch)\r\n\r\nFINISH: Antique Gold plating that has been oxidized
+        to give a darker contrast in the recessed areas.\r\n\r\nMADE IN: USA","creation_tsz":1373353932,"ending_tsz":1383984732,"original_creation_tsz":1290294886,"last_modified_tsz":1373353932,"price":"2.75","currency_code":"USD","quantity":29,"tags":["connector","link","hand","pewter","lead
+        free","gold","2 sided","canada","hand holding ring","bail","hand ring","antique
+        gold","hand ring connector"],"category_path":["Supplies","Commercial","Findings"],"category_path_ids":[69150433,69151163,69172175],"materials":["pewter","gold"],"shop_section_id":5407048,"featured_rank":0,"state_tsz":1358226374,"url":"http:\/\/www.etsy.com\/listing\/62482804\/hand-holding-ring-connector-antique-gold?utm_source=madmimi&utm_medium=api&utm_campaign=api","views":2180,"num_favorers":344,"processing_min":1,"processing_max":2,"who_made":"someone_else","is_supply":"true","when_made":"2010_2013","is_private":false,"recipient":null,"occasion":null,"style":null,"non_taxable":false,"is_digital":false,"file_data":"","has_variations":false,"MainImage":{"listing_image_id":195096720,"hex_code":null,"red":null,"green":null,"blue":null,"hue":null,"saturation":null,"brightness":null,"is_black_and_white":null,"creation_tsz":null,"listing_id":62482804,"rank":null,"url_75x75":"http:\/\/img0.etsystatic.com\/000\/0\/5262404\/il_75x75.195096720.jpg","url_170x135":"http:\/\/img0.etsystatic.com\/000\/0\/5262404\/il_170x135.195096720.jpg","url_570xN":"http:\/\/img0.etsystatic.com\/000\/0\/5262404\/il_570xN.195096720.jpg","url_fullxfull":"http:\/\/img0.etsystatic.com\/000\/0\/5262404\/il_fullxfull.195096720.jpg","full_height":null,"full_width":null}},{"listing_id":61907868,"state":"active","user_id":5682253,"category_id":69172175,"title":"Medium
+        Lobster Clasp Antique Brass 6 Pc. AB16","description":"These are great quality,
+        medium-sized 12 mm lobster claw clasps, perfect for your antique brass designs.
+        They are solid brass and have been antiqued.\r\n\r\nThese are exceptional
+        quality lead and nickel-free brass findings. \r\n\r\nPRICE: $2.50\r\n\r\nQUANTITY:
+        6\r\n\r\nSIZE: 12x7 mm (.47 x .28 inch)\r\n\r\nFINISH: Antique Brass, also
+        known as Brass Ox is a golden brass color that has been oxidized or antiqued.","creation_tsz":1373353932,"ending_tsz":1383984732,"original_creation_tsz":1289844177,"last_modified_tsz":1373353932,"price":"2.50","currency_code":"USD","quantity":15,"tags":["clasp","medium","12
+        mm","brass","antique brass","brass ox","canada","fabbeads","lobster clasp","necklace
+        clasp","bracelet clasp","brass lobster clasp","lobster claw"],"category_path":["Supplies","Commercial","Findings"],"category_path_ids":[69150433,69151163,69172175],"materials":["brass"],"shop_section_id":5407051,"featured_rank":0,"state_tsz":1358222050,"url":"http:\/\/www.etsy.com\/listing\/61907868\/medium-lobster-clasp-antique-brass-6-pc?utm_source=madmimi&utm_medium=api&utm_campaign=api","views":1082,"num_favorers":59,"processing_min":1,"processing_max":2,"who_made":"someone_else","is_supply":"true","when_made":"2010_2013","is_private":false,"recipient":null,"occasion":null,"style":null,"non_taxable":false,"is_digital":false,"file_data":"","has_variations":false,"MainImage":{"listing_image_id":193174719,"hex_code":null,"red":null,"green":null,"blue":null,"hue":null,"saturation":null,"brightness":null,"is_black_and_white":null,"creation_tsz":null,"listing_id":61907868,"rank":null,"url_75x75":"http:\/\/img1.etsystatic.com\/000\/0\/5262404\/il_75x75.193174719.jpg","url_170x135":"http:\/\/img1.etsystatic.com\/000\/0\/5262404\/il_170x135.193174719.jpg","url_570xN":"http:\/\/img1.etsystatic.com\/000\/0\/5262404\/il_570xN.193174719.jpg","url_fullxfull":"http:\/\/img1.etsystatic.com\/000\/0\/5262404\/il_fullxfull.193174719.jpg","full_height":null,"full_width":null}},{"listing_id":123802912,"state":"active","user_id":5682253,"category_id":69175915,"title":"Czech
+        Glass Engraved Cushion Beads, Light Amethyst, Black, 20x8 MM, 6 Pc. C296","description":"These
+        are great, rectangular shaped, 20 x 8 mm, pressed glass engraved glass cushion
+        beads in light amethyst with black. Perfect for earring designs.\r\n\r\nSIZE:
+        20 x 8 mm\r\n\r\nCOLOR: light amethyst\/black\r\n\r\nSHAPE: rectangle\/cushion\r\n\r\nQUANTITY:
+        6\r\n\r\nPRICE: $2.50\r\n\r\nMADE IN: Czech Republic\r\n\r\nFor more engraved
+        beads: http:\/\/www.etsy.com\/shop\/FabBeads\/search?search_query=engraved+bead&order=date_desc&view_type=list&ref=shop_search","creation_tsz":1373353931,"ending_tsz":1383984731,"original_creation_tsz":1361042762,"last_modified_tsz":1373353931,"price":"2.50","currency_code":"USD","quantity":2,"tags":["czech","canada","czech
+        glass bead","engraved glass bead","etched glass bead","pressed glass bead","cushion
+        bead","rectangle","light amethyst","black","amethyst cushion","rectangle bead","purple"],"category_path":["Supplies","Bead","Glass"],"category_path_ids":[69150433,69151309,69175915],"materials":["glass"],"shop_section_id":5407060,"featured_rank":0,"state_tsz":1361042762,"url":"http:\/\/www.etsy.com\/listing\/123802912\/czech-glass-engraved-cushion-beads-light?utm_source=madmimi&utm_medium=api&utm_campaign=api","views":107,"num_favorers":10,"processing_min":1,"processing_max":2,"who_made":"someone_else","is_supply":"true","when_made":"2010_2013","is_private":false,"recipient":null,"occasion":null,"style":null,"non_taxable":false,"is_digital":false,"file_data":"","has_variations":false,"MainImage":{"listing_image_id":428241021,"hex_code":null,"red":null,"green":null,"blue":null,"hue":null,"saturation":null,"brightness":null,"is_black_and_white":null,"creation_tsz":null,"listing_id":123802912,"rank":null,"url_75x75":"http:\/\/img1.etsystatic.com\/015\/0\/5262404\/il_75x75.428241021_9c5u.jpg","url_170x135":"http:\/\/img1.etsystatic.com\/015\/0\/5262404\/il_170x135.428241021_9c5u.jpg","url_570xN":"http:\/\/img1.etsystatic.com\/015\/0\/5262404\/il_570xN.428241021_9c5u.jpg","url_fullxfull":"http:\/\/img1.etsystatic.com\/015\/0\/5262404\/il_fullxfull.428241021_9c5u.jpg","full_height":null,"full_width":null}},{"listing_id":62279842,"state":"active","user_id":5682253,"category_id":69172175,"title":"Mermaid
+        Toggle Clasp Antique Pewter AP24","description":"This is a delightful silver
+        colored, mermaid toggle clasp in lead-free antique pewter, great for ocean
+        themed bracelets and necklaces.\r\n\r\nAlso available in antique gold, item
+        # AG136 http:\/\/www.etsy.com\/listing\/62782981\/mermaid-toggle-clasp-antique-gold-pewter\r\n\r\nMore
+        mermaids here: http:\/\/www.etsy.com\/shop\/FabBeads\/search?search_query=mermaid&order=date_desc&view_type=list&ref=shop_search\r\n\r\nThese
+        solid pewter charms and findings are made of an alloy containing tin and copper.  Nickel
+        free and lead-compliant (complies with all regulations under the CPSIA and
+        California Prop. 65). They are cast from well-carved originals and have excellent
+        details.\r\n\r\nPRICE: $2.25\r\n\r\nQUANTITY: 1\r\n\r\nSIZE: Toggle: 20 mm
+        (.8 inch) with ring\r\nBar: 25 mm (1 inch)\r\n\r\nFINISH: Antique Pewter is
+        polished and antiqued, not plated. This cast antiqued pewter finish is slightly
+        grayer than the brighter antiqued silver plate but blends very well with it
+        and does not tarnish.\r\n\r\nMADE IN: USA","creation_tsz":1373328851,"ending_tsz":1383959651,"original_creation_tsz":1290119677,"last_modified_tsz":1373328851,"price":"2.25","currency_code":"USD","quantity":17,"tags":["clasp","mermaid","pewter","antiqued","lead
+        free","silver","canada","fabbeads","mermaid clasp","mermaid toggle clasp","toggle
+        clasp","silver mermaid clasp","pewter mermaid clasp"],"category_path":["Supplies","Commercial","Findings"],"category_path_ids":[69150433,69151163,69172175],"materials":["pewter"],"shop_section_id":5407051,"featured_rank":0,"state_tsz":1358226461,"url":"http:\/\/www.etsy.com\/listing\/62279842\/mermaid-toggle-clasp-antique-pewter-ap24?utm_source=madmimi&utm_medium=api&utm_campaign=api","views":4525,"num_favorers":946,"processing_min":1,"processing_max":2,"who_made":"someone_else","is_supply":"true","when_made":"2010_2013","is_private":false,"recipient":null,"occasion":null,"style":null,"non_taxable":false,"is_digital":false,"file_data":"","has_variations":false,"MainImage":{"listing_image_id":194413878,"hex_code":null,"red":null,"green":null,"blue":null,"hue":null,"saturation":null,"brightness":null,"is_black_and_white":null,"creation_tsz":null,"listing_id":62279842,"rank":null,"url_75x75":"http:\/\/img0.etsystatic.com\/000\/0\/5262404\/il_75x75.194413878.jpg","url_170x135":"http:\/\/img0.etsystatic.com\/000\/0\/5262404\/il_170x135.194413878.jpg","url_570xN":"http:\/\/img0.etsystatic.com\/000\/0\/5262404\/il_570xN.194413878.jpg","url_fullxfull":"http:\/\/img0.etsystatic.com\/000\/0\/5262404\/il_fullxfull.194413878.jpg","full_height":null,"full_width":null}},{"listing_id":60393202,"state":"active","user_id":5682253,"category_id":69172175,"title":"Pewter
+        Mermaid On A Shell Charm 2 Pc AP37","description":"A sweet little mermaid
+        sits atop a rounded half-shell. Made from lead-free pewter, this charm is
+        double-sided and I&#39;ve included a photo of the back.\r\n\r\nThese solid
+        pewter charms and findings are made of an alloy containing tin and copper.  Nickel
+        free and lead-compliant (complies with all regulations under the CPSIA and
+        California Prop. 65). They are cast from well-carved originals and have excellent
+        details.\r\n\r\nCheck out more mermaid items here: http:\/\/www.etsy.com\/shop\/FabBeads\/search?search_query=mermaid&search_submit=&search_type=user_shop_ttt_id_5262404&shopname=FabBeads\r\n\r\nPRICE:
+        $3.25\r\n\r\nQUANTITY: 2\r\n\r\nSIZE: 19 mm w x 19 mm l (.71 x .71 inch)\r\n\r\nFINISH:
+        Antique Pewter is polished and antiqued, not plated. This cast antiqued pewter
+        finish is slightly grayer than the brighter antiqued silver plate but blends
+        very well with it.\r\n\r\nMADE IN: USA","creation_tsz":1373328851,"ending_tsz":1383959651,"original_creation_tsz":1288497546,"last_modified_tsz":1373328851,"price":"3.25","currency_code":"USD","quantity":14,"tags":["charm","pewter","lead
+        free","mermaid","shell","sea shell","beach","canada","silver color","fabbeads","half
+        shell","mermaid charm","mermaid on shell"],"category_path":["Supplies","Commercial","Findings"],"category_path_ids":[69150433,69151163,69172175],"materials":["pewter"],"shop_section_id":5407046,"featured_rank":0,"state_tsz":1369918015,"url":"http:\/\/www.etsy.com\/listing\/60393202\/pewter-mermaid-on-a-shell-charm-2-pc?utm_source=madmimi&utm_medium=api&utm_campaign=api","views":914,"num_favorers":114,"processing_min":1,"processing_max":2,"who_made":"someone_else","is_supply":"true","when_made":"2010_2013","is_private":false,"recipient":null,"occasion":null,"style":null,"non_taxable":false,"is_digital":false,"file_data":"","has_variations":false,"MainImage":{"listing_image_id":188086937,"hex_code":null,"red":null,"green":null,"blue":null,"hue":null,"saturation":null,"brightness":null,"is_black_and_white":null,"creation_tsz":null,"listing_id":60393202,"rank":null,"url_75x75":"http:\/\/img1.etsystatic.com\/000\/0\/5262404\/il_75x75.188086937.jpg","url_170x135":"http:\/\/img1.etsystatic.com\/000\/0\/5262404\/il_170x135.188086937.jpg","url_570xN":"http:\/\/img1.etsystatic.com\/000\/0\/5262404\/il_570xN.188086937.jpg","url_fullxfull":"http:\/\/img1.etsystatic.com\/000\/0\/5262404\/il_fullxfull.188086937.jpg","full_height":null,"full_width":null}},{"listing_id":62142322,"state":"active","user_id":5682253,"category_id":69172175,"title":"Pewter
+        Mermaid With Seahorse Charm, Pendant AP38","description":"This double-sided,
+        lead-free pewter mermaid with seahorse could be used as a charm or a pendant.\r\n\r\nThese
+        solid pewter charms and findings are made of an alloy containing tin and copper.  Nickel
+        free and lead-compliant (complies with all regulations under the CPSIA and
+        California Prop. 65). They are cast from well-carved originals and have excellent
+        details.\r\n\r\nCheck out more mermaid items here: http:\/\/www.etsy.com\/shop\/FabBeads\/search?search_query=mermaid&search_submit=&search_type=user_shop_ttt_id_5262404&shopname=FabBeads\r\n\r\nPRICE:
+        $2\r\n\r\nQUANTITY: 1\r\n\r\nSIZE: 13 mm w x 28 mm l (.51 x 1.10 inch)\r\n\r\nFINISH:
+        Antique Pewter is polished and antiqued, not plated. This cast antiqued pewter
+        finish is slightly grayer than the brighter antiqued silver plate but blends
+        very well with it.\r\n\r\nMADE IN: USA","creation_tsz":1373328850,"ending_tsz":1383959650,"original_creation_tsz":1290018902,"last_modified_tsz":1373328850,"price":"2.00","currency_code":"USD","quantity":15,"tags":["charm","pendant","pewter","lead
+        free","mermaid","seahorse","silver color","canada","fabbeads","sea horse","mermaid
+        charm","seahorse charm","mermaid seahorse"],"category_path":["Supplies","Commercial","Findings"],"category_path_ids":[69150433,69151163,69172175],"materials":["pewter"],"shop_section_id":5407046,"featured_rank":0,"state_tsz":1369918015,"url":"http:\/\/www.etsy.com\/listing\/62142322\/pewter-mermaid-with-seahorse-charm?utm_source=madmimi&utm_medium=api&utm_campaign=api","views":1818,"num_favorers":188,"processing_min":null,"processing_max":null,"who_made":"someone_else","is_supply":"true","when_made":"2010_2013","is_private":false,"recipient":null,"occasion":null,"style":null,"non_taxable":false,"is_digital":false,"file_data":"","has_variations":false,"MainImage":{"listing_image_id":193959030,"hex_code":null,"red":null,"green":null,"blue":null,"hue":null,"saturation":null,"brightness":null,"is_black_and_white":null,"creation_tsz":null,"listing_id":62142322,"rank":null,"url_75x75":"http:\/\/img0.etsystatic.com\/000\/0\/5262404\/il_75x75.193959030.jpg","url_170x135":"http:\/\/img0.etsystatic.com\/000\/0\/5262404\/il_170x135.193959030.jpg","url_570xN":"http:\/\/img0.etsystatic.com\/000\/0\/5262404\/il_570xN.193959030.jpg","url_fullxfull":"http:\/\/img0.etsystatic.com\/000\/0\/5262404\/il_fullxfull.193959030.jpg","full_height":null,"full_width":null}},{"listing_id":61831713,"state":"active","user_id":5682253,"category_id":69172175,"title":"Mermaid
+        Charm Antique Pewter 1 Pair AP27","description":"This listing is for two different
+        mermaid charms in lead-free antiqued pewter. They are double sided and one
+        holds a shell while the other holds a starfish.\r\n\r\nCheck out more mermaid
+        items here: http:\/\/www.etsy.com\/shop\/FabBeads\/search?search_query=mermaid&search_submit=&search_type=user_shop_ttt_id_5262404&shopname=FabBeads\r\n\r\nThese
+        solid pewter charms and findings are made of an alloy containing tin and copper.  Nickel
+        free and lead-compliant (complies with all regulations under the CPSIA and
+        California Prop. 65). They are cast from well-carved originals and have excellent
+        details.\r\n\r\nPRICE: $3\r\n\r\nQUANTITY: 2\r\n\r\nSIZE: 22 mm (.87 inch)\r\n\r\nFINISH:
+        Antique Pewter is polished and antiqued, not plated. This cast antiqued pewter
+        finish is slightly grayer than the brighter antiqued silver plate but blends
+        very well with it and does not tarnish.\r\n\r\nMADE IN: USA","creation_tsz":1373328849,"ending_tsz":1383959649,"original_creation_tsz":1289777974,"last_modified_tsz":1373328849,"price":"3.00","currency_code":"USD","quantity":24,"tags":["charm","mermaid","pewter","lead
+        free","silver","ocean","beach","fantasy","canada","shell","fabbeads","mermaid
+        charm","pewter mermaid"],"category_path":["Supplies","Commercial","Findings"],"category_path_ids":[69150433,69151163,69172175],"materials":["pewter"],"shop_section_id":5407046,"featured_rank":0,"state_tsz":1371916368,"url":"http:\/\/www.etsy.com\/listing\/61831713\/mermaid-charm-antique-pewter-1-pair-ap27?utm_source=madmimi&utm_medium=api&utm_campaign=api","views":2734,"num_favorers":377,"processing_min":1,"processing_max":2,"who_made":"someone_else","is_supply":"true","when_made":"2010_2013","is_private":false,"recipient":null,"occasion":null,"style":null,"non_taxable":false,"is_digital":false,"file_data":"","has_variations":false,"MainImage":{"listing_image_id":192919086,"hex_code":null,"red":null,"green":null,"blue":null,"hue":null,"saturation":null,"brightness":null,"is_black_and_white":null,"creation_tsz":null,"listing_id":61831713,"rank":null,"url_75x75":"http:\/\/img0.etsystatic.com\/000\/0\/5262404\/il_75x75.192919086.jpg","url_170x135":"http:\/\/img0.etsystatic.com\/000\/0\/5262404\/il_170x135.192919086.jpg","url_570xN":"http:\/\/img0.etsystatic.com\/000\/0\/5262404\/il_570xN.192919086.jpg","url_fullxfull":"http:\/\/img0.etsystatic.com\/000\/0\/5262404\/il_fullxfull.192919086.jpg","full_height":null,"full_width":null}},{"listing_id":122487530,"state":"active","user_id":5682253,"category_id":69172175,"title":"Zilah
+        Filigree 3-Ring Connector, Antique Silver, Trinity Brass 2 Pc. AS259","description":"These
+        are very versatile, small, 3-ring filigree connectors in Antiqued silver plated
+        brass. Great for delicate pendants or earrings. They are lightweight and dapt,
+        not flat.\r\n\r\nFrom Trinity Brass Co., these solid brass stampings are lead
+        and nickel free, professionally finished and won&#39;t tarnish.\r\n\r\nPRICE:
+        $3\r\n\r\nQUANTITY: 2\r\n\r\nSIZE: 14 x 20 mm (.55 x .79 inch)\r\n\r\nFINISH:
+        Antique Silver; this quality finish uses real silver, and is expertly plated
+        by one of the best platers in the industry. It is then antiqued to enhance
+        the rich detail of the piece, and then finished with a protective lacquer
+        to protect it from tarnishing. This color has a beautiful shine finish.\r\n\r\nMADE
+        IN: USA\r\n\r\nFor more Trinity Antique silver: http:\/\/www.etsy.com\/shop\/FabBeads\/search?search_query=trinity+antique+silver&order=date_desc&view_type=list&ref=shop_search","creation_tsz":1373327890,"ending_tsz":1383958690,"original_creation_tsz":1359855379,"last_modified_tsz":1373327890,"price":"3.00","currency_code":"USD","quantity":10,"tags":["connector","link","filigree","brass","trinity
+        brass","brass filigree","earring connector","chandelier connector","zilah
+        connector","3 ring connector","small connector","antique silver","silver connector"],"category_path":["Supplies","Commercial","Findings"],"category_path_ids":[69150433,69151163,69172175],"materials":["brass","silver"],"shop_section_id":5407048,"featured_rank":0,"state_tsz":1359855379,"url":"http:\/\/www.etsy.com\/listing\/122487530\/zilah-filigree-3-ring-connector-antique?utm_source=madmimi&utm_medium=api&utm_campaign=api","views":135,"num_favorers":27,"processing_min":1,"processing_max":2,"who_made":"someone_else","is_supply":"true","when_made":"2010_2013","is_private":false,"recipient":null,"occasion":null,"style":null,"non_taxable":false,"is_digital":false,"file_data":"","has_variations":false,"MainImage":{"listing_image_id":423340863,"hex_code":null,"red":null,"green":null,"blue":null,"hue":null,"saturation":null,"brightness":null,"is_black_and_white":null,"creation_tsz":null,"listing_id":122487530,"rank":null,"url_75x75":"http:\/\/img1.etsystatic.com\/016\/0\/5262404\/il_75x75.423340863_286r.jpg","url_170x135":"http:\/\/img1.etsystatic.com\/016\/0\/5262404\/il_170x135.423340863_286r.jpg","url_570xN":"http:\/\/img1.etsystatic.com\/016\/0\/5262404\/il_570xN.423340863_286r.jpg","url_fullxfull":"http:\/\/img1.etsystatic.com\/016\/0\/5262404\/il_fullxfull.423340863_286r.jpg","full_height":null,"full_width":null}},{"listing_id":106649108,"state":"active","user_id":5682253,"category_id":69172175,"title":"Pewter
+        Connector Filigree Lantern 2 Pc. AP72","description":"These lead-free antiqued
+        pewter filigree lantern connectors would be great as pendants or earrings.
+        They have a very Far-East look. They are one-sided, with loops at both top
+        and bottom.\r\n\r\nThese solid pewter charms and findings are made of an alloy
+        containing tin and copper.  Nickel free and lead-compliant (complies with
+        all regulations under the CPSIA and California Prop. 65). They are cast from
+        well-carved originals and have excellent details.\r\n\r\nPRICE: $2.75\r\n\r\nQUANTITY:
+        2\r\n\r\nSIZE: 11 mm wide x 25 mm long (.43 x 1 inch)\r\n\r\nFINISH: Antique
+        Pewter is polished and antiqued, not plated. This cast antiqued pewter finish
+        is slightly grayer than the brighter antiqued silver plate but blends very
+        well with it.\r\n\r\nMADE IN: USA","creation_tsz":1373327889,"ending_tsz":1383958689,"original_creation_tsz":1344745684,"last_modified_tsz":1373327889,"price":"2.75","currency_code":"USD","quantity":5,"tags":["connector","link","earring
+        component","pewter","silver","lead free","fabbeads","filigree","lantern","filigree
+        lantern","lantern connector","pewter connector","asian lantern"],"category_path":["Supplies","Commercial","Findings"],"category_path_ids":[69150433,69151163,69172175],"materials":["pewter"],"shop_section_id":5407048,"featured_rank":0,"state_tsz":1358218826,"url":"http:\/\/www.etsy.com\/listing\/106649108\/pewter-connector-filigree-lantern-2-pc?utm_source=madmimi&utm_medium=api&utm_campaign=api","views":151,"num_favorers":25,"processing_min":1,"processing_max":2,"who_made":"someone_else","is_supply":"true","when_made":"2010_2013","is_private":false,"recipient":null,"occasion":null,"style":null,"non_taxable":false,"is_digital":false,"file_data":"","has_variations":false,"MainImage":{"listing_image_id":364895783,"hex_code":null,"red":null,"green":null,"blue":null,"hue":null,"saturation":null,"brightness":null,"is_black_and_white":null,"creation_tsz":null,"listing_id":106649108,"rank":null,"url_75x75":"http:\/\/img1.etsystatic.com\/004\/0\/5262404\/il_75x75.364895783_9kzn.jpg","url_170x135":"http:\/\/img1.etsystatic.com\/004\/0\/5262404\/il_170x135.364895783_9kzn.jpg","url_570xN":"http:\/\/img1.etsystatic.com\/004\/0\/5262404\/il_570xN.364895783_9kzn.jpg","url_fullxfull":"http:\/\/img1.etsystatic.com\/004\/0\/5262404\/il_fullxfull.364895783_9kzn.jpg","full_height":null,"full_width":null}},{"listing_id":102673314,"state":"active","user_id":5682253,"category_id":69172175,"title":"Small
+        Hammered Ring Connector Antique Silver, 13 MM 4-Pc. AS245","description":"This
+        is a great, small-sized hammered ring in antiqued silver plated brass. These
+        would make nice connectors in necklace or earring designs. They&#39;re hammered
+        on the front, solid on the back.\r\n\r\nPRICE: $4\r\n\r\nQUANTITY: 4\r\n\r\nSIZE:
+        13 mm (.51 inch)\r\n\r\nFINISH: Antiqued silver; real silver plating with
+        the recessed areas darkened with an antiquing agent. \r\n\r\nMADE IN: USA\r\n\r\nFor
+        other finishes: https:\/\/www.etsy.com\/shop\/FabBeads\/search?search_query=small+hammered+ring&order=date_desc&view_type=list&ref=shop_search","creation_tsz":1373327889,"ending_tsz":1383958689,"original_creation_tsz":1340319551,"last_modified_tsz":1373327889,"price":"4.00","currency_code":"USD","quantity":12,"tags":["connector","link","earring
+        component","brass","silver","hammered","round","canada","hammered ring","silver
+        hammered ring","small","small hammered ring","hammered connector"],"category_path":["Supplies","Commercial","Findings"],"category_path_ids":[69150433,69151163,69172175],"materials":["brass","silver"],"shop_section_id":5407048,"featured_rank":0,"state_tsz":1358222346,"url":"http:\/\/www.etsy.com\/listing\/102673314\/small-hammered-ring-connector-antique?utm_source=madmimi&utm_medium=api&utm_campaign=api","views":409,"num_favorers":57,"processing_min":1,"processing_max":2,"who_made":"someone_else","is_supply":"true","when_made":"2010_2013","is_private":false,"recipient":null,"occasion":null,"style":null,"non_taxable":false,"is_digital":false,"file_data":"","has_variations":false,"MainImage":{"listing_image_id":350108622,"hex_code":null,"red":null,"green":null,"blue":null,"hue":null,"saturation":null,"brightness":null,"is_black_and_white":null,"creation_tsz":null,"listing_id":102673314,"rank":null,"url_75x75":"http:\/\/img0.etsystatic.com\/000\/0\/5262404\/il_75x75.350108622.jpg","url_170x135":"http:\/\/img0.etsystatic.com\/000\/0\/5262404\/il_170x135.350108622.jpg","url_570xN":"http:\/\/img0.etsystatic.com\/000\/0\/5262404\/il_570xN.350108622.jpg","url_fullxfull":"http:\/\/img0.etsystatic.com\/000\/0\/5262404\/il_fullxfull.350108622.jpg","full_height":null,"full_width":null}},{"listing_id":59965491,"state":"active","user_id":5682253,"category_id":69172175,"title":"Small
+        Filigree Connector Antique Silver Trinity Brass 4 Pc. AS129","description":"Exquisite,
+        small, lacy brass filigree connectors with 2 loops in antiqued silver are
+        great for necklaces, bracelets and earring connectors.\r\n\r\nFrom Trinity
+        Brass Co., these are exceptional quality lead & nickel-free brass stampings
+        and findings, made in the USA.\r\n\r\nPRICE: $4.75\r\n\r\nQUANTITY: 4\r\n\r\nSIZE:
+        13 x 18 mm (.5 x .71 inch)\r\n\r\nFINISH: Antique Silver; this quality finish
+        uses real silver, and is expertly plated by one of the best platers in the
+        industry. It is then antiqued to enhance the rich detail of the piece, and
+        then finished with a protective lacquer to protect it from tarnishing.  This
+        color has a beautiful shine finish.\r\n\r\nMADE IN: USA","creation_tsz":1373327889,"ending_tsz":1383958689,"original_creation_tsz":1288060801,"last_modified_tsz":1373327889,"price":"4.75","currency_code":"USD","quantity":10,"tags":["connector","link","filigree","brass","silver","antique
+        silver","2 ring","small","canada","fabbeads","trinity brass","filigree connector","silver
+        filigree"],"category_path":["Supplies","Commercial","Findings"],"category_path_ids":[69150433,69151163,69172175],"materials":["brass","silver"],"shop_section_id":5407048,"featured_rank":0,"state_tsz":1358222485,"url":"http:\/\/www.etsy.com\/listing\/59965491\/small-filigree-connector-antique-silver?utm_source=madmimi&utm_medium=api&utm_campaign=api","views":645,"num_favorers":69,"processing_min":1,"processing_max":2,"who_made":"someone_else","is_supply":"true","when_made":"2010_2013","is_private":false,"recipient":null,"occasion":null,"style":null,"non_taxable":false,"is_digital":false,"file_data":"","has_variations":false,"MainImage":{"listing_image_id":186651533,"hex_code":null,"red":null,"green":null,"blue":null,"hue":null,"saturation":null,"brightness":null,"is_black_and_white":null,"creation_tsz":null,"listing_id":59965491,"rank":null,"url_75x75":"http:\/\/img1.etsystatic.com\/000\/0\/5262404\/il_75x75.186651533.jpg","url_170x135":"http:\/\/img1.etsystatic.com\/000\/0\/5262404\/il_170x135.186651533.jpg","url_570xN":"http:\/\/img1.etsystatic.com\/000\/0\/5262404\/il_570xN.186651533.jpg","url_fullxfull":"http:\/\/img1.etsystatic.com\/000\/0\/5262404\/il_fullxfull.186651533.jpg","full_height":null,"full_width":null}},{"listing_id":115096028,"state":"active","user_id":5682253,"category_id":69172175,"title":"Paloma
+        Bird Link, Connector Antique Silver, TierraCast 2-Pc. TS59","description":"This
+        is a great, rectangular Paloma bird connector or link in antique silver.  It&#39;s
+        double-sided and the orientation of the bird is different on each side, so
+        which ever way you place the holes, the design will be placed correctly.\r\n\r\nTierraCast
+        beads and findings are artisan-crafted, precious metal plated, lead free pewter
+        components. They are beautiful, consistent and meet all standards regarding
+        lead content in metal.\r\n\r\nAll castings are electroplated using precious
+        metals: fine silver, 22 karat gold, rhodium or copper.\r\n\r\nPRICE: $2.75\r\n\r\nQUANTITY:
+        2\r\n\r\nSIZE: \r\nHeight: 13mm\r\nWidth: 14.9mm\r\nHole ID: 1.5mm\r\n\r\nFINISH:
+        Antiqued Silver: TierraCast uses fine silver on its plated parts. The composition
+        of the silver plate provides the warm white color that is a good match with
+        other silver components.\r\n\r\nMADE IN: USA\r\n\r\nFor more Tierracast connectors:
+        http:\/\/www.etsy.com\/shop\/FabBeads\/search?search_query=tierracast+connector&order=date_desc&view_type=list&ref=shop_search\r\n\r\nTIERRACAST
+        PEWTER: Uses a &quot;lead free&quot; tin alloy that exceeds the stringent
+        California standards for lead content and complies with the standards for
+        pewter in contact with food. \r\n\r\nFor more info about TierraCast safety
+        compliance https:\/\/www.etsy.com\/your\/shops\/FabBeads\/policies","creation_tsz":1373327888,"ending_tsz":1383958688,"original_creation_tsz":1352970100,"last_modified_tsz":1373327888,"price":"2.75","currency_code":"USD","quantity":13,"tags":["pewter","tierracast","silver","antique
+        silver","charm","connector","canada","flower link","paloma link","paloma connector","bird
+        connector","bird link","silver paloma link"],"category_path":["Supplies","Commercial","Findings"],"category_path_ids":[69150433,69151163,69172175],"materials":["lead
+        free pewter","silver"],"shop_section_id":5407043,"featured_rank":0,"state_tsz":1358225456,"url":"http:\/\/www.etsy.com\/listing\/115096028\/paloma-bird-link-connector-antique?utm_source=madmimi&utm_medium=api&utm_campaign=api","views":115,"num_favorers":20,"processing_min":1,"processing_max":2,"who_made":"someone_else","is_supply":"true","when_made":"2010_2013","is_private":false,"recipient":null,"occasion":null,"style":null,"non_taxable":false,"is_digital":false,"file_data":"","has_variations":false,"MainImage":{"listing_image_id":395668238,"hex_code":null,"red":null,"green":null,"blue":null,"hue":null,"saturation":null,"brightness":null,"is_black_and_white":null,"creation_tsz":null,"listing_id":115096028,"rank":null,"url_75x75":"http:\/\/img0.etsystatic.com\/008\/0\/5262404\/il_75x75.395668238_aszq.jpg","url_170x135":"http:\/\/img0.etsystatic.com\/008\/0\/5262404\/il_170x135.395668238_aszq.jpg","url_570xN":"http:\/\/img0.etsystatic.com\/008\/0\/5262404\/il_570xN.395668238_aszq.jpg","url_fullxfull":"http:\/\/img0.etsystatic.com\/008\/0\/5262404\/il_fullxfull.395668238_aszq.jpg","full_height":null,"full_width":null}},{"listing_id":62737449,"state":"active","user_id":5682253,"category_id":69172175,"title":"Floral
+        Tag Charm Antique Silver Trinity Brass 4 Pc. AS118","description":"These are
+        delightful little rectangular tag charms in silver plated brass with a raised
+        floral and leaf pattern.\r\n\r\nFrom Trinity Brass Co., these are exceptional
+        quality lead & nickel-free brass stampings and findings, made in the USA.\r\n\r\nPRICE:
+        $3.25\r\n\r\nQUANTITY: 4\r\n\r\nSIZE: 12 mm w x 16 mm l (.47 x .63 inch)\r\n\r\nFINISH:
+        Antique Silver; this quality finish uses real silver, and is expertly plated
+        by one of the best platers in the industry. It is then antiqued to enhance
+        the rich detail of the piece, and then finished with a protective lacquer
+        to protect it from tarnishing.  This color has a beautiful shine finish.\r\n\r\nMADE
+        IN: USA","creation_tsz":1373327888,"ending_tsz":1383958688,"original_creation_tsz":1290484580,"last_modified_tsz":1373327888,"price":"3.25","currency_code":"USD","quantity":17,"tags":["charm","tag","rectangle","silver","antique
+        silver","brass","embossed","small","canada","trinity brass","floral leaf","tag
+        charm","rectangle charm"],"category_path":["Supplies","Commercial","Findings"],"category_path_ids":[69150433,69151163,69172175],"materials":["brass","silver"],"shop_section_id":5407046,"featured_rank":0,"state_tsz":1373066154,"url":"http:\/\/www.etsy.com\/listing\/62737449\/floral-tag-charm-antique-silver-trinity?utm_source=madmimi&utm_medium=api&utm_campaign=api","views":946,"num_favorers":78,"processing_min":1,"processing_max":2,"who_made":"someone_else","is_supply":"true","when_made":"2010_2013","is_private":false,"recipient":null,"occasion":null,"style":null,"non_taxable":false,"is_digital":false,"file_data":"","has_variations":false,"MainImage":{"listing_image_id":195952256,"hex_code":null,"red":null,"green":null,"blue":null,"hue":null,"saturation":null,"brightness":null,"is_black_and_white":null,"creation_tsz":null,"listing_id":62737449,"rank":null,"url_75x75":"http:\/\/img0.etsystatic.com\/000\/0\/5262404\/il_75x75.195952256.jpg","url_170x135":"http:\/\/img0.etsystatic.com\/000\/0\/5262404\/il_170x135.195952256.jpg","url_570xN":"http:\/\/img0.etsystatic.com\/000\/0\/5262404\/il_570xN.195952256.jpg","url_fullxfull":"http:\/\/img0.etsystatic.com\/000\/0\/5262404\/il_fullxfull.195952256.jpg","full_height":null,"full_width":null}},{"listing_id":115095902,"state":"active","user_id":5682253,"category_id":69172175,"title":"TierraCast
+        Ethnic Fan Connector Antique Silver, 2-Pc. TS58","description":"This is a
+        really nice ethnic fan connector in antique silver.  It&#39;s double-sided
+        and has fine detail. I&#39;ve shown a design idea in the last photo.\r\n\r\nTierraCast
+        beads and findings are artisan-crafted, precious metal plated, lead free pewter
+        components. They are beautiful, consistent and meet all standards regarding
+        lead content in metal.\r\n\r\nAll castings are electroplated using precious
+        metals: fine silver, 22 karat gold, rhodium or copper.\r\n\r\nPRICE: $3.25\r\n\r\nQUANTITY:
+        2\r\n\r\nSIZE: \r\nHeight: 15.2mm\r\nWidth: 18.9mm\r\nLoop ID: 1.25mm\r\nLower
+        Loop ID: 1mm\r\n\r\nFINISH: Antiqued Silver: TierraCast uses fine silver on
+        its plated parts. The composition of the silver plate provides the warm white
+        color that is a good match with other silver components.\r\n\r\nMADE IN: USA\r\n\r\nFor
+        more Tierracast connectors: http:\/\/www.etsy.com\/shop\/FabBeads\/search?search_query=tierracast+connector&order=date_desc&view_type=list&ref=shop_search\r\n\r\nTIERRACAST
+        PEWTER: Uses a &quot;lead free&quot; tin alloy that exceeds the stringent
+        California standards for lead content and complies with the standards for
+        pewter in contact with food. \r\n\r\nFor more info about TierraCast safety
+        compliance https:\/\/www.etsy.com\/your\/shops\/FabBeads\/policies","creation_tsz":1373327887,"ending_tsz":1383958687,"original_creation_tsz":1352969712,"last_modified_tsz":1373327887,"price":"3.25","currency_code":"USD","quantity":23,"tags":["pewter","tierracast","silver","antique
+        silver","charm","connector","canada","chandelier connector","ethnic fan","ethnic
+        fan connector","earring finding","silver fan connector","tierracast fan"],"category_path":["Supplies","Commercial","Findings"],"category_path_ids":[69150433,69151163,69172175],"materials":["lead
+        free pewter","silver"],"shop_section_id":5407043,"featured_rank":0,"state_tsz":1366247964,"url":"http:\/\/www.etsy.com\/listing\/115095902\/tierracast-ethnic-fan-connector-antique?utm_source=madmimi&utm_medium=api&utm_campaign=api","views":135,"num_favorers":27,"processing_min":1,"processing_max":2,"who_made":"someone_else","is_supply":"true","when_made":"2010_2013","is_private":false,"recipient":null,"occasion":null,"style":null,"non_taxable":false,"is_digital":false,"file_data":"","has_variations":false,"MainImage":{"listing_image_id":395667834,"hex_code":null,"red":null,"green":null,"blue":null,"hue":null,"saturation":null,"brightness":null,"is_black_and_white":null,"creation_tsz":null,"listing_id":115095902,"rank":null,"url_75x75":"http:\/\/img0.etsystatic.com\/006\/0\/5262404\/il_75x75.395667834_t9hr.jpg","url_170x135":"http:\/\/img0.etsystatic.com\/006\/0\/5262404\/il_170x135.395667834_t9hr.jpg","url_570xN":"http:\/\/img0.etsystatic.com\/006\/0\/5262404\/il_570xN.395667834_t9hr.jpg","url_fullxfull":"http:\/\/img0.etsystatic.com\/006\/0\/5262404\/il_fullxfull.395667834_t9hr.jpg","full_height":null,"full_width":null}},{"listing_id":112816380,"state":"active","user_id":5682253,"category_id":69172175,"title":"TierraCast
+        Celtic Braid Charm, Antique Silver 2 Pc. TS53","description":"This is a great,
+        double-sided long Celtic braid charm in antique silver. It has excellent detail
+        and is beautiful from both sides. I&#39;ve shown a design idea in the last
+        photo.\r\n\r\nTierraCast beads and findings are artisan-crafted, precious
+        metal plated, lead free pewter components. They are beautiful, consistent
+        and meet all standards regarding lead content in metal.\r\n\r\nAll castings
+        are electroplated using precious metals: fine silver, 22 karat gold, rhodium
+        or copper.\r\n\r\nPRICE: $2.50\r\n\r\nQUANTITY: 2\r\n\r\nSIZE: Height: 25.25mm\r\nWidth:
+        5.5mm\r\nLoop ID: 1mm\r\n\r\nFINISH: Antiqued Silver: TierraCast uses fine
+        silver on its plated parts. The composition of the silver plate provides the
+        warm white color that is a good match with other silver components.\r\n\r\nJust
+        like its cousin sterling silver, fine silver will tarnish during common use,
+        but can be brightened by softly rubbing with a jeweler\u2019s polishing cloth.
+        Abrasive silver paste polishes should not be used.\r\n\r\nMADE IN: USA\r\n\r\nFor
+        more Tierracast Celtic charms and pendants: http:\/\/www.etsy.com\/shop\/FabBeads\/search?search_query=tierracast+celtic&order=date_desc&view_type=list&ref=shop_search\r\n\r\nFor
+        more TierraCast charms: http:\/\/www.etsy.com\/shop\/FabBeads\/search?search_query=tierracast+charm&order=date_desc&view_type=list&ref=shop_search\r\n\r\nTIERRACAST
+        PEWTER: Uses a &quot;lead free&quot; tin alloy that exceeds the stringent
+        California standards for lead content and complies with the standards for
+        pewter in contact with food. \r\n\r\nFor more info about TierraCast safety
+        compliance https:\/\/www.etsy.com\/your\/shops\/FabBeads\/policies\r\n\r\nTierracast
+        silver and gold plated cast pewter components also meet the eu nickel directive","creation_tsz":1373327887,"ending_tsz":1383958687,"original_creation_tsz":1350877248,"last_modified_tsz":1373327887,"price":"2.50","currency_code":"USD","quantity":18,"tags":["pewter","tierracast","charm","drop","pendant","silver","antique
+        silver","celtic","celtic knot","celtic charm","celtic drop","silver celtic
+        charm","celtic braid"],"category_path":["Supplies","Commercial","Findings"],"category_path_ids":[69150433,69151163,69172175],"materials":["lead
+        free pewter","silver"],"shop_section_id":5407043,"featured_rank":0,"state_tsz":1358222282,"url":"http:\/\/www.etsy.com\/listing\/112816380\/tierracast-celtic-braid-charm-antique?utm_source=madmimi&utm_medium=api&utm_campaign=api","views":129,"num_favorers":21,"processing_min":1,"processing_max":2,"who_made":"someone_else","is_supply":"true","when_made":"2010_2013","is_private":false,"recipient":null,"occasion":null,"style":null,"non_taxable":false,"is_digital":false,"file_data":"","has_variations":false,"MainImage":{"listing_image_id":387331325,"hex_code":null,"red":null,"green":null,"blue":null,"hue":null,"saturation":null,"brightness":null,"is_black_and_white":null,"creation_tsz":null,"listing_id":112816380,"rank":null,"url_75x75":"http:\/\/img1.etsystatic.com\/005\/0\/5262404\/il_75x75.387331325_pm3q.jpg","url_170x135":"http:\/\/img1.etsystatic.com\/005\/0\/5262404\/il_170x135.387331325_pm3q.jpg","url_570xN":"http:\/\/img1.etsystatic.com\/005\/0\/5262404\/il_570xN.387331325_pm3q.jpg","url_fullxfull":"http:\/\/img1.etsystatic.com\/005\/0\/5262404\/il_fullxfull.387331325_pm3q.jpg","full_height":null,"full_width":null}},{"listing_id":59046121,"state":"active","user_id":5682253,"category_id":69175915,"title":"Czech
+        Beads Firepolished 6mm Aquamarine Celsian 50 Pc. C73","description":"These
+        6 mm Czech firepolished round beads are a light aquamarine color finished
+        with a golden Celsian coating. This versatile size is a great staple in everyone&#39;s
+        bead stash.\r\n\r\nSIZE: 6 mm\r\n\r\nCOLOR: aquamarine celsian\r\n\r\nSHAPE:
+        round\r\n\r\nQUANTITY: 50\r\n\r\nPRICE: $3.00\r\n\r\nMADE IN: Czech Republic","creation_tsz":1373325457,"ending_tsz":1383956257,"original_creation_tsz":1287162499,"last_modified_tsz":1373325457,"price":"3.00","currency_code":"USD","quantity":10,"tags":["glass","firepolished","facetted","round","6
+        mm","aqua","aquamarine","celsian","blue","czech","canada","czech glass beads","aquamarine
+        celsian"],"category_path":["Supplies","Bead","Glass"],"category_path_ids":[69150433,69151309,69175915],"materials":["glass"],"shop_section_id":5407060,"featured_rank":0,"state_tsz":1358224449,"url":"http:\/\/www.etsy.com\/listing\/59046121\/czech-beads-firepolished-6mm-aquamarine?utm_source=madmimi&utm_medium=api&utm_campaign=api","views":786,"num_favorers":80,"processing_min":1,"processing_max":2,"who_made":"someone_else","is_supply":"true","when_made":"2010_2013","is_private":false,"recipient":null,"occasion":null,"style":null,"non_taxable":false,"is_digital":false,"file_data":"","has_variations":false,"MainImage":{"listing_image_id":183573037,"hex_code":null,"red":null,"green":null,"blue":null,"hue":null,"saturation":null,"brightness":null,"is_black_and_white":null,"creation_tsz":null,"listing_id":59046121,"rank":null,"url_75x75":"http:\/\/img1.etsystatic.com\/000\/0\/5262404\/il_75x75.183573037.jpg","url_170x135":"http:\/\/img1.etsystatic.com\/000\/0\/5262404\/il_170x135.183573037.jpg","url_570xN":"http:\/\/img1.etsystatic.com\/000\/0\/5262404\/il_570xN.183573037.jpg","url_fullxfull":"http:\/\/img1.etsystatic.com\/000\/0\/5262404\/il_fullxfull.183573037.jpg","full_height":null,"full_width":null}},{"listing_id":123096767,"state":"active","user_id":5682253,"category_id":69171721,"title":"Guitar
+        Pick, Embossed Brass Charm 2 Pc.  E68","description":"I&#39;ve embossed these
+        unique, brass, Vintaj guitar pick charms with a pattern of dots and swirls.
+        You could use them as pendants or in a pair of earrings. \r\n\r\nAfter embossing,
+        the charm is hand sanded and buffed, so the design stands out from the darker
+        brass background. The piece is then protected with wax to preserve the finish.\r\n\r\nNote:
+        there are slight variations of color and patterns on these pendants, no two
+        are exactly the same, due to the nature of handmade. \r\n\r\nTo see the full
+        line of embossed pendants and charms: http:\/\/www.etsy.com\/shop\/FabBeads\/search?search_query=e&search_submit=&search_type=user_shop_ttt_id_5262404&shopname=FabBeads\r\n\r\nPRICE:
+        $5.75\r\n\r\nQUANTITY: 2\r\n\r\nSIZE: 31 mm x 26.5 mm (1.22 x 1.04 inch)\r\n\r\nFINISH:
+        100% natural aged brass patina, finished with micro-crystalline wax polish\r\n\r\nMADE
+        IN: USA","creation_tsz":1373324443,"ending_tsz":1383955243,"original_creation_tsz":1360372877,"last_modified_tsz":1373324443,"price":"5.75","currency_code":"USD","quantity":1,"tags":["brass","vintaj","pendant","embossed","charm","embossed
+        brass charm","embossed brass","embossed vintaj","guitar pick","guitar pick
+        charm","embossed guitar pick","dots","circles"],"category_path":["Supplies","Handmade","Findings"],"category_path_ids":[69150433,69151267,69171721],"materials":["brass"],"shop_section_id":5407062,"featured_rank":0,"state_tsz":1373324443,"url":"http:\/\/www.etsy.com\/listing\/123096767\/guitar-pick-embossed-brass-charm-2-pc?utm_source=madmimi&utm_medium=api&utm_campaign=api","views":71,"num_favorers":9,"processing_min":1,"processing_max":2,"who_made":"i_did","is_supply":"true","when_made":"2010_2013","is_private":false,"recipient":"women","occasion":null,"style":null,"non_taxable":false,"is_digital":false,"file_data":"","has_variations":false,"MainImage":{"listing_image_id":425598013,"hex_code":null,"red":null,"green":null,"blue":null,"hue":null,"saturation":null,"brightness":null,"is_black_and_white":null,"creation_tsz":null,"listing_id":123096767,"rank":null,"url_75x75":"http:\/\/img1.etsystatic.com\/015\/0\/5262404\/il_75x75.425598013_o1tc.jpg","url_170x135":"http:\/\/img1.etsystatic.com\/015\/0\/5262404\/il_170x135.425598013_o1tc.jpg","url_570xN":"http:\/\/img1.etsystatic.com\/015\/0\/5262404\/il_570xN.425598013_o1tc.jpg","url_fullxfull":"http:\/\/img1.etsystatic.com\/015\/0\/5262404\/il_fullxfull.425598013_o1tc.jpg","full_height":null,"full_width":null}},{"listing_id":62965458,"state":"active","user_id":5682253,"category_id":69172175,"title":"Pewter
+        Compass Steampunk Charms 2 Pc. AP45","description":"These great compass charms
+        in antiqued silver plated pewter are ready to use in your steampunk designs.
+        Try combining them with gears and cogs for great necklace or earring designs.\r\n\r\nSteampunk
+        jewelry is really popular right now. Think Victorian meets industrial, romance
+        meets science. For great steampunk designs use watch parts, gears, cogs, wheels,
+        buttons, keys, medals, typewriter keys, lockets, Victorian style charms and
+        stampings, filigrees, chains in different styles and finishes, brass flowers,
+        leaves, birds and bugs. Soften it with some soft hues of glass, crystals and
+        pearls.\r\n\r\nThese solid pewter charms and findings are made of an alloy
+        containing tin and copper.  Nickel free and lead-compliant (complies with
+        all regulations under the CPSIA and California Prop. 65). They are cast from
+        well-carved originals and have excellent details.\r\n\r\nPRICE: $2.50\r\n\r\nQUANTITY:
+        2\r\n\r\nSIZE: 17 mm (.67 inch)\r\n\r\nFINISH: Antiqued silver plated Pewter
+        \r\n\r\nMADE IN: USA","creation_tsz":1373320591,"ending_tsz":1383951391,"original_creation_tsz":1290737042,"last_modified_tsz":1373320591,"price":"2.50","currency_code":"USD","quantity":9,"tags":["charm","pewter","lead
+        free","antique pewter","metal","canada","fabbeads","steampunk","compass","silver","compass
+        charm","pewter compass charm","steampunk charm"],"category_path":["Supplies","Commercial","Findings"],"category_path_ids":[69150433,69151163,69172175],"materials":["pewter"],"shop_section_id":5407046,"featured_rank":0,"state_tsz":1371588013,"url":"http:\/\/www.etsy.com\/listing\/62965458\/pewter-compass-steampunk-charms-2-pc?utm_source=madmimi&utm_medium=api&utm_campaign=api","views":790,"num_favorers":56,"processing_min":1,"processing_max":2,"who_made":"someone_else","is_supply":"true","when_made":"2010_2013","is_private":false,"recipient":null,"occasion":null,"style":null,"non_taxable":false,"is_digital":false,"file_data":"","has_variations":false,"MainImage":{"listing_image_id":196775819,"hex_code":null,"red":null,"green":null,"blue":null,"hue":null,"saturation":null,"brightness":null,"is_black_and_white":null,"creation_tsz":null,"listing_id":62965458,"rank":null,"url_75x75":"http:\/\/img1.etsystatic.com\/000\/0\/5262404\/il_75x75.196775819.jpg","url_170x135":"http:\/\/img1.etsystatic.com\/000\/0\/5262404\/il_170x135.196775819.jpg","url_570xN":"http:\/\/img1.etsystatic.com\/000\/0\/5262404\/il_570xN.196775819.jpg","url_fullxfull":"http:\/\/img1.etsystatic.com\/000\/0\/5262404\/il_fullxfull.196775819.jpg","full_height":null,"full_width":null}},{"listing_id":61029056,"state":"active","user_id":5682253,"category_id":69172175,"title":"Filigree
+        Tear Drop Vintage Patina Trinity Brass VP36","description":"This amazing Vintage
+        Patina brass filigree crest or teardrop is dapt (domed) on the upper part.
+        It would make a fabulous connector for a necklace or use it as a pendant.
+        It&#39;s great for steampunk designs too.\r\n\r\nAlso available in antique
+        silver, item #AS11 \r\n\r\nPRICE: $2.25\r\n\r\nQUANTITY: 1\r\n\r\nSIZE: 26
+        x 32 mm (1 1\/8 x 1 \u00bc inch)\r\n\r\nFINISH: Trinity Vintage Patina is
+        a warm chocolate color that has been achieved through an oxidation process
+        and is not plated. During the process, each piece takes on it&#39;s own unique
+        color. The slight differences in each piece give the color it&#39;s desired
+        finish. They are then sealed with a protective non-toxic lacquer so that your
+        designs will stay looking like you designed them today, even years from now.
+        This process  is the same process and quality used by  top jewelry designers.\r\n\r\nMADE
+        IN: USA","creation_tsz":1373311830,"ending_tsz":1383942630,"original_creation_tsz":1289098566,"last_modified_tsz":1373311830,"price":"2.25","currency_code":"USD","quantity":14,"tags":["connector","link","pendant","filigree","tear
+        drop","crest","brass","vintage patina","antiqued","trinity brass","teardrop
+        filigree","brass filigree","crest filigree"],"category_path":["Supplies","Commercial","Findings"],"category_path_ids":[69150433,69151163,69172175],"materials":["brass"],"shop_section_id":5407048,"featured_rank":0,"state_tsz":1370403632,"url":"http:\/\/www.etsy.com\/listing\/61029056\/filigree-tear-drop-vintage-patina?utm_source=madmimi&utm_medium=api&utm_campaign=api","views":355,"num_favorers":34,"processing_min":1,"processing_max":2,"who_made":"someone_else","is_supply":"true","when_made":"2010_2013","is_private":false,"recipient":null,"occasion":null,"style":null,"non_taxable":false,"is_digital":false,"file_data":"","has_variations":false,"MainImage":{"listing_image_id":190224596,"hex_code":null,"red":null,"green":null,"blue":null,"hue":null,"saturation":null,"brightness":null,"is_black_and_white":null,"creation_tsz":null,"listing_id":61029056,"rank":null,"url_75x75":"http:\/\/img0.etsystatic.com\/000\/0\/5262404\/il_75x75.190224596.jpg","url_170x135":"http:\/\/img0.etsystatic.com\/000\/0\/5262404\/il_170x135.190224596.jpg","url_570xN":"http:\/\/img0.etsystatic.com\/000\/0\/5262404\/il_570xN.190224596.jpg","url_fullxfull":"http:\/\/img0.etsystatic.com\/000\/0\/5262404\/il_fullxfull.190224596.jpg","full_height":null,"full_width":null}},{"listing_id":102264123,"state":"active","user_id":5682253,"category_id":69172175,"title":"Sand
+        Dollar Charm Antique Pewter 4 Pc. AP70","description":"These are  great lightweight
+        sand dollar charms in antiqued pewter-plated brass. Perfect for beach or ocean
+        themed designs. Layer and cluster \u2013 create necklaces, bracelets and earrings!
+        \r\n\r\nThis finish matches the larger sand dollar pendants: https:\/\/www.etsy.com\/listing\/99328731\/sand-dollar-pendant-antique-pewter-brass?ga_search_query=sand%2Bdollar\r\n\r\nPRICE:
+        $4\r\n\r\nQUANTITY: 4\r\n\r\nSIZE: 16 mm\r\n\r\nFINISH:Antique Pewter is polished
+        and antiqued, not plated. This cast antiqued pewter finish is slightly grayer
+        than the brighter antiqued silver plate but blends very well with it and does
+        not tarnish.\r\n\r\nMADE IN: USA\r\n\r\nFor more sand dollar charms and pendants:
+        http:\/\/www.etsy.com\/shop\/FabBeads\/search?search_query=sand+dollar&order=date_desc&view_type=list&ref=shop_search\r\n\r\nFor
+        more shell themed items: https:\/\/www.etsy.com\/shop\/FabBeads\/search?search_query=seashell&order=date_desc&view_type=list&ref=shop_search","creation_tsz":1373311829,"ending_tsz":1383942629,"original_creation_tsz":1339870265,"last_modified_tsz":1373311829,"price":"4.00","currency_code":"USD","quantity":5,"tags":["charm","sand
+        dollar","beach","seashell","brass","silver","canada","fabbeads","silver sand
+        dollar","antique pewter","pewter sand dollar","beach charm","sand dollar charm"],"category_path":["Supplies","Commercial","Findings"],"category_path_ids":[69150433,69151163,69172175],"materials":["brass"],"shop_section_id":5407046,"featured_rank":0,"state_tsz":1358226466,"url":"http:\/\/www.etsy.com\/listing\/102264123\/sand-dollar-charm-antique-pewter-4-pc?utm_source=madmimi&utm_medium=api&utm_campaign=api","views":445,"num_favorers":43,"processing_min":1,"processing_max":2,"who_made":"someone_else","is_supply":"true","when_made":"2010_2013","is_private":false,"recipient":null,"occasion":null,"style":null,"non_taxable":false,"is_digital":false,"file_data":"","has_variations":false,"MainImage":{"listing_image_id":345922181,"hex_code":null,"red":null,"green":null,"blue":null,"hue":null,"saturation":null,"brightness":null,"is_black_and_white":null,"creation_tsz":null,"listing_id":102264123,"rank":null,"url_75x75":"http:\/\/img1.etsystatic.com\/000\/0\/5262404\/il_75x75.345922181.jpg","url_170x135":"http:\/\/img1.etsystatic.com\/000\/0\/5262404\/il_170x135.345922181.jpg","url_570xN":"http:\/\/img1.etsystatic.com\/000\/0\/5262404\/il_570xN.345922181.jpg","url_fullxfull":"http:\/\/img1.etsystatic.com\/000\/0\/5262404\/il_fullxfull.345922181.jpg","full_height":null,"full_width":null}},{"listing_id":98701197,"state":"active","user_id":5682253,"category_id":69176111,"title":"Mykonos
+        Casting Fancy Fish Pendant, Pewter M52","description":"This is a really beautiful
+        cast metal angel fish pendant in the silver finish. It has lots of detail
+        and is the same on both sides. This pendant would look especially nice with
+        Mykonos ceramic beads and would be great as a focal on a necklace design.\r\n\r\nCast
+        metal findings, made in Mykonos Greece. Mykonos Castings start with a lead-free
+        base metal, but are then coated with copper and finished (in the same way
+        their Metalized Ceramics are finished) with fine metals (pure copper, fine
+        silver and 24k gold). \r\n\r\nSIZE: 30 x 32 mm (1.18 x 1.26 inch)\r\n\r\nCOLOR:
+        silver plated pewter\r\n\r\nSHAPE: fish\r\n\r\nQUANTITY: 1\r\n\r\nPRICE: $3.25
+        SALE! $2.44\r\n\r\nMADE IN: Mykonos, Greece","creation_tsz":1373311829,"ending_tsz":1383942629,"original_creation_tsz":1335730473,"last_modified_tsz":1373311829,"price":"2.44","currency_code":"USD","quantity":10,"tags":["mykonos","greek","mykonos
+        beads","cast metal","pendant","mykonos pendant","greek pendant","silver","pewter","canada","fish","angel
+        fish","fish pendant"],"category_path":["Supplies","Bead","Metal"],"category_path_ids":[69150433,69151309,69176111],"materials":["cast
+        metal","silver"],"shop_section_id":5407042,"featured_rank":0,"state_tsz":1371916368,"url":"http:\/\/www.etsy.com\/listing\/98701197\/mykonos-casting-fancy-fish-pendant?utm_source=madmimi&utm_medium=api&utm_campaign=api","views":260,"num_favorers":29,"processing_min":1,"processing_max":2,"who_made":"someone_else","is_supply":"true","when_made":"2010_2013","is_private":false,"recipient":null,"occasion":null,"style":null,"non_taxable":false,"is_digital":false,"file_data":"","has_variations":false,"MainImage":{"listing_image_id":332857713,"hex_code":null,"red":null,"green":null,"blue":null,"hue":null,"saturation":null,"brightness":null,"is_black_and_white":null,"creation_tsz":null,"listing_id":98701197,"rank":null,"url_75x75":"http:\/\/img1.etsystatic.com\/000\/0\/5262404\/il_75x75.332857713.jpg","url_170x135":"http:\/\/img1.etsystatic.com\/000\/0\/5262404\/il_170x135.332857713.jpg","url_570xN":"http:\/\/img1.etsystatic.com\/000\/0\/5262404\/il_570xN.332857713.jpg","url_fullxfull":"http:\/\/img1.etsystatic.com\/000\/0\/5262404\/il_fullxfull.332857713.jpg","full_height":null,"full_width":null}},{"listing_id":106649476,"state":"active","user_id":5682253,"category_id":69172175,"title":"Paisley
+        Pendant Antique Pewter 2 Pc. AP73","description":"These great, filigree paisley
+        pendants have a lot of detail. They&#39;re made from silver colored lead-free
+        pewter with an antiqued finish. These would be nice in earring designs too,
+        since they&#39;re double-sided, you can reverse them.\r\n\r\nThese solid pewter
+        charms and findings are made of an alloy containing tin and copper.  Nickel
+        free and lead-compliant (complies with all regulations under the CPSIA and
+        California Prop. 65). They are cast from well-carved originals and have excellent
+        details.\r\n\r\nPRICE: $3.75 SALE: $2.81\r\n\r\nQUANTITY: 2\r\n\r\nSIZE: 15
+        mm W x 25 mm L (.59 x 1 inch)\r\n\r\nFINISH: Antique Pewter is polished and
+        antiqued, not plated. This cast antiqued pewter finish is slightly grayer
+        than the brighter antiqued silver plate but blends very well with it.\r\n\r\nMADE
+        IN: USA","creation_tsz":1373311828,"ending_tsz":1383942628,"original_creation_tsz":1344746266,"last_modified_tsz":1373311828,"price":"2.81","currency_code":"USD","quantity":5,"tags":["double
+        sided","pewter","lead free","canada","pendant","fabbeads","paisley pendant","paisley","paisley
+        filigree","earring finding","pewter paisley","pewter filigree","silver paisley"],"category_path":["Supplies","Commercial","Findings"],"category_path_ids":[69150433,69151163,69172175],"materials":["lead
+        free pewter"],"shop_section_id":5407042,"featured_rank":0,"state_tsz":1358225455,"url":"http:\/\/www.etsy.com\/listing\/106649476\/paisley-pendant-antique-pewter-2-pc-ap73?utm_source=madmimi&utm_medium=api&utm_campaign=api","views":110,"num_favorers":26,"processing_min":1,"processing_max":2,"who_made":"someone_else","is_supply":"true","when_made":"2010_2013","is_private":false,"recipient":null,"occasion":null,"style":null,"non_taxable":false,"is_digital":false,"file_data":"","has_variations":false,"MainImage":{"listing_image_id":364896975,"hex_code":null,"red":null,"green":null,"blue":null,"hue":null,"saturation":null,"brightness":null,"is_black_and_white":null,"creation_tsz":null,"listing_id":106649476,"rank":null,"url_75x75":"http:\/\/img1.etsystatic.com\/008\/0\/5262404\/il_75x75.364896975_qega.jpg","url_170x135":"http:\/\/img1.etsystatic.com\/008\/0\/5262404\/il_170x135.364896975_qega.jpg","url_570xN":"http:\/\/img1.etsystatic.com\/008\/0\/5262404\/il_570xN.364896975_qega.jpg","url_fullxfull":"http:\/\/img1.etsystatic.com\/008\/0\/5262404\/il_fullxfull.364896975_qega.jpg","full_height":null,"full_width":null}},{"listing_id":67649656,"state":"active","user_id":5682253,"category_id":69172175,"title":"Stingray
+        Fish Charm Silver Antique Pewter 2 Pc. AP52","description":"These great double-sided
+        stingray fish charms have a lot of detail. They&#39;re made from silver colored
+        lead-free pewter with an antiqued finish. These would be nice in your ocean
+        or beach themed designs.\r\n\r\nThese solid pewter charms and findings are
+        made of an alloy containing tin and copper.  Nickel free and lead-compliant
+        (complies with all regulations under the CPSIA and California Prop. 65). They
+        are cast from well-carved originals and have excellent details.\r\n\r\nPRICE:
+        $2.75\r\n\r\nQUANTITY: 2\r\n\r\nSIZE: 16 mm W x 21 mm L (.63 x .79 inch)\r\n\r\nFINISH:
+        Antique Pewter is polished and antiqued, not plated. This cast antiqued pewter
+        finish is slightly grayer than the brighter antiqued silver plate but blends
+        very well with it and does not tarnish.\r\n\r\nMADE IN: USA","creation_tsz":1373311828,"ending_tsz":1383942628,"original_creation_tsz":1297117641,"last_modified_tsz":1373311828,"price":"2.75","currency_code":"USD","quantity":7,"tags":["charm","double
+        sided","pewter","lead free","antiqued","fish","stingray","canada","pendant","fish
+        charm","stingray charm","stingray fish charm","fabbeads"],"category_path":["Supplies","Commercial","Findings"],"category_path_ids":[69150433,69151163,69172175],"materials":["lead
+        free pewter"],"shop_section_id":5407046,"featured_rank":0,"state_tsz":1358224621,"url":"http:\/\/www.etsy.com\/listing\/67649656\/stingray-fish-charm-silver-antique?utm_source=madmimi&utm_medium=api&utm_campaign=api","views":889,"num_favorers":134,"processing_min":1,"processing_max":2,"who_made":"someone_else","is_supply":"true","when_made":"2010_2013","is_private":false,"recipient":null,"occasion":null,"style":null,"non_taxable":false,"is_digital":false,"file_data":"","has_variations":false,"MainImage":{"listing_image_id":216294840,"hex_code":null,"red":null,"green":null,"blue":null,"hue":null,"saturation":null,"brightness":null,"is_black_and_white":null,"creation_tsz":null,"listing_id":67649656,"rank":null,"url_75x75":"http:\/\/img0.etsystatic.com\/000\/0\/5262404\/il_75x75.216294840.jpg","url_170x135":"http:\/\/img0.etsystatic.com\/000\/0\/5262404\/il_170x135.216294840.jpg","url_570xN":"http:\/\/img0.etsystatic.com\/000\/0\/5262404\/il_570xN.216294840.jpg","url_fullxfull":"http:\/\/img0.etsystatic.com\/000\/0\/5262404\/il_fullxfull.216294840.jpg","full_height":null,"full_width":null}}],"params":{"limit":25,"offset":0,"page":"1","shop_id":"5262404","keywords":null,"sort_on":"created","sort_order":"down","min_price":null,"max_price":null,"color":null,"color_accuracy":0,"tags":null,"category":null,"translate_keywords":"false","include_private":0},"type":"Listing","pagination":{"effective_limit":25,"effective_offset":0,"next_offset":25,"effective_page":1,"next_page":2}}'
+    http_version: 
+  recorded_at: Tue, 09 Jul 2013 09:21:44 GMT
+- request:
+    method: get
+    uri: http://openapi.etsy.com/v2/shops/MadeUpStore?api_key=4j3amz573gly866229iixzri
+    body:
+      encoding: US-ASCII
+      string: ''
     headers:
-      accept-encoding:
+      Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-  response: !ruby/struct:VCR::Response
-    status: !ruby/struct:VCR::ResponseStatus
-      code: 200
-      message: OK
-    headers:
-      date:
-      - Mon, 20 May 2013 14:02:37 GMT
-      server:
-      - Apache
-      x-ratelimit-limit:
-      - '10000'
-      x-ratelimit-remaining:
-      - '9993'
-      x-etsy-request-uuid:
-      - uB4BMCFMEhW8fD1aohHE4w1-zFAR
-      content-length:
-      - '710'
-      content-type:
-      - application/json
-    body: ! '{"count":1,"results":[{"listing_image_id":460947101,"hex_code":"AFACAE","red":175,"green":172,"blue":174,"hue":320,"saturation":1,"brightness":68,"is_black_and_white":false,"creation_tsz":1369058006,"listing_id":151692123,"rank":1,"url_75x75":"http:\/\/img1.etsystatic.com\/015\/0\/8162357\/il_75x75.460947101_fvba.jpg","url_170x135":"http:\/\/img1.etsystatic.com\/015\/0\/8162357\/il_170x135.460947101_fvba.jpg","url_570xN":"http:\/\/img1.etsystatic.com\/015\/0\/8162357\/il_570xN.460947101_fvba.jpg","url_fullxfull":"http:\/\/img1.etsystatic.com\/015\/0\/8162357\/il_fullxfull.460947101_fvba.jpg","full_height":830,"full_width":591}],"params":{"listing_id":"151692123"},"type":"ListingImage","pagination":{}}'
-    http_version: '1.1'
-- !ruby/struct:VCR::HTTPInteraction
-  request: !ruby/struct:VCR::Request
-    method: :get
-    uri: http://openapi.etsy.com:80/v2/shops/a_made_up_store?api_key=4j3amz573gly866229iixzri
-    body: 
-    headers:
-      accept-encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-  response: !ruby/struct:VCR::Response
-    status: !ruby/struct:VCR::ResponseStatus
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
       code: 404
       message: Not Found
     headers:
-      date:
-      - Wed, 12 Jun 2013 14:36:16 GMT
-      server:
+      Date:
+      - Tue, 09 Jul 2013 09:23:32 GMT
+      Server:
       - Apache
-      x-ratelimit-limit:
+      Set-Cookie:
+      - uaid=uaid%3D9B5nR-bnQGdqxX-5EMONntuZQZiY%26_now%3D1373361812%26_slt%3D0i1z2qlf%26_kid%3D1%26_ver%3D1%26_mac%3DAslGGoF990bah5wFSx-X-1ZglYUqZB5_e_1Y01ONZU4.;
+        expires=Thu, 09-Jul-2015 09:23:32 GMT; path=/; domain=.etsy.com; httponly
+      X-Ratelimit-Limit:
       - '10000'
-      x-ratelimit-remaining:
-      - '9989'
-      x-error-detail:
-      - ! '''a_made_up_store'' is not a valid shop name'
-      x-etsy-request-uuid:
-      - JJrD7othikfNdHLpi6dij92l2_G9
-      content-length:
-      - '42'
-      content-type:
+      X-Ratelimit-Remaining:
+      - '9994'
+      X-Error-Detail:
+      - ! '''MadeUpStore'' is not a valid shop name'
+      X-Etsy-Request-Uuid:
+      - VQ9_Qb0NBl1QspCF0TGnvDaM5xLm
+      Content-Length:
+      - '38'
+      X-Cnection:
+      - close
+      Content-Type:
       - text/plain;charset=UTF-8
-    body: ! '''a_made_up_store'' is not a valid shop name'
-    http_version: '1.1'
+    body:
+      encoding: US-ASCII
+      string: ! '''MadeUpStore'' is not a valid shop name'
+    http_version: 
+  recorded_at: Tue, 09 Jul 2013 09:23:32 GMT
+recorded_with: VCR 2.5.0

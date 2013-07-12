@@ -20,7 +20,6 @@ describe MadCart::Model::Product do
 
   it "allows attribute names to be overwritten" do
     MadCart.configure do |config|
-      config.include_attributes :products => [:square_image_url]
       config.attribute_map :products, {:square_image_url => :thumbnail,
                                       :name => :title}
     end

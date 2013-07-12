@@ -63,8 +63,6 @@ describe MadCart::Store::Base do
 
       lambda { MyStore.new(:args => 'too').connection }.should_not raise_error
     end
-
-
   end
 
   describe "fetch" do
