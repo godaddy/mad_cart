@@ -17,4 +17,6 @@ test/tmp
 test/version_tmp
 tmp
 .ruby-version
+.ruby-gemset
+.DS_Store
 *.swp
