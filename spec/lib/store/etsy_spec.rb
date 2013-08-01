@@ -2,7 +2,7 @@ require "spec_helper"
 
 describe MadCart::Store::Etsy do
 
-  before(:each) { clear_config } 
+  before(:each) { clear_config }
 
   describe "retrieving products" do
 
@@ -39,33 +39,33 @@ describe MadCart::Store::Etsy do
           first_product.image_url.should_not be_nil
         end
       end
-      
+
       context "pagination" do
-        
+
         it "defaults to page one" do
           VCR.use_cassette('etsy_store_listings') do
             api = MadCart::Store::Etsy.new(:store_name => 'FabBeads')
-          
+
             api.connection.should_receive(:listings).with(:active, {:page => 1}).and_return([])
             api.products
           end
         end
-        
+
         it "returns the page requested" do
           VCR.use_cassette('etsy_store_listings') do
             api = MadCart::Store::Etsy.new(:store_name => 'FabBeads')
-            
+
             api.connection.should_receive(:listings).with(:active, {:page => 2}).and_return([]) # Trusting the Etsy gem, not testing that it works
             api.products(:page => 2)
           end
         end
-              
+
       end
 
       context "validating credentials" do
 
         it "succeeds if it can get a connection object" do
-          VCR.use_cassette('etsy_store_listings', :record => :new_episodes) do
+          VCR.use_cassette('etsy_store_listings') do
             api = MadCart::Store::Etsy.new(:store_name => 'FabBeads')
 
             api.should be_valid
@@ -73,9 +73,9 @@ describe MadCart::Store::Etsy do
         end
 
         it "fails if it cannot get a connection object" do
-          VCR.use_cassette('etsy_store_listings', :record => :new_episodes) do
+          VCR.use_cassette('etsy_store_listings') do
             api = MadCart::Store::Etsy.new(:store_name => 'FabBeads')
-            api.stub!(:create_connection).and_return(nil)
+            api.stub(:create_connection).and_return(nil)
 
             api.should_not be_valid
           end

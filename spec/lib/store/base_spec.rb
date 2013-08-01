@@ -156,7 +156,7 @@ describe MadCart::Store::Base do
 
       store = MyStore.new
       store.should_receive(:format_method).with(:one => 1).and_return(double(MadCart::Model::Product))
-      store.stub!(:ensure_model_format)
+      store.stub(:ensure_model_format)
       store.products
     end
 
