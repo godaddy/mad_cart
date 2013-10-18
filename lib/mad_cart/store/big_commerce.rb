@@ -71,8 +71,8 @@ module MadCart
 
         while true
           items.each &block
-          break if items.count < 200
-          items = send(source, :min_id => items.max_id + 1 )
+          break if items.count < 50
+          items = send(source, :min_id => items.last['id'] + 1 )
         end
 
       end
