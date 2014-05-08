@@ -1,0 +1,65 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://openapi.etsy.com/v2/shops/MadeUpStore?api_key=4j3amz573gly866229iixzri
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Date:
+      - Thu, 08 May 2014 09:45:03 GMT
+      Server:
+      - Apache
+      X-Etsy-Request-Uuid:
+      - bXZQ1-1Xs7iqWhgQMTIAqIxtjAMP
+      X-Ratelimit-Limit:
+      - '10000'
+      X-Ratelimit-Remaining:
+      - '9830'
+      X-Error-Detail:
+      - "'MadeUpStore' is not a valid shop name"
+      Cache-Control:
+      - private
+      X-Cnection:
+      - close
+      Content-Type:
+      - text/plain;charset=UTF-8
+      Content-Length:
+      - '58'
+      Accept-Ranges:
+      - bytes
+      Via:
+      - 1.1 varnish
+      Age:
+      - '0'
+      X-Served-By:
+      - cache-fra1229-FRA
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      X-Timer:
+      - S1399542303.808446169,VS0,VE140
+      Vary:
+      - Accept-Encoding
+      Set-Cookie:
+      - uaid=uaid%3D3Y11lAt6Ap_Q9bG2GKfR5A88VXh_%26_now%3D1399542303%26_slt%3DtiNDp8bD%26_kid%3D1%26_ver%3D1%26_mac%3D517wl1yuHcbCZFV9WJfcfQzN3FGBU1hGg73jSL-YrRU.;
+        expires=Sat, 07-May-2016 09:45:03 GMT; path=/; domain=.etsy.com; httponly
+    body:
+      encoding: UTF-8
+      string: "'MadeUpStore' is not a valid shop name"
+    http_version: 
+  recorded_at: Thu, 08 May 2014 09:45:04 GMT
+recorded_with: VCR 2.5.0

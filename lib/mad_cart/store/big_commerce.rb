@@ -10,7 +10,7 @@ module MadCart
       create_connection_with :create_connection, :requires => [:api_key, :store_url, :username]
       fetch :customers, :with => :get_customer_hashes
       fetch :products, :with => :get_products
-      
+
       def valid?
         check_for_errors do
           connection.get('time.json')

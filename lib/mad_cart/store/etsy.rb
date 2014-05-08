@@ -1,5 +1,6 @@
 require 'etsy'
 require 'money'
+require 'monetize'
 
 module MadCart
   module Store
@@ -24,7 +25,7 @@ module MadCart
            :external_id => listing.id,
            :name => listing.title,
            :description => listing.description,
-           :price => "#{listing.price} #{listing.currency}".to_money.format,
+           :price => listing.price.to_money(listing.currency).dollars,
            :url => listing.url,
            :currency_code => listing.currency,
            :image_url => listing.result["MainImage"].try(:[], "url_570xN"),
