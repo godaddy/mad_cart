@@ -20,3 +20,4 @@ tmp
 .ruby-gemset
 .DS_Store
 *.swp
+.idea
