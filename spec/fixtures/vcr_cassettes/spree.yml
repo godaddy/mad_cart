@@ -1,0 +1,988 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3001/api/orders.json?page=1&per_page=50
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      X-Spree-Token:
+      - d1202dea0f624d1c2f0c8544f5dffe4b24bbcaf3a9601cc5
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 200
+      message: ! 'OK '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - ! '"14c7a2e9aad7c0e8aaaa7e03b9c43b07"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - dbbe63a6-39e6-4de0-9911-4633a4b3fe2c
+      X-Runtime:
+      - '0.479790'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.1/2014-02-24)
+      Date:
+      - Thu, 31 Jul 2014 14:38:11 GMT
+      Content-Length:
+      - '1701'
+      Connection:
+      - Keep-Alive
+      Set-Cookie:
+      - guest_token=InJKc3B3eTdGVXF2ZlhMSnVqTXdXbHci--9d0649e08e4e313b28bdbe59a76c1903922d8759;
+        path=/; expires=Mon, 31 Jul 2034 14:38:11 -0000
+      - request_method=GET; path=/
+    body:
+      encoding: US-ASCII
+      string: ! '{"count":2,"current_page":"1","pages":1,"orders":[{"id":1,"number":"R123456789","item_total":"15.99","total":"22.63","ship_total":"5.0","state":"complete","adjustment_total":"1.64","user_id":null,"created_at":"2014-07-31T09:47:41.085Z","updated_at":"2014-07-31T14:31:12.868Z","completed_at":"2014-07-30T09:47:41.427Z","payment_total":"0.0","shipment_state":"pending","payment_state":"balance_due","email":"spree@example.com","special_instructions":null,"channel":"spree","included_tax_total":"0.0","additional_tax_total":"0.8","display_included_tax_total":"$0.00","display_additional_tax_total":"$0.80","tax_total":"0.8","currency":"USD","display_item_total":"$15.99","total_quantity":1,"display_total":"$22.63","display_ship_total":"$5.00","display_tax_total":"$0.80","token":"IQdQhZw30eVYmDW9B1MO6w","checkout_steps":["address","delivery","payment","confirm","complete"]},{"id":2,"number":"R987654321","item_total":"22.99","total":"30.35","ship_total":"5.0","state":"complete","adjustment_total":"2.36","user_id":null,"created_at":"2014-07-31T09:47:41.106Z","updated_at":"2014-07-31T14:31:12.540Z","completed_at":"2014-07-30T09:47:41.448Z","payment_total":"0.0","shipment_state":"pending","payment_state":"balance_due","email":"spree@example.com","special_instructions":null,"channel":"spree","included_tax_total":"0.0","additional_tax_total":"1.15","display_included_tax_total":"$0.00","display_additional_tax_total":"$1.15","tax_total":"1.15","currency":"USD","display_item_total":"$22.99","total_quantity":1,"display_total":"$30.35","display_ship_total":"$5.00","display_tax_total":"$1.15","token":"083Fh6dzfyy7D2ItT9tVBA","checkout_steps":["address","delivery","payment","confirm","complete"]}]}'
+    http_version: 
+  recorded_at: Thu, 31 Jul 2014 14:38:11 GMT
+- request:
+    method: get
+    uri: http://localhost:3001/api/orders/R123456789.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      X-Spree-Token:
+      - d1202dea0f624d1c2f0c8544f5dffe4b24bbcaf3a9601cc5
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 200
+      message: ! 'OK '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - ! '"43ad07f03ca026a00cc1b666fdd1dd46"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 2a78ae1b-5cb0-44ec-b3f5-6c1501c6b674
+      X-Runtime:
+      - '0.852006'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.1/2014-02-24)
+      Date:
+      - Thu, 31 Jul 2014 14:38:12 GMT
+      Content-Length:
+      - '5912'
+      Connection:
+      - Keep-Alive
+      Set-Cookie:
+      - guest_token=IlJtR1NjazVTZ29YRDVvRFl5cjlYMGci--41e7e20515580db628c641faae8861b0fa2e66b7;
+        path=/; expires=Mon, 31 Jul 2034 14:38:11 -0000
+      - request_method=GET; path=/
+    body:
+      encoding: US-ASCII
+      string: ! '{"id":1,"number":"R123456789","item_total":"15.99","total":"22.63","ship_total":"5.0","state":"complete","adjustment_total":"1.64","user_id":null,"created_at":"2014-07-31T09:47:41.085Z","updated_at":"2014-07-31T14:38:11.779Z","completed_at":"2014-07-30T09:47:41.427Z","payment_total":"0.0","shipment_state":"pending","payment_state":"balance_due","email":"spree@example.com","special_instructions":null,"channel":"spree","included_tax_total":"0.0","additional_tax_total":"0.8","display_included_tax_total":"$0.00","display_additional_tax_total":"$0.80","tax_total":"0.8","currency":"USD","display_item_total":"$15.99","total_quantity":1,"display_total":"$22.63","display_ship_total":"$5.00","display_tax_total":"$0.80","token":"IQdQhZw30eVYmDW9B1MO6w","checkout_steps":["address","delivery","payment","confirm","complete"],"permissions":{"can_update":true},"bill_address":{"id":2,"firstname":"Ofelia","lastname":"Prohaska","full_name":"Ofelia
+        Prohaska","address1":"444 Muhammad Crossing","address2":"Apt. 300","city":"Jamesonport","zipcode":"16804","phone":"170-498-6272","company":null,"alternative_phone":null,"country_id":49,"state_id":48,"state_name":null,"state_text":"NY","country":{"id":49,"iso_name":"UNITED
+        STATES","iso":"US","iso3":"USA","name":"United States","numcode":840},"state":{"id":48,"name":"New
+        York","abbr":"NY","country_id":49}},"ship_address":{"id":1,"firstname":"Kirk","lastname":"Bruen","full_name":"Kirk
+        Bruen","address1":"4379 Murphy Orchard","address2":"Suite 228","city":"Yundtmouth","zipcode":"16804","phone":"1-622-711-4579","company":null,"alternative_phone":null,"country_id":49,"state_id":48,"state_name":null,"state_text":"NY","country":{"id":49,"iso_name":"UNITED
+        STATES","iso":"US","iso3":"USA","name":"United States","numcode":840},"state":{"id":48,"name":"New
+        York","abbr":"NY","country_id":49}},"line_items":[{"id":1,"quantity":1,"price":"15.99","variant_id":1,"single_display_amount":"$15.99","display_amount":"$15.99","total":"16.79","variant":{"id":1,"name":"Ruby
+        on Rails Tote","sku":"ROR-00011","price":"15.99","weight":"0.0","height":null,"width":null,"depth":null,"is_master":true,"cost_price":"17.0","slug":"ruby-on-rails-tote","description":"Dolorem
+        minus illum quas eos beatae deleniti rerum velit. Deserunt delectus fuga nihil
+        itaque eum. Culpa soluta reiciendis dolorem eius sit voluptas. Impedit porro
+        aut dolore. Quaerat quia sint odit ducimus sint ut.","track_inventory":true,"display_price":"$15.99","options_text":"","in_stock":true,"option_values":[],"images":[{"id":21,"position":1,"attachment_content_type":"image/jpeg","attachment_file_name":"ror_tote.jpeg","type":"Spree::Image","attachment_updated_at":"2014-07-31T09:47:28.686Z","attachment_width":360,"attachment_height":360,"alt":null,"viewable_type":"Spree::Variant","viewable_id":1,"mini_url":"/spree/products/21/mini/ror_tote.jpeg?1406800048","small_url":"/spree/products/21/small/ror_tote.jpeg?1406800048","product_url":"/spree/products/21/product/ror_tote.jpeg?1406800048","large_url":"/spree/products/21/large/ror_tote.jpeg?1406800048"},{"id":22,"position":2,"attachment_content_type":"image/jpeg","attachment_file_name":"ror_tote_back.jpeg","type":"Spree::Image","attachment_updated_at":"2014-07-31T09:47:29.114Z","attachment_width":360,"attachment_height":360,"alt":null,"viewable_type":"Spree::Variant","viewable_id":1,"mini_url":"/spree/products/22/mini/ror_tote_back.jpeg?1406800049","small_url":"/spree/products/22/small/ror_tote_back.jpeg?1406800049","product_url":"/spree/products/22/product/ror_tote_back.jpeg?1406800049","large_url":"/spree/products/22/large/ror_tote_back.jpeg?1406800049"}],"product_id":1},"adjustments":[{"id":1,"source_type":"Spree::TaxRate","source_id":1,"adjustable_type":"Spree::LineItem","adjustable_id":1,"amount":"0.8","label":"North
+        America 5.0%","mandatory":null,"eligible":true,"created_at":"2014-07-31T09:47:41.216Z","updated_at":"2014-07-31T09:47:41.522Z","display_amount":"$0.80"}]}],"payments":[{"id":1,"source_type":"Spree::CreditCard","source_id":1,"amount":"22.63","display_amount":"$22.63","payment_method_id":1,"response_code":"12345","state":"pending","avs_response":null,"created_at":"2014-07-31T09:47:41.598Z","updated_at":"2014-07-31T09:47:41.598Z","payment_method":{"id":1,"name":"Credit
+        Card","environment":"development"},"source":{"id":1,"month":"12","year":"2014","cc_type":"visa","last_digits":"1111","name":"Sean
+        Schofield"}}],"shipments":[{"id":1,"tracking":null,"number":"H62716768648","cost":"5.0","shipped_at":null,"state":"pending","order_id":"R123456789","stock_location_name":"default","shipping_rates":[{"id":1,"name":"UPS
+        Ground (USD)","cost":"5.0","selected":true,"shipping_method_id":1,"display_cost":"$5.00"},{"id":2,"name":"UPS
+        Two Day (USD)","cost":"10.0","selected":false,"shipping_method_id":2,"display_cost":"$10.00"},{"id":3,"name":"UPS
+        One Day (USD)","cost":"15.0","selected":false,"shipping_method_id":3,"display_cost":"$15.00"}],"selected_shipping_rate":{"id":1,"name":"UPS
+        Ground (USD)","cost":"5.0","selected":true,"shipping_method_id":1,"display_cost":"$5.00"},"shipping_methods":[{"id":1,"name":"UPS
+        Ground (USD)","zones":[{"id":2,"name":"North America","description":"USA +
+        Canada"}],"shipping_categories":[{"id":1,"name":"Default"}]},{"id":2,"name":"UPS
+        Two Day (USD)","zones":[{"id":2,"name":"North America","description":"USA
+        + Canada"}],"shipping_categories":[{"id":1,"name":"Default"}]},{"id":3,"name":"UPS
+        One Day (USD)","zones":[{"id":2,"name":"North America","description":"USA
+        + Canada"}],"shipping_categories":[{"id":1,"name":"Default"}]}],"manifest":[{"quantity":1,"states":{"on_hand":1},"variant_id":1}]}],"adjustments":[{"id":3,"source_type":"Spree::TaxRate","source_id":1,"adjustable_type":"Spree::Order","adjustable_id":1,"amount":"0.84","label":"Tax","mandatory":true,"eligible":true,"created_at":"2014-07-31T09:47:41.463Z","updated_at":"2014-07-31T09:47:41.533Z","display_amount":"$0.84"}]}'
+    http_version: 
+  recorded_at: Thu, 31 Jul 2014 14:38:12 GMT
+- request:
+    method: get
+    uri: http://localhost:3001/api/orders/R987654321.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      X-Spree-Token:
+      - d1202dea0f624d1c2f0c8544f5dffe4b24bbcaf3a9601cc5
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 200
+      message: ! 'OK '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - ! '"18b51fa1481b68844c711b58fd00cf66"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 48d53acf-8536-40ae-85d3-c84e3ec883ba
+      X-Runtime:
+      - '0.803044'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.1/2014-02-24)
+      Date:
+      - Thu, 31 Jul 2014 14:38:13 GMT
+      Content-Length:
+      - '5344'
+      Connection:
+      - Keep-Alive
+      Set-Cookie:
+      - guest_token=Inc2eEw5ek5FbmdQQ2QwZEZoeE1PcXci--4df877b994c6ff4fd437b0c51f55fd7a9e66c755;
+        path=/; expires=Mon, 31 Jul 2034 14:38:12 -0000
+      - request_method=GET; path=/
+    body:
+      encoding: US-ASCII
+      string: ! '{"id":2,"number":"R987654321","item_total":"22.99","total":"30.35","ship_total":"5.0","state":"complete","adjustment_total":"2.36","user_id":null,"created_at":"2014-07-31T09:47:41.106Z","updated_at":"2014-07-31T14:38:11.838Z","completed_at":"2014-07-30T09:47:41.448Z","payment_total":"0.0","shipment_state":"pending","payment_state":"balance_due","email":"spree@example.com","special_instructions":null,"channel":"spree","included_tax_total":"0.0","additional_tax_total":"1.15","display_included_tax_total":"$0.00","display_additional_tax_total":"$1.15","tax_total":"1.15","currency":"USD","display_item_total":"$22.99","total_quantity":1,"display_total":"$30.35","display_ship_total":"$5.00","display_tax_total":"$1.15","token":"083Fh6dzfyy7D2ItT9tVBA","checkout_steps":["address","delivery","payment","confirm","complete"],"permissions":{"can_update":true},"bill_address":{"id":2,"firstname":"Ofelia","lastname":"Prohaska","full_name":"Ofelia
+        Prohaska","address1":"444 Muhammad Crossing","address2":"Apt. 300","city":"Jamesonport","zipcode":"16804","phone":"170-498-6272","company":null,"alternative_phone":null,"country_id":49,"state_id":48,"state_name":null,"state_text":"NY","country":{"id":49,"iso_name":"UNITED
+        STATES","iso":"US","iso3":"USA","name":"United States","numcode":840},"state":{"id":48,"name":"New
+        York","abbr":"NY","country_id":49}},"ship_address":{"id":1,"firstname":"Kirk","lastname":"Bruen","full_name":"Kirk
+        Bruen","address1":"4379 Murphy Orchard","address2":"Suite 228","city":"Yundtmouth","zipcode":"16804","phone":"1-622-711-4579","company":null,"alternative_phone":null,"country_id":49,"state_id":48,"state_name":null,"state_text":"NY","country":{"id":49,"iso_name":"UNITED
+        STATES","iso":"US","iso3":"USA","name":"United States","numcode":840},"state":{"id":48,"name":"New
+        York","abbr":"NY","country_id":49}},"line_items":[{"id":2,"quantity":1,"price":"22.99","variant_id":2,"single_display_amount":"$22.99","display_amount":"$22.99","total":"24.14","variant":{"id":2,"name":"Ruby
+        on Rails Bag","sku":"ROR-00012","price":"22.99","weight":"0.0","height":null,"width":null,"depth":null,"is_master":true,"cost_price":"21.0","slug":"ruby-on-rails-bag","description":"Dolorem
+        minus illum quas eos beatae deleniti rerum velit. Deserunt delectus fuga nihil
+        itaque eum. Culpa soluta reiciendis dolorem eius sit voluptas. Impedit porro
+        aut dolore. Quaerat quia sint odit ducimus sint ut.","track_inventory":true,"display_price":"$22.99","options_text":"","in_stock":true,"option_values":[],"images":[{"id":23,"position":1,"attachment_content_type":"image/jpeg","attachment_file_name":"ror_bag.jpeg","type":"Spree::Image","attachment_updated_at":"2014-07-31T09:47:29.540Z","attachment_width":360,"attachment_height":360,"alt":null,"viewable_type":"Spree::Variant","viewable_id":2,"mini_url":"/spree/products/23/mini/ror_bag.jpeg?1406800049","small_url":"/spree/products/23/small/ror_bag.jpeg?1406800049","product_url":"/spree/products/23/product/ror_bag.jpeg?1406800049","large_url":"/spree/products/23/large/ror_bag.jpeg?1406800049"}],"product_id":2},"adjustments":[{"id":2,"source_type":"Spree::TaxRate","source_id":1,"adjustable_type":"Spree::LineItem","adjustable_id":2,"amount":"1.15","label":"North
+        America 5.0%","mandatory":null,"eligible":true,"created_at":"2014-07-31T09:47:41.266Z","updated_at":"2014-07-31T09:47:41.622Z","display_amount":"$1.15"}]}],"payments":[{"id":2,"source_type":"Spree::CreditCard","source_id":1,"amount":"30.35","display_amount":"$30.35","payment_method_id":1,"response_code":"12345","state":"pending","avs_response":null,"created_at":"2014-07-31T09:47:41.651Z","updated_at":"2014-07-31T09:47:41.651Z","payment_method":{"id":1,"name":"Credit
+        Card","environment":"development"},"source":{"id":1,"month":"12","year":"2014","cc_type":"visa","last_digits":"1111","name":"Sean
+        Schofield"}}],"shipments":[{"id":2,"tracking":null,"number":"H46363574125","cost":"5.0","shipped_at":null,"state":"pending","order_id":"R987654321","stock_location_name":"default","shipping_rates":[{"id":4,"name":"UPS
+        Ground (USD)","cost":"5.0","selected":true,"shipping_method_id":1,"display_cost":"$5.00"},{"id":5,"name":"UPS
+        Two Day (USD)","cost":"10.0","selected":false,"shipping_method_id":2,"display_cost":"$10.00"},{"id":6,"name":"UPS
+        One Day (USD)","cost":"15.0","selected":false,"shipping_method_id":3,"display_cost":"$15.00"}],"selected_shipping_rate":{"id":4,"name":"UPS
+        Ground (USD)","cost":"5.0","selected":true,"shipping_method_id":1,"display_cost":"$5.00"},"shipping_methods":[{"id":1,"name":"UPS
+        Ground (USD)","zones":[{"id":2,"name":"North America","description":"USA +
+        Canada"}],"shipping_categories":[{"id":1,"name":"Default"}]},{"id":2,"name":"UPS
+        Two Day (USD)","zones":[{"id":2,"name":"North America","description":"USA
+        + Canada"}],"shipping_categories":[{"id":1,"name":"Default"}]},{"id":3,"name":"UPS
+        One Day (USD)","zones":[{"id":2,"name":"North America","description":"USA
+        + Canada"}],"shipping_categories":[{"id":1,"name":"Default"}]}],"manifest":[{"quantity":1,"states":{"on_hand":1},"variant_id":2}]}],"adjustments":[{"id":4,"source_type":"Spree::TaxRate","source_id":1,"adjustable_type":"Spree::Order","adjustable_id":2,"amount":"1.21","label":"Tax","mandatory":true,"eligible":true,"created_at":"2014-07-31T09:47:41.478Z","updated_at":"2014-07-31T09:47:41.632Z","display_amount":"$1.21"}]}'
+    http_version: 
+  recorded_at: Thu, 31 Jul 2014 14:38:13 GMT
+- request:
+    method: get
+    uri: http://localhost:3001/api/orders.json?page=1&per_page=50
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      X-Spree-Token:
+      - d1202dea0f624d1c2f0c8544f5dffe4b24bbcaf3a9601cc5
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 200
+      message: ! 'OK '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - ! '"47b742b7859380a148dc42cd62a9d487"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 3565d8f7-1c67-40f8-a3a7-e96d9f75f5d7
+      X-Runtime:
+      - '0.325476'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.1/2014-02-24)
+      Date:
+      - Thu, 31 Jul 2014 14:38:13 GMT
+      Content-Length:
+      - '1701'
+      Connection:
+      - Keep-Alive
+      Set-Cookie:
+      - guest_token=InpoUGEzQXZNeG9UMjhwSG5RYzFLV2ci--68cf5c5293d6898c47ebe2a733bf8a9bb4e7df1e;
+        path=/; expires=Mon, 31 Jul 2034 14:38:13 -0000
+      - request_method=GET; path=/
+    body:
+      encoding: US-ASCII
+      string: ! '{"count":2,"current_page":"1","pages":1,"orders":[{"id":1,"number":"R123456789","item_total":"15.99","total":"22.63","ship_total":"5.0","state":"complete","adjustment_total":"1.64","user_id":null,"created_at":"2014-07-31T09:47:41.085Z","updated_at":"2014-07-31T14:38:12.171Z","completed_at":"2014-07-30T09:47:41.427Z","payment_total":"0.0","shipment_state":"pending","payment_state":"balance_due","email":"spree@example.com","special_instructions":null,"channel":"spree","included_tax_total":"0.0","additional_tax_total":"0.8","display_included_tax_total":"$0.00","display_additional_tax_total":"$0.80","tax_total":"0.8","currency":"USD","display_item_total":"$15.99","total_quantity":1,"display_total":"$22.63","display_ship_total":"$5.00","display_tax_total":"$0.80","token":"IQdQhZw30eVYmDW9B1MO6w","checkout_steps":["address","delivery","payment","confirm","complete"]},{"id":2,"number":"R987654321","item_total":"22.99","total":"30.35","ship_total":"5.0","state":"complete","adjustment_total":"2.36","user_id":null,"created_at":"2014-07-31T09:47:41.106Z","updated_at":"2014-07-31T14:38:13.032Z","completed_at":"2014-07-30T09:47:41.448Z","payment_total":"0.0","shipment_state":"pending","payment_state":"balance_due","email":"spree@example.com","special_instructions":null,"channel":"spree","included_tax_total":"0.0","additional_tax_total":"1.15","display_included_tax_total":"$0.00","display_additional_tax_total":"$1.15","tax_total":"1.15","currency":"USD","display_item_total":"$22.99","total_quantity":1,"display_total":"$30.35","display_ship_total":"$5.00","display_tax_total":"$1.15","token":"083Fh6dzfyy7D2ItT9tVBA","checkout_steps":["address","delivery","payment","confirm","complete"]}]}'
+    http_version: 
+  recorded_at: Thu, 31 Jul 2014 14:38:13 GMT
+- request:
+    method: get
+    uri: http://localhost:3001/api/orders/R123456789.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      X-Spree-Token:
+      - d1202dea0f624d1c2f0c8544f5dffe4b24bbcaf3a9601cc5
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 200
+      message: ! 'OK '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - ! '"7136a47ae386e7ce19c940b93a1b28fb"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 93efa42f-7fdc-4ae6-a157-a08a55a5e2ac
+      X-Runtime:
+      - '0.793060'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.1/2014-02-24)
+      Date:
+      - Thu, 31 Jul 2014 14:38:14 GMT
+      Content-Length:
+      - '5912'
+      Connection:
+      - Keep-Alive
+      Set-Cookie:
+      - guest_token=InIxOW9teEx3Nmh5akdZQUZmVXExSnci--843ba1ecf970903f2c688f61bfc6f67aff1530ea;
+        path=/; expires=Mon, 31 Jul 2034 14:38:13 -0000
+      - request_method=GET; path=/
+    body:
+      encoding: US-ASCII
+      string: ! '{"id":1,"number":"R123456789","item_total":"15.99","total":"22.63","ship_total":"5.0","state":"complete","adjustment_total":"1.64","user_id":null,"created_at":"2014-07-31T09:47:41.085Z","updated_at":"2014-07-31T14:38:13.835Z","completed_at":"2014-07-30T09:47:41.427Z","payment_total":"0.0","shipment_state":"pending","payment_state":"balance_due","email":"spree@example.com","special_instructions":null,"channel":"spree","included_tax_total":"0.0","additional_tax_total":"0.8","display_included_tax_total":"$0.00","display_additional_tax_total":"$0.80","tax_total":"0.8","currency":"USD","display_item_total":"$15.99","total_quantity":1,"display_total":"$22.63","display_ship_total":"$5.00","display_tax_total":"$0.80","token":"IQdQhZw30eVYmDW9B1MO6w","checkout_steps":["address","delivery","payment","confirm","complete"],"permissions":{"can_update":true},"bill_address":{"id":2,"firstname":"Ofelia","lastname":"Prohaska","full_name":"Ofelia
+        Prohaska","address1":"444 Muhammad Crossing","address2":"Apt. 300","city":"Jamesonport","zipcode":"16804","phone":"170-498-6272","company":null,"alternative_phone":null,"country_id":49,"state_id":48,"state_name":null,"state_text":"NY","country":{"id":49,"iso_name":"UNITED
+        STATES","iso":"US","iso3":"USA","name":"United States","numcode":840},"state":{"id":48,"name":"New
+        York","abbr":"NY","country_id":49}},"ship_address":{"id":1,"firstname":"Kirk","lastname":"Bruen","full_name":"Kirk
+        Bruen","address1":"4379 Murphy Orchard","address2":"Suite 228","city":"Yundtmouth","zipcode":"16804","phone":"1-622-711-4579","company":null,"alternative_phone":null,"country_id":49,"state_id":48,"state_name":null,"state_text":"NY","country":{"id":49,"iso_name":"UNITED
+        STATES","iso":"US","iso3":"USA","name":"United States","numcode":840},"state":{"id":48,"name":"New
+        York","abbr":"NY","country_id":49}},"line_items":[{"id":1,"quantity":1,"price":"15.99","variant_id":1,"single_display_amount":"$15.99","display_amount":"$15.99","total":"16.79","variant":{"id":1,"name":"Ruby
+        on Rails Tote","sku":"ROR-00011","price":"15.99","weight":"0.0","height":null,"width":null,"depth":null,"is_master":true,"cost_price":"17.0","slug":"ruby-on-rails-tote","description":"Dolorem
+        minus illum quas eos beatae deleniti rerum velit. Deserunt delectus fuga nihil
+        itaque eum. Culpa soluta reiciendis dolorem eius sit voluptas. Impedit porro
+        aut dolore. Quaerat quia sint odit ducimus sint ut.","track_inventory":true,"display_price":"$15.99","options_text":"","in_stock":true,"option_values":[],"images":[{"id":21,"position":1,"attachment_content_type":"image/jpeg","attachment_file_name":"ror_tote.jpeg","type":"Spree::Image","attachment_updated_at":"2014-07-31T09:47:28.686Z","attachment_width":360,"attachment_height":360,"alt":null,"viewable_type":"Spree::Variant","viewable_id":1,"mini_url":"/spree/products/21/mini/ror_tote.jpeg?1406800048","small_url":"/spree/products/21/small/ror_tote.jpeg?1406800048","product_url":"/spree/products/21/product/ror_tote.jpeg?1406800048","large_url":"/spree/products/21/large/ror_tote.jpeg?1406800048"},{"id":22,"position":2,"attachment_content_type":"image/jpeg","attachment_file_name":"ror_tote_back.jpeg","type":"Spree::Image","attachment_updated_at":"2014-07-31T09:47:29.114Z","attachment_width":360,"attachment_height":360,"alt":null,"viewable_type":"Spree::Variant","viewable_id":1,"mini_url":"/spree/products/22/mini/ror_tote_back.jpeg?1406800049","small_url":"/spree/products/22/small/ror_tote_back.jpeg?1406800049","product_url":"/spree/products/22/product/ror_tote_back.jpeg?1406800049","large_url":"/spree/products/22/large/ror_tote_back.jpeg?1406800049"}],"product_id":1},"adjustments":[{"id":1,"source_type":"Spree::TaxRate","source_id":1,"adjustable_type":"Spree::LineItem","adjustable_id":1,"amount":"0.8","label":"North
+        America 5.0%","mandatory":null,"eligible":true,"created_at":"2014-07-31T09:47:41.216Z","updated_at":"2014-07-31T09:47:41.522Z","display_amount":"$0.80"}]}],"payments":[{"id":1,"source_type":"Spree::CreditCard","source_id":1,"amount":"22.63","display_amount":"$22.63","payment_method_id":1,"response_code":"12345","state":"pending","avs_response":null,"created_at":"2014-07-31T09:47:41.598Z","updated_at":"2014-07-31T09:47:41.598Z","payment_method":{"id":1,"name":"Credit
+        Card","environment":"development"},"source":{"id":1,"month":"12","year":"2014","cc_type":"visa","last_digits":"1111","name":"Sean
+        Schofield"}}],"shipments":[{"id":1,"tracking":null,"number":"H62716768648","cost":"5.0","shipped_at":null,"state":"pending","order_id":"R123456789","stock_location_name":"default","shipping_rates":[{"id":1,"name":"UPS
+        Ground (USD)","cost":"5.0","selected":true,"shipping_method_id":1,"display_cost":"$5.00"},{"id":2,"name":"UPS
+        Two Day (USD)","cost":"10.0","selected":false,"shipping_method_id":2,"display_cost":"$10.00"},{"id":3,"name":"UPS
+        One Day (USD)","cost":"15.0","selected":false,"shipping_method_id":3,"display_cost":"$15.00"}],"selected_shipping_rate":{"id":1,"name":"UPS
+        Ground (USD)","cost":"5.0","selected":true,"shipping_method_id":1,"display_cost":"$5.00"},"shipping_methods":[{"id":1,"name":"UPS
+        Ground (USD)","zones":[{"id":2,"name":"North America","description":"USA +
+        Canada"}],"shipping_categories":[{"id":1,"name":"Default"}]},{"id":2,"name":"UPS
+        Two Day (USD)","zones":[{"id":2,"name":"North America","description":"USA
+        + Canada"}],"shipping_categories":[{"id":1,"name":"Default"}]},{"id":3,"name":"UPS
+        One Day (USD)","zones":[{"id":2,"name":"North America","description":"USA
+        + Canada"}],"shipping_categories":[{"id":1,"name":"Default"}]}],"manifest":[{"quantity":1,"states":{"on_hand":1},"variant_id":1}]}],"adjustments":[{"id":3,"source_type":"Spree::TaxRate","source_id":1,"adjustable_type":"Spree::Order","adjustable_id":1,"amount":"0.84","label":"Tax","mandatory":true,"eligible":true,"created_at":"2014-07-31T09:47:41.463Z","updated_at":"2014-07-31T09:47:41.533Z","display_amount":"$0.84"}]}'
+    http_version: 
+  recorded_at: Thu, 31 Jul 2014 14:38:14 GMT
+- request:
+    method: get
+    uri: http://localhost:3001/api/orders/R987654321.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      X-Spree-Token:
+      - d1202dea0f624d1c2f0c8544f5dffe4b24bbcaf3a9601cc5
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 200
+      message: ! 'OK '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - ! '"b0d69cfcc811e42c6be801987d40b3b1"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - ffba1931-bf92-455d-bb13-c312c5b963f7
+      X-Runtime:
+      - '0.733876'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.1/2014-02-24)
+      Date:
+      - Thu, 31 Jul 2014 14:38:15 GMT
+      Content-Length:
+      - '5344'
+      Connection:
+      - Keep-Alive
+      Set-Cookie:
+      - guest_token=ImtvT0NVZnBEbXdBSEtNQTB4cTFXOEEi--29234293e189753a3bb0d7407635da4ed25ef527;
+        path=/; expires=Mon, 31 Jul 2034 14:38:14 -0000
+      - request_method=GET; path=/
+    body:
+      encoding: US-ASCII
+      string: ! '{"id":2,"number":"R987654321","item_total":"22.99","total":"30.35","ship_total":"5.0","state":"complete","adjustment_total":"2.36","user_id":null,"created_at":"2014-07-31T09:47:41.106Z","updated_at":"2014-07-31T14:38:13.881Z","completed_at":"2014-07-30T09:47:41.448Z","payment_total":"0.0","shipment_state":"pending","payment_state":"balance_due","email":"spree@example.com","special_instructions":null,"channel":"spree","included_tax_total":"0.0","additional_tax_total":"1.15","display_included_tax_total":"$0.00","display_additional_tax_total":"$1.15","tax_total":"1.15","currency":"USD","display_item_total":"$22.99","total_quantity":1,"display_total":"$30.35","display_ship_total":"$5.00","display_tax_total":"$1.15","token":"083Fh6dzfyy7D2ItT9tVBA","checkout_steps":["address","delivery","payment","confirm","complete"],"permissions":{"can_update":true},"bill_address":{"id":2,"firstname":"Ofelia","lastname":"Prohaska","full_name":"Ofelia
+        Prohaska","address1":"444 Muhammad Crossing","address2":"Apt. 300","city":"Jamesonport","zipcode":"16804","phone":"170-498-6272","company":null,"alternative_phone":null,"country_id":49,"state_id":48,"state_name":null,"state_text":"NY","country":{"id":49,"iso_name":"UNITED
+        STATES","iso":"US","iso3":"USA","name":"United States","numcode":840},"state":{"id":48,"name":"New
+        York","abbr":"NY","country_id":49}},"ship_address":{"id":1,"firstname":"Kirk","lastname":"Bruen","full_name":"Kirk
+        Bruen","address1":"4379 Murphy Orchard","address2":"Suite 228","city":"Yundtmouth","zipcode":"16804","phone":"1-622-711-4579","company":null,"alternative_phone":null,"country_id":49,"state_id":48,"state_name":null,"state_text":"NY","country":{"id":49,"iso_name":"UNITED
+        STATES","iso":"US","iso3":"USA","name":"United States","numcode":840},"state":{"id":48,"name":"New
+        York","abbr":"NY","country_id":49}},"line_items":[{"id":2,"quantity":1,"price":"22.99","variant_id":2,"single_display_amount":"$22.99","display_amount":"$22.99","total":"24.14","variant":{"id":2,"name":"Ruby
+        on Rails Bag","sku":"ROR-00012","price":"22.99","weight":"0.0","height":null,"width":null,"depth":null,"is_master":true,"cost_price":"21.0","slug":"ruby-on-rails-bag","description":"Dolorem
+        minus illum quas eos beatae deleniti rerum velit. Deserunt delectus fuga nihil
+        itaque eum. Culpa soluta reiciendis dolorem eius sit voluptas. Impedit porro
+        aut dolore. Quaerat quia sint odit ducimus sint ut.","track_inventory":true,"display_price":"$22.99","options_text":"","in_stock":true,"option_values":[],"images":[{"id":23,"position":1,"attachment_content_type":"image/jpeg","attachment_file_name":"ror_bag.jpeg","type":"Spree::Image","attachment_updated_at":"2014-07-31T09:47:29.540Z","attachment_width":360,"attachment_height":360,"alt":null,"viewable_type":"Spree::Variant","viewable_id":2,"mini_url":"/spree/products/23/mini/ror_bag.jpeg?1406800049","small_url":"/spree/products/23/small/ror_bag.jpeg?1406800049","product_url":"/spree/products/23/product/ror_bag.jpeg?1406800049","large_url":"/spree/products/23/large/ror_bag.jpeg?1406800049"}],"product_id":2},"adjustments":[{"id":2,"source_type":"Spree::TaxRate","source_id":1,"adjustable_type":"Spree::LineItem","adjustable_id":2,"amount":"1.15","label":"North
+        America 5.0%","mandatory":null,"eligible":true,"created_at":"2014-07-31T09:47:41.266Z","updated_at":"2014-07-31T09:47:41.622Z","display_amount":"$1.15"}]}],"payments":[{"id":2,"source_type":"Spree::CreditCard","source_id":1,"amount":"30.35","display_amount":"$30.35","payment_method_id":1,"response_code":"12345","state":"pending","avs_response":null,"created_at":"2014-07-31T09:47:41.651Z","updated_at":"2014-07-31T09:47:41.651Z","payment_method":{"id":1,"name":"Credit
+        Card","environment":"development"},"source":{"id":1,"month":"12","year":"2014","cc_type":"visa","last_digits":"1111","name":"Sean
+        Schofield"}}],"shipments":[{"id":2,"tracking":null,"number":"H46363574125","cost":"5.0","shipped_at":null,"state":"pending","order_id":"R987654321","stock_location_name":"default","shipping_rates":[{"id":4,"name":"UPS
+        Ground (USD)","cost":"5.0","selected":true,"shipping_method_id":1,"display_cost":"$5.00"},{"id":5,"name":"UPS
+        Two Day (USD)","cost":"10.0","selected":false,"shipping_method_id":2,"display_cost":"$10.00"},{"id":6,"name":"UPS
+        One Day (USD)","cost":"15.0","selected":false,"shipping_method_id":3,"display_cost":"$15.00"}],"selected_shipping_rate":{"id":4,"name":"UPS
+        Ground (USD)","cost":"5.0","selected":true,"shipping_method_id":1,"display_cost":"$5.00"},"shipping_methods":[{"id":1,"name":"UPS
+        Ground (USD)","zones":[{"id":2,"name":"North America","description":"USA +
+        Canada"}],"shipping_categories":[{"id":1,"name":"Default"}]},{"id":2,"name":"UPS
+        Two Day (USD)","zones":[{"id":2,"name":"North America","description":"USA
+        + Canada"}],"shipping_categories":[{"id":1,"name":"Default"}]},{"id":3,"name":"UPS
+        One Day (USD)","zones":[{"id":2,"name":"North America","description":"USA
+        + Canada"}],"shipping_categories":[{"id":1,"name":"Default"}]}],"manifest":[{"quantity":1,"states":{"on_hand":1},"variant_id":2}]}],"adjustments":[{"id":4,"source_type":"Spree::TaxRate","source_id":1,"adjustable_type":"Spree::Order","adjustable_id":2,"amount":"1.21","label":"Tax","mandatory":true,"eligible":true,"created_at":"2014-07-31T09:47:41.478Z","updated_at":"2014-07-31T09:47:41.632Z","display_amount":"$1.21"}]}'
+    http_version: 
+  recorded_at: Thu, 31 Jul 2014 14:38:15 GMT
+- request:
+    method: get
+    uri: http://localhost:3001/api/orders.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      X-Spree-Token:
+      - d1202dea0f624d1c2f0c8544f5dffe4b24bbcaf3a9601cc5
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 200
+      message: ! 'OK '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - ! '"bf9cf3e2ef1ce59970ebd9b2b32af3ab"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 628b76ed-c3bb-4999-b38b-8945815a8c7e
+      X-Runtime:
+      - '0.343875'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.1/2014-02-24)
+      Date:
+      - Thu, 31 Jul 2014 14:38:15 GMT
+      Content-Length:
+      - '1699'
+      Connection:
+      - Keep-Alive
+      Set-Cookie:
+      - guest_token=Il8zVzc3akRfd3VBdVV5cVp2OUN6d3ci--1b1e820bf290d934d919a1f7d3acdff7c14a83a2;
+        path=/; expires=Mon, 31 Jul 2034 14:38:15 -0000
+      - request_method=GET; path=/
+    body:
+      encoding: US-ASCII
+      string: ! '{"count":2,"current_page":1,"pages":1,"orders":[{"id":1,"number":"R123456789","item_total":"15.99","total":"22.63","ship_total":"5.0","state":"complete","adjustment_total":"1.64","user_id":null,"created_at":"2014-07-31T09:47:41.085Z","updated_at":"2014-07-31T14:38:14.197Z","completed_at":"2014-07-30T09:47:41.427Z","payment_total":"0.0","shipment_state":"pending","payment_state":"balance_due","email":"spree@example.com","special_instructions":null,"channel":"spree","included_tax_total":"0.0","additional_tax_total":"0.8","display_included_tax_total":"$0.00","display_additional_tax_total":"$0.80","tax_total":"0.8","currency":"USD","display_item_total":"$15.99","total_quantity":1,"display_total":"$22.63","display_ship_total":"$5.00","display_tax_total":"$0.80","token":"IQdQhZw30eVYmDW9B1MO6w","checkout_steps":["address","delivery","payment","confirm","complete"]},{"id":2,"number":"R987654321","item_total":"22.99","total":"30.35","ship_total":"5.0","state":"complete","adjustment_total":"2.36","user_id":null,"created_at":"2014-07-31T09:47:41.106Z","updated_at":"2014-07-31T14:38:14.999Z","completed_at":"2014-07-30T09:47:41.448Z","payment_total":"0.0","shipment_state":"pending","payment_state":"balance_due","email":"spree@example.com","special_instructions":null,"channel":"spree","included_tax_total":"0.0","additional_tax_total":"1.15","display_included_tax_total":"$0.00","display_additional_tax_total":"$1.15","tax_total":"1.15","currency":"USD","display_item_total":"$22.99","total_quantity":1,"display_total":"$30.35","display_ship_total":"$5.00","display_tax_total":"$1.15","token":"083Fh6dzfyy7D2ItT9tVBA","checkout_steps":["address","delivery","payment","confirm","complete"]}]}'
+    http_version: 
+  recorded_at: Thu, 31 Jul 2014 14:38:15 GMT
+- request:
+    method: get
+    uri: http://localhost:3001/api/products.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      X-Spree-Token:
+      - d1202dea0f624d1c2f0c8544f5dffe4b24bbcaf3a9601cc5
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 200
+      message: ! 'OK '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 31 Jul 2014 14:38:15 GMT
+      Surrogate-Control:
+      - max-age=900
+      Cache-Control:
+      - max-age=900, public
+      Etag:
+      - ! '"1fa4b01070520093a33ebd555491e875"'
+      X-Request-Id:
+      - 994f7088-456c-48b1-bae2-5218dffca048
+      X-Runtime:
+      - '2.964009'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.1/2014-02-24)
+      Content-Length:
+      - '59494'
+      Connection:
+      - Keep-Alive
+      Set-Cookie:
+      - guest_token=IkVoOFFwS2E2b3VIN2lOVlV6aEVlLWci--19ea3114fe059823c2c757bd40eb63e4f9d87160;
+        path=/; expires=Mon, 31 Jul 2034 14:38:15 -0000
+      - request_method=GET; path=/
+    body:
+      encoding: US-ASCII
+      string: ! '{"count":16,"total_count":16,"current_page":1,"per_page":25,"pages":1,"products":[{"id":1,"name":"Ruby
+        on Rails Tote","description":"Dolorem minus illum quas eos beatae deleniti
+        rerum velit. Deserunt delectus fuga nihil itaque eum. Culpa soluta reiciendis
+        dolorem eius sit voluptas. Impedit porro aut dolore. Quaerat quia sint odit
+        ducimus sint ut.","price":"15.99","display_price":"$15.99","available_on":"2014-07-31T09:47:16.508Z","slug":"ruby-on-rails-tote","meta_description":null,"meta_keywords":null,"shipping_category_id":1,"taxon_ids":[3,11],"total_on_hand":10,"has_variants":false,"master":{"id":1,"name":"Ruby
+        on Rails Tote","sku":"ROR-00011","price":"15.99","weight":"0.0","height":null,"width":null,"depth":null,"is_master":true,"cost_price":"17.0","slug":"ruby-on-rails-tote","description":"Dolorem
+        minus illum quas eos beatae deleniti rerum velit. Deserunt delectus fuga nihil
+        itaque eum. Culpa soluta reiciendis dolorem eius sit voluptas. Impedit porro
+        aut dolore. Quaerat quia sint odit ducimus sint ut.","track_inventory":true,"display_price":"$15.99","options_text":"","in_stock":true,"option_values":[],"images":[{"id":21,"position":1,"attachment_content_type":"image/jpeg","attachment_file_name":"ror_tote.jpeg","type":"Spree::Image","attachment_updated_at":"2014-07-31T09:47:28.686Z","attachment_width":360,"attachment_height":360,"alt":null,"viewable_type":"Spree::Variant","viewable_id":1,"mini_url":"/spree/products/21/mini/ror_tote.jpeg?1406800048","small_url":"/spree/products/21/small/ror_tote.jpeg?1406800048","product_url":"/spree/products/21/product/ror_tote.jpeg?1406800048","large_url":"/spree/products/21/large/ror_tote.jpeg?1406800048"},{"id":22,"position":2,"attachment_content_type":"image/jpeg","attachment_file_name":"ror_tote_back.jpeg","type":"Spree::Image","attachment_updated_at":"2014-07-31T09:47:29.114Z","attachment_width":360,"attachment_height":360,"alt":null,"viewable_type":"Spree::Variant","viewable_id":1,"mini_url":"/spree/products/22/mini/ror_tote_back.jpeg?1406800049","small_url":"/spree/products/22/small/ror_tote_back.jpeg?1406800049","product_url":"/spree/products/22/product/ror_tote_back.jpeg?1406800049","large_url":"/spree/products/22/large/ror_tote_back.jpeg?1406800049"}]},"variants":[],"option_types":[],"product_properties":[{"id":25,"product_id":1,"property_id":9,"value":"Tote","property_name":"Type"},{"id":26,"product_id":1,"property_id":10,"value":"15\"
+        x 18\" x 6\"","property_name":"Size"},{"id":27,"product_id":1,"property_id":11,"value":"Canvas","property_name":"Material"}]},{"id":2,"name":"Ruby
+        on Rails Bag","description":"Dolorem minus illum quas eos beatae deleniti
+        rerum velit. Deserunt delectus fuga nihil itaque eum. Culpa soluta reiciendis
+        dolorem eius sit voluptas. Impedit porro aut dolore. Quaerat quia sint odit
+        ducimus sint ut.","price":"22.99","display_price":"$22.99","available_on":"2014-07-31T09:47:16.508Z","slug":"ruby-on-rails-bag","meta_description":null,"meta_keywords":null,"shipping_category_id":1,"taxon_ids":[3,11],"total_on_hand":10,"has_variants":false,"master":{"id":2,"name":"Ruby
+        on Rails Bag","sku":"ROR-00012","price":"22.99","weight":"0.0","height":null,"width":null,"depth":null,"is_master":true,"cost_price":"21.0","slug":"ruby-on-rails-bag","description":"Dolorem
+        minus illum quas eos beatae deleniti rerum velit. Deserunt delectus fuga nihil
+        itaque eum. Culpa soluta reiciendis dolorem eius sit voluptas. Impedit porro
+        aut dolore. Quaerat quia sint odit ducimus sint ut.","track_inventory":true,"display_price":"$22.99","options_text":"","in_stock":true,"option_values":[],"images":[{"id":23,"position":1,"attachment_content_type":"image/jpeg","attachment_file_name":"ror_bag.jpeg","type":"Spree::Image","attachment_updated_at":"2014-07-31T09:47:29.540Z","attachment_width":360,"attachment_height":360,"alt":null,"viewable_type":"Spree::Variant","viewable_id":2,"mini_url":"/spree/products/23/mini/ror_bag.jpeg?1406800049","small_url":"/spree/products/23/small/ror_bag.jpeg?1406800049","product_url":"/spree/products/23/product/ror_bag.jpeg?1406800049","large_url":"/spree/products/23/large/ror_bag.jpeg?1406800049"}]},"variants":[],"option_types":[],"product_properties":[{"id":28,"product_id":2,"property_id":9,"value":"Messenger","property_name":"Type"},{"id":29,"product_id":2,"property_id":10,"value":"14
+        1/2\" x 12\" x 5\"","property_name":"Size"},{"id":30,"product_id":2,"property_id":11,"value":"600
+        Denier Polyester","property_name":"Material"}]},{"id":3,"name":"Ruby on Rails
+        Baseball Jersey","description":"Dolorem minus illum quas eos beatae deleniti
+        rerum velit. Deserunt delectus fuga nihil itaque eum. Culpa soluta reiciendis
+        dolorem eius sit voluptas. Impedit porro aut dolore. Quaerat quia sint odit
+        ducimus sint ut.","price":"19.99","display_price":"$19.99","available_on":"2014-07-31T09:47:16.508Z","slug":"ruby-on-rails-baseball-jersey","meta_description":null,"meta_keywords":null,"shipping_category_id":1,"taxon_ids":[7,11],"total_on_hand":110,"has_variants":true,"master":{"id":3,"name":"Ruby
+        on Rails Baseball Jersey","sku":"ROR-001","price":"19.99","weight":"0.0","height":null,"width":null,"depth":null,"is_master":true,"cost_price":"17.0","slug":"ruby-on-rails-baseball-jersey","description":"Dolorem
+        minus illum quas eos beatae deleniti rerum velit. Deserunt delectus fuga nihil
+        itaque eum. Culpa soluta reiciendis dolorem eius sit voluptas. Impedit porro
+        aut dolore. Quaerat quia sint odit ducimus sint ut.","track_inventory":true,"display_price":"$19.99","options_text":"","in_stock":true,"option_values":[],"images":[{"id":24,"position":1,"attachment_content_type":"image/jpeg","attachment_file_name":"ror_baseball.jpeg","type":"Spree::Image","attachment_updated_at":"2014-07-31T09:47:29.944Z","attachment_width":360,"attachment_height":360,"alt":null,"viewable_type":"Spree::Variant","viewable_id":3,"mini_url":"/spree/products/24/mini/ror_baseball.jpeg?1406800049","small_url":"/spree/products/24/small/ror_baseball.jpeg?1406800049","product_url":"/spree/products/24/product/ror_baseball.jpeg?1406800049","large_url":"/spree/products/24/large/ror_baseball.jpeg?1406800049"},{"id":25,"position":2,"attachment_content_type":"image/jpeg","attachment_file_name":"ror_baseball_back.jpeg","type":"Spree::Image","attachment_updated_at":"2014-07-31T09:47:30.444Z","attachment_width":360,"attachment_height":360,"alt":null,"viewable_type":"Spree::Variant","viewable_id":3,"mini_url":"/spree/products/25/mini/ror_baseball_back.jpeg?1406800050","small_url":"/spree/products/25/small/ror_baseball_back.jpeg?1406800050","product_url":"/spree/products/25/product/ror_baseball_back.jpeg?1406800050","large_url":"/spree/products/25/large/ror_baseball_back.jpeg?1406800050"}]},"variants":[{"id":17,"name":"Ruby
+        on Rails Baseball Jersey","sku":"ROR-00001","price":"19.99","weight":"0.0","height":null,"width":null,"depth":null,"is_master":false,"cost_price":"17.0","slug":"ruby-on-rails-baseball-jersey","description":"Dolorem
+        minus illum quas eos beatae deleniti rerum velit. Deserunt delectus fuga nihil
+        itaque eum. Culpa soluta reiciendis dolorem eius sit voluptas. Impedit porro
+        aut dolore. Quaerat quia sint odit ducimus sint ut.","track_inventory":true,"display_price":"$19.99","options_text":"Size:
+        S, Color: Red","in_stock":true,"option_values":[{"id":1,"name":"Small","presentation":"S","option_type_name":"tshirt-size","option_type_id":1,"option_type_presentation":"Size"},{"id":5,"name":"Red","presentation":"Red","option_type_name":"tshirt-color","option_type_id":2,"option_type_presentation":"Color"}],"images":[{"id":1,"position":1,"attachment_content_type":"image/png","attachment_file_name":"ror_baseball_jersey_red.png","type":"Spree::Image","attachment_updated_at":"2014-07-31T09:47:19.977Z","attachment_width":240,"attachment_height":240,"alt":null,"viewable_type":"Spree::Variant","viewable_id":17,"mini_url":"/spree/products/1/mini/ror_baseball_jersey_red.png?1406800039","small_url":"/spree/products/1/small/ror_baseball_jersey_red.png?1406800039","product_url":"/spree/products/1/product/ror_baseball_jersey_red.png?1406800039","large_url":"/spree/products/1/large/ror_baseball_jersey_red.png?1406800039"},{"id":2,"position":2,"attachment_content_type":"image/png","attachment_file_name":"ror_baseball_jersey_back_red.png","type":"Spree::Image","attachment_updated_at":"2014-07-31T09:47:20.452Z","attachment_width":240,"attachment_height":240,"alt":null,"viewable_type":"Spree::Variant","viewable_id":17,"mini_url":"/spree/products/2/mini/ror_baseball_jersey_back_red.png?1406800040","small_url":"/spree/products/2/small/ror_baseball_jersey_back_red.png?1406800040","product_url":"/spree/products/2/product/ror_baseball_jersey_back_red.png?1406800040","large_url":"/spree/products/2/large/ror_baseball_jersey_back_red.png?1406800040"}]},{"id":18,"name":"Ruby
+        on Rails Baseball Jersey","sku":"ROR-00002","price":"19.99","weight":"0.0","height":null,"width":null,"depth":null,"is_master":false,"cost_price":"17.0","slug":"ruby-on-rails-baseball-jersey","description":"Dolorem
+        minus illum quas eos beatae deleniti rerum velit. Deserunt delectus fuga nihil
+        itaque eum. Culpa soluta reiciendis dolorem eius sit voluptas. Impedit porro
+        aut dolore. Quaerat quia sint odit ducimus sint ut.","track_inventory":true,"display_price":"$19.99","options_text":"Size:
+        S, Color: Blue","in_stock":true,"option_values":[{"id":1,"name":"Small","presentation":"S","option_type_name":"tshirt-size","option_type_id":1,"option_type_presentation":"Size"},{"id":7,"name":"Blue","presentation":"Blue","option_type_name":"tshirt-color","option_type_id":2,"option_type_presentation":"Color"}],"images":[{"id":3,"position":1,"attachment_content_type":"image/png","attachment_file_name":"ror_baseball_jersey_blue.png","type":"Spree::Image","attachment_updated_at":"2014-07-31T09:47:20.917Z","attachment_width":240,"attachment_height":240,"alt":null,"viewable_type":"Spree::Variant","viewable_id":18,"mini_url":"/spree/products/3/mini/ror_baseball_jersey_blue.png?1406800040","small_url":"/spree/products/3/small/ror_baseball_jersey_blue.png?1406800040","product_url":"/spree/products/3/product/ror_baseball_jersey_blue.png?1406800040","large_url":"/spree/products/3/large/ror_baseball_jersey_blue.png?1406800040"},{"id":4,"position":2,"attachment_content_type":"image/png","attachment_file_name":"ror_baseball_jersey_back_blue.png","type":"Spree::Image","attachment_updated_at":"2014-07-31T09:47:21.312Z","attachment_width":240,"attachment_height":240,"alt":null,"viewable_type":"Spree::Variant","viewable_id":18,"mini_url":"/spree/products/4/mini/ror_baseball_jersey_back_blue.png?1406800041","small_url":"/spree/products/4/small/ror_baseball_jersey_back_blue.png?1406800041","product_url":"/spree/products/4/product/ror_baseball_jersey_back_blue.png?1406800041","large_url":"/spree/products/4/large/ror_baseball_jersey_back_blue.png?1406800041"}]},{"id":19,"name":"Ruby
+        on Rails Baseball Jersey","sku":"ROR-00003","price":"19.99","weight":"0.0","height":null,"width":null,"depth":null,"is_master":false,"cost_price":"17.0","slug":"ruby-on-rails-baseball-jersey","description":"Dolorem
+        minus illum quas eos beatae deleniti rerum velit. Deserunt delectus fuga nihil
+        itaque eum. Culpa soluta reiciendis dolorem eius sit voluptas. Impedit porro
+        aut dolore. Quaerat quia sint odit ducimus sint ut.","track_inventory":true,"display_price":"$19.99","options_text":"Size:
+        S, Color: Green","in_stock":true,"option_values":[{"id":1,"name":"Small","presentation":"S","option_type_name":"tshirt-size","option_type_id":1,"option_type_presentation":"Size"},{"id":6,"name":"Green","presentation":"Green","option_type_name":"tshirt-color","option_type_id":2,"option_type_presentation":"Color"}],"images":[{"id":5,"position":1,"attachment_content_type":"image/png","attachment_file_name":"ror_baseball_jersey_green.png","type":"Spree::Image","attachment_updated_at":"2014-07-31T09:47:21.708Z","attachment_width":240,"attachment_height":240,"alt":null,"viewable_type":"Spree::Variant","viewable_id":19,"mini_url":"/spree/products/5/mini/ror_baseball_jersey_green.png?1406800041","small_url":"/spree/products/5/small/ror_baseball_jersey_green.png?1406800041","product_url":"/spree/products/5/product/ror_baseball_jersey_green.png?1406800041","large_url":"/spree/products/5/large/ror_baseball_jersey_green.png?1406800041"},{"id":6,"position":2,"attachment_content_type":"image/png","attachment_file_name":"ror_baseball_jersey_back_green.png","type":"Spree::Image","attachment_updated_at":"2014-07-31T09:47:22.142Z","attachment_width":240,"attachment_height":240,"alt":null,"viewable_type":"Spree::Variant","viewable_id":19,"mini_url":"/spree/products/6/mini/ror_baseball_jersey_back_green.png?1406800042","small_url":"/spree/products/6/small/ror_baseball_jersey_back_green.png?1406800042","product_url":"/spree/products/6/product/ror_baseball_jersey_back_green.png?1406800042","large_url":"/spree/products/6/large/ror_baseball_jersey_back_green.png?1406800042"}]},{"id":20,"name":"Ruby
+        on Rails Baseball Jersey","sku":"ROR-00004","price":"19.99","weight":"0.0","height":null,"width":null,"depth":null,"is_master":false,"cost_price":"17.0","slug":"ruby-on-rails-baseball-jersey","description":"Dolorem
+        minus illum quas eos beatae deleniti rerum velit. Deserunt delectus fuga nihil
+        itaque eum. Culpa soluta reiciendis dolorem eius sit voluptas. Impedit porro
+        aut dolore. Quaerat quia sint odit ducimus sint ut.","track_inventory":true,"display_price":"$19.99","options_text":"Size:
+        M, Color: Red","in_stock":true,"option_values":[{"id":2,"name":"Medium","presentation":"M","option_type_name":"tshirt-size","option_type_id":1,"option_type_presentation":"Size"},{"id":5,"name":"Red","presentation":"Red","option_type_name":"tshirt-color","option_type_id":2,"option_type_presentation":"Color"}],"images":[{"id":7,"position":1,"attachment_content_type":"image/png","attachment_file_name":"ror_baseball_jersey_red.png","type":"Spree::Image","attachment_updated_at":"2014-07-31T09:47:22.603Z","attachment_width":240,"attachment_height":240,"alt":null,"viewable_type":"Spree::Variant","viewable_id":20,"mini_url":"/spree/products/7/mini/ror_baseball_jersey_red.png?1406800042","small_url":"/spree/products/7/small/ror_baseball_jersey_red.png?1406800042","product_url":"/spree/products/7/product/ror_baseball_jersey_red.png?1406800042","large_url":"/spree/products/7/large/ror_baseball_jersey_red.png?1406800042"},{"id":8,"position":2,"attachment_content_type":"image/png","attachment_file_name":"ror_baseball_jersey_back_red.png","type":"Spree::Image","attachment_updated_at":"2014-07-31T09:47:23.040Z","attachment_width":240,"attachment_height":240,"alt":null,"viewable_type":"Spree::Variant","viewable_id":20,"mini_url":"/spree/products/8/mini/ror_baseball_jersey_back_red.png?1406800043","small_url":"/spree/products/8/small/ror_baseball_jersey_back_red.png?1406800043","product_url":"/spree/products/8/product/ror_baseball_jersey_back_red.png?1406800043","large_url":"/spree/products/8/large/ror_baseball_jersey_back_red.png?1406800043"}]},{"id":21,"name":"Ruby
+        on Rails Baseball Jersey","sku":"ROR-00005","price":"19.99","weight":"0.0","height":null,"width":null,"depth":null,"is_master":false,"cost_price":"17.0","slug":"ruby-on-rails-baseball-jersey","description":"Dolorem
+        minus illum quas eos beatae deleniti rerum velit. Deserunt delectus fuga nihil
+        itaque eum. Culpa soluta reiciendis dolorem eius sit voluptas. Impedit porro
+        aut dolore. Quaerat quia sint odit ducimus sint ut.","track_inventory":true,"display_price":"$19.99","options_text":"Size:
+        M, Color: Blue","in_stock":true,"option_values":[{"id":2,"name":"Medium","presentation":"M","option_type_name":"tshirt-size","option_type_id":1,"option_type_presentation":"Size"},{"id":7,"name":"Blue","presentation":"Blue","option_type_name":"tshirt-color","option_type_id":2,"option_type_presentation":"Color"}],"images":[{"id":9,"position":1,"attachment_content_type":"image/png","attachment_file_name":"ror_baseball_jersey_blue.png","type":"Spree::Image","attachment_updated_at":"2014-07-31T09:47:23.483Z","attachment_width":240,"attachment_height":240,"alt":null,"viewable_type":"Spree::Variant","viewable_id":21,"mini_url":"/spree/products/9/mini/ror_baseball_jersey_blue.png?1406800043","small_url":"/spree/products/9/small/ror_baseball_jersey_blue.png?1406800043","product_url":"/spree/products/9/product/ror_baseball_jersey_blue.png?1406800043","large_url":"/spree/products/9/large/ror_baseball_jersey_blue.png?1406800043"},{"id":10,"position":2,"attachment_content_type":"image/png","attachment_file_name":"ror_baseball_jersey_back_blue.png","type":"Spree::Image","attachment_updated_at":"2014-07-31T09:47:23.915Z","attachment_width":240,"attachment_height":240,"alt":null,"viewable_type":"Spree::Variant","viewable_id":21,"mini_url":"/spree/products/10/mini/ror_baseball_jersey_back_blue.png?1406800043","small_url":"/spree/products/10/small/ror_baseball_jersey_back_blue.png?1406800043","product_url":"/spree/products/10/product/ror_baseball_jersey_back_blue.png?1406800043","large_url":"/spree/products/10/large/ror_baseball_jersey_back_blue.png?1406800043"}]},{"id":22,"name":"Ruby
+        on Rails Baseball Jersey","sku":"ROR-00006","price":"19.99","weight":"0.0","height":null,"width":null,"depth":null,"is_master":false,"cost_price":"17.0","slug":"ruby-on-rails-baseball-jersey","description":"Dolorem
+        minus illum quas eos beatae deleniti rerum velit. Deserunt delectus fuga nihil
+        itaque eum. Culpa soluta reiciendis dolorem eius sit voluptas. Impedit porro
+        aut dolore. Quaerat quia sint odit ducimus sint ut.","track_inventory":true,"display_price":"$19.99","options_text":"Size:
+        M, Color: Green","in_stock":true,"option_values":[{"id":2,"name":"Medium","presentation":"M","option_type_name":"tshirt-size","option_type_id":1,"option_type_presentation":"Size"},{"id":6,"name":"Green","presentation":"Green","option_type_name":"tshirt-color","option_type_id":2,"option_type_presentation":"Color"}],"images":[{"id":11,"position":1,"attachment_content_type":"image/png","attachment_file_name":"ror_baseball_jersey_green.png","type":"Spree::Image","attachment_updated_at":"2014-07-31T09:47:24.338Z","attachment_width":240,"attachment_height":240,"alt":null,"viewable_type":"Spree::Variant","viewable_id":22,"mini_url":"/spree/products/11/mini/ror_baseball_jersey_green.png?1406800044","small_url":"/spree/products/11/small/ror_baseball_jersey_green.png?1406800044","product_url":"/spree/products/11/product/ror_baseball_jersey_green.png?1406800044","large_url":"/spree/products/11/large/ror_baseball_jersey_green.png?1406800044"},{"id":12,"position":2,"attachment_content_type":"image/png","attachment_file_name":"ror_baseball_jersey_back_green.png","type":"Spree::Image","attachment_updated_at":"2014-07-31T09:47:24.750Z","attachment_width":240,"attachment_height":240,"alt":null,"viewable_type":"Spree::Variant","viewable_id":22,"mini_url":"/spree/products/12/mini/ror_baseball_jersey_back_green.png?1406800044","small_url":"/spree/products/12/small/ror_baseball_jersey_back_green.png?1406800044","product_url":"/spree/products/12/product/ror_baseball_jersey_back_green.png?1406800044","large_url":"/spree/products/12/large/ror_baseball_jersey_back_green.png?1406800044"}]},{"id":23,"name":"Ruby
+        on Rails Baseball Jersey","sku":"ROR-00007","price":"19.99","weight":"0.0","height":null,"width":null,"depth":null,"is_master":false,"cost_price":"17.0","slug":"ruby-on-rails-baseball-jersey","description":"Dolorem
+        minus illum quas eos beatae deleniti rerum velit. Deserunt delectus fuga nihil
+        itaque eum. Culpa soluta reiciendis dolorem eius sit voluptas. Impedit porro
+        aut dolore. Quaerat quia sint odit ducimus sint ut.","track_inventory":true,"display_price":"$19.99","options_text":"Size:
+        L, Color: Red","in_stock":true,"option_values":[{"id":3,"name":"Large","presentation":"L","option_type_name":"tshirt-size","option_type_id":1,"option_type_presentation":"Size"},{"id":5,"name":"Red","presentation":"Red","option_type_name":"tshirt-color","option_type_id":2,"option_type_presentation":"Color"}],"images":[{"id":13,"position":1,"attachment_content_type":"image/png","attachment_file_name":"ror_baseball_jersey_red.png","type":"Spree::Image","attachment_updated_at":"2014-07-31T09:47:25.179Z","attachment_width":240,"attachment_height":240,"alt":null,"viewable_type":"Spree::Variant","viewable_id":23,"mini_url":"/spree/products/13/mini/ror_baseball_jersey_red.png?1406800045","small_url":"/spree/products/13/small/ror_baseball_jersey_red.png?1406800045","product_url":"/spree/products/13/product/ror_baseball_jersey_red.png?1406800045","large_url":"/spree/products/13/large/ror_baseball_jersey_red.png?1406800045"},{"id":14,"position":2,"attachment_content_type":"image/png","attachment_file_name":"ror_baseball_jersey_back_red.png","type":"Spree::Image","attachment_updated_at":"2014-07-31T09:47:25.577Z","attachment_width":240,"attachment_height":240,"alt":null,"viewable_type":"Spree::Variant","viewable_id":23,"mini_url":"/spree/products/14/mini/ror_baseball_jersey_back_red.png?1406800045","small_url":"/spree/products/14/small/ror_baseball_jersey_back_red.png?1406800045","product_url":"/spree/products/14/product/ror_baseball_jersey_back_red.png?1406800045","large_url":"/spree/products/14/large/ror_baseball_jersey_back_red.png?1406800045"}]},{"id":24,"name":"Ruby
+        on Rails Baseball Jersey","sku":"ROR-00008","price":"19.99","weight":"0.0","height":null,"width":null,"depth":null,"is_master":false,"cost_price":"17.0","slug":"ruby-on-rails-baseball-jersey","description":"Dolorem
+        minus illum quas eos beatae deleniti rerum velit. Deserunt delectus fuga nihil
+        itaque eum. Culpa soluta reiciendis dolorem eius sit voluptas. Impedit porro
+        aut dolore. Quaerat quia sint odit ducimus sint ut.","track_inventory":true,"display_price":"$19.99","options_text":"Size:
+        L, Color: Blue","in_stock":true,"option_values":[{"id":3,"name":"Large","presentation":"L","option_type_name":"tshirt-size","option_type_id":1,"option_type_presentation":"Size"},{"id":7,"name":"Blue","presentation":"Blue","option_type_name":"tshirt-color","option_type_id":2,"option_type_presentation":"Color"}],"images":[{"id":15,"position":1,"attachment_content_type":"image/png","attachment_file_name":"ror_baseball_jersey_blue.png","type":"Spree::Image","attachment_updated_at":"2014-07-31T09:47:25.990Z","attachment_width":240,"attachment_height":240,"alt":null,"viewable_type":"Spree::Variant","viewable_id":24,"mini_url":"/spree/products/15/mini/ror_baseball_jersey_blue.png?1406800045","small_url":"/spree/products/15/small/ror_baseball_jersey_blue.png?1406800045","product_url":"/spree/products/15/product/ror_baseball_jersey_blue.png?1406800045","large_url":"/spree/products/15/large/ror_baseball_jersey_blue.png?1406800045"},{"id":16,"position":2,"attachment_content_type":"image/png","attachment_file_name":"ror_baseball_jersey_back_blue.png","type":"Spree::Image","attachment_updated_at":"2014-07-31T09:47:26.466Z","attachment_width":240,"attachment_height":240,"alt":null,"viewable_type":"Spree::Variant","viewable_id":24,"mini_url":"/spree/products/16/mini/ror_baseball_jersey_back_blue.png?1406800046","small_url":"/spree/products/16/small/ror_baseball_jersey_back_blue.png?1406800046","product_url":"/spree/products/16/product/ror_baseball_jersey_back_blue.png?1406800046","large_url":"/spree/products/16/large/ror_baseball_jersey_back_blue.png?1406800046"}]},{"id":25,"name":"Ruby
+        on Rails Baseball Jersey","sku":"ROR-00009","price":"19.99","weight":"0.0","height":null,"width":null,"depth":null,"is_master":false,"cost_price":"17.0","slug":"ruby-on-rails-baseball-jersey","description":"Dolorem
+        minus illum quas eos beatae deleniti rerum velit. Deserunt delectus fuga nihil
+        itaque eum. Culpa soluta reiciendis dolorem eius sit voluptas. Impedit porro
+        aut dolore. Quaerat quia sint odit ducimus sint ut.","track_inventory":true,"display_price":"$19.99","options_text":"Size:
+        L, Color: Green","in_stock":true,"option_values":[{"id":3,"name":"Large","presentation":"L","option_type_name":"tshirt-size","option_type_id":1,"option_type_presentation":"Size"},{"id":6,"name":"Green","presentation":"Green","option_type_name":"tshirt-color","option_type_id":2,"option_type_presentation":"Color"}],"images":[{"id":17,"position":1,"attachment_content_type":"image/png","attachment_file_name":"ror_baseball_jersey_green.png","type":"Spree::Image","attachment_updated_at":"2014-07-31T09:47:26.887Z","attachment_width":240,"attachment_height":240,"alt":null,"viewable_type":"Spree::Variant","viewable_id":25,"mini_url":"/spree/products/17/mini/ror_baseball_jersey_green.png?1406800046","small_url":"/spree/products/17/small/ror_baseball_jersey_green.png?1406800046","product_url":"/spree/products/17/product/ror_baseball_jersey_green.png?1406800046","large_url":"/spree/products/17/large/ror_baseball_jersey_green.png?1406800046"},{"id":18,"position":2,"attachment_content_type":"image/png","attachment_file_name":"ror_baseball_jersey_back_green.png","type":"Spree::Image","attachment_updated_at":"2014-07-31T09:47:27.351Z","attachment_width":240,"attachment_height":240,"alt":null,"viewable_type":"Spree::Variant","viewable_id":25,"mini_url":"/spree/products/18/mini/ror_baseball_jersey_back_green.png?1406800047","small_url":"/spree/products/18/small/ror_baseball_jersey_back_green.png?1406800047","product_url":"/spree/products/18/product/ror_baseball_jersey_back_green.png?1406800047","large_url":"/spree/products/18/large/ror_baseball_jersey_back_green.png?1406800047"}]},{"id":26,"name":"Ruby
+        on Rails Baseball Jersey","sku":"ROR-00012","price":"19.99","weight":"0.0","height":null,"width":null,"depth":null,"is_master":false,"cost_price":"17.0","slug":"ruby-on-rails-baseball-jersey","description":"Dolorem
+        minus illum quas eos beatae deleniti rerum velit. Deserunt delectus fuga nihil
+        itaque eum. Culpa soluta reiciendis dolorem eius sit voluptas. Impedit porro
+        aut dolore. Quaerat quia sint odit ducimus sint ut.","track_inventory":true,"display_price":"$19.99","options_text":"Size:
+        XL, Color: Green","in_stock":true,"option_values":[{"id":4,"name":"Extra Large","presentation":"XL","option_type_name":"tshirt-size","option_type_id":1,"option_type_presentation":"Size"},{"id":6,"name":"Green","presentation":"Green","option_type_name":"tshirt-color","option_type_id":2,"option_type_presentation":"Color"}],"images":[{"id":19,"position":1,"attachment_content_type":"image/png","attachment_file_name":"ror_baseball_jersey_green.png","type":"Spree::Image","attachment_updated_at":"2014-07-31T09:47:27.782Z","attachment_width":240,"attachment_height":240,"alt":null,"viewable_type":"Spree::Variant","viewable_id":26,"mini_url":"/spree/products/19/mini/ror_baseball_jersey_green.png?1406800047","small_url":"/spree/products/19/small/ror_baseball_jersey_green.png?1406800047","product_url":"/spree/products/19/product/ror_baseball_jersey_green.png?1406800047","large_url":"/spree/products/19/large/ror_baseball_jersey_green.png?1406800047"},{"id":20,"position":2,"attachment_content_type":"image/png","attachment_file_name":"ror_baseball_jersey_back_green.png","type":"Spree::Image","attachment_updated_at":"2014-07-31T09:47:28.264Z","attachment_width":240,"attachment_height":240,"alt":null,"viewable_type":"Spree::Variant","viewable_id":26,"mini_url":"/spree/products/20/mini/ror_baseball_jersey_back_green.png?1406800048","small_url":"/spree/products/20/small/ror_baseball_jersey_back_green.png?1406800048","product_url":"/spree/products/20/product/ror_baseball_jersey_back_green.png?1406800048","large_url":"/spree/products/20/large/ror_baseball_jersey_back_green.png?1406800048"}]}],"option_types":[{"id":1,"name":"tshirt-size","presentation":"Size","position":1},{"id":2,"name":"tshirt-color","presentation":"Color","position":2}],"product_properties":[{"id":1,"product_id":3,"property_id":1,"value":"Wilson","property_name":"Manufacturer"},{"id":2,"product_id":3,"property_id":2,"value":"Wannabe
+        Sports","property_name":"Brand"},{"id":3,"product_id":3,"property_id":3,"value":"JK1002","property_name":"Model"},{"id":4,"product_id":3,"property_id":4,"value":"Baseball
+        Jersey","property_name":"Shirt Type"},{"id":5,"product_id":3,"property_id":5,"value":"Long","property_name":"Sleeve
+        Type"},{"id":6,"product_id":3,"property_id":6,"value":"100% cotton","property_name":"Made
+        from"},{"id":7,"product_id":3,"property_id":7,"value":"Loose","property_name":"Fit"},{"id":8,"product_id":3,"property_id":8,"value":"Men''s","property_name":"Gender"}]},{"id":4,"name":"Ruby
+        on Rails Jr. Spaghetti","description":"Dolorem minus illum quas eos beatae
+        deleniti rerum velit. Deserunt delectus fuga nihil itaque eum. Culpa soluta
+        reiciendis dolorem eius sit voluptas. Impedit porro aut dolore. Quaerat quia
+        sint odit ducimus sint ut.","price":"19.99","display_price":"$19.99","available_on":"2014-07-31T09:47:16.508Z","slug":"ruby-on-rails-jr-spaghetti","meta_description":null,"meta_keywords":null,"shipping_category_id":1,"taxon_ids":[6,11],"total_on_hand":10,"has_variants":false,"master":{"id":4,"name":"Ruby
+        on Rails Jr. Spaghetti","sku":"ROR-00013","price":"19.99","weight":"0.0","height":null,"width":null,"depth":null,"is_master":true,"cost_price":"17.0","slug":"ruby-on-rails-jr-spaghetti","description":"Dolorem
+        minus illum quas eos beatae deleniti rerum velit. Deserunt delectus fuga nihil
+        itaque eum. Culpa soluta reiciendis dolorem eius sit voluptas. Impedit porro
+        aut dolore. Quaerat quia sint odit ducimus sint ut.","track_inventory":true,"display_price":"$19.99","options_text":"","in_stock":true,"option_values":[],"images":[{"id":26,"position":1,"attachment_content_type":"image/jpeg","attachment_file_name":"ror_jr_spaghetti.jpeg","type":"Spree::Image","attachment_updated_at":"2014-07-31T09:47:30.870Z","attachment_width":360,"attachment_height":360,"alt":null,"viewable_type":"Spree::Variant","viewable_id":4,"mini_url":"/spree/products/26/mini/ror_jr_spaghetti.jpeg?1406800050","small_url":"/spree/products/26/small/ror_jr_spaghetti.jpeg?1406800050","product_url":"/spree/products/26/product/ror_jr_spaghetti.jpeg?1406800050","large_url":"/spree/products/26/large/ror_jr_spaghetti.jpeg?1406800050"}]},"variants":[],"option_types":[],"product_properties":[{"id":9,"product_id":4,"property_id":1,"value":"Jerseys","property_name":"Manufacturer"},{"id":10,"product_id":4,"property_id":2,"value":"Resiliance","property_name":"Brand"},{"id":11,"product_id":4,"property_id":3,"value":"TL174","property_name":"Model"},{"id":12,"product_id":4,"property_id":4,"value":"Jr.
+        Spaghetti T","property_name":"Shirt Type"},{"id":13,"product_id":4,"property_id":5,"value":"None","property_name":"Sleeve
+        Type"},{"id":14,"product_id":4,"property_id":6,"value":"90% Cotton, 10% Nylon","property_name":"Made
+        from"},{"id":15,"product_id":4,"property_id":7,"value":"Form","property_name":"Fit"},{"id":16,"product_id":4,"property_id":8,"value":"Women''s","property_name":"Gender"}]},{"id":5,"name":"Ruby
+        on Rails Ringer T-Shirt","description":"Dolorem minus illum quas eos beatae
+        deleniti rerum velit. Deserunt delectus fuga nihil itaque eum. Culpa soluta
+        reiciendis dolorem eius sit voluptas. Impedit porro aut dolore. Quaerat quia
+        sint odit ducimus sint ut.","price":"19.99","display_price":"$19.99","available_on":"2014-07-31T09:47:16.508Z","slug":"ruby-on-rails-ringer-t-shirt","meta_description":null,"meta_keywords":null,"shipping_category_id":1,"taxon_ids":[7,11],"total_on_hand":10,"has_variants":false,"master":{"id":5,"name":"Ruby
+        on Rails Ringer T-Shirt","sku":"ROR-00015","price":"19.99","weight":"0.0","height":null,"width":null,"depth":null,"is_master":true,"cost_price":"17.0","slug":"ruby-on-rails-ringer-t-shirt","description":"Dolorem
+        minus illum quas eos beatae deleniti rerum velit. Deserunt delectus fuga nihil
+        itaque eum. Culpa soluta reiciendis dolorem eius sit voluptas. Impedit porro
+        aut dolore. Quaerat quia sint odit ducimus sint ut.","track_inventory":true,"display_price":"$19.99","options_text":"","in_stock":true,"option_values":[],"images":[{"id":29,"position":1,"attachment_content_type":"image/jpeg","attachment_file_name":"ror_ringer.jpeg","type":"Spree::Image","attachment_updated_at":"2014-07-31T09:47:32.201Z","attachment_width":360,"attachment_height":360,"alt":null,"viewable_type":"Spree::Variant","viewable_id":5,"mini_url":"/spree/products/29/mini/ror_ringer.jpeg?1406800052","small_url":"/spree/products/29/small/ror_ringer.jpeg?1406800052","product_url":"/spree/products/29/product/ror_ringer.jpeg?1406800052","large_url":"/spree/products/29/large/ror_ringer.jpeg?1406800052"},{"id":30,"position":2,"attachment_content_type":"image/jpeg","attachment_file_name":"ror_ringer_back.jpeg","type":"Spree::Image","attachment_updated_at":"2014-07-31T09:47:32.648Z","attachment_width":360,"attachment_height":360,"alt":null,"viewable_type":"Spree::Variant","viewable_id":5,"mini_url":"/spree/products/30/mini/ror_ringer_back.jpeg?1406800052","small_url":"/spree/products/30/small/ror_ringer_back.jpeg?1406800052","product_url":"/spree/products/30/product/ror_ringer_back.jpeg?1406800052","large_url":"/spree/products/30/large/ror_ringer_back.jpeg?1406800052"}]},"variants":[],"option_types":[],"product_properties":[{"id":17,"product_id":5,"property_id":1,"value":"Jerseys","property_name":"Manufacturer"},{"id":18,"product_id":5,"property_id":2,"value":"Conditioned","property_name":"Brand"},{"id":19,"product_id":5,"property_id":3,"value":"TL9002","property_name":"Model"},{"id":20,"product_id":5,"property_id":4,"value":"Ringer
+        T","property_name":"Shirt Type"},{"id":21,"product_id":5,"property_id":5,"value":"Short","property_name":"Sleeve
+        Type"},{"id":22,"product_id":5,"property_id":6,"value":"100% Vellum","property_name":"Made
+        from"},{"id":23,"product_id":5,"property_id":7,"value":"Loose","property_name":"Fit"},{"id":24,"product_id":5,"property_id":8,"value":"Men''s","property_name":"Gender"}]},{"id":6,"name":"Ruby
+        Baseball Jersey","description":"Dolorem minus illum quas eos beatae deleniti
+        rerum velit. Deserunt delectus fuga nihil itaque eum. Culpa soluta reiciendis
+        dolorem eius sit voluptas. Impedit porro aut dolore. Quaerat quia sint odit
+        ducimus sint ut.","price":"19.99","display_price":"$19.99","available_on":"2014-07-31T09:47:16.508Z","slug":"ruby-baseball-jersey","meta_description":null,"meta_keywords":null,"shipping_category_id":1,"taxon_ids":[7,8],"total_on_hand":10,"has_variants":false,"master":{"id":6,"name":"Ruby
+        Baseball Jersey","sku":"RUB-00001","price":"19.99","weight":"0.0","height":null,"width":null,"depth":null,"is_master":true,"cost_price":"17.0","slug":"ruby-baseball-jersey","description":"Dolorem
+        minus illum quas eos beatae deleniti rerum velit. Deserunt delectus fuga nihil
+        itaque eum. Culpa soluta reiciendis dolorem eius sit voluptas. Impedit porro
+        aut dolore. Quaerat quia sint odit ducimus sint ut.","track_inventory":true,"display_price":"$19.99","options_text":"","in_stock":true,"option_values":[],"images":[{"id":34,"position":1,"attachment_content_type":"image/png","attachment_file_name":"ruby_baseball.png","type":"Spree::Image","attachment_updated_at":"2014-07-31T09:47:34.727Z","attachment_width":495,"attachment_height":477,"alt":null,"viewable_type":"Spree::Variant","viewable_id":6,"mini_url":"/spree/products/34/mini/ruby_baseball.png?1406800054","small_url":"/spree/products/34/small/ruby_baseball.png?1406800054","product_url":"/spree/products/34/product/ruby_baseball.png?1406800054","large_url":"/spree/products/34/large/ruby_baseball.png?1406800054"}]},"variants":[],"option_types":[],"product_properties":[]},{"id":7,"name":"Apache
+        Baseball Jersey","description":"Dolorem minus illum quas eos beatae deleniti
+        rerum velit. Deserunt delectus fuga nihil itaque eum. Culpa soluta reiciendis
+        dolorem eius sit voluptas. Impedit porro aut dolore. Quaerat quia sint odit
+        ducimus sint ut.","price":"19.99","display_price":"$19.99","available_on":"2014-07-31T09:47:16.508Z","slug":"apache-baseball-jersey","meta_description":null,"meta_keywords":null,"shipping_category_id":1,"taxon_ids":[7,9],"total_on_hand":10,"has_variants":false,"master":{"id":7,"name":"Apache
+        Baseball Jersey","sku":"APC-00001","price":"19.99","weight":"0.0","height":null,"width":null,"depth":null,"is_master":true,"cost_price":"17.0","slug":"apache-baseball-jersey","description":"Dolorem
+        minus illum quas eos beatae deleniti rerum velit. Deserunt delectus fuga nihil
+        itaque eum. Culpa soluta reiciendis dolorem eius sit voluptas. Impedit porro
+        aut dolore. Quaerat quia sint odit ducimus sint ut.","track_inventory":true,"display_price":"$19.99","options_text":"","in_stock":true,"option_values":[],"images":[{"id":33,"position":1,"attachment_content_type":"image/png","attachment_file_name":"apache_baseball.png","type":"Spree::Image","attachment_updated_at":"2014-07-31T09:47:33.921Z","attachment_width":504,"attachment_height":484,"alt":null,"viewable_type":"Spree::Variant","viewable_id":7,"mini_url":"/spree/products/33/mini/apache_baseball.png?1406800053","small_url":"/spree/products/33/small/apache_baseball.png?1406800053","product_url":"/spree/products/33/product/apache_baseball.png?1406800053","large_url":"/spree/products/33/large/apache_baseball.png?1406800053"}]},"variants":[],"option_types":[],"product_properties":[]},{"id":8,"name":"Spree
+        Baseball Jersey","description":"Dolorem minus illum quas eos beatae deleniti
+        rerum velit. Deserunt delectus fuga nihil itaque eum. Culpa soluta reiciendis
+        dolorem eius sit voluptas. Impedit porro aut dolore. Quaerat quia sint odit
+        ducimus sint ut.","price":"19.99","display_price":"$19.99","available_on":"2014-07-31T09:47:16.508Z","slug":"spree-baseball-jersey","meta_description":null,"meta_keywords":null,"shipping_category_id":1,"taxon_ids":[7,10],"total_on_hand":10,"has_variants":false,"master":{"id":8,"name":"Spree
+        Baseball Jersey","sku":"SPR-00001","price":"19.99","weight":"0.0","height":null,"width":null,"depth":null,"is_master":true,"cost_price":"17.0","slug":"spree-baseball-jersey","description":"Dolorem
+        minus illum quas eos beatae deleniti rerum velit. Deserunt delectus fuga nihil
+        itaque eum. Culpa soluta reiciendis dolorem eius sit voluptas. Impedit porro
+        aut dolore. Quaerat quia sint odit ducimus sint ut.","track_inventory":true,"display_price":"$19.99","options_text":"","in_stock":true,"option_values":[],"images":[{"id":41,"position":1,"attachment_content_type":"image/jpeg","attachment_file_name":"spree_jersey.jpeg","type":"Spree::Image","attachment_updated_at":"2014-07-31T09:47:38.317Z","attachment_width":480,"attachment_height":480,"alt":null,"viewable_type":"Spree::Variant","viewable_id":8,"mini_url":"/spree/products/41/mini/spree_jersey.jpeg?1406800058","small_url":"/spree/products/41/small/spree_jersey.jpeg?1406800058","product_url":"/spree/products/41/product/spree_jersey.jpeg?1406800058","large_url":"/spree/products/41/large/spree_jersey.jpeg?1406800058"},{"id":42,"position":2,"attachment_content_type":"image/jpeg","attachment_file_name":"spree_jersey_back.jpeg","type":"Spree::Image","attachment_updated_at":"2014-07-31T09:47:38.757Z","attachment_width":480,"attachment_height":480,"alt":null,"viewable_type":"Spree::Variant","viewable_id":8,"mini_url":"/spree/products/42/mini/spree_jersey_back.jpeg?1406800058","small_url":"/spree/products/42/small/spree_jersey_back.jpeg?1406800058","product_url":"/spree/products/42/product/spree_jersey_back.jpeg?1406800058","large_url":"/spree/products/42/large/spree_jersey_back.jpeg?1406800058"}]},"variants":[],"option_types":[{"id":1,"name":"tshirt-size","presentation":"Size","position":1},{"id":2,"name":"tshirt-color","presentation":"Color","position":2}],"product_properties":[{"id":43,"product_id":8,"property_id":1,"value":"Wilson","property_name":"Manufacturer"},{"id":44,"product_id":8,"property_id":2,"value":"Wannabe
+        Sports","property_name":"Brand"},{"id":45,"product_id":8,"property_id":3,"value":"JK1002","property_name":"Model"},{"id":46,"product_id":8,"property_id":4,"value":"Baseball
+        Jersey","property_name":"Shirt Type"},{"id":47,"product_id":8,"property_id":5,"value":"Long","property_name":"Sleeve
+        Type"},{"id":48,"product_id":8,"property_id":6,"value":"100% cotton","property_name":"Made
+        from"},{"id":49,"product_id":8,"property_id":7,"value":"Loose","property_name":"Fit"},{"id":50,"product_id":8,"property_id":8,"value":"Men''s","property_name":"Gender"}]},{"id":9,"name":"Spree
+        Jr. Spaghetti","description":"Dolorem minus illum quas eos beatae deleniti
+        rerum velit. Deserunt delectus fuga nihil itaque eum. Culpa soluta reiciendis
+        dolorem eius sit voluptas. Impedit porro aut dolore. Quaerat quia sint odit
+        ducimus sint ut.","price":"19.99","display_price":"$19.99","available_on":"2014-07-31T09:47:16.508Z","slug":"spree-jr-spaghetti","meta_description":null,"meta_keywords":null,"shipping_category_id":1,"taxon_ids":[6,10],"total_on_hand":10,"has_variants":false,"master":{"id":9,"name":"Spree
+        Jr. Spaghetti","sku":"SPR-00013","price":"19.99","weight":"0.0","height":null,"width":null,"depth":null,"is_master":true,"cost_price":"17.0","slug":"spree-jr-spaghetti","description":"Dolorem
+        minus illum quas eos beatae deleniti rerum velit. Deserunt delectus fuga nihil
+        itaque eum. Culpa soluta reiciendis dolorem eius sit voluptas. Impedit porro
+        aut dolore. Quaerat quia sint odit ducimus sint ut.","track_inventory":true,"display_price":"$19.99","options_text":"","in_stock":true,"option_values":[],"images":[{"id":40,"position":1,"attachment_content_type":"image/jpeg","attachment_file_name":"spree_spaghetti.jpeg","type":"Spree::Image","attachment_updated_at":"2014-07-31T09:47:37.859Z","attachment_width":480,"attachment_height":480,"alt":null,"viewable_type":"Spree::Variant","viewable_id":9,"mini_url":"/spree/products/40/mini/spree_spaghetti.jpeg?1406800057","small_url":"/spree/products/40/small/spree_spaghetti.jpeg?1406800057","product_url":"/spree/products/40/product/spree_spaghetti.jpeg?1406800057","large_url":"/spree/products/40/large/spree_spaghetti.jpeg?1406800057"}]},"variants":[],"option_types":[],"product_properties":[{"id":51,"product_id":9,"property_id":1,"value":"Jerseys","property_name":"Manufacturer"},{"id":52,"product_id":9,"property_id":2,"value":"Resiliance","property_name":"Brand"},{"id":53,"product_id":9,"property_id":3,"value":"TL174","property_name":"Model"},{"id":54,"product_id":9,"property_id":4,"value":"Jr.
+        Spaghetti T","property_name":"Shirt Type"},{"id":55,"product_id":9,"property_id":5,"value":"None","property_name":"Sleeve
+        Type"},{"id":56,"product_id":9,"property_id":6,"value":"90% Cotton, 10% Nylon","property_name":"Made
+        from"},{"id":57,"product_id":9,"property_id":7,"value":"Form","property_name":"Fit"},{"id":58,"product_id":9,"property_id":8,"value":"Women''s","property_name":"Gender"}]},{"id":10,"name":"Spree
+        Ringer T-Shirt","description":"Dolorem minus illum quas eos beatae deleniti
+        rerum velit. Deserunt delectus fuga nihil itaque eum. Culpa soluta reiciendis
+        dolorem eius sit voluptas. Impedit porro aut dolore. Quaerat quia sint odit
+        ducimus sint ut.","price":"19.99","display_price":"$19.99","available_on":"2014-07-31T09:47:16.508Z","slug":"spree-ringer-t-shirt","meta_description":null,"meta_keywords":null,"shipping_category_id":1,"taxon_ids":[7,10],"total_on_hand":10,"has_variants":false,"master":{"id":10,"name":"Spree
+        Ringer T-Shirt","sku":"SPR-00015","price":"19.99","weight":"0.0","height":null,"width":null,"depth":null,"is_master":true,"cost_price":"17.0","slug":"spree-ringer-t-shirt","description":"Dolorem
+        minus illum quas eos beatae deleniti rerum velit. Deserunt delectus fuga nihil
+        itaque eum. Culpa soluta reiciendis dolorem eius sit voluptas. Impedit porro
+        aut dolore. Quaerat quia sint odit ducimus sint ut.","track_inventory":true,"display_price":"$19.99","options_text":"","in_stock":true,"option_values":[],"images":[{"id":38,"position":1,"attachment_content_type":"image/jpeg","attachment_file_name":"spree_ringer_t.jpeg","type":"Spree::Image","attachment_updated_at":"2014-07-31T09:47:36.923Z","attachment_width":480,"attachment_height":480,"alt":null,"viewable_type":"Spree::Variant","viewable_id":10,"mini_url":"/spree/products/38/mini/spree_ringer_t.jpeg?1406800056","small_url":"/spree/products/38/small/spree_ringer_t.jpeg?1406800056","product_url":"/spree/products/38/product/spree_ringer_t.jpeg?1406800056","large_url":"/spree/products/38/large/spree_ringer_t.jpeg?1406800056"},{"id":39,"position":2,"attachment_content_type":"image/jpeg","attachment_file_name":"spree_ringer_t_back.jpeg","type":"Spree::Image","attachment_updated_at":"2014-07-31T09:47:37.404Z","attachment_width":480,"attachment_height":480,"alt":null,"viewable_type":"Spree::Variant","viewable_id":10,"mini_url":"/spree/products/39/mini/spree_ringer_t_back.jpeg?1406800057","small_url":"/spree/products/39/small/spree_ringer_t_back.jpeg?1406800057","product_url":"/spree/products/39/product/spree_ringer_t_back.jpeg?1406800057","large_url":"/spree/products/39/large/spree_ringer_t_back.jpeg?1406800057"}]},"variants":[],"option_types":[],"product_properties":[{"id":59,"product_id":10,"property_id":1,"value":"Jerseys","property_name":"Manufacturer"},{"id":60,"product_id":10,"property_id":2,"value":"Conditioned","property_name":"Brand"},{"id":61,"product_id":10,"property_id":3,"value":"TL9002","property_name":"Model"},{"id":62,"product_id":10,"property_id":4,"value":"Ringer
+        T","property_name":"Shirt Type"},{"id":63,"product_id":10,"property_id":5,"value":"Short","property_name":"Sleeve
+        Type"},{"id":64,"product_id":10,"property_id":6,"value":"100% Vellum","property_name":"Made
+        from"},{"id":65,"product_id":10,"property_id":7,"value":"Loose","property_name":"Fit"},{"id":66,"product_id":10,"property_id":8,"value":"Men''s","property_name":"Gender"}]},{"id":11,"name":"Spree
+        Tote","description":"Dolorem minus illum quas eos beatae deleniti rerum velit.
+        Deserunt delectus fuga nihil itaque eum. Culpa soluta reiciendis dolorem eius
+        sit voluptas. Impedit porro aut dolore. Quaerat quia sint odit ducimus sint
+        ut.","price":"15.99","display_price":"$15.99","available_on":"2014-07-31T09:47:16.508Z","slug":"spree-tote","meta_description":null,"meta_keywords":null,"shipping_category_id":1,"taxon_ids":[3,10],"total_on_hand":10,"has_variants":false,"master":{"id":11,"name":"Spree
+        Tote","sku":"SPR-00011","price":"15.99","weight":"0.0","height":null,"width":null,"depth":null,"is_master":true,"cost_price":"13.0","slug":"spree-tote","description":"Dolorem
+        minus illum quas eos beatae deleniti rerum velit. Deserunt delectus fuga nihil
+        itaque eum. Culpa soluta reiciendis dolorem eius sit voluptas. Impedit porro
+        aut dolore. Quaerat quia sint odit ducimus sint ut.","track_inventory":true,"display_price":"$15.99","options_text":"","in_stock":true,"option_values":[],"images":[{"id":36,"position":1,"attachment_content_type":"image/jpeg","attachment_file_name":"spree_tote_front.jpeg","type":"Spree::Image","attachment_updated_at":"2014-07-31T09:47:35.905Z","attachment_width":480,"attachment_height":480,"alt":null,"viewable_type":"Spree::Variant","viewable_id":11,"mini_url":"/spree/products/36/mini/spree_tote_front.jpeg?1406800055","small_url":"/spree/products/36/small/spree_tote_front.jpeg?1406800055","product_url":"/spree/products/36/product/spree_tote_front.jpeg?1406800055","large_url":"/spree/products/36/large/spree_tote_front.jpeg?1406800055"},{"id":37,"position":2,"attachment_content_type":"image/jpeg","attachment_file_name":"spree_tote_back.jpeg","type":"Spree::Image","attachment_updated_at":"2014-07-31T09:47:36.418Z","attachment_width":480,"attachment_height":480,"alt":null,"viewable_type":"Spree::Variant","viewable_id":11,"mini_url":"/spree/products/37/mini/spree_tote_back.jpeg?1406800056","small_url":"/spree/products/37/small/spree_tote_back.jpeg?1406800056","product_url":"/spree/products/37/product/spree_tote_back.jpeg?1406800056","large_url":"/spree/products/37/large/spree_tote_back.jpeg?1406800056"}]},"variants":[],"option_types":[],"product_properties":[{"id":39,"product_id":11,"property_id":9,"value":"Tote","property_name":"Type"},{"id":40,"product_id":11,"property_id":10,"value":"15\"
+        x 18\" x 6\"","property_name":"Size"}]},{"id":12,"name":"Spree Bag","description":"Dolorem
+        minus illum quas eos beatae deleniti rerum velit. Deserunt delectus fuga nihil
+        itaque eum. Culpa soluta reiciendis dolorem eius sit voluptas. Impedit porro
+        aut dolore. Quaerat quia sint odit ducimus sint ut.","price":"22.99","display_price":"$22.99","available_on":"2014-07-31T09:47:16.508Z","slug":"spree-bag","meta_description":null,"meta_keywords":null,"shipping_category_id":1,"taxon_ids":[3,10],"total_on_hand":10,"has_variants":false,"master":{"id":12,"name":"Spree
+        Bag","sku":"SPR-00012","price":"22.99","weight":"0.0","height":null,"width":null,"depth":null,"is_master":true,"cost_price":"21.0","slug":"spree-bag","description":"Dolorem
+        minus illum quas eos beatae deleniti rerum velit. Deserunt delectus fuga nihil
+        itaque eum. Culpa soluta reiciendis dolorem eius sit voluptas. Impedit porro
+        aut dolore. Quaerat quia sint odit ducimus sint ut.","track_inventory":true,"display_price":"$22.99","options_text":"","in_stock":true,"option_values":[],"images":[{"id":35,"position":1,"attachment_content_type":"image/jpeg","attachment_file_name":"spree_bag.jpeg","type":"Spree::Image","attachment_updated_at":"2014-07-31T09:47:35.328Z","attachment_width":480,"attachment_height":480,"alt":null,"viewable_type":"Spree::Variant","viewable_id":12,"mini_url":"/spree/products/35/mini/spree_bag.jpeg?1406800055","small_url":"/spree/products/35/small/spree_bag.jpeg?1406800055","product_url":"/spree/products/35/product/spree_bag.jpeg?1406800055","large_url":"/spree/products/35/large/spree_bag.jpeg?1406800055"}]},"variants":[],"option_types":[],"product_properties":[{"id":41,"product_id":12,"property_id":9,"value":"Messenger","property_name":"Type"},{"id":42,"product_id":12,"property_id":10,"value":"14
+        1/2\" x 12\" x 5\"","property_name":"Size"}]},{"id":13,"name":"Ruby on Rails
+        Mug","description":"Dolorem minus illum quas eos beatae deleniti rerum velit.
+        Deserunt delectus fuga nihil itaque eum. Culpa soluta reiciendis dolorem eius
+        sit voluptas. Impedit porro aut dolore. Quaerat quia sint odit ducimus sint
+        ut.","price":"13.99","display_price":"$13.99","available_on":"2014-07-31T09:47:16.508Z","slug":"ruby-on-rails-mug","meta_description":null,"meta_keywords":null,"shipping_category_id":1,"taxon_ids":[4,11],"total_on_hand":10,"has_variants":false,"master":{"id":13,"name":"Ruby
+        on Rails Mug","sku":"ROR-00014","price":"13.99","weight":"0.0","height":null,"width":null,"depth":null,"is_master":true,"cost_price":"11.0","slug":"ruby-on-rails-mug","description":"Dolorem
+        minus illum quas eos beatae deleniti rerum velit. Deserunt delectus fuga nihil
+        itaque eum. Culpa soluta reiciendis dolorem eius sit voluptas. Impedit porro
+        aut dolore. Quaerat quia sint odit ducimus sint ut.","track_inventory":true,"display_price":"$13.99","options_text":"","in_stock":true,"option_values":[],"images":[{"id":27,"position":1,"attachment_content_type":"image/jpeg","attachment_file_name":"ror_mug.jpeg","type":"Spree::Image","attachment_updated_at":"2014-07-31T09:47:31.310Z","attachment_width":360,"attachment_height":360,"alt":null,"viewable_type":"Spree::Variant","viewable_id":13,"mini_url":"/spree/products/27/mini/ror_mug.jpeg?1406800051","small_url":"/spree/products/27/small/ror_mug.jpeg?1406800051","product_url":"/spree/products/27/product/ror_mug.jpeg?1406800051","large_url":"/spree/products/27/large/ror_mug.jpeg?1406800051"},{"id":28,"position":2,"attachment_content_type":"image/jpeg","attachment_file_name":"ror_mug_back.jpeg","type":"Spree::Image","attachment_updated_at":"2014-07-31T09:47:31.754Z","attachment_width":360,"attachment_height":360,"alt":null,"viewable_type":"Spree::Variant","viewable_id":13,"mini_url":"/spree/products/28/mini/ror_mug_back.jpeg?1406800051","small_url":"/spree/products/28/small/ror_mug_back.jpeg?1406800051","product_url":"/spree/products/28/product/ror_mug_back.jpeg?1406800051","large_url":"/spree/products/28/large/ror_mug_back.jpeg?1406800051"}]},"variants":[],"option_types":[],"product_properties":[{"id":31,"product_id":13,"property_id":9,"value":"Mug","property_name":"Type"},{"id":32,"product_id":13,"property_id":10,"value":"4.5\"
+        tall, 3.25\" dia.","property_name":"Size"}]},{"id":14,"name":"Ruby on Rails
+        Stein","description":"Dolorem minus illum quas eos beatae deleniti rerum velit.
+        Deserunt delectus fuga nihil itaque eum. Culpa soluta reiciendis dolorem eius
+        sit voluptas. Impedit porro aut dolore. Quaerat quia sint odit ducimus sint
+        ut.","price":"16.99","display_price":"$16.99","available_on":"2014-07-31T09:47:16.508Z","slug":"ruby-on-rails-stein","meta_description":null,"meta_keywords":null,"shipping_category_id":1,"taxon_ids":[4,11],"total_on_hand":10,"has_variants":false,"master":{"id":14,"name":"Ruby
+        on Rails Stein","sku":"ROR-00016","price":"16.99","weight":"0.0","height":null,"width":null,"depth":null,"is_master":true,"cost_price":"15.0","slug":"ruby-on-rails-stein","description":"Dolorem
+        minus illum quas eos beatae deleniti rerum velit. Deserunt delectus fuga nihil
+        itaque eum. Culpa soluta reiciendis dolorem eius sit voluptas. Impedit porro
+        aut dolore. Quaerat quia sint odit ducimus sint ut.","track_inventory":true,"display_price":"$16.99","options_text":"","in_stock":true,"option_values":[],"images":[{"id":31,"position":1,"attachment_content_type":"image/jpeg","attachment_file_name":"ror_stein.jpeg","type":"Spree::Image","attachment_updated_at":"2014-07-31T09:47:33.053Z","attachment_width":360,"attachment_height":360,"alt":null,"viewable_type":"Spree::Variant","viewable_id":14,"mini_url":"/spree/products/31/mini/ror_stein.jpeg?1406800053","small_url":"/spree/products/31/small/ror_stein.jpeg?1406800053","product_url":"/spree/products/31/product/ror_stein.jpeg?1406800053","large_url":"/spree/products/31/large/ror_stein.jpeg?1406800053"},{"id":32,"position":2,"attachment_content_type":"image/jpeg","attachment_file_name":"ror_stein_back.jpeg","type":"Spree::Image","attachment_updated_at":"2014-07-31T09:47:33.475Z","attachment_width":360,"attachment_height":360,"alt":null,"viewable_type":"Spree::Variant","viewable_id":14,"mini_url":"/spree/products/32/mini/ror_stein_back.jpeg?1406800053","small_url":"/spree/products/32/small/ror_stein_back.jpeg?1406800053","product_url":"/spree/products/32/product/ror_stein_back.jpeg?1406800053","large_url":"/spree/products/32/large/ror_stein_back.jpeg?1406800053"}]},"variants":[],"option_types":[],"product_properties":[{"id":33,"product_id":14,"property_id":9,"value":"Stein","property_name":"Type"},{"id":34,"product_id":14,"property_id":10,"value":"6.75\"
+        tall, 3.75\" dia. base, 3\" dia. rim","property_name":"Size"}]},{"id":15,"name":"Spree
+        Stein","description":"Dolorem minus illum quas eos beatae deleniti rerum velit.
+        Deserunt delectus fuga nihil itaque eum. Culpa soluta reiciendis dolorem eius
+        sit voluptas. Impedit porro aut dolore. Quaerat quia sint odit ducimus sint
+        ut.","price":"16.99","display_price":"$16.99","available_on":"2014-07-31T09:47:16.508Z","slug":"spree-stein","meta_description":null,"meta_keywords":null,"shipping_category_id":1,"taxon_ids":[4,10],"total_on_hand":10,"has_variants":false,"master":{"id":15,"name":"Spree
+        Stein","sku":"SPR-00016","price":"16.99","weight":"0.0","height":null,"width":null,"depth":null,"is_master":true,"cost_price":"15.0","slug":"spree-stein","description":"Dolorem
+        minus illum quas eos beatae deleniti rerum velit. Deserunt delectus fuga nihil
+        itaque eum. Culpa soluta reiciendis dolorem eius sit voluptas. Impedit porro
+        aut dolore. Quaerat quia sint odit ducimus sint ut.","track_inventory":true,"display_price":"$16.99","options_text":"","in_stock":true,"option_values":[],"images":[{"id":43,"position":1,"attachment_content_type":"image/jpeg","attachment_file_name":"spree_stein.jpeg","type":"Spree::Image","attachment_updated_at":"2014-07-31T09:47:39.245Z","attachment_width":480,"attachment_height":480,"alt":null,"viewable_type":"Spree::Variant","viewable_id":15,"mini_url":"/spree/products/43/mini/spree_stein.jpeg?1406800059","small_url":"/spree/products/43/small/spree_stein.jpeg?1406800059","product_url":"/spree/products/43/product/spree_stein.jpeg?1406800059","large_url":"/spree/products/43/large/spree_stein.jpeg?1406800059"},{"id":44,"position":2,"attachment_content_type":"image/jpeg","attachment_file_name":"spree_stein_back.jpeg","type":"Spree::Image","attachment_updated_at":"2014-07-31T09:47:39.688Z","attachment_width":480,"attachment_height":480,"alt":null,"viewable_type":"Spree::Variant","viewable_id":15,"mini_url":"/spree/products/44/mini/spree_stein_back.jpeg?1406800059","small_url":"/spree/products/44/small/spree_stein_back.jpeg?1406800059","product_url":"/spree/products/44/product/spree_stein_back.jpeg?1406800059","large_url":"/spree/products/44/large/spree_stein_back.jpeg?1406800059"}]},"variants":[],"option_types":[],"product_properties":[{"id":35,"product_id":15,"property_id":9,"value":"Stein","property_name":"Type"},{"id":36,"product_id":15,"property_id":10,"value":"6.75\"
+        tall, 3.75\" dia. base, 3\" dia. rim","property_name":"Size"}]},{"id":16,"name":"Spree
+        Mug","description":"Dolorem minus illum quas eos beatae deleniti rerum velit.
+        Deserunt delectus fuga nihil itaque eum. Culpa soluta reiciendis dolorem eius
+        sit voluptas. Impedit porro aut dolore. Quaerat quia sint odit ducimus sint
+        ut.","price":"13.99","display_price":"$13.99","available_on":"2014-07-31T09:47:16.508Z","slug":"spree-mug","meta_description":null,"meta_keywords":null,"shipping_category_id":1,"taxon_ids":[4,10],"total_on_hand":10,"has_variants":false,"master":{"id":16,"name":"Spree
+        Mug","sku":"SPR-00014","price":"13.99","weight":"0.0","height":null,"width":null,"depth":null,"is_master":true,"cost_price":"11.0","slug":"spree-mug","description":"Dolorem
+        minus illum quas eos beatae deleniti rerum velit. Deserunt delectus fuga nihil
+        itaque eum. Culpa soluta reiciendis dolorem eius sit voluptas. Impedit porro
+        aut dolore. Quaerat quia sint odit ducimus sint ut.","track_inventory":true,"display_price":"$13.99","options_text":"","in_stock":true,"option_values":[],"images":[{"id":45,"position":1,"attachment_content_type":"image/jpeg","attachment_file_name":"spree_mug.jpeg","type":"Spree::Image","attachment_updated_at":"2014-07-31T09:47:40.141Z","attachment_width":240,"attachment_height":240,"alt":null,"viewable_type":"Spree::Variant","viewable_id":16,"mini_url":"/spree/products/45/mini/spree_mug.jpeg?1406800060","small_url":"/spree/products/45/small/spree_mug.jpeg?1406800060","product_url":"/spree/products/45/product/spree_mug.jpeg?1406800060","large_url":"/spree/products/45/large/spree_mug.jpeg?1406800060"},{"id":46,"position":2,"attachment_content_type":"image/jpeg","attachment_file_name":"spree_mug_back.jpeg","type":"Spree::Image","attachment_updated_at":"2014-07-31T09:47:40.563Z","attachment_width":240,"attachment_height":240,"alt":null,"viewable_type":"Spree::Variant","viewable_id":16,"mini_url":"/spree/products/46/mini/spree_mug_back.jpeg?1406800060","small_url":"/spree/products/46/small/spree_mug_back.jpeg?1406800060","product_url":"/spree/products/46/product/spree_mug_back.jpeg?1406800060","large_url":"/spree/products/46/large/spree_mug_back.jpeg?1406800060"}]},"variants":[],"option_types":[],"product_properties":[{"id":37,"product_id":16,"property_id":9,"value":"Mug","property_name":"Type"},{"id":38,"product_id":16,"property_id":10,"value":"4.5\"
+        tall, 3.25\" dia.","property_name":"Size"}]}]}'
+    http_version: 
+  recorded_at: Thu, 31 Jul 2014 14:38:18 GMT
+- request:
+    method: get
+    uri: http://localhost:3001/api/products.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      X-Spree-Token:
+      - d1202dea0f624d1c2f0c8544f5dffe4b24bbcaf3a9601cc5
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 200
+      message: ! 'OK '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 31 Jul 2014 14:38:19 GMT
+      Surrogate-Control:
+      - max-age=900
+      Cache-Control:
+      - max-age=900, public
+      Etag:
+      - ! '"1fa4b01070520093a33ebd555491e875"'
+      X-Request-Id:
+      - 51b03a3f-3731-4c83-bec6-75617199d9f6
+      X-Runtime:
+      - '2.814468'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.1/2014-02-24)
+      Content-Length:
+      - '59494'
+      Connection:
+      - Keep-Alive
+      Set-Cookie:
+      - guest_token=IlRiMm9VYjhjN3p6STlodHV3NEIzb1Ei--8331722c4a0141ae6e81627b7547dbeadb07325d;
+        path=/; expires=Mon, 31 Jul 2034 14:38:19 -0000
+      - request_method=GET; path=/
+    body:
+      encoding: US-ASCII
+      string: ! '{"count":16,"total_count":16,"current_page":1,"per_page":25,"pages":1,"products":[{"id":1,"name":"Ruby
+        on Rails Tote","description":"Dolorem minus illum quas eos beatae deleniti
+        rerum velit. Deserunt delectus fuga nihil itaque eum. Culpa soluta reiciendis
+        dolorem eius sit voluptas. Impedit porro aut dolore. Quaerat quia sint odit
+        ducimus sint ut.","price":"15.99","display_price":"$15.99","available_on":"2014-07-31T09:47:16.508Z","slug":"ruby-on-rails-tote","meta_description":null,"meta_keywords":null,"shipping_category_id":1,"taxon_ids":[3,11],"total_on_hand":10,"has_variants":false,"master":{"id":1,"name":"Ruby
+        on Rails Tote","sku":"ROR-00011","price":"15.99","weight":"0.0","height":null,"width":null,"depth":null,"is_master":true,"cost_price":"17.0","slug":"ruby-on-rails-tote","description":"Dolorem
+        minus illum quas eos beatae deleniti rerum velit. Deserunt delectus fuga nihil
+        itaque eum. Culpa soluta reiciendis dolorem eius sit voluptas. Impedit porro
+        aut dolore. Quaerat quia sint odit ducimus sint ut.","track_inventory":true,"display_price":"$15.99","options_text":"","in_stock":true,"option_values":[],"images":[{"id":21,"position":1,"attachment_content_type":"image/jpeg","attachment_file_name":"ror_tote.jpeg","type":"Spree::Image","attachment_updated_at":"2014-07-31T09:47:28.686Z","attachment_width":360,"attachment_height":360,"alt":null,"viewable_type":"Spree::Variant","viewable_id":1,"mini_url":"/spree/products/21/mini/ror_tote.jpeg?1406800048","small_url":"/spree/products/21/small/ror_tote.jpeg?1406800048","product_url":"/spree/products/21/product/ror_tote.jpeg?1406800048","large_url":"/spree/products/21/large/ror_tote.jpeg?1406800048"},{"id":22,"position":2,"attachment_content_type":"image/jpeg","attachment_file_name":"ror_tote_back.jpeg","type":"Spree::Image","attachment_updated_at":"2014-07-31T09:47:29.114Z","attachment_width":360,"attachment_height":360,"alt":null,"viewable_type":"Spree::Variant","viewable_id":1,"mini_url":"/spree/products/22/mini/ror_tote_back.jpeg?1406800049","small_url":"/spree/products/22/small/ror_tote_back.jpeg?1406800049","product_url":"/spree/products/22/product/ror_tote_back.jpeg?1406800049","large_url":"/spree/products/22/large/ror_tote_back.jpeg?1406800049"}]},"variants":[],"option_types":[],"product_properties":[{"id":25,"product_id":1,"property_id":9,"value":"Tote","property_name":"Type"},{"id":26,"product_id":1,"property_id":10,"value":"15\"
+        x 18\" x 6\"","property_name":"Size"},{"id":27,"product_id":1,"property_id":11,"value":"Canvas","property_name":"Material"}]},{"id":2,"name":"Ruby
+        on Rails Bag","description":"Dolorem minus illum quas eos beatae deleniti
+        rerum velit. Deserunt delectus fuga nihil itaque eum. Culpa soluta reiciendis
+        dolorem eius sit voluptas. Impedit porro aut dolore. Quaerat quia sint odit
+        ducimus sint ut.","price":"22.99","display_price":"$22.99","available_on":"2014-07-31T09:47:16.508Z","slug":"ruby-on-rails-bag","meta_description":null,"meta_keywords":null,"shipping_category_id":1,"taxon_ids":[3,11],"total_on_hand":10,"has_variants":false,"master":{"id":2,"name":"Ruby
+        on Rails Bag","sku":"ROR-00012","price":"22.99","weight":"0.0","height":null,"width":null,"depth":null,"is_master":true,"cost_price":"21.0","slug":"ruby-on-rails-bag","description":"Dolorem
+        minus illum quas eos beatae deleniti rerum velit. Deserunt delectus fuga nihil
+        itaque eum. Culpa soluta reiciendis dolorem eius sit voluptas. Impedit porro
+        aut dolore. Quaerat quia sint odit ducimus sint ut.","track_inventory":true,"display_price":"$22.99","options_text":"","in_stock":true,"option_values":[],"images":[{"id":23,"position":1,"attachment_content_type":"image/jpeg","attachment_file_name":"ror_bag.jpeg","type":"Spree::Image","attachment_updated_at":"2014-07-31T09:47:29.540Z","attachment_width":360,"attachment_height":360,"alt":null,"viewable_type":"Spree::Variant","viewable_id":2,"mini_url":"/spree/products/23/mini/ror_bag.jpeg?1406800049","small_url":"/spree/products/23/small/ror_bag.jpeg?1406800049","product_url":"/spree/products/23/product/ror_bag.jpeg?1406800049","large_url":"/spree/products/23/large/ror_bag.jpeg?1406800049"}]},"variants":[],"option_types":[],"product_properties":[{"id":28,"product_id":2,"property_id":9,"value":"Messenger","property_name":"Type"},{"id":29,"product_id":2,"property_id":10,"value":"14
+        1/2\" x 12\" x 5\"","property_name":"Size"},{"id":30,"product_id":2,"property_id":11,"value":"600
+        Denier Polyester","property_name":"Material"}]},{"id":3,"name":"Ruby on Rails
+        Baseball Jersey","description":"Dolorem minus illum quas eos beatae deleniti
+        rerum velit. Deserunt delectus fuga nihil itaque eum. Culpa soluta reiciendis
+        dolorem eius sit voluptas. Impedit porro aut dolore. Quaerat quia sint odit
+        ducimus sint ut.","price":"19.99","display_price":"$19.99","available_on":"2014-07-31T09:47:16.508Z","slug":"ruby-on-rails-baseball-jersey","meta_description":null,"meta_keywords":null,"shipping_category_id":1,"taxon_ids":[7,11],"total_on_hand":110,"has_variants":true,"master":{"id":3,"name":"Ruby
+        on Rails Baseball Jersey","sku":"ROR-001","price":"19.99","weight":"0.0","height":null,"width":null,"depth":null,"is_master":true,"cost_price":"17.0","slug":"ruby-on-rails-baseball-jersey","description":"Dolorem
+        minus illum quas eos beatae deleniti rerum velit. Deserunt delectus fuga nihil
+        itaque eum. Culpa soluta reiciendis dolorem eius sit voluptas. Impedit porro
+        aut dolore. Quaerat quia sint odit ducimus sint ut.","track_inventory":true,"display_price":"$19.99","options_text":"","in_stock":true,"option_values":[],"images":[{"id":24,"position":1,"attachment_content_type":"image/jpeg","attachment_file_name":"ror_baseball.jpeg","type":"Spree::Image","attachment_updated_at":"2014-07-31T09:47:29.944Z","attachment_width":360,"attachment_height":360,"alt":null,"viewable_type":"Spree::Variant","viewable_id":3,"mini_url":"/spree/products/24/mini/ror_baseball.jpeg?1406800049","small_url":"/spree/products/24/small/ror_baseball.jpeg?1406800049","product_url":"/spree/products/24/product/ror_baseball.jpeg?1406800049","large_url":"/spree/products/24/large/ror_baseball.jpeg?1406800049"},{"id":25,"position":2,"attachment_content_type":"image/jpeg","attachment_file_name":"ror_baseball_back.jpeg","type":"Spree::Image","attachment_updated_at":"2014-07-31T09:47:30.444Z","attachment_width":360,"attachment_height":360,"alt":null,"viewable_type":"Spree::Variant","viewable_id":3,"mini_url":"/spree/products/25/mini/ror_baseball_back.jpeg?1406800050","small_url":"/spree/products/25/small/ror_baseball_back.jpeg?1406800050","product_url":"/spree/products/25/product/ror_baseball_back.jpeg?1406800050","large_url":"/spree/products/25/large/ror_baseball_back.jpeg?1406800050"}]},"variants":[{"id":17,"name":"Ruby
+        on Rails Baseball Jersey","sku":"ROR-00001","price":"19.99","weight":"0.0","height":null,"width":null,"depth":null,"is_master":false,"cost_price":"17.0","slug":"ruby-on-rails-baseball-jersey","description":"Dolorem
+        minus illum quas eos beatae deleniti rerum velit. Deserunt delectus fuga nihil
+        itaque eum. Culpa soluta reiciendis dolorem eius sit voluptas. Impedit porro
+        aut dolore. Quaerat quia sint odit ducimus sint ut.","track_inventory":true,"display_price":"$19.99","options_text":"Size:
+        S, Color: Red","in_stock":true,"option_values":[{"id":1,"name":"Small","presentation":"S","option_type_name":"tshirt-size","option_type_id":1,"option_type_presentation":"Size"},{"id":5,"name":"Red","presentation":"Red","option_type_name":"tshirt-color","option_type_id":2,"option_type_presentation":"Color"}],"images":[{"id":1,"position":1,"attachment_content_type":"image/png","attachment_file_name":"ror_baseball_jersey_red.png","type":"Spree::Image","attachment_updated_at":"2014-07-31T09:47:19.977Z","attachment_width":240,"attachment_height":240,"alt":null,"viewable_type":"Spree::Variant","viewable_id":17,"mini_url":"/spree/products/1/mini/ror_baseball_jersey_red.png?1406800039","small_url":"/spree/products/1/small/ror_baseball_jersey_red.png?1406800039","product_url":"/spree/products/1/product/ror_baseball_jersey_red.png?1406800039","large_url":"/spree/products/1/large/ror_baseball_jersey_red.png?1406800039"},{"id":2,"position":2,"attachment_content_type":"image/png","attachment_file_name":"ror_baseball_jersey_back_red.png","type":"Spree::Image","attachment_updated_at":"2014-07-31T09:47:20.452Z","attachment_width":240,"attachment_height":240,"alt":null,"viewable_type":"Spree::Variant","viewable_id":17,"mini_url":"/spree/products/2/mini/ror_baseball_jersey_back_red.png?1406800040","small_url":"/spree/products/2/small/ror_baseball_jersey_back_red.png?1406800040","product_url":"/spree/products/2/product/ror_baseball_jersey_back_red.png?1406800040","large_url":"/spree/products/2/large/ror_baseball_jersey_back_red.png?1406800040"}]},{"id":18,"name":"Ruby
+        on Rails Baseball Jersey","sku":"ROR-00002","price":"19.99","weight":"0.0","height":null,"width":null,"depth":null,"is_master":false,"cost_price":"17.0","slug":"ruby-on-rails-baseball-jersey","description":"Dolorem
+        minus illum quas eos beatae deleniti rerum velit. Deserunt delectus fuga nihil
+        itaque eum. Culpa soluta reiciendis dolorem eius sit voluptas. Impedit porro
+        aut dolore. Quaerat quia sint odit ducimus sint ut.","track_inventory":true,"display_price":"$19.99","options_text":"Size:
+        S, Color: Blue","in_stock":true,"option_values":[{"id":1,"name":"Small","presentation":"S","option_type_name":"tshirt-size","option_type_id":1,"option_type_presentation":"Size"},{"id":7,"name":"Blue","presentation":"Blue","option_type_name":"tshirt-color","option_type_id":2,"option_type_presentation":"Color"}],"images":[{"id":3,"position":1,"attachment_content_type":"image/png","attachment_file_name":"ror_baseball_jersey_blue.png","type":"Spree::Image","attachment_updated_at":"2014-07-31T09:47:20.917Z","attachment_width":240,"attachment_height":240,"alt":null,"viewable_type":"Spree::Variant","viewable_id":18,"mini_url":"/spree/products/3/mini/ror_baseball_jersey_blue.png?1406800040","small_url":"/spree/products/3/small/ror_baseball_jersey_blue.png?1406800040","product_url":"/spree/products/3/product/ror_baseball_jersey_blue.png?1406800040","large_url":"/spree/products/3/large/ror_baseball_jersey_blue.png?1406800040"},{"id":4,"position":2,"attachment_content_type":"image/png","attachment_file_name":"ror_baseball_jersey_back_blue.png","type":"Spree::Image","attachment_updated_at":"2014-07-31T09:47:21.312Z","attachment_width":240,"attachment_height":240,"alt":null,"viewable_type":"Spree::Variant","viewable_id":18,"mini_url":"/spree/products/4/mini/ror_baseball_jersey_back_blue.png?1406800041","small_url":"/spree/products/4/small/ror_baseball_jersey_back_blue.png?1406800041","product_url":"/spree/products/4/product/ror_baseball_jersey_back_blue.png?1406800041","large_url":"/spree/products/4/large/ror_baseball_jersey_back_blue.png?1406800041"}]},{"id":19,"name":"Ruby
+        on Rails Baseball Jersey","sku":"ROR-00003","price":"19.99","weight":"0.0","height":null,"width":null,"depth":null,"is_master":false,"cost_price":"17.0","slug":"ruby-on-rails-baseball-jersey","description":"Dolorem
+        minus illum quas eos beatae deleniti rerum velit. Deserunt delectus fuga nihil
+        itaque eum. Culpa soluta reiciendis dolorem eius sit voluptas. Impedit porro
+        aut dolore. Quaerat quia sint odit ducimus sint ut.","track_inventory":true,"display_price":"$19.99","options_text":"Size:
+        S, Color: Green","in_stock":true,"option_values":[{"id":1,"name":"Small","presentation":"S","option_type_name":"tshirt-size","option_type_id":1,"option_type_presentation":"Size"},{"id":6,"name":"Green","presentation":"Green","option_type_name":"tshirt-color","option_type_id":2,"option_type_presentation":"Color"}],"images":[{"id":5,"position":1,"attachment_content_type":"image/png","attachment_file_name":"ror_baseball_jersey_green.png","type":"Spree::Image","attachment_updated_at":"2014-07-31T09:47:21.708Z","attachment_width":240,"attachment_height":240,"alt":null,"viewable_type":"Spree::Variant","viewable_id":19,"mini_url":"/spree/products/5/mini/ror_baseball_jersey_green.png?1406800041","small_url":"/spree/products/5/small/ror_baseball_jersey_green.png?1406800041","product_url":"/spree/products/5/product/ror_baseball_jersey_green.png?1406800041","large_url":"/spree/products/5/large/ror_baseball_jersey_green.png?1406800041"},{"id":6,"position":2,"attachment_content_type":"image/png","attachment_file_name":"ror_baseball_jersey_back_green.png","type":"Spree::Image","attachment_updated_at":"2014-07-31T09:47:22.142Z","attachment_width":240,"attachment_height":240,"alt":null,"viewable_type":"Spree::Variant","viewable_id":19,"mini_url":"/spree/products/6/mini/ror_baseball_jersey_back_green.png?1406800042","small_url":"/spree/products/6/small/ror_baseball_jersey_back_green.png?1406800042","product_url":"/spree/products/6/product/ror_baseball_jersey_back_green.png?1406800042","large_url":"/spree/products/6/large/ror_baseball_jersey_back_green.png?1406800042"}]},{"id":20,"name":"Ruby
+        on Rails Baseball Jersey","sku":"ROR-00004","price":"19.99","weight":"0.0","height":null,"width":null,"depth":null,"is_master":false,"cost_price":"17.0","slug":"ruby-on-rails-baseball-jersey","description":"Dolorem
+        minus illum quas eos beatae deleniti rerum velit. Deserunt delectus fuga nihil
+        itaque eum. Culpa soluta reiciendis dolorem eius sit voluptas. Impedit porro
+        aut dolore. Quaerat quia sint odit ducimus sint ut.","track_inventory":true,"display_price":"$19.99","options_text":"Size:
+        M, Color: Red","in_stock":true,"option_values":[{"id":2,"name":"Medium","presentation":"M","option_type_name":"tshirt-size","option_type_id":1,"option_type_presentation":"Size"},{"id":5,"name":"Red","presentation":"Red","option_type_name":"tshirt-color","option_type_id":2,"option_type_presentation":"Color"}],"images":[{"id":7,"position":1,"attachment_content_type":"image/png","attachment_file_name":"ror_baseball_jersey_red.png","type":"Spree::Image","attachment_updated_at":"2014-07-31T09:47:22.603Z","attachment_width":240,"attachment_height":240,"alt":null,"viewable_type":"Spree::Variant","viewable_id":20,"mini_url":"/spree/products/7/mini/ror_baseball_jersey_red.png?1406800042","small_url":"/spree/products/7/small/ror_baseball_jersey_red.png?1406800042","product_url":"/spree/products/7/product/ror_baseball_jersey_red.png?1406800042","large_url":"/spree/products/7/large/ror_baseball_jersey_red.png?1406800042"},{"id":8,"position":2,"attachment_content_type":"image/png","attachment_file_name":"ror_baseball_jersey_back_red.png","type":"Spree::Image","attachment_updated_at":"2014-07-31T09:47:23.040Z","attachment_width":240,"attachment_height":240,"alt":null,"viewable_type":"Spree::Variant","viewable_id":20,"mini_url":"/spree/products/8/mini/ror_baseball_jersey_back_red.png?1406800043","small_url":"/spree/products/8/small/ror_baseball_jersey_back_red.png?1406800043","product_url":"/spree/products/8/product/ror_baseball_jersey_back_red.png?1406800043","large_url":"/spree/products/8/large/ror_baseball_jersey_back_red.png?1406800043"}]},{"id":21,"name":"Ruby
+        on Rails Baseball Jersey","sku":"ROR-00005","price":"19.99","weight":"0.0","height":null,"width":null,"depth":null,"is_master":false,"cost_price":"17.0","slug":"ruby-on-rails-baseball-jersey","description":"Dolorem
+        minus illum quas eos beatae deleniti rerum velit. Deserunt delectus fuga nihil
+        itaque eum. Culpa soluta reiciendis dolorem eius sit voluptas. Impedit porro
+        aut dolore. Quaerat quia sint odit ducimus sint ut.","track_inventory":true,"display_price":"$19.99","options_text":"Size:
+        M, Color: Blue","in_stock":true,"option_values":[{"id":2,"name":"Medium","presentation":"M","option_type_name":"tshirt-size","option_type_id":1,"option_type_presentation":"Size"},{"id":7,"name":"Blue","presentation":"Blue","option_type_name":"tshirt-color","option_type_id":2,"option_type_presentation":"Color"}],"images":[{"id":9,"position":1,"attachment_content_type":"image/png","attachment_file_name":"ror_baseball_jersey_blue.png","type":"Spree::Image","attachment_updated_at":"2014-07-31T09:47:23.483Z","attachment_width":240,"attachment_height":240,"alt":null,"viewable_type":"Spree::Variant","viewable_id":21,"mini_url":"/spree/products/9/mini/ror_baseball_jersey_blue.png?1406800043","small_url":"/spree/products/9/small/ror_baseball_jersey_blue.png?1406800043","product_url":"/spree/products/9/product/ror_baseball_jersey_blue.png?1406800043","large_url":"/spree/products/9/large/ror_baseball_jersey_blue.png?1406800043"},{"id":10,"position":2,"attachment_content_type":"image/png","attachment_file_name":"ror_baseball_jersey_back_blue.png","type":"Spree::Image","attachment_updated_at":"2014-07-31T09:47:23.915Z","attachment_width":240,"attachment_height":240,"alt":null,"viewable_type":"Spree::Variant","viewable_id":21,"mini_url":"/spree/products/10/mini/ror_baseball_jersey_back_blue.png?1406800043","small_url":"/spree/products/10/small/ror_baseball_jersey_back_blue.png?1406800043","product_url":"/spree/products/10/product/ror_baseball_jersey_back_blue.png?1406800043","large_url":"/spree/products/10/large/ror_baseball_jersey_back_blue.png?1406800043"}]},{"id":22,"name":"Ruby
+        on Rails Baseball Jersey","sku":"ROR-00006","price":"19.99","weight":"0.0","height":null,"width":null,"depth":null,"is_master":false,"cost_price":"17.0","slug":"ruby-on-rails-baseball-jersey","description":"Dolorem
+        minus illum quas eos beatae deleniti rerum velit. Deserunt delectus fuga nihil
+        itaque eum. Culpa soluta reiciendis dolorem eius sit voluptas. Impedit porro
+        aut dolore. Quaerat quia sint odit ducimus sint ut.","track_inventory":true,"display_price":"$19.99","options_text":"Size:
+        M, Color: Green","in_stock":true,"option_values":[{"id":2,"name":"Medium","presentation":"M","option_type_name":"tshirt-size","option_type_id":1,"option_type_presentation":"Size"},{"id":6,"name":"Green","presentation":"Green","option_type_name":"tshirt-color","option_type_id":2,"option_type_presentation":"Color"}],"images":[{"id":11,"position":1,"attachment_content_type":"image/png","attachment_file_name":"ror_baseball_jersey_green.png","type":"Spree::Image","attachment_updated_at":"2014-07-31T09:47:24.338Z","attachment_width":240,"attachment_height":240,"alt":null,"viewable_type":"Spree::Variant","viewable_id":22,"mini_url":"/spree/products/11/mini/ror_baseball_jersey_green.png?1406800044","small_url":"/spree/products/11/small/ror_baseball_jersey_green.png?1406800044","product_url":"/spree/products/11/product/ror_baseball_jersey_green.png?1406800044","large_url":"/spree/products/11/large/ror_baseball_jersey_green.png?1406800044"},{"id":12,"position":2,"attachment_content_type":"image/png","attachment_file_name":"ror_baseball_jersey_back_green.png","type":"Spree::Image","attachment_updated_at":"2014-07-31T09:47:24.750Z","attachment_width":240,"attachment_height":240,"alt":null,"viewable_type":"Spree::Variant","viewable_id":22,"mini_url":"/spree/products/12/mini/ror_baseball_jersey_back_green.png?1406800044","small_url":"/spree/products/12/small/ror_baseball_jersey_back_green.png?1406800044","product_url":"/spree/products/12/product/ror_baseball_jersey_back_green.png?1406800044","large_url":"/spree/products/12/large/ror_baseball_jersey_back_green.png?1406800044"}]},{"id":23,"name":"Ruby
+        on Rails Baseball Jersey","sku":"ROR-00007","price":"19.99","weight":"0.0","height":null,"width":null,"depth":null,"is_master":false,"cost_price":"17.0","slug":"ruby-on-rails-baseball-jersey","description":"Dolorem
+        minus illum quas eos beatae deleniti rerum velit. Deserunt delectus fuga nihil
+        itaque eum. Culpa soluta reiciendis dolorem eius sit voluptas. Impedit porro
+        aut dolore. Quaerat quia sint odit ducimus sint ut.","track_inventory":true,"display_price":"$19.99","options_text":"Size:
+        L, Color: Red","in_stock":true,"option_values":[{"id":3,"name":"Large","presentation":"L","option_type_name":"tshirt-size","option_type_id":1,"option_type_presentation":"Size"},{"id":5,"name":"Red","presentation":"Red","option_type_name":"tshirt-color","option_type_id":2,"option_type_presentation":"Color"}],"images":[{"id":13,"position":1,"attachment_content_type":"image/png","attachment_file_name":"ror_baseball_jersey_red.png","type":"Spree::Image","attachment_updated_at":"2014-07-31T09:47:25.179Z","attachment_width":240,"attachment_height":240,"alt":null,"viewable_type":"Spree::Variant","viewable_id":23,"mini_url":"/spree/products/13/mini/ror_baseball_jersey_red.png?1406800045","small_url":"/spree/products/13/small/ror_baseball_jersey_red.png?1406800045","product_url":"/spree/products/13/product/ror_baseball_jersey_red.png?1406800045","large_url":"/spree/products/13/large/ror_baseball_jersey_red.png?1406800045"},{"id":14,"position":2,"attachment_content_type":"image/png","attachment_file_name":"ror_baseball_jersey_back_red.png","type":"Spree::Image","attachment_updated_at":"2014-07-31T09:47:25.577Z","attachment_width":240,"attachment_height":240,"alt":null,"viewable_type":"Spree::Variant","viewable_id":23,"mini_url":"/spree/products/14/mini/ror_baseball_jersey_back_red.png?1406800045","small_url":"/spree/products/14/small/ror_baseball_jersey_back_red.png?1406800045","product_url":"/spree/products/14/product/ror_baseball_jersey_back_red.png?1406800045","large_url":"/spree/products/14/large/ror_baseball_jersey_back_red.png?1406800045"}]},{"id":24,"name":"Ruby
+        on Rails Baseball Jersey","sku":"ROR-00008","price":"19.99","weight":"0.0","height":null,"width":null,"depth":null,"is_master":false,"cost_price":"17.0","slug":"ruby-on-rails-baseball-jersey","description":"Dolorem
+        minus illum quas eos beatae deleniti rerum velit. Deserunt delectus fuga nihil
+        itaque eum. Culpa soluta reiciendis dolorem eius sit voluptas. Impedit porro
+        aut dolore. Quaerat quia sint odit ducimus sint ut.","track_inventory":true,"display_price":"$19.99","options_text":"Size:
+        L, Color: Blue","in_stock":true,"option_values":[{"id":3,"name":"Large","presentation":"L","option_type_name":"tshirt-size","option_type_id":1,"option_type_presentation":"Size"},{"id":7,"name":"Blue","presentation":"Blue","option_type_name":"tshirt-color","option_type_id":2,"option_type_presentation":"Color"}],"images":[{"id":15,"position":1,"attachment_content_type":"image/png","attachment_file_name":"ror_baseball_jersey_blue.png","type":"Spree::Image","attachment_updated_at":"2014-07-31T09:47:25.990Z","attachment_width":240,"attachment_height":240,"alt":null,"viewable_type":"Spree::Variant","viewable_id":24,"mini_url":"/spree/products/15/mini/ror_baseball_jersey_blue.png?1406800045","small_url":"/spree/products/15/small/ror_baseball_jersey_blue.png?1406800045","product_url":"/spree/products/15/product/ror_baseball_jersey_blue.png?1406800045","large_url":"/spree/products/15/large/ror_baseball_jersey_blue.png?1406800045"},{"id":16,"position":2,"attachment_content_type":"image/png","attachment_file_name":"ror_baseball_jersey_back_blue.png","type":"Spree::Image","attachment_updated_at":"2014-07-31T09:47:26.466Z","attachment_width":240,"attachment_height":240,"alt":null,"viewable_type":"Spree::Variant","viewable_id":24,"mini_url":"/spree/products/16/mini/ror_baseball_jersey_back_blue.png?1406800046","small_url":"/spree/products/16/small/ror_baseball_jersey_back_blue.png?1406800046","product_url":"/spree/products/16/product/ror_baseball_jersey_back_blue.png?1406800046","large_url":"/spree/products/16/large/ror_baseball_jersey_back_blue.png?1406800046"}]},{"id":25,"name":"Ruby
+        on Rails Baseball Jersey","sku":"ROR-00009","price":"19.99","weight":"0.0","height":null,"width":null,"depth":null,"is_master":false,"cost_price":"17.0","slug":"ruby-on-rails-baseball-jersey","description":"Dolorem
+        minus illum quas eos beatae deleniti rerum velit. Deserunt delectus fuga nihil
+        itaque eum. Culpa soluta reiciendis dolorem eius sit voluptas. Impedit porro
+        aut dolore. Quaerat quia sint odit ducimus sint ut.","track_inventory":true,"display_price":"$19.99","options_text":"Size:
+        L, Color: Green","in_stock":true,"option_values":[{"id":3,"name":"Large","presentation":"L","option_type_name":"tshirt-size","option_type_id":1,"option_type_presentation":"Size"},{"id":6,"name":"Green","presentation":"Green","option_type_name":"tshirt-color","option_type_id":2,"option_type_presentation":"Color"}],"images":[{"id":17,"position":1,"attachment_content_type":"image/png","attachment_file_name":"ror_baseball_jersey_green.png","type":"Spree::Image","attachment_updated_at":"2014-07-31T09:47:26.887Z","attachment_width":240,"attachment_height":240,"alt":null,"viewable_type":"Spree::Variant","viewable_id":25,"mini_url":"/spree/products/17/mini/ror_baseball_jersey_green.png?1406800046","small_url":"/spree/products/17/small/ror_baseball_jersey_green.png?1406800046","product_url":"/spree/products/17/product/ror_baseball_jersey_green.png?1406800046","large_url":"/spree/products/17/large/ror_baseball_jersey_green.png?1406800046"},{"id":18,"position":2,"attachment_content_type":"image/png","attachment_file_name":"ror_baseball_jersey_back_green.png","type":"Spree::Image","attachment_updated_at":"2014-07-31T09:47:27.351Z","attachment_width":240,"attachment_height":240,"alt":null,"viewable_type":"Spree::Variant","viewable_id":25,"mini_url":"/spree/products/18/mini/ror_baseball_jersey_back_green.png?1406800047","small_url":"/spree/products/18/small/ror_baseball_jersey_back_green.png?1406800047","product_url":"/spree/products/18/product/ror_baseball_jersey_back_green.png?1406800047","large_url":"/spree/products/18/large/ror_baseball_jersey_back_green.png?1406800047"}]},{"id":26,"name":"Ruby
+        on Rails Baseball Jersey","sku":"ROR-00012","price":"19.99","weight":"0.0","height":null,"width":null,"depth":null,"is_master":false,"cost_price":"17.0","slug":"ruby-on-rails-baseball-jersey","description":"Dolorem
+        minus illum quas eos beatae deleniti rerum velit. Deserunt delectus fuga nihil
+        itaque eum. Culpa soluta reiciendis dolorem eius sit voluptas. Impedit porro
+        aut dolore. Quaerat quia sint odit ducimus sint ut.","track_inventory":true,"display_price":"$19.99","options_text":"Size:
+        XL, Color: Green","in_stock":true,"option_values":[{"id":4,"name":"Extra Large","presentation":"XL","option_type_name":"tshirt-size","option_type_id":1,"option_type_presentation":"Size"},{"id":6,"name":"Green","presentation":"Green","option_type_name":"tshirt-color","option_type_id":2,"option_type_presentation":"Color"}],"images":[{"id":19,"position":1,"attachment_content_type":"image/png","attachment_file_name":"ror_baseball_jersey_green.png","type":"Spree::Image","attachment_updated_at":"2014-07-31T09:47:27.782Z","attachment_width":240,"attachment_height":240,"alt":null,"viewable_type":"Spree::Variant","viewable_id":26,"mini_url":"/spree/products/19/mini/ror_baseball_jersey_green.png?1406800047","small_url":"/spree/products/19/small/ror_baseball_jersey_green.png?1406800047","product_url":"/spree/products/19/product/ror_baseball_jersey_green.png?1406800047","large_url":"/spree/products/19/large/ror_baseball_jersey_green.png?1406800047"},{"id":20,"position":2,"attachment_content_type":"image/png","attachment_file_name":"ror_baseball_jersey_back_green.png","type":"Spree::Image","attachment_updated_at":"2014-07-31T09:47:28.264Z","attachment_width":240,"attachment_height":240,"alt":null,"viewable_type":"Spree::Variant","viewable_id":26,"mini_url":"/spree/products/20/mini/ror_baseball_jersey_back_green.png?1406800048","small_url":"/spree/products/20/small/ror_baseball_jersey_back_green.png?1406800048","product_url":"/spree/products/20/product/ror_baseball_jersey_back_green.png?1406800048","large_url":"/spree/products/20/large/ror_baseball_jersey_back_green.png?1406800048"}]}],"option_types":[{"id":1,"name":"tshirt-size","presentation":"Size","position":1},{"id":2,"name":"tshirt-color","presentation":"Color","position":2}],"product_properties":[{"id":1,"product_id":3,"property_id":1,"value":"Wilson","property_name":"Manufacturer"},{"id":2,"product_id":3,"property_id":2,"value":"Wannabe
+        Sports","property_name":"Brand"},{"id":3,"product_id":3,"property_id":3,"value":"JK1002","property_name":"Model"},{"id":4,"product_id":3,"property_id":4,"value":"Baseball
+        Jersey","property_name":"Shirt Type"},{"id":5,"product_id":3,"property_id":5,"value":"Long","property_name":"Sleeve
+        Type"},{"id":6,"product_id":3,"property_id":6,"value":"100% cotton","property_name":"Made
+        from"},{"id":7,"product_id":3,"property_id":7,"value":"Loose","property_name":"Fit"},{"id":8,"product_id":3,"property_id":8,"value":"Men''s","property_name":"Gender"}]},{"id":4,"name":"Ruby
+        on Rails Jr. Spaghetti","description":"Dolorem minus illum quas eos beatae
+        deleniti rerum velit. Deserunt delectus fuga nihil itaque eum. Culpa soluta
+        reiciendis dolorem eius sit voluptas. Impedit porro aut dolore. Quaerat quia
+        sint odit ducimus sint ut.","price":"19.99","display_price":"$19.99","available_on":"2014-07-31T09:47:16.508Z","slug":"ruby-on-rails-jr-spaghetti","meta_description":null,"meta_keywords":null,"shipping_category_id":1,"taxon_ids":[6,11],"total_on_hand":10,"has_variants":false,"master":{"id":4,"name":"Ruby
+        on Rails Jr. Spaghetti","sku":"ROR-00013","price":"19.99","weight":"0.0","height":null,"width":null,"depth":null,"is_master":true,"cost_price":"17.0","slug":"ruby-on-rails-jr-spaghetti","description":"Dolorem
+        minus illum quas eos beatae deleniti rerum velit. Deserunt delectus fuga nihil
+        itaque eum. Culpa soluta reiciendis dolorem eius sit voluptas. Impedit porro
+        aut dolore. Quaerat quia sint odit ducimus sint ut.","track_inventory":true,"display_price":"$19.99","options_text":"","in_stock":true,"option_values":[],"images":[{"id":26,"position":1,"attachment_content_type":"image/jpeg","attachment_file_name":"ror_jr_spaghetti.jpeg","type":"Spree::Image","attachment_updated_at":"2014-07-31T09:47:30.870Z","attachment_width":360,"attachment_height":360,"alt":null,"viewable_type":"Spree::Variant","viewable_id":4,"mini_url":"/spree/products/26/mini/ror_jr_spaghetti.jpeg?1406800050","small_url":"/spree/products/26/small/ror_jr_spaghetti.jpeg?1406800050","product_url":"/spree/products/26/product/ror_jr_spaghetti.jpeg?1406800050","large_url":"/spree/products/26/large/ror_jr_spaghetti.jpeg?1406800050"}]},"variants":[],"option_types":[],"product_properties":[{"id":9,"product_id":4,"property_id":1,"value":"Jerseys","property_name":"Manufacturer"},{"id":10,"product_id":4,"property_id":2,"value":"Resiliance","property_name":"Brand"},{"id":11,"product_id":4,"property_id":3,"value":"TL174","property_name":"Model"},{"id":12,"product_id":4,"property_id":4,"value":"Jr.
+        Spaghetti T","property_name":"Shirt Type"},{"id":13,"product_id":4,"property_id":5,"value":"None","property_name":"Sleeve
+        Type"},{"id":14,"product_id":4,"property_id":6,"value":"90% Cotton, 10% Nylon","property_name":"Made
+        from"},{"id":15,"product_id":4,"property_id":7,"value":"Form","property_name":"Fit"},{"id":16,"product_id":4,"property_id":8,"value":"Women''s","property_name":"Gender"}]},{"id":5,"name":"Ruby
+        on Rails Ringer T-Shirt","description":"Dolorem minus illum quas eos beatae
+        deleniti rerum velit. Deserunt delectus fuga nihil itaque eum. Culpa soluta
+        reiciendis dolorem eius sit voluptas. Impedit porro aut dolore. Quaerat quia
+        sint odit ducimus sint ut.","price":"19.99","display_price":"$19.99","available_on":"2014-07-31T09:47:16.508Z","slug":"ruby-on-rails-ringer-t-shirt","meta_description":null,"meta_keywords":null,"shipping_category_id":1,"taxon_ids":[7,11],"total_on_hand":10,"has_variants":false,"master":{"id":5,"name":"Ruby
+        on Rails Ringer T-Shirt","sku":"ROR-00015","price":"19.99","weight":"0.0","height":null,"width":null,"depth":null,"is_master":true,"cost_price":"17.0","slug":"ruby-on-rails-ringer-t-shirt","description":"Dolorem
+        minus illum quas eos beatae deleniti rerum velit. Deserunt delectus fuga nihil
+        itaque eum. Culpa soluta reiciendis dolorem eius sit voluptas. Impedit porro
+        aut dolore. Quaerat quia sint odit ducimus sint ut.","track_inventory":true,"display_price":"$19.99","options_text":"","in_stock":true,"option_values":[],"images":[{"id":29,"position":1,"attachment_content_type":"image/jpeg","attachment_file_name":"ror_ringer.jpeg","type":"Spree::Image","attachment_updated_at":"2014-07-31T09:47:32.201Z","attachment_width":360,"attachment_height":360,"alt":null,"viewable_type":"Spree::Variant","viewable_id":5,"mini_url":"/spree/products/29/mini/ror_ringer.jpeg?1406800052","small_url":"/spree/products/29/small/ror_ringer.jpeg?1406800052","product_url":"/spree/products/29/product/ror_ringer.jpeg?1406800052","large_url":"/spree/products/29/large/ror_ringer.jpeg?1406800052"},{"id":30,"position":2,"attachment_content_type":"image/jpeg","attachment_file_name":"ror_ringer_back.jpeg","type":"Spree::Image","attachment_updated_at":"2014-07-31T09:47:32.648Z","attachment_width":360,"attachment_height":360,"alt":null,"viewable_type":"Spree::Variant","viewable_id":5,"mini_url":"/spree/products/30/mini/ror_ringer_back.jpeg?1406800052","small_url":"/spree/products/30/small/ror_ringer_back.jpeg?1406800052","product_url":"/spree/products/30/product/ror_ringer_back.jpeg?1406800052","large_url":"/spree/products/30/large/ror_ringer_back.jpeg?1406800052"}]},"variants":[],"option_types":[],"product_properties":[{"id":17,"product_id":5,"property_id":1,"value":"Jerseys","property_name":"Manufacturer"},{"id":18,"product_id":5,"property_id":2,"value":"Conditioned","property_name":"Brand"},{"id":19,"product_id":5,"property_id":3,"value":"TL9002","property_name":"Model"},{"id":20,"product_id":5,"property_id":4,"value":"Ringer
+        T","property_name":"Shirt Type"},{"id":21,"product_id":5,"property_id":5,"value":"Short","property_name":"Sleeve
+        Type"},{"id":22,"product_id":5,"property_id":6,"value":"100% Vellum","property_name":"Made
+        from"},{"id":23,"product_id":5,"property_id":7,"value":"Loose","property_name":"Fit"},{"id":24,"product_id":5,"property_id":8,"value":"Men''s","property_name":"Gender"}]},{"id":6,"name":"Ruby
+        Baseball Jersey","description":"Dolorem minus illum quas eos beatae deleniti
+        rerum velit. Deserunt delectus fuga nihil itaque eum. Culpa soluta reiciendis
+        dolorem eius sit voluptas. Impedit porro aut dolore. Quaerat quia sint odit
+        ducimus sint ut.","price":"19.99","display_price":"$19.99","available_on":"2014-07-31T09:47:16.508Z","slug":"ruby-baseball-jersey","meta_description":null,"meta_keywords":null,"shipping_category_id":1,"taxon_ids":[7,8],"total_on_hand":10,"has_variants":false,"master":{"id":6,"name":"Ruby
+        Baseball Jersey","sku":"RUB-00001","price":"19.99","weight":"0.0","height":null,"width":null,"depth":null,"is_master":true,"cost_price":"17.0","slug":"ruby-baseball-jersey","description":"Dolorem
+        minus illum quas eos beatae deleniti rerum velit. Deserunt delectus fuga nihil
+        itaque eum. Culpa soluta reiciendis dolorem eius sit voluptas. Impedit porro
+        aut dolore. Quaerat quia sint odit ducimus sint ut.","track_inventory":true,"display_price":"$19.99","options_text":"","in_stock":true,"option_values":[],"images":[{"id":34,"position":1,"attachment_content_type":"image/png","attachment_file_name":"ruby_baseball.png","type":"Spree::Image","attachment_updated_at":"2014-07-31T09:47:34.727Z","attachment_width":495,"attachment_height":477,"alt":null,"viewable_type":"Spree::Variant","viewable_id":6,"mini_url":"/spree/products/34/mini/ruby_baseball.png?1406800054","small_url":"/spree/products/34/small/ruby_baseball.png?1406800054","product_url":"/spree/products/34/product/ruby_baseball.png?1406800054","large_url":"/spree/products/34/large/ruby_baseball.png?1406800054"}]},"variants":[],"option_types":[],"product_properties":[]},{"id":7,"name":"Apache
+        Baseball Jersey","description":"Dolorem minus illum quas eos beatae deleniti
+        rerum velit. Deserunt delectus fuga nihil itaque eum. Culpa soluta reiciendis
+        dolorem eius sit voluptas. Impedit porro aut dolore. Quaerat quia sint odit
+        ducimus sint ut.","price":"19.99","display_price":"$19.99","available_on":"2014-07-31T09:47:16.508Z","slug":"apache-baseball-jersey","meta_description":null,"meta_keywords":null,"shipping_category_id":1,"taxon_ids":[7,9],"total_on_hand":10,"has_variants":false,"master":{"id":7,"name":"Apache
+        Baseball Jersey","sku":"APC-00001","price":"19.99","weight":"0.0","height":null,"width":null,"depth":null,"is_master":true,"cost_price":"17.0","slug":"apache-baseball-jersey","description":"Dolorem
+        minus illum quas eos beatae deleniti rerum velit. Deserunt delectus fuga nihil
+        itaque eum. Culpa soluta reiciendis dolorem eius sit voluptas. Impedit porro
+        aut dolore. Quaerat quia sint odit ducimus sint ut.","track_inventory":true,"display_price":"$19.99","options_text":"","in_stock":true,"option_values":[],"images":[{"id":33,"position":1,"attachment_content_type":"image/png","attachment_file_name":"apache_baseball.png","type":"Spree::Image","attachment_updated_at":"2014-07-31T09:47:33.921Z","attachment_width":504,"attachment_height":484,"alt":null,"viewable_type":"Spree::Variant","viewable_id":7,"mini_url":"/spree/products/33/mini/apache_baseball.png?1406800053","small_url":"/spree/products/33/small/apache_baseball.png?1406800053","product_url":"/spree/products/33/product/apache_baseball.png?1406800053","large_url":"/spree/products/33/large/apache_baseball.png?1406800053"}]},"variants":[],"option_types":[],"product_properties":[]},{"id":8,"name":"Spree
+        Baseball Jersey","description":"Dolorem minus illum quas eos beatae deleniti
+        rerum velit. Deserunt delectus fuga nihil itaque eum. Culpa soluta reiciendis
+        dolorem eius sit voluptas. Impedit porro aut dolore. Quaerat quia sint odit
+        ducimus sint ut.","price":"19.99","display_price":"$19.99","available_on":"2014-07-31T09:47:16.508Z","slug":"spree-baseball-jersey","meta_description":null,"meta_keywords":null,"shipping_category_id":1,"taxon_ids":[7,10],"total_on_hand":10,"has_variants":false,"master":{"id":8,"name":"Spree
+        Baseball Jersey","sku":"SPR-00001","price":"19.99","weight":"0.0","height":null,"width":null,"depth":null,"is_master":true,"cost_price":"17.0","slug":"spree-baseball-jersey","description":"Dolorem
+        minus illum quas eos beatae deleniti rerum velit. Deserunt delectus fuga nihil
+        itaque eum. Culpa soluta reiciendis dolorem eius sit voluptas. Impedit porro
+        aut dolore. Quaerat quia sint odit ducimus sint ut.","track_inventory":true,"display_price":"$19.99","options_text":"","in_stock":true,"option_values":[],"images":[{"id":41,"position":1,"attachment_content_type":"image/jpeg","attachment_file_name":"spree_jersey.jpeg","type":"Spree::Image","attachment_updated_at":"2014-07-31T09:47:38.317Z","attachment_width":480,"attachment_height":480,"alt":null,"viewable_type":"Spree::Variant","viewable_id":8,"mini_url":"/spree/products/41/mini/spree_jersey.jpeg?1406800058","small_url":"/spree/products/41/small/spree_jersey.jpeg?1406800058","product_url":"/spree/products/41/product/spree_jersey.jpeg?1406800058","large_url":"/spree/products/41/large/spree_jersey.jpeg?1406800058"},{"id":42,"position":2,"attachment_content_type":"image/jpeg","attachment_file_name":"spree_jersey_back.jpeg","type":"Spree::Image","attachment_updated_at":"2014-07-31T09:47:38.757Z","attachment_width":480,"attachment_height":480,"alt":null,"viewable_type":"Spree::Variant","viewable_id":8,"mini_url":"/spree/products/42/mini/spree_jersey_back.jpeg?1406800058","small_url":"/spree/products/42/small/spree_jersey_back.jpeg?1406800058","product_url":"/spree/products/42/product/spree_jersey_back.jpeg?1406800058","large_url":"/spree/products/42/large/spree_jersey_back.jpeg?1406800058"}]},"variants":[],"option_types":[{"id":1,"name":"tshirt-size","presentation":"Size","position":1},{"id":2,"name":"tshirt-color","presentation":"Color","position":2}],"product_properties":[{"id":43,"product_id":8,"property_id":1,"value":"Wilson","property_name":"Manufacturer"},{"id":44,"product_id":8,"property_id":2,"value":"Wannabe
+        Sports","property_name":"Brand"},{"id":45,"product_id":8,"property_id":3,"value":"JK1002","property_name":"Model"},{"id":46,"product_id":8,"property_id":4,"value":"Baseball
+        Jersey","property_name":"Shirt Type"},{"id":47,"product_id":8,"property_id":5,"value":"Long","property_name":"Sleeve
+        Type"},{"id":48,"product_id":8,"property_id":6,"value":"100% cotton","property_name":"Made
+        from"},{"id":49,"product_id":8,"property_id":7,"value":"Loose","property_name":"Fit"},{"id":50,"product_id":8,"property_id":8,"value":"Men''s","property_name":"Gender"}]},{"id":9,"name":"Spree
+        Jr. Spaghetti","description":"Dolorem minus illum quas eos beatae deleniti
+        rerum velit. Deserunt delectus fuga nihil itaque eum. Culpa soluta reiciendis
+        dolorem eius sit voluptas. Impedit porro aut dolore. Quaerat quia sint odit
+        ducimus sint ut.","price":"19.99","display_price":"$19.99","available_on":"2014-07-31T09:47:16.508Z","slug":"spree-jr-spaghetti","meta_description":null,"meta_keywords":null,"shipping_category_id":1,"taxon_ids":[6,10],"total_on_hand":10,"has_variants":false,"master":{"id":9,"name":"Spree
+        Jr. Spaghetti","sku":"SPR-00013","price":"19.99","weight":"0.0","height":null,"width":null,"depth":null,"is_master":true,"cost_price":"17.0","slug":"spree-jr-spaghetti","description":"Dolorem
+        minus illum quas eos beatae deleniti rerum velit. Deserunt delectus fuga nihil
+        itaque eum. Culpa soluta reiciendis dolorem eius sit voluptas. Impedit porro
+        aut dolore. Quaerat quia sint odit ducimus sint ut.","track_inventory":true,"display_price":"$19.99","options_text":"","in_stock":true,"option_values":[],"images":[{"id":40,"position":1,"attachment_content_type":"image/jpeg","attachment_file_name":"spree_spaghetti.jpeg","type":"Spree::Image","attachment_updated_at":"2014-07-31T09:47:37.859Z","attachment_width":480,"attachment_height":480,"alt":null,"viewable_type":"Spree::Variant","viewable_id":9,"mini_url":"/spree/products/40/mini/spree_spaghetti.jpeg?1406800057","small_url":"/spree/products/40/small/spree_spaghetti.jpeg?1406800057","product_url":"/spree/products/40/product/spree_spaghetti.jpeg?1406800057","large_url":"/spree/products/40/large/spree_spaghetti.jpeg?1406800057"}]},"variants":[],"option_types":[],"product_properties":[{"id":51,"product_id":9,"property_id":1,"value":"Jerseys","property_name":"Manufacturer"},{"id":52,"product_id":9,"property_id":2,"value":"Resiliance","property_name":"Brand"},{"id":53,"product_id":9,"property_id":3,"value":"TL174","property_name":"Model"},{"id":54,"product_id":9,"property_id":4,"value":"Jr.
+        Spaghetti T","property_name":"Shirt Type"},{"id":55,"product_id":9,"property_id":5,"value":"None","property_name":"Sleeve
+        Type"},{"id":56,"product_id":9,"property_id":6,"value":"90% Cotton, 10% Nylon","property_name":"Made
+        from"},{"id":57,"product_id":9,"property_id":7,"value":"Form","property_name":"Fit"},{"id":58,"product_id":9,"property_id":8,"value":"Women''s","property_name":"Gender"}]},{"id":10,"name":"Spree
+        Ringer T-Shirt","description":"Dolorem minus illum quas eos beatae deleniti
+        rerum velit. Deserunt delectus fuga nihil itaque eum. Culpa soluta reiciendis
+        dolorem eius sit voluptas. Impedit porro aut dolore. Quaerat quia sint odit
+        ducimus sint ut.","price":"19.99","display_price":"$19.99","available_on":"2014-07-31T09:47:16.508Z","slug":"spree-ringer-t-shirt","meta_description":null,"meta_keywords":null,"shipping_category_id":1,"taxon_ids":[7,10],"total_on_hand":10,"has_variants":false,"master":{"id":10,"name":"Spree
+        Ringer T-Shirt","sku":"SPR-00015","price":"19.99","weight":"0.0","height":null,"width":null,"depth":null,"is_master":true,"cost_price":"17.0","slug":"spree-ringer-t-shirt","description":"Dolorem
+        minus illum quas eos beatae deleniti rerum velit. Deserunt delectus fuga nihil
+        itaque eum. Culpa soluta reiciendis dolorem eius sit voluptas. Impedit porro
+        aut dolore. Quaerat quia sint odit ducimus sint ut.","track_inventory":true,"display_price":"$19.99","options_text":"","in_stock":true,"option_values":[],"images":[{"id":38,"position":1,"attachment_content_type":"image/jpeg","attachment_file_name":"spree_ringer_t.jpeg","type":"Spree::Image","attachment_updated_at":"2014-07-31T09:47:36.923Z","attachment_width":480,"attachment_height":480,"alt":null,"viewable_type":"Spree::Variant","viewable_id":10,"mini_url":"/spree/products/38/mini/spree_ringer_t.jpeg?1406800056","small_url":"/spree/products/38/small/spree_ringer_t.jpeg?1406800056","product_url":"/spree/products/38/product/spree_ringer_t.jpeg?1406800056","large_url":"/spree/products/38/large/spree_ringer_t.jpeg?1406800056"},{"id":39,"position":2,"attachment_content_type":"image/jpeg","attachment_file_name":"spree_ringer_t_back.jpeg","type":"Spree::Image","attachment_updated_at":"2014-07-31T09:47:37.404Z","attachment_width":480,"attachment_height":480,"alt":null,"viewable_type":"Spree::Variant","viewable_id":10,"mini_url":"/spree/products/39/mini/spree_ringer_t_back.jpeg?1406800057","small_url":"/spree/products/39/small/spree_ringer_t_back.jpeg?1406800057","product_url":"/spree/products/39/product/spree_ringer_t_back.jpeg?1406800057","large_url":"/spree/products/39/large/spree_ringer_t_back.jpeg?1406800057"}]},"variants":[],"option_types":[],"product_properties":[{"id":59,"product_id":10,"property_id":1,"value":"Jerseys","property_name":"Manufacturer"},{"id":60,"product_id":10,"property_id":2,"value":"Conditioned","property_name":"Brand"},{"id":61,"product_id":10,"property_id":3,"value":"TL9002","property_name":"Model"},{"id":62,"product_id":10,"property_id":4,"value":"Ringer
+        T","property_name":"Shirt Type"},{"id":63,"product_id":10,"property_id":5,"value":"Short","property_name":"Sleeve
+        Type"},{"id":64,"product_id":10,"property_id":6,"value":"100% Vellum","property_name":"Made
+        from"},{"id":65,"product_id":10,"property_id":7,"value":"Loose","property_name":"Fit"},{"id":66,"product_id":10,"property_id":8,"value":"Men''s","property_name":"Gender"}]},{"id":11,"name":"Spree
+        Tote","description":"Dolorem minus illum quas eos beatae deleniti rerum velit.
+        Deserunt delectus fuga nihil itaque eum. Culpa soluta reiciendis dolorem eius
+        sit voluptas. Impedit porro aut dolore. Quaerat quia sint odit ducimus sint
+        ut.","price":"15.99","display_price":"$15.99","available_on":"2014-07-31T09:47:16.508Z","slug":"spree-tote","meta_description":null,"meta_keywords":null,"shipping_category_id":1,"taxon_ids":[3,10],"total_on_hand":10,"has_variants":false,"master":{"id":11,"name":"Spree
+        Tote","sku":"SPR-00011","price":"15.99","weight":"0.0","height":null,"width":null,"depth":null,"is_master":true,"cost_price":"13.0","slug":"spree-tote","description":"Dolorem
+        minus illum quas eos beatae deleniti rerum velit. Deserunt delectus fuga nihil
+        itaque eum. Culpa soluta reiciendis dolorem eius sit voluptas. Impedit porro
+        aut dolore. Quaerat quia sint odit ducimus sint ut.","track_inventory":true,"display_price":"$15.99","options_text":"","in_stock":true,"option_values":[],"images":[{"id":36,"position":1,"attachment_content_type":"image/jpeg","attachment_file_name":"spree_tote_front.jpeg","type":"Spree::Image","attachment_updated_at":"2014-07-31T09:47:35.905Z","attachment_width":480,"attachment_height":480,"alt":null,"viewable_type":"Spree::Variant","viewable_id":11,"mini_url":"/spree/products/36/mini/spree_tote_front.jpeg?1406800055","small_url":"/spree/products/36/small/spree_tote_front.jpeg?1406800055","product_url":"/spree/products/36/product/spree_tote_front.jpeg?1406800055","large_url":"/spree/products/36/large/spree_tote_front.jpeg?1406800055"},{"id":37,"position":2,"attachment_content_type":"image/jpeg","attachment_file_name":"spree_tote_back.jpeg","type":"Spree::Image","attachment_updated_at":"2014-07-31T09:47:36.418Z","attachment_width":480,"attachment_height":480,"alt":null,"viewable_type":"Spree::Variant","viewable_id":11,"mini_url":"/spree/products/37/mini/spree_tote_back.jpeg?1406800056","small_url":"/spree/products/37/small/spree_tote_back.jpeg?1406800056","product_url":"/spree/products/37/product/spree_tote_back.jpeg?1406800056","large_url":"/spree/products/37/large/spree_tote_back.jpeg?1406800056"}]},"variants":[],"option_types":[],"product_properties":[{"id":39,"product_id":11,"property_id":9,"value":"Tote","property_name":"Type"},{"id":40,"product_id":11,"property_id":10,"value":"15\"
+        x 18\" x 6\"","property_name":"Size"}]},{"id":12,"name":"Spree Bag","description":"Dolorem
+        minus illum quas eos beatae deleniti rerum velit. Deserunt delectus fuga nihil
+        itaque eum. Culpa soluta reiciendis dolorem eius sit voluptas. Impedit porro
+        aut dolore. Quaerat quia sint odit ducimus sint ut.","price":"22.99","display_price":"$22.99","available_on":"2014-07-31T09:47:16.508Z","slug":"spree-bag","meta_description":null,"meta_keywords":null,"shipping_category_id":1,"taxon_ids":[3,10],"total_on_hand":10,"has_variants":false,"master":{"id":12,"name":"Spree
+        Bag","sku":"SPR-00012","price":"22.99","weight":"0.0","height":null,"width":null,"depth":null,"is_master":true,"cost_price":"21.0","slug":"spree-bag","description":"Dolorem
+        minus illum quas eos beatae deleniti rerum velit. Deserunt delectus fuga nihil
+        itaque eum. Culpa soluta reiciendis dolorem eius sit voluptas. Impedit porro
+        aut dolore. Quaerat quia sint odit ducimus sint ut.","track_inventory":true,"display_price":"$22.99","options_text":"","in_stock":true,"option_values":[],"images":[{"id":35,"position":1,"attachment_content_type":"image/jpeg","attachment_file_name":"spree_bag.jpeg","type":"Spree::Image","attachment_updated_at":"2014-07-31T09:47:35.328Z","attachment_width":480,"attachment_height":480,"alt":null,"viewable_type":"Spree::Variant","viewable_id":12,"mini_url":"/spree/products/35/mini/spree_bag.jpeg?1406800055","small_url":"/spree/products/35/small/spree_bag.jpeg?1406800055","product_url":"/spree/products/35/product/spree_bag.jpeg?1406800055","large_url":"/spree/products/35/large/spree_bag.jpeg?1406800055"}]},"variants":[],"option_types":[],"product_properties":[{"id":41,"product_id":12,"property_id":9,"value":"Messenger","property_name":"Type"},{"id":42,"product_id":12,"property_id":10,"value":"14
+        1/2\" x 12\" x 5\"","property_name":"Size"}]},{"id":13,"name":"Ruby on Rails
+        Mug","description":"Dolorem minus illum quas eos beatae deleniti rerum velit.
+        Deserunt delectus fuga nihil itaque eum. Culpa soluta reiciendis dolorem eius
+        sit voluptas. Impedit porro aut dolore. Quaerat quia sint odit ducimus sint
+        ut.","price":"13.99","display_price":"$13.99","available_on":"2014-07-31T09:47:16.508Z","slug":"ruby-on-rails-mug","meta_description":null,"meta_keywords":null,"shipping_category_id":1,"taxon_ids":[4,11],"total_on_hand":10,"has_variants":false,"master":{"id":13,"name":"Ruby
+        on Rails Mug","sku":"ROR-00014","price":"13.99","weight":"0.0","height":null,"width":null,"depth":null,"is_master":true,"cost_price":"11.0","slug":"ruby-on-rails-mug","description":"Dolorem
+        minus illum quas eos beatae deleniti rerum velit. Deserunt delectus fuga nihil
+        itaque eum. Culpa soluta reiciendis dolorem eius sit voluptas. Impedit porro
+        aut dolore. Quaerat quia sint odit ducimus sint ut.","track_inventory":true,"display_price":"$13.99","options_text":"","in_stock":true,"option_values":[],"images":[{"id":27,"position":1,"attachment_content_type":"image/jpeg","attachment_file_name":"ror_mug.jpeg","type":"Spree::Image","attachment_updated_at":"2014-07-31T09:47:31.310Z","attachment_width":360,"attachment_height":360,"alt":null,"viewable_type":"Spree::Variant","viewable_id":13,"mini_url":"/spree/products/27/mini/ror_mug.jpeg?1406800051","small_url":"/spree/products/27/small/ror_mug.jpeg?1406800051","product_url":"/spree/products/27/product/ror_mug.jpeg?1406800051","large_url":"/spree/products/27/large/ror_mug.jpeg?1406800051"},{"id":28,"position":2,"attachment_content_type":"image/jpeg","attachment_file_name":"ror_mug_back.jpeg","type":"Spree::Image","attachment_updated_at":"2014-07-31T09:47:31.754Z","attachment_width":360,"attachment_height":360,"alt":null,"viewable_type":"Spree::Variant","viewable_id":13,"mini_url":"/spree/products/28/mini/ror_mug_back.jpeg?1406800051","small_url":"/spree/products/28/small/ror_mug_back.jpeg?1406800051","product_url":"/spree/products/28/product/ror_mug_back.jpeg?1406800051","large_url":"/spree/products/28/large/ror_mug_back.jpeg?1406800051"}]},"variants":[],"option_types":[],"product_properties":[{"id":31,"product_id":13,"property_id":9,"value":"Mug","property_name":"Type"},{"id":32,"product_id":13,"property_id":10,"value":"4.5\"
+        tall, 3.25\" dia.","property_name":"Size"}]},{"id":14,"name":"Ruby on Rails
+        Stein","description":"Dolorem minus illum quas eos beatae deleniti rerum velit.
+        Deserunt delectus fuga nihil itaque eum. Culpa soluta reiciendis dolorem eius
+        sit voluptas. Impedit porro aut dolore. Quaerat quia sint odit ducimus sint
+        ut.","price":"16.99","display_price":"$16.99","available_on":"2014-07-31T09:47:16.508Z","slug":"ruby-on-rails-stein","meta_description":null,"meta_keywords":null,"shipping_category_id":1,"taxon_ids":[4,11],"total_on_hand":10,"has_variants":false,"master":{"id":14,"name":"Ruby
+        on Rails Stein","sku":"ROR-00016","price":"16.99","weight":"0.0","height":null,"width":null,"depth":null,"is_master":true,"cost_price":"15.0","slug":"ruby-on-rails-stein","description":"Dolorem
+        minus illum quas eos beatae deleniti rerum velit. Deserunt delectus fuga nihil
+        itaque eum. Culpa soluta reiciendis dolorem eius sit voluptas. Impedit porro
+        aut dolore. Quaerat quia sint odit ducimus sint ut.","track_inventory":true,"display_price":"$16.99","options_text":"","in_stock":true,"option_values":[],"images":[{"id":31,"position":1,"attachment_content_type":"image/jpeg","attachment_file_name":"ror_stein.jpeg","type":"Spree::Image","attachment_updated_at":"2014-07-31T09:47:33.053Z","attachment_width":360,"attachment_height":360,"alt":null,"viewable_type":"Spree::Variant","viewable_id":14,"mini_url":"/spree/products/31/mini/ror_stein.jpeg?1406800053","small_url":"/spree/products/31/small/ror_stein.jpeg?1406800053","product_url":"/spree/products/31/product/ror_stein.jpeg?1406800053","large_url":"/spree/products/31/large/ror_stein.jpeg?1406800053"},{"id":32,"position":2,"attachment_content_type":"image/jpeg","attachment_file_name":"ror_stein_back.jpeg","type":"Spree::Image","attachment_updated_at":"2014-07-31T09:47:33.475Z","attachment_width":360,"attachment_height":360,"alt":null,"viewable_type":"Spree::Variant","viewable_id":14,"mini_url":"/spree/products/32/mini/ror_stein_back.jpeg?1406800053","small_url":"/spree/products/32/small/ror_stein_back.jpeg?1406800053","product_url":"/spree/products/32/product/ror_stein_back.jpeg?1406800053","large_url":"/spree/products/32/large/ror_stein_back.jpeg?1406800053"}]},"variants":[],"option_types":[],"product_properties":[{"id":33,"product_id":14,"property_id":9,"value":"Stein","property_name":"Type"},{"id":34,"product_id":14,"property_id":10,"value":"6.75\"
+        tall, 3.75\" dia. base, 3\" dia. rim","property_name":"Size"}]},{"id":15,"name":"Spree
+        Stein","description":"Dolorem minus illum quas eos beatae deleniti rerum velit.
+        Deserunt delectus fuga nihil itaque eum. Culpa soluta reiciendis dolorem eius
+        sit voluptas. Impedit porro aut dolore. Quaerat quia sint odit ducimus sint
+        ut.","price":"16.99","display_price":"$16.99","available_on":"2014-07-31T09:47:16.508Z","slug":"spree-stein","meta_description":null,"meta_keywords":null,"shipping_category_id":1,"taxon_ids":[4,10],"total_on_hand":10,"has_variants":false,"master":{"id":15,"name":"Spree
+        Stein","sku":"SPR-00016","price":"16.99","weight":"0.0","height":null,"width":null,"depth":null,"is_master":true,"cost_price":"15.0","slug":"spree-stein","description":"Dolorem
+        minus illum quas eos beatae deleniti rerum velit. Deserunt delectus fuga nihil
+        itaque eum. Culpa soluta reiciendis dolorem eius sit voluptas. Impedit porro
+        aut dolore. Quaerat quia sint odit ducimus sint ut.","track_inventory":true,"display_price":"$16.99","options_text":"","in_stock":true,"option_values":[],"images":[{"id":43,"position":1,"attachment_content_type":"image/jpeg","attachment_file_name":"spree_stein.jpeg","type":"Spree::Image","attachment_updated_at":"2014-07-31T09:47:39.245Z","attachment_width":480,"attachment_height":480,"alt":null,"viewable_type":"Spree::Variant","viewable_id":15,"mini_url":"/spree/products/43/mini/spree_stein.jpeg?1406800059","small_url":"/spree/products/43/small/spree_stein.jpeg?1406800059","product_url":"/spree/products/43/product/spree_stein.jpeg?1406800059","large_url":"/spree/products/43/large/spree_stein.jpeg?1406800059"},{"id":44,"position":2,"attachment_content_type":"image/jpeg","attachment_file_name":"spree_stein_back.jpeg","type":"Spree::Image","attachment_updated_at":"2014-07-31T09:47:39.688Z","attachment_width":480,"attachment_height":480,"alt":null,"viewable_type":"Spree::Variant","viewable_id":15,"mini_url":"/spree/products/44/mini/spree_stein_back.jpeg?1406800059","small_url":"/spree/products/44/small/spree_stein_back.jpeg?1406800059","product_url":"/spree/products/44/product/spree_stein_back.jpeg?1406800059","large_url":"/spree/products/44/large/spree_stein_back.jpeg?1406800059"}]},"variants":[],"option_types":[],"product_properties":[{"id":35,"product_id":15,"property_id":9,"value":"Stein","property_name":"Type"},{"id":36,"product_id":15,"property_id":10,"value":"6.75\"
+        tall, 3.75\" dia. base, 3\" dia. rim","property_name":"Size"}]},{"id":16,"name":"Spree
+        Mug","description":"Dolorem minus illum quas eos beatae deleniti rerum velit.
+        Deserunt delectus fuga nihil itaque eum. Culpa soluta reiciendis dolorem eius
+        sit voluptas. Impedit porro aut dolore. Quaerat quia sint odit ducimus sint
+        ut.","price":"13.99","display_price":"$13.99","available_on":"2014-07-31T09:47:16.508Z","slug":"spree-mug","meta_description":null,"meta_keywords":null,"shipping_category_id":1,"taxon_ids":[4,10],"total_on_hand":10,"has_variants":false,"master":{"id":16,"name":"Spree
+        Mug","sku":"SPR-00014","price":"13.99","weight":"0.0","height":null,"width":null,"depth":null,"is_master":true,"cost_price":"11.0","slug":"spree-mug","description":"Dolorem
+        minus illum quas eos beatae deleniti rerum velit. Deserunt delectus fuga nihil
+        itaque eum. Culpa soluta reiciendis dolorem eius sit voluptas. Impedit porro
+        aut dolore. Quaerat quia sint odit ducimus sint ut.","track_inventory":true,"display_price":"$13.99","options_text":"","in_stock":true,"option_values":[],"images":[{"id":45,"position":1,"attachment_content_type":"image/jpeg","attachment_file_name":"spree_mug.jpeg","type":"Spree::Image","attachment_updated_at":"2014-07-31T09:47:40.141Z","attachment_width":240,"attachment_height":240,"alt":null,"viewable_type":"Spree::Variant","viewable_id":16,"mini_url":"/spree/products/45/mini/spree_mug.jpeg?1406800060","small_url":"/spree/products/45/small/spree_mug.jpeg?1406800060","product_url":"/spree/products/45/product/spree_mug.jpeg?1406800060","large_url":"/spree/products/45/large/spree_mug.jpeg?1406800060"},{"id":46,"position":2,"attachment_content_type":"image/jpeg","attachment_file_name":"spree_mug_back.jpeg","type":"Spree::Image","attachment_updated_at":"2014-07-31T09:47:40.563Z","attachment_width":240,"attachment_height":240,"alt":null,"viewable_type":"Spree::Variant","viewable_id":16,"mini_url":"/spree/products/46/mini/spree_mug_back.jpeg?1406800060","small_url":"/spree/products/46/small/spree_mug_back.jpeg?1406800060","product_url":"/spree/products/46/product/spree_mug_back.jpeg?1406800060","large_url":"/spree/products/46/large/spree_mug_back.jpeg?1406800060"}]},"variants":[],"option_types":[],"product_properties":[{"id":37,"product_id":16,"property_id":9,"value":"Mug","property_name":"Type"},{"id":38,"product_id":16,"property_id":10,"value":"4.5\"
+        tall, 3.25\" dia.","property_name":"Size"}]}]}'
+    http_version: 
+  recorded_at: Thu, 31 Jul 2014 14:38:22 GMT
+recorded_with: VCR 2.5.0

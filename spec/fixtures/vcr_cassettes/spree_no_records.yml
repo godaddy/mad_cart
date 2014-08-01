@@ -1,0 +1,110 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3001/api/products.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      X-Spree-Token:
+      - d1202dea0f624d1c2f0c8544f5dffe4b24bbcaf3a9601cc5
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 200
+      message: ! 'OK '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 31 Jul 2014 14:21:21 GMT
+      Surrogate-Control:
+      - max-age=900
+      Cache-Control:
+      - max-age=900, public
+      Etag:
+      - ! '"1fa4b01070520093a33ebd555491e875"'
+      X-Request-Id:
+      - f0b9d1f6-3284-4a5d-ac7a-2e31d456e496
+      X-Runtime:
+      - '2.942793'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.1/2014-02-24)
+      Content-Length:
+      - '59494'
+      Connection:
+      - Keep-Alive
+      Set-Cookie:
+      - guest_token=ImtKakRBQ3FFY3hwTWFXV2hWdXIzVkEi--6cf9210ccc7dacc3b1cacba52a4a11e9c048ddf1;
+        path=/; expires=Mon, 31 Jul 2034 14:21:21 -0000
+      - request_method=GET; path=/
+    body:
+      encoding: US-ASCII
+      string: ! '{"count":0,"total_count":0,"current_page":1,"per_page":25,"pages":0,"products":[]}'
+    http_version:
+  recorded_at: Thu, 31 Jul 2014 14:24:20 GMT
+- request:
+    method: get
+    uri: http://localhost:3001/api/orders.json?page=1&per_page=50
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      X-Spree-Token:
+      - d1202dea0f624d1c2f0c8544f5dffe4b24bbcaf3a9601cc5
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+  response:
+    status:
+      code: 200
+      message: ! 'OK '
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Content-Type:
+      - application/json; charset=utf-8
+      Etag:
+      - ! '"a9dbd28d9782cb1412355546414a494b"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 31e9ac96-1215-40d7-a7a4-1b6cadee3478
+      X-Runtime:
+      - '0.499069'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.1.1/2014-02-24)
+      Date:
+      - Thu, 31 Jul 2014 14:31:12 GMT
+      Content-Length:
+      - '1701'
+      Connection:
+      - Keep-Alive
+      Set-Cookie:
+      - guest_token=IllrNXp0Uld1MGxxWkNwRHRKcUhRaUEi--7af3a10f1bb3481c15ba73ad7bc1141cdfb3001c;
+        path=/; expires=Mon, 31 Jul 2034 14:31:12 -0000
+      - request_method=GET; path=/
+    body:
+      encoding: US-ASCII
+      string: ! '{"count":0,"current_page":"1","pages":0,"orders":[]}'
+    http_version:
+  recorded_at: Thu, 31 Jul 2014 14:31:12 GMT
