@@ -7,6 +7,7 @@ A flexible DSL allows easy CRM and store integration.
 Currently supports the following stores:
 **-Etsy**
 **-Bigcommerce**
+**-Spree**
 
 ## Installation
 
