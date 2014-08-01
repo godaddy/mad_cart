@@ -107,6 +107,16 @@ store = MadCart::Store::Etsy.new
 store.products.each{|p| MyProduct.create!(p.attributes) }
 ```
 
+### Exceptions
+
+MadCart throws several types of exceptions:
+
+```ruby
+MadCart::Store::ServerError        #=> when Store's API returns server error response (status code: 500).
+MadCart::Store::InvalidCredentials #=> when Store's API returns unauthorized response (status code: 401).
+MadCart::Store::InvalidStore       #=> when there is a problem with connection to Store's API.
+```
+
 ## Contributing
 
 See the [Contributor's Guide](https://github.com/madmimi/mad_cart/wiki/Contributor's-Guide) for info on the store integration API.
