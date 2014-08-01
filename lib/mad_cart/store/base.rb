@@ -9,7 +9,10 @@ module MadCart
         "in your initialize method should you require it."
       end
     end
-    class InvalidStore < StandardError; end
+
+    InvalidStore       = Class.new(StandardError)
+    ServerError        = Class.new(StandardError)
+    InvalidCredentials = Class.new(StandardError)
 
     module Base
       def self.included(base)

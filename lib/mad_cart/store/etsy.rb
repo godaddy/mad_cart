@@ -10,7 +10,7 @@ module MadCart
       create_connection_with :create_connection, :requires => [:store_name, :api_key]
       fetch :products, :with => :get_products
       format :products, :with => :format_products
-      
+
       def valid?
         self.connection ? true : false
       end
@@ -39,19 +39,18 @@ module MadCart
         store = ::Etsy::Shop.find(args[:store_name])
         if store.is_a? Array
           return store.first
-        else 
+        else
           raise InvalidStore if store.nil?
           return store
         end
       end
-      
+
       def product_options(options)
         prod_options = options.clone
         prod_options[:page] ||= 1
-        
+
         return prod_options
       end
     end
   end
 end
-

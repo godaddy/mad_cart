@@ -1,10 +1,6 @@
 module MadCart
   module Store
     class Spree
-      class InvalidStore < StandardError; end;
-      class ServerError < StandardError; end;
-      class InvalidCredentials < StandardError; end;
-
       include MadCart::Store::Base
 
       ORDERS_PER_PAGE = 50
