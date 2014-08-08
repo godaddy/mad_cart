@@ -57,15 +57,17 @@ module MadCart
           }
         end
 
-        result.reverse.uniq{ |r| r[:user_email] }.map do |r|
+        result.reverse.select{ |r| r[:user_email].present? }.uniq{ |r| r[:user_email] }.map do |r|
           c = parse_response { connection.get("orders/#{ r[:order_number] }.json") }
-          {
-            first_name: c['bill_address']['firstname'],
-            last_name:  c['bill_address']['lastname'],
-            email:      c['email'],
-            id:         c['email']
-          }
-        end
+          if c['email']
+            {
+              first_name: c['bill_address'].try(:[], 'firstname'),
+              last_name:  c['bill_address'].try(:[], 'lastname'),
+              email:      c['email'],
+              id:         c['email']
+            }
+          end
+        end.compact
       end
 
       def loop(source, &block)
