@@ -86,6 +86,16 @@ describe MadCart::Store::BigCommerce do
     end
   end
 
+  describe "store" do
+    context "retrieval" do
+      it "returns the store" do
+        VCR.use_cassette('big_commerce_store') do
+          subject.store.should_not be_nil
+        end
+      end
+    end
+  end
+
   describe "validating credentials" do
 
     it "succeeds if it can get time.json from big commerce" do
