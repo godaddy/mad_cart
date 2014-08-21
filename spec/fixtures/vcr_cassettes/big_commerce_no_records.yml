@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://admin:0ff0e3939f5f160f36047cf0caa6f699fe24bdeb@store-cr4wsh4.mybigcommerce.com/api/v2/products.json
+    uri: https://support%40madmimi.com:0ff0e3939f5f160f36047cf0caa6f699fe24bdeb@store-cr4wsh4.mybigcommerce.com/api/v2/products.json
     body:
       encoding: US-ASCII
       string: ''
@@ -58,7 +58,7 @@ http_interactions:
   recorded_at: Tue, 09 Jul 2013 09:35:32 GMT
 - request:
     method: get
-    uri: https://admin:0ff0e3939f5f160f36047cf0caa6f699fe24bdeb@store-cr4wsh4.mybigcommerce.com/api/v2/products.json
+    uri: https://support%40madmimi.com:0ff0e3939f5f160f36047cf0caa6f699fe24bdeb@store-cr4wsh4.mybigcommerce.com/api/v2/products.json
     body:
       encoding: US-ASCII
       string: ! '[]'
@@ -95,7 +95,7 @@ http_interactions:
   recorded_at: Thu, 01 Aug 2013 13:06:03 GMT
 - request:
     method: get
-    uri: https://admin:0ff0e3939f5f160f36047cf0caa6f699fe24bdeb@store-cr4wsh4.mybigcommerce.com/api/v2/customers.json?min_id=1
+    uri: https://support%40madmimi.com:0ff0e3939f5f160f36047cf0caa6f699fe24bdeb@store-cr4wsh4.mybigcommerce.com/api/v2/customers.json?min_id=1
     body:
       encoding: US-ASCII
       string: ! '[{"id":1,"company":"CompanyNAME","first_name":"First","last_name":"Customer","email":"this@email.com","phone":"","date_created":"Fri,
@@ -133,7 +133,7 @@ http_interactions:
   recorded_at: Thu, 01 Aug 2013 14:27:03 GMT
 - request:
     method: get
-    uri: https://admin:0ff0e3939f5f160f36047cf0caa6f699fe24bdeb@store-cr4wsh4.mybigcommerce.com/api/v2/customers.json?min_id=1
+    uri: https://support%40madmimi.com:0ff0e3939f5f160f36047cf0caa6f699fe24bdeb@store-cr4wsh4.mybigcommerce.com/api/v2/customers.json?min_id=1
     body:
       encoding: US-ASCII
       string: ! '[]'

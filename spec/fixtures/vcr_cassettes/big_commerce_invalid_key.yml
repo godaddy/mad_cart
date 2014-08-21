@@ -1,0 +1,77 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://support%40madmimi.com:an-invalid-key@store-cr4wsh4.mybigcommerce.com/api/v2/time.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 21 Aug 2014 21:37:06 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Www-Authenticate:
+      - Basic
+      X-Bc-Store-Version:
+      - 7.6.0
+    body:
+      encoding: UTF-8
+      string: '[{"status":401,"message":"The specified credentials were invalid."}]'
+    http_version: 
+  recorded_at: Thu, 21 Aug 2014 21:37:06 GMT
+- request:
+    method: get
+    uri: https://support%40madmimi.com:an-invalid-key@store-cr4wsh4.mybigcommerce.com/api/v2/time.json
+    body:
+      encoding: UTF-8
+      string: '[{"status":401,"message":"The specified credentials were invalid."}]'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 21 Aug 2014 21:37:07 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Www-Authenticate:
+      - Basic
+      X-Bc-Store-Version:
+      - 7.6.0
+    body:
+      encoding: UTF-8
+      string: '[{"status":401,"message":"The specified credentials were invalid."}]'
+    http_version: 
+  recorded_at: Thu, 21 Aug 2014 21:37:08 GMT
+recorded_with: VCR 2.5.0

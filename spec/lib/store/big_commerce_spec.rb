@@ -2,10 +2,12 @@ require "spec_helper"
 
 describe MadCart::Store::BigCommerce do
 
+  subject { MadCart::Store::BigCommerce.new(valid_credentials) }
+
   let(:valid_credentials) {
     { :api_key => '0ff0e3939f5f160f36047cf0caa6f699fe24bdeb',
       :store_url => 'store-cr4wsh4.mybigcommerce.com',
-      :username => 'admin' }
+      :username => 'support@madmimi.com' }
   }
 
   describe "store" do
@@ -30,14 +32,12 @@ describe MadCart::Store::BigCommerce do
 
     context "retrieval" do
 
-      it "returns all products" do
-        VCR.use_cassette('big_commerce') do
-          api = MadCart::Store::BigCommerce.new(valid_credentials)
+      it "returns products" do
+        VCR.use_cassette('big_commerce_products') do
+          products = subject.products(limit: 10)
+          products.size.should == 10
 
-          api.products.size.should == 45
-
-          first_product = api.products.first
-
+          first_product = products.first
           first_product.should be_a(MadCart::Model::Product)
           first_product.name.should_not be_nil
           first_product.description.should_not be_nil
@@ -47,8 +47,7 @@ describe MadCart::Store::BigCommerce do
 
       it "returns an empty array when there are no products" do
         VCR.use_cassette('big_commerce_no_records') do
-          api = MadCart::Store::BigCommerce.new(valid_credentials)
-          api.products.should == []
+          subject.products.should == []
         end
       end
 
@@ -57,9 +56,8 @@ describe MadCart::Store::BigCommerce do
     context "count" do
 
       it "returns how many products there are" do
-        VCR.use_cassette('big_commerce') do
-          api = MadCart::Store::BigCommerce.new(valid_credentials)
-          api.products_count.should == 45
+        VCR.use_cassette('big_commerce_products_count') do
+          subject.products_count.should == 45
         end
       end
 
@@ -71,19 +69,17 @@ describe MadCart::Store::BigCommerce do
     context "retrieval" do
 
       it "returns all customers" do
-        VCR.use_cassette('big_commerce') do
-          api = MadCart::Store::BigCommerce.new(valid_credentials)
+        VCR.use_cassette('big_commerce_customers') do
+          customers = subject.customers
 
-          api.customers.size.should be > 0
-          api.customers.first.should be_a(MadCart::Model::Customer)
+          customers.size.should be > 0
+          customers.first.should be_a(MadCart::Model::Customer)
         end
       end
 
       it "returns an empty array whern there are no customers" do
         VCR.use_cassette('big_commerce_no_records') do
-          api = MadCart::Store::BigCommerce.new(valid_credentials)
-
-          api.customers.should eql([])
+          subject.customers.should eql([])
         end
       end
 
@@ -92,19 +88,17 @@ describe MadCart::Store::BigCommerce do
     describe "validating credentials" do
 
       it "succeeds if it can get time.json from big commerce" do
-        VCR.use_cassette('big_commerce') do
-          api = MadCart::Store::BigCommerce.new(valid_credentials)
-
-          api.should be_valid
+        VCR.use_cassette('big_commerce_time') do
+          subject.should be_valid
         end
       end
 
       it "fails if it cannot get time.json from big commerce" do
-        VCR.use_cassette('big_commerce') do
+        VCR.use_cassette('big_commerce_invalid_key') do
           api = MadCart::Store::BigCommerce.new(
             :api_key => 'an-invalid-key',
             :store_url => 'store-cr4wsh4.mybigcommerce.com',
-            :username => 'admin'
+            :username => 'support@madmimi.com'
           )
 
           api.should_not be_valid
