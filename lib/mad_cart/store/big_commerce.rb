@@ -6,6 +6,7 @@ module MadCart
       create_connection_with :create_connection, :requires => [:api_key, :store_url, :username]
       fetch :customers, :with => :get_customer_hashes
       fetch :products, :with => :get_products
+      fetch :store, :with => :get_store
 
       def valid?
         check_for_errors do
@@ -72,6 +73,10 @@ module MadCart
           items = send(source, :min_id => items.last['id'] + 1 )
         end
 
+      end
+
+      def get_store
+        parse_response { connection.get('store.json') }
       end
 
       def parse_response(&block)

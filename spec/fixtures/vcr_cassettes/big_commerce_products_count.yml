@@ -1,0 +1,77 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://support%40madmimi.com:0ff0e3939f5f160f36047cf0caa6f699fe24bdeb@store-cr4wsh4.mybigcommerce.com/api/v2/products/count.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 21 Aug 2014 21:16:39 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Bc-Apilimit-Remaining:
+      - '19969'
+      X-Bc-Store-Version:
+      - 7.6.0
+    body:
+      encoding: UTF-8
+      string: '{"count":45}'
+    http_version: 
+  recorded_at: Thu, 21 Aug 2014 21:16:39 GMT
+- request:
+    method: get
+    uri: https://support%40madmimi.com:0ff0e3939f5f160f36047cf0caa6f699fe24bdeb@store-cr4wsh4.mybigcommerce.com/api/v2/products/count.json
+    body:
+      encoding: UTF-8
+      string: '{"count":45}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 21 Aug 2014 21:16:41 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Bc-Apilimit-Remaining:
+      - '19968'
+      X-Bc-Store-Version:
+      - 7.6.0
+    body:
+      encoding: UTF-8
+      string: '{"count":45}'
+    http_version: 
+  recorded_at: Thu, 21 Aug 2014 21:16:41 GMT
+recorded_with: VCR 2.5.0

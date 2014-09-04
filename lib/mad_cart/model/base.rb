@@ -25,6 +25,8 @@ module MadCart
       end
 
       def check_required_attributes(args)
+        return unless klass.required_attrs
+
         keys = args.keys.map{|a| a.to_s }
         klass.required_attrs.each do |attr|
           raise(ArgumentError, "missing argument: #{attr}") if !keys.include?(attr)
@@ -34,7 +36,7 @@ module MadCart
 
       def set_attribute(key, value)
         attr_name = klass.map_attribute_name(key)
-        
+
         if klass.exposed_attributes.include? attr_name.to_s
           define_attribute_accessors unless self.respond_to?(attr_name)
           self.send("#{attr_name}=", value) unless value.nil?

@@ -82,15 +82,17 @@ module MadCart
       private :configured_connection_args
 
       def ensure_model_format(model, results)
-        if results.first.is_a?(MadCart::Model::Base)
-          results
-        else
+        if results.is_a?(Array)
           map_to_madcart_model(model, results)
+        else
+          "MadCart::Model::#{model.to_s.classify}".constantize.new(results)
         end
       end
       private :ensure_model_format
 
       def map_to_madcart_model(model, results)
+        return results if results.first.is_a?(MadCart::Model::Base)
+
         results.map do |args|
           "MadCart::Model::#{model.to_s.classify}".constantize.new(args)
         end

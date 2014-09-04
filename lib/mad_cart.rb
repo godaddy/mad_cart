@@ -16,6 +16,7 @@ require 'mad_cart/inheritable_attributes'
 require 'mad_cart/model/base'
 require 'mad_cart/model/customer'
 require 'mad_cart/model/product'
+require 'mad_cart/model/store'
 
 # stores
 require 'mad_cart/store/base'
