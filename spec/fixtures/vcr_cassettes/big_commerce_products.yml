@@ -1874,4 +1874,393 @@ http_interactions:
         21 Sep 2012 04:33:36 +0000","is_sample":false}]'
     http_version: 
   recorded_at: Thu, 21 Aug 2014 21:42:20 GMT
+- request:
+    method: get
+    uri: https://support%40madmimi.com:0ff0e3939f5f160f36047cf0caa6f699fe24bdeb@store-cr4wsh4.mybigcommerce.com/api/v2/products/36/images.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Wed, 11 Feb 2015 13:58:41 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - fornax_anonymousId=4888a218-5483-4c4d-8cc1-4ee7496061bb; path=/; domain=.store-cr4wsh4.mybigcommerce.com
+      X-Bc-Apilimit-Remaining:
+      - '19997'
+      X-Bc-Store-Version:
+      - 7.6.0
+      X-Bc-Is-Ha:
+      - '1'
+    body:
+      encoding: UTF-8
+      string: '[{"id":140,"product_id":36,"image_file":"sample_images\/p-s-win-portmans095__18030.jpg","zoom_url":"https:\/\/cdn2.bigcommerce.com\/server3700\/cr4wsh4\/products\/36\/images\/140\/p-s-win-portmans095__18030.1405299849.1280.1280.jpg?c=2","thumbnail_url":"https:\/\/cdn2.bigcommerce.com\/server3700\/cr4wsh4\/products\/36\/images\/140\/p-s-win-portmans095__18030.1405299849.386.513.jpg?c=2","standard_url":"https:\/\/cdn2.bigcommerce.com\/server3700\/cr4wsh4\/products\/36\/images\/140\/p-s-win-portmans095__18030.1405299849.220.290.jpg?c=2","tiny_url":"https:\/\/cdn2.bigcommerce.com\/server3700\/cr4wsh4\/products\/36\/images\/140\/p-s-win-portmans095__18030.1405299849.44.58.jpg?c=2","is_thumbnail":true,"sort_order":0,"description":null,"date_created":"Fri,
+        21 Sep 2012 04:17:42 +0000","is_sample":false}]'
+    http_version: 
+  recorded_at: Wed, 11 Feb 2015 13:58:46 GMT
+- request:
+    method: get
+    uri: https://support%40madmimi.com:0ff0e3939f5f160f36047cf0caa6f699fe24bdeb@store-cr4wsh4.mybigcommerce.com/api/v2/products/40/images.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Wed, 11 Feb 2015 13:58:41 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - fornax_anonymousId=d3d85c1d-bdf9-44c1-af1e-5fdde0f72557; path=/; domain=.store-cr4wsh4.mybigcommerce.com
+      X-Bc-Apilimit-Remaining:
+      - '19997'
+      X-Bc-Store-Version:
+      - 7.6.0
+      X-Bc-Is-Ha:
+      - '1'
+    body:
+      encoding: UTF-8
+      string: '[{"id":146,"product_id":40,"image_file":"sample_images\/HERO_COCO_100413__25837.jpg","zoom_url":"https:\/\/cdn2.bigcommerce.com\/server3700\/cr4wsh4\/products\/40\/images\/146\/HERO_COCO_100413__25837.1405299806.1280.1280.jpg?c=2","thumbnail_url":"https:\/\/cdn2.bigcommerce.com\/server3700\/cr4wsh4\/products\/40\/images\/146\/HERO_COCO_100413__25837.1405299806.386.513.jpg?c=2","standard_url":"https:\/\/cdn2.bigcommerce.com\/server3700\/cr4wsh4\/products\/40\/images\/146\/HERO_COCO_100413__25837.1405299806.220.290.jpg?c=2","tiny_url":"https:\/\/cdn2.bigcommerce.com\/server3700\/cr4wsh4\/products\/40\/images\/146\/HERO_COCO_100413__25837.1405299806.44.58.jpg?c=2","is_thumbnail":false,"sort_order":0,"description":null,"date_created":"Fri,
+        21 Sep 2012 04:38:02 +0000","is_sample":false},{"id":147,"product_id":40,"image_file":"sample_images\/COCO_100415__75369.jpg","zoom_url":"https:\/\/cdn2.bigcommerce.com\/server3700\/cr4wsh4\/products\/40\/images\/147\/COCO_100415__75369.1405299803.1280.1280.jpg?c=2","thumbnail_url":"https:\/\/cdn2.bigcommerce.com\/server3700\/cr4wsh4\/products\/40\/images\/147\/COCO_100415__75369.1405299803.386.513.jpg?c=2","standard_url":"https:\/\/cdn2.bigcommerce.com\/server3700\/cr4wsh4\/products\/40\/images\/147\/COCO_100415__75369.1405299803.220.290.jpg?c=2","tiny_url":"https:\/\/cdn2.bigcommerce.com\/server3700\/cr4wsh4\/products\/40\/images\/147\/COCO_100415__75369.1405299803.44.58.jpg?c=2","is_thumbnail":false,"sort_order":1,"description":null,"date_created":"Fri,
+        21 Sep 2012 04:38:09 +0000","is_sample":false},{"id":256,"product_id":40,"image_file":"sample_images\/donatello.1280.1280__61380.jpg","zoom_url":"https:\/\/cdn2.bigcommerce.com\/server3700\/cr4wsh4\/products\/40\/images\/256\/donatello.1280.1280__61380.1405299819.1280.1280.jpg?c=2","thumbnail_url":"https:\/\/cdn2.bigcommerce.com\/server3700\/cr4wsh4\/products\/40\/images\/256\/donatello.1280.1280__61380.1405299819.386.513.jpg?c=2","standard_url":"https:\/\/cdn2.bigcommerce.com\/server3700\/cr4wsh4\/products\/40\/images\/256\/donatello.1280.1280__61380.1405299819.220.290.jpg?c=2","tiny_url":"https:\/\/cdn2.bigcommerce.com\/server3700\/cr4wsh4\/products\/40\/images\/256\/donatello.1280.1280__61380.1405299819.44.58.jpg?c=2","is_thumbnail":true,"sort_order":2,"description":null,"date_created":"Mon,
+        24 Sep 2012 06:05:59 +0000","is_sample":false}]'
+    http_version: 
+  recorded_at: Wed, 11 Feb 2015 13:58:46 GMT
+- request:
+    method: get
+    uri: https://support%40madmimi.com:0ff0e3939f5f160f36047cf0caa6f699fe24bdeb@store-cr4wsh4.mybigcommerce.com/api/v2/products/41/images.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Wed, 11 Feb 2015 13:58:41 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - fornax_anonymousId=c0993ef4-4066-4d2f-93a6-f800cde5717e; path=/; domain=.store-cr4wsh4.mybigcommerce.com
+      X-Bc-Apilimit-Remaining:
+      - '19997'
+      X-Bc-Store-Version:
+      - 7.6.0
+      X-Bc-Is-Ha:
+      - '1'
+    body:
+      encoding: UTF-8
+      string: '[{"id":149,"product_id":41,"image_file":"sample_images\/Giddion_canvas_07111191649__16196.jpg","zoom_url":"https:\/\/cdn2.bigcommerce.com\/server3700\/cr4wsh4\/products\/41\/images\/149\/Giddion_canvas_07111191649__16196.1405299806.1280.1280.jpg?c=2","thumbnail_url":"https:\/\/cdn2.bigcommerce.com\/server3700\/cr4wsh4\/products\/41\/images\/149\/Giddion_canvas_07111191649__16196.1405299806.386.513.jpg?c=2","standard_url":"https:\/\/cdn2.bigcommerce.com\/server3700\/cr4wsh4\/products\/41\/images\/149\/Giddion_canvas_07111191649__16196.1405299806.220.290.jpg?c=2","tiny_url":"https:\/\/cdn2.bigcommerce.com\/server3700\/cr4wsh4\/products\/41\/images\/149\/Giddion_canvas_07111191649__16196.1405299806.44.58.jpg?c=2","is_thumbnail":false,"sort_order":0,"description":null,"date_created":"Fri,
+        21 Sep 2012 05:20:58 +0000","is_sample":false},{"id":150,"product_id":41,"image_file":"sample_images\/Giddion_canvas_07111191650__10275.jpg","zoom_url":"https:\/\/cdn2.bigcommerce.com\/server3700\/cr4wsh4\/products\/41\/images\/150\/Giddion_canvas_07111191650__10275.1405299806.1280.1280.jpg?c=2","thumbnail_url":"https:\/\/cdn2.bigcommerce.com\/server3700\/cr4wsh4\/products\/41\/images\/150\/Giddion_canvas_07111191650__10275.1405299806.386.513.jpg?c=2","standard_url":"https:\/\/cdn2.bigcommerce.com\/server3700\/cr4wsh4\/products\/41\/images\/150\/Giddion_canvas_07111191650__10275.1405299806.220.290.jpg?c=2","tiny_url":"https:\/\/cdn2.bigcommerce.com\/server3700\/cr4wsh4\/products\/41\/images\/150\/Giddion_canvas_07111191650__10275.1405299806.44.58.jpg?c=2","is_thumbnail":false,"sort_order":1,"description":null,"date_created":"Fri,
+        21 Sep 2012 05:30:49 +0000","is_sample":false},{"id":151,"product_id":41,"image_file":"sample_images\/Giddion_canvas_07111191652__23794.jpg","zoom_url":"https:\/\/cdn2.bigcommerce.com\/server3700\/cr4wsh4\/products\/41\/images\/151\/Giddion_canvas_07111191652__23794.1405299806.1280.1280.jpg?c=2","thumbnail_url":"https:\/\/cdn2.bigcommerce.com\/server3700\/cr4wsh4\/products\/41\/images\/151\/Giddion_canvas_07111191652__23794.1405299806.386.513.jpg?c=2","standard_url":"https:\/\/cdn2.bigcommerce.com\/server3700\/cr4wsh4\/products\/41\/images\/151\/Giddion_canvas_07111191652__23794.1405299806.220.290.jpg?c=2","tiny_url":"https:\/\/cdn2.bigcommerce.com\/server3700\/cr4wsh4\/products\/41\/images\/151\/Giddion_canvas_07111191652__23794.1405299806.44.58.jpg?c=2","is_thumbnail":false,"sort_order":2,"description":null,"date_created":"Fri,
+        21 Sep 2012 05:30:56 +0000","is_sample":false},{"id":152,"product_id":41,"image_file":"sample_images\/HERO_Giddion_canvas_07111191651__21691.jpg","zoom_url":"https:\/\/cdn2.bigcommerce.com\/server3700\/cr4wsh4\/products\/41\/images\/152\/HERO_Giddion_canvas_07111191651__21691.1405299807.1280.1280.jpg?c=2","thumbnail_url":"https:\/\/cdn2.bigcommerce.com\/server3700\/cr4wsh4\/products\/41\/images\/152\/HERO_Giddion_canvas_07111191651__21691.1405299807.386.513.jpg?c=2","standard_url":"https:\/\/cdn2.bigcommerce.com\/server3700\/cr4wsh4\/products\/41\/images\/152\/HERO_Giddion_canvas_07111191651__21691.1405299807.220.290.jpg?c=2","tiny_url":"https:\/\/cdn2.bigcommerce.com\/server3700\/cr4wsh4\/products\/41\/images\/152\/HERO_Giddion_canvas_07111191651__21691.1405299807.44.58.jpg?c=2","is_thumbnail":true,"sort_order":3,"description":null,"date_created":"Fri,
+        21 Sep 2012 05:31:01 +0000","is_sample":false}]'
+    http_version: 
+  recorded_at: Wed, 11 Feb 2015 13:58:46 GMT
+- request:
+    method: get
+    uri: https://support%40madmimi.com:0ff0e3939f5f160f36047cf0caa6f699fe24bdeb@store-cr4wsh4.mybigcommerce.com/api/v2/products/40/images.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Wed, 11 Feb 2015 14:07:48 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - fornax_anonymousId=d6cba28b-e016-41c9-a349-99fda4e6bf26; path=/; domain=.store-cr4wsh4.mybigcommerce.com
+      X-Bc-Apilimit-Remaining:
+      - '19995'
+      X-Bc-Store-Version:
+      - 7.6.0
+      X-Bc-Is-Ha:
+      - '1'
+    body:
+      encoding: UTF-8
+      string: '[{"id":146,"product_id":40,"image_file":"sample_images\/HERO_COCO_100413__25837.jpg","zoom_url":"https:\/\/cdn2.bigcommerce.com\/server3700\/cr4wsh4\/products\/40\/images\/146\/HERO_COCO_100413__25837.1405299806.1280.1280.jpg?c=2","thumbnail_url":"https:\/\/cdn2.bigcommerce.com\/server3700\/cr4wsh4\/products\/40\/images\/146\/HERO_COCO_100413__25837.1405299806.386.513.jpg?c=2","standard_url":"https:\/\/cdn2.bigcommerce.com\/server3700\/cr4wsh4\/products\/40\/images\/146\/HERO_COCO_100413__25837.1405299806.220.290.jpg?c=2","tiny_url":"https:\/\/cdn2.bigcommerce.com\/server3700\/cr4wsh4\/products\/40\/images\/146\/HERO_COCO_100413__25837.1405299806.44.58.jpg?c=2","is_thumbnail":false,"sort_order":0,"description":null,"date_created":"Fri,
+        21 Sep 2012 04:38:02 +0000","is_sample":false},{"id":147,"product_id":40,"image_file":"sample_images\/COCO_100415__75369.jpg","zoom_url":"https:\/\/cdn2.bigcommerce.com\/server3700\/cr4wsh4\/products\/40\/images\/147\/COCO_100415__75369.1405299803.1280.1280.jpg?c=2","thumbnail_url":"https:\/\/cdn2.bigcommerce.com\/server3700\/cr4wsh4\/products\/40\/images\/147\/COCO_100415__75369.1405299803.386.513.jpg?c=2","standard_url":"https:\/\/cdn2.bigcommerce.com\/server3700\/cr4wsh4\/products\/40\/images\/147\/COCO_100415__75369.1405299803.220.290.jpg?c=2","tiny_url":"https:\/\/cdn2.bigcommerce.com\/server3700\/cr4wsh4\/products\/40\/images\/147\/COCO_100415__75369.1405299803.44.58.jpg?c=2","is_thumbnail":false,"sort_order":1,"description":null,"date_created":"Fri,
+        21 Sep 2012 04:38:09 +0000","is_sample":false},{"id":256,"product_id":40,"image_file":"sample_images\/donatello.1280.1280__61380.jpg","zoom_url":"https:\/\/cdn2.bigcommerce.com\/server3700\/cr4wsh4\/products\/40\/images\/256\/donatello.1280.1280__61380.1405299819.1280.1280.jpg?c=2","thumbnail_url":"https:\/\/cdn2.bigcommerce.com\/server3700\/cr4wsh4\/products\/40\/images\/256\/donatello.1280.1280__61380.1405299819.386.513.jpg?c=2","standard_url":"https:\/\/cdn2.bigcommerce.com\/server3700\/cr4wsh4\/products\/40\/images\/256\/donatello.1280.1280__61380.1405299819.220.290.jpg?c=2","tiny_url":"https:\/\/cdn2.bigcommerce.com\/server3700\/cr4wsh4\/products\/40\/images\/256\/donatello.1280.1280__61380.1405299819.44.58.jpg?c=2","is_thumbnail":true,"sort_order":2,"description":null,"date_created":"Mon,
+        24 Sep 2012 06:05:59 +0000","is_sample":false}]'
+    http_version: 
+  recorded_at: Wed, 11 Feb 2015 14:07:53 GMT
+- request:
+    method: get
+    uri: https://support%40madmimi.com:0ff0e3939f5f160f36047cf0caa6f699fe24bdeb@store-cr4wsh4.mybigcommerce.com/api/v2/products/36/images.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Wed, 11 Feb 2015 14:07:48 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - fornax_anonymousId=9d840894-aa3e-42c5-8ced-93ffb47b5117; path=/; domain=.store-cr4wsh4.mybigcommerce.com
+      X-Bc-Apilimit-Remaining:
+      - '19993'
+      X-Bc-Store-Version:
+      - 7.6.0
+      X-Bc-Is-Ha:
+      - '1'
+    body:
+      encoding: UTF-8
+      string: '[{"id":140,"product_id":36,"image_file":"sample_images\/p-s-win-portmans095__18030.jpg","zoom_url":"https:\/\/cdn2.bigcommerce.com\/server3700\/cr4wsh4\/products\/36\/images\/140\/p-s-win-portmans095__18030.1405299849.1280.1280.jpg?c=2","thumbnail_url":"https:\/\/cdn2.bigcommerce.com\/server3700\/cr4wsh4\/products\/36\/images\/140\/p-s-win-portmans095__18030.1405299849.386.513.jpg?c=2","standard_url":"https:\/\/cdn2.bigcommerce.com\/server3700\/cr4wsh4\/products\/36\/images\/140\/p-s-win-portmans095__18030.1405299849.220.290.jpg?c=2","tiny_url":"https:\/\/cdn2.bigcommerce.com\/server3700\/cr4wsh4\/products\/36\/images\/140\/p-s-win-portmans095__18030.1405299849.44.58.jpg?c=2","is_thumbnail":true,"sort_order":0,"description":null,"date_created":"Fri,
+        21 Sep 2012 04:17:42 +0000","is_sample":false}]'
+    http_version: 
+  recorded_at: Wed, 11 Feb 2015 14:07:53 GMT
+- request:
+    method: get
+    uri: https://support%40madmimi.com:0ff0e3939f5f160f36047cf0caa6f699fe24bdeb@store-cr4wsh4.mybigcommerce.com/api/v2/products/39/images.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Wed, 11 Feb 2015 14:07:48 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - fornax_anonymousId=e03799a4-63af-4fe7-a76e-738c920b72c6; path=/; domain=.store-cr4wsh4.mybigcommerce.com
+      X-Bc-Apilimit-Remaining:
+      - '19993'
+      X-Bc-Store-Version:
+      - 7.6.0
+      X-Bc-Is-Ha:
+      - '1'
+    body:
+      encoding: UTF-8
+      string: '[{"id":144,"product_id":39,"image_file":"sample_images\/GF_luv2shop_6625__63295.jpg","zoom_url":"https:\/\/cdn2.bigcommerce.com\/server3700\/cr4wsh4\/products\/39\/images\/144\/GF_luv2shop_6625__63295.1405299805.1280.1280.jpg?c=2","thumbnail_url":"https:\/\/cdn2.bigcommerce.com\/server3700\/cr4wsh4\/products\/39\/images\/144\/GF_luv2shop_6625__63295.1405299805.386.513.jpg?c=2","standard_url":"https:\/\/cdn2.bigcommerce.com\/server3700\/cr4wsh4\/products\/39\/images\/144\/GF_luv2shop_6625__63295.1405299805.220.290.jpg?c=2","tiny_url":"https:\/\/cdn2.bigcommerce.com\/server3700\/cr4wsh4\/products\/39\/images\/144\/GF_luv2shop_6625__63295.1405299805.44.58.jpg?c=2","is_thumbnail":true,"sort_order":0,"description":null,"date_created":"Fri,
+        21 Sep 2012 04:35:58 +0000","is_sample":false}]'
+    http_version: 
+  recorded_at: Wed, 11 Feb 2015 14:07:53 GMT
+- request:
+    method: get
+    uri: https://support%40madmimi.com:0ff0e3939f5f160f36047cf0caa6f699fe24bdeb@store-cr4wsh4.mybigcommerce.com/api/v2/products/37/images.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Wed, 11 Feb 2015 14:07:48 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - fornax_anonymousId=f17ca386-d9d5-46ac-9c28-7c0f4b101a13; path=/; domain=.store-cr4wsh4.mybigcommerce.com
+      X-Bc-Apilimit-Remaining:
+      - '19993'
+      X-Bc-Store-Version:
+      - 7.6.0
+      X-Bc-Is-Ha:
+      - '1'
+    body:
+      encoding: UTF-8
+      string: '[{"id":141,"product_id":37,"image_file":"sample_images\/gf-l2s-80022__72789.jpg","zoom_url":"https:\/\/cdn2.bigcommerce.com\/server3700\/cr4wsh4\/products\/37\/images\/141\/gf-l2s-80022__72789.1405299820.1280.1280.jpg?c=2","thumbnail_url":"https:\/\/cdn2.bigcommerce.com\/server3700\/cr4wsh4\/products\/37\/images\/141\/gf-l2s-80022__72789.1405299820.386.513.jpg?c=2","standard_url":"https:\/\/cdn2.bigcommerce.com\/server3700\/cr4wsh4\/products\/37\/images\/141\/gf-l2s-80022__72789.1405299820.220.290.jpg?c=2","tiny_url":"https:\/\/cdn2.bigcommerce.com\/server3700\/cr4wsh4\/products\/37\/images\/141\/gf-l2s-80022__72789.1405299820.44.58.jpg?c=2","is_thumbnail":false,"sort_order":0,"description":null,"date_created":"Fri,
+        21 Sep 2012 04:28:29 +0000","is_sample":false},{"id":142,"product_id":37,"image_file":"sample_images\/hero-gf-l2s-80031__63154.jpg","zoom_url":"https:\/\/cdn2.bigcommerce.com\/server3700\/cr4wsh4\/products\/37\/images\/142\/hero-gf-l2s-80031__63154.1405299821.1280.1280.jpg?c=2","thumbnail_url":"https:\/\/cdn2.bigcommerce.com\/server3700\/cr4wsh4\/products\/37\/images\/142\/hero-gf-l2s-80031__63154.1405299821.386.513.jpg?c=2","standard_url":"https:\/\/cdn2.bigcommerce.com\/server3700\/cr4wsh4\/products\/37\/images\/142\/hero-gf-l2s-80031__63154.1405299821.220.290.jpg?c=2","tiny_url":"https:\/\/cdn2.bigcommerce.com\/server3700\/cr4wsh4\/products\/37\/images\/142\/hero-gf-l2s-80031__63154.1405299821.44.58.jpg?c=2","is_thumbnail":true,"sort_order":1,"description":null,"date_created":"Fri,
+        21 Sep 2012 04:28:30 +0000","is_sample":false}]'
+    http_version: 
+  recorded_at: Wed, 11 Feb 2015 14:07:53 GMT
+- request:
+    method: get
+    uri: https://support%40madmimi.com:0ff0e3939f5f160f36047cf0caa6f699fe24bdeb@store-cr4wsh4.mybigcommerce.com/api/v2/products/38/images.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Wed, 11 Feb 2015 14:07:48 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - fornax_anonymousId=9b22f137-193c-4895-a0dc-180a5331c7b8; path=/; domain=.store-cr4wsh4.mybigcommerce.com
+      X-Bc-Apilimit-Remaining:
+      - '19991'
+      X-Bc-Store-Version:
+      - 7.6.0
+      X-Bc-Is-Ha:
+      - '1'
+    body:
+      encoding: UTF-8
+      string: '[{"id":143,"product_id":38,"image_file":"sample_images\/NI_116__41975.jpg","zoom_url":"https:\/\/cdn2.bigcommerce.com\/server3700\/cr4wsh4\/products\/38\/images\/143\/NI_116__41975.1405299812.1280.1280.jpg?c=2","thumbnail_url":"https:\/\/cdn2.bigcommerce.com\/server3700\/cr4wsh4\/products\/38\/images\/143\/NI_116__41975.1405299812.386.513.jpg?c=2","standard_url":"https:\/\/cdn2.bigcommerce.com\/server3700\/cr4wsh4\/products\/38\/images\/143\/NI_116__41975.1405299812.220.290.jpg?c=2","tiny_url":"https:\/\/cdn2.bigcommerce.com\/server3700\/cr4wsh4\/products\/38\/images\/143\/NI_116__41975.1405299812.44.58.jpg?c=2","is_thumbnail":true,"sort_order":0,"description":null,"date_created":"Fri,
+        21 Sep 2012 04:33:36 +0000","is_sample":false}]'
+    http_version: 
+  recorded_at: Wed, 11 Feb 2015 14:07:53 GMT
+- request:
+    method: get
+    uri: https://support%40madmimi.com:0ff0e3939f5f160f36047cf0caa6f699fe24bdeb@store-cr4wsh4.mybigcommerce.com/api/v2/products/41/images.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Wed, 11 Feb 2015 14:07:48 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - fornax_anonymousId=4d738b00-be58-4091-922d-c8d93d859e96; path=/; domain=.store-cr4wsh4.mybigcommerce.com
+      X-Bc-Apilimit-Remaining:
+      - '19991'
+      X-Bc-Store-Version:
+      - 7.6.0
+      X-Bc-Is-Ha:
+      - '1'
+    body:
+      encoding: UTF-8
+      string: '[{"id":149,"product_id":41,"image_file":"sample_images\/Giddion_canvas_07111191649__16196.jpg","zoom_url":"https:\/\/cdn2.bigcommerce.com\/server3700\/cr4wsh4\/products\/41\/images\/149\/Giddion_canvas_07111191649__16196.1405299806.1280.1280.jpg?c=2","thumbnail_url":"https:\/\/cdn2.bigcommerce.com\/server3700\/cr4wsh4\/products\/41\/images\/149\/Giddion_canvas_07111191649__16196.1405299806.386.513.jpg?c=2","standard_url":"https:\/\/cdn2.bigcommerce.com\/server3700\/cr4wsh4\/products\/41\/images\/149\/Giddion_canvas_07111191649__16196.1405299806.220.290.jpg?c=2","tiny_url":"https:\/\/cdn2.bigcommerce.com\/server3700\/cr4wsh4\/products\/41\/images\/149\/Giddion_canvas_07111191649__16196.1405299806.44.58.jpg?c=2","is_thumbnail":false,"sort_order":0,"description":null,"date_created":"Fri,
+        21 Sep 2012 05:20:58 +0000","is_sample":false},{"id":150,"product_id":41,"image_file":"sample_images\/Giddion_canvas_07111191650__10275.jpg","zoom_url":"https:\/\/cdn2.bigcommerce.com\/server3700\/cr4wsh4\/products\/41\/images\/150\/Giddion_canvas_07111191650__10275.1405299806.1280.1280.jpg?c=2","thumbnail_url":"https:\/\/cdn2.bigcommerce.com\/server3700\/cr4wsh4\/products\/41\/images\/150\/Giddion_canvas_07111191650__10275.1405299806.386.513.jpg?c=2","standard_url":"https:\/\/cdn2.bigcommerce.com\/server3700\/cr4wsh4\/products\/41\/images\/150\/Giddion_canvas_07111191650__10275.1405299806.220.290.jpg?c=2","tiny_url":"https:\/\/cdn2.bigcommerce.com\/server3700\/cr4wsh4\/products\/41\/images\/150\/Giddion_canvas_07111191650__10275.1405299806.44.58.jpg?c=2","is_thumbnail":false,"sort_order":1,"description":null,"date_created":"Fri,
+        21 Sep 2012 05:30:49 +0000","is_sample":false},{"id":151,"product_id":41,"image_file":"sample_images\/Giddion_canvas_07111191652__23794.jpg","zoom_url":"https:\/\/cdn2.bigcommerce.com\/server3700\/cr4wsh4\/products\/41\/images\/151\/Giddion_canvas_07111191652__23794.1405299806.1280.1280.jpg?c=2","thumbnail_url":"https:\/\/cdn2.bigcommerce.com\/server3700\/cr4wsh4\/products\/41\/images\/151\/Giddion_canvas_07111191652__23794.1405299806.386.513.jpg?c=2","standard_url":"https:\/\/cdn2.bigcommerce.com\/server3700\/cr4wsh4\/products\/41\/images\/151\/Giddion_canvas_07111191652__23794.1405299806.220.290.jpg?c=2","tiny_url":"https:\/\/cdn2.bigcommerce.com\/server3700\/cr4wsh4\/products\/41\/images\/151\/Giddion_canvas_07111191652__23794.1405299806.44.58.jpg?c=2","is_thumbnail":false,"sort_order":2,"description":null,"date_created":"Fri,
+        21 Sep 2012 05:30:56 +0000","is_sample":false},{"id":152,"product_id":41,"image_file":"sample_images\/HERO_Giddion_canvas_07111191651__21691.jpg","zoom_url":"https:\/\/cdn2.bigcommerce.com\/server3700\/cr4wsh4\/products\/41\/images\/152\/HERO_Giddion_canvas_07111191651__21691.1405299807.1280.1280.jpg?c=2","thumbnail_url":"https:\/\/cdn2.bigcommerce.com\/server3700\/cr4wsh4\/products\/41\/images\/152\/HERO_Giddion_canvas_07111191651__21691.1405299807.386.513.jpg?c=2","standard_url":"https:\/\/cdn2.bigcommerce.com\/server3700\/cr4wsh4\/products\/41\/images\/152\/HERO_Giddion_canvas_07111191651__21691.1405299807.220.290.jpg?c=2","tiny_url":"https:\/\/cdn2.bigcommerce.com\/server3700\/cr4wsh4\/products\/41\/images\/152\/HERO_Giddion_canvas_07111191651__21691.1405299807.44.58.jpg?c=2","is_thumbnail":true,"sort_order":3,"description":null,"date_created":"Fri,
+        21 Sep 2012 05:31:01 +0000","is_sample":false}]'
+    http_version: 
+  recorded_at: Wed, 11 Feb 2015 14:07:53 GMT
 recorded_with: VCR 2.5.0
