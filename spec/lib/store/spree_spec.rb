@@ -27,10 +27,10 @@ describe MadCart::Store::Spree do
     context "retrieval" do
 
       it "returns all products" do
-        VCR.use_cassette(spree_cassette) do
+        VCR.use_cassette(spree_cassette, :record => :new_episodes) do
           api = MadCart::Store::Spree.new(valid_credentials)
 
-          api.products.size.should == 16
+          api.products.size.should == 58
 
           first_product = api.products.first
 
@@ -53,9 +53,9 @@ describe MadCart::Store::Spree do
     context "count" do
 
       it "returns how many products there are" do
-        VCR.use_cassette(spree_cassette) do
+        VCR.use_cassette(spree_cassette, :record => :new_episodes) do
           api = MadCart::Store::Spree.new(valid_credentials)
-          api.products_count.should == 16
+          api.products_count.should == 58
         end
       end
 
@@ -67,7 +67,7 @@ describe MadCart::Store::Spree do
     context "retrieval" do
 
       it "returns all customers" do
-        VCR.use_cassette(spree_cassette) do
+        VCR.use_cassette(spree_cassette, :record => :new_episodes) do
           api = MadCart::Store::Spree.new(valid_credentials)
 
           api.customers.size.should be > 0
@@ -88,7 +88,7 @@ describe MadCart::Store::Spree do
     describe "validating credentials" do
 
       it "succeeds if it can get orders.json from Spree" do
-        VCR.use_cassette(spree_cassette) do
+        VCR.use_cassette(spree_cassette, :record => :new_episodes) do
           api = MadCart::Store::Spree.new(valid_credentials)
 
           api.should be_valid

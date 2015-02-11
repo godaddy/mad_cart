@@ -3,7 +3,8 @@ module MadCart
     class Spree
       include MadCart::Store::Base
 
-      ORDERS_PER_PAGE = 50
+      PRODUCTS_PER_PAGE = 50
+      ORDERS_PER_PAGE   = 50
 
       create_connection_with :create_connection, :requires => [:api_key, :store_url]
       fetch :customers, :with => :get_customer_hashes
@@ -19,19 +20,27 @@ module MadCart
       end
 
       def products_count
-        (parse_response { connection.get('products.json') })["count"]
+        (parse_response { connection.get('products.json') })["total_count"]
       end
 
       private
 
       def make_order_request(params={})
-        params = params.deep_merge({ :page => 1, :per_page => ORDERS_PER_PAGE })
-        parse_response { connection.get('orders.json', params) }["orders"]
+        params = params.reverse_merge({ :page => 1, :per_page => ORDERS_PER_PAGE })
+        parse_response { connection.get('orders.json', params) }
+      end
+
+      def make_product_request(params={})
+        params = params.reverse_merge({ :page => 1, :per_page => PRODUCTS_PER_PAGE })
+        parse_response { connection.get('products.json', params) }
       end
 
       def get_products(options={})
-        product_hashes = connection.get('products.json', options).try{ |c| c.body["products"] }
-        return [] unless product_hashes
+        product_hashes = []
+
+        loop(:make_product_request, :products) do |r|
+          product_hashes << r
+        end
 
         product_hashes.map do |product|
           if product["master"]["images"]
@@ -48,16 +57,16 @@ module MadCart
       end
 
       def get_customer_hashes
-        result = []
+        orders = []
 
-        loop(:make_order_request) do |c|
-          result << {
-            order_number: c["number"],
-            user_email: c["email"]
+        loop(:make_order_request, :orders) do |r|
+          orders << {
+            order_number: r["number"],
+            user_email:   r["email"]
           }
         end
 
-        result.reverse.select{ |r| r[:user_email].present? }.uniq{ |r| r[:user_email] }.map do |r|
+        orders.reverse.select{ |r| r[:user_email].present? }.uniq{ |r| r[:user_email] }.map do |r|
           c = parse_response { connection.get("orders/#{ r[:order_number] }.json") }
           if c['email']
             {
@@ -70,16 +79,16 @@ module MadCart
         end.compact
       end
 
-      def loop(source, &block)
-        page = 1
-        items = send(source, { :page => page })
+      def loop(source, items_key, &block)
+        response    = send(source, { :page => 1 })
+        items       = response[items_key.to_s]
+        pages_count = response['pages']
 
-        while true
-          items.each &block
-          break if items.count < ORDERS_PER_PAGE
-          items = send(source, { :page => page += 1 })
+        (2..pages_count).each do |page|
+          items += send(source, { :page => page })[items_key.to_s]
         end
 
+        items.each(&block)
       end
 
       def parse_response(&block)
