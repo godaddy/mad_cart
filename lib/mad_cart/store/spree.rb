@@ -43,16 +43,26 @@ module MadCart
         end
 
         product_hashes.map do |product|
-          if product["master"]["images"]
-            image = product["master"]["images"].first
+          master         = product.try(:[], "master")
+          master_variant = product.try(:[], "variants").try{ |variants| variants.find{ |variant| variant['is_master'] } }
+          images         = (master || master_variant).try(:[], "images")
+
+          if images.present?
+            image = images.first
+
             product = product.merge({
-              :url              => connection.build_url("/products/#{ product["slug"] }").to_s,
-              :image_square_url => connection.build_url(image["product_url"]).to_s,
-              :image_url        => connection.build_url(image["large_url"]).to_s
+              :image_square_url => connection.build_url(image["product_url"] || image["attachment_url"]).to_s,
+              :image_url        => connection.build_url(image["large_url"] || image["attachment_url"]).to_s
             })
           end
 
+          product = product.merge({
+            :url => connection.build_url("/products/#{ product["slug"] || product['permalink'] }").to_s,
+          })
+
           product
+        end.select do |product|
+          product[:image_url].present?
         end
       end
 

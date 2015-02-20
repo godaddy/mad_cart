@@ -3,6 +3,7 @@ require "spec_helper"
 describe MadCart::Store::Spree do
 
   let(:spree_cassette) { 'spree' }
+  let(:spree_alternative_cassette) { 'spree_alternative' }
   let(:spree_no_records_cassette) { 'spree_no_records' }
   let(:spree_invalid_key_cassette) { 'spree_invalid_key' }
 
@@ -10,6 +11,13 @@ describe MadCart::Store::Spree do
     {
       :api_key => 'd1202dea0f624d1c2f0c8544f5dffe4b24bbcaf3a9601cc5',
       :store_url => 'localhost:3001'
+    }
+  }
+
+  let(:valid_alternative_credentials) {
+    {
+      :api_key => '3d5216bcb9253377d7d354222a55bd32751f7fccc963b4ea',
+      :store_url => 'localhost:3002'
     }
   }
 
@@ -26,18 +34,39 @@ describe MadCart::Store::Spree do
 
     context "retrieval" do
 
-      it "returns all products" do
-        VCR.use_cassette(spree_cassette, :record => :new_episodes) do
-          api = MadCart::Store::Spree.new(valid_credentials)
+      context "basic spree installation" do
+        it "returns all products" do
+          VCR.use_cassette(spree_cassette, :record => :new_episodes) do
+            api = MadCart::Store::Spree.new(valid_credentials)
 
-          api.products.size.should == 58
+            api.products.size.should == 58
 
-          first_product = api.products.first
+            first_product = api.products.first
 
-          first_product.should be_a(MadCart::Model::Product)
-          first_product.name.should_not be_nil
-          first_product.description.should_not be_nil
-          first_product.image_url.should_not be_nil
+            first_product.should be_a(MadCart::Model::Product)
+            first_product.name.should_not be_nil
+            first_product.description.should_not be_nil
+            first_product.image_url.should_not be_nil
+            first_product.additional_attributes['price'].should_not be_nil
+          end
+        end
+      end
+
+      context "alternative spree installation" do
+        it "returns all products" do
+          VCR.use_cassette(spree_alternative_cassette, :record => :new_episodes) do
+            api = MadCart::Store::Spree.new(valid_alternative_credentials)
+
+            api.products.size.should == 148
+
+            first_product = api.products.first
+
+            first_product.should be_a(MadCart::Model::Product)
+            first_product.name.should_not be_nil
+            first_product.description.should_not be_nil
+            first_product.image_url.should_not be_nil
+            first_product.additional_attributes['price'].should_not be_nil
+          end
         end
       end
 

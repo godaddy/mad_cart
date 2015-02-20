@@ -2263,4 +2263,92 @@ http_interactions:
         21 Sep 2012 05:31:01 +0000","is_sample":false}]'
     http_version: 
   recorded_at: Wed, 11 Feb 2015 14:07:53 GMT
+- request:
+    method: get
+    uri: https://support%40madmimi.com:0ff0e3939f5f160f36047cf0caa6f699fe24bdeb@store-cr4wsh4.mybigcommerce.com/api/v2/products/39/images.json
+    body:
+      encoding: UTF-8
+      string: '[{"id":144,"product_id":39,"image_file":"sample_images\/GF_luv2shop_6625__63295.jpg","zoom_url":"https:\/\/cdn2.bigcommerce.com\/server3700\/cr4wsh4\/products\/39\/images\/144\/GF_luv2shop_6625__63295.1405299805.1280.1280.jpg?c=2","thumbnail_url":"https:\/\/cdn2.bigcommerce.com\/server3700\/cr4wsh4\/products\/39\/images\/144\/GF_luv2shop_6625__63295.1405299805.386.513.jpg?c=2","standard_url":"https:\/\/cdn2.bigcommerce.com\/server3700\/cr4wsh4\/products\/39\/images\/144\/GF_luv2shop_6625__63295.1405299805.220.290.jpg?c=2","tiny_url":"https:\/\/cdn2.bigcommerce.com\/server3700\/cr4wsh4\/products\/39\/images\/144\/GF_luv2shop_6625__63295.1405299805.44.58.jpg?c=2","is_thumbnail":true,"sort_order":0,"description":null,"date_created":"Fri,
+        21 Sep 2012 04:35:58 +0000","is_sample":false}]'
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 20 Feb 2015 12:53:26 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - fornax_anonymousId=31d238f5-d980-4606-87b6-2168962d6164; path=/; domain=.store-cr4wsh4.mybigcommerce.com
+      X-Bc-Apilimit-Remaining:
+      - '19999'
+      X-Bc-Store-Version:
+      - 7.6.0
+      X-Bc-Is-Ha:
+      - '1'
+    body:
+      encoding: UTF-8
+      string: '[{"id":144,"product_id":39,"image_file":"sample_images\/GF_luv2shop_6625__63295.jpg","zoom_url":"https:\/\/cdn2.bigcommerce.com\/server3700\/cr4wsh4\/products\/39\/images\/144\/GF_luv2shop_6625__63295.1405299805.1280.1280.jpg?c=2","thumbnail_url":"https:\/\/cdn2.bigcommerce.com\/server3700\/cr4wsh4\/products\/39\/images\/144\/GF_luv2shop_6625__63295.1405299805.386.513.jpg?c=2","standard_url":"https:\/\/cdn2.bigcommerce.com\/server3700\/cr4wsh4\/products\/39\/images\/144\/GF_luv2shop_6625__63295.1405299805.220.290.jpg?c=2","tiny_url":"https:\/\/cdn2.bigcommerce.com\/server3700\/cr4wsh4\/products\/39\/images\/144\/GF_luv2shop_6625__63295.1405299805.44.58.jpg?c=2","is_thumbnail":true,"sort_order":0,"description":null,"date_created":"Fri,
+        21 Sep 2012 04:35:58 +0000","is_sample":false}]'
+    http_version: 
+  recorded_at: Fri, 20 Feb 2015 12:54:05 GMT
+- request:
+    method: get
+    uri: https://support%40madmimi.com:0ff0e3939f5f160f36047cf0caa6f699fe24bdeb@store-cr4wsh4.mybigcommerce.com/api/v2/products/37/images.json
+    body:
+      encoding: UTF-8
+      string: '[{"id":141,"product_id":37,"image_file":"sample_images\/gf-l2s-80022__72789.jpg","zoom_url":"https:\/\/cdn2.bigcommerce.com\/server3700\/cr4wsh4\/products\/37\/images\/141\/gf-l2s-80022__72789.1405299820.1280.1280.jpg?c=2","thumbnail_url":"https:\/\/cdn2.bigcommerce.com\/server3700\/cr4wsh4\/products\/37\/images\/141\/gf-l2s-80022__72789.1405299820.386.513.jpg?c=2","standard_url":"https:\/\/cdn2.bigcommerce.com\/server3700\/cr4wsh4\/products\/37\/images\/141\/gf-l2s-80022__72789.1405299820.220.290.jpg?c=2","tiny_url":"https:\/\/cdn2.bigcommerce.com\/server3700\/cr4wsh4\/products\/37\/images\/141\/gf-l2s-80022__72789.1405299820.44.58.jpg?c=2","is_thumbnail":false,"sort_order":0,"description":null,"date_created":"Fri,
+        21 Sep 2012 04:28:29 +0000","is_sample":false},{"id":142,"product_id":37,"image_file":"sample_images\/hero-gf-l2s-80031__63154.jpg","zoom_url":"https:\/\/cdn2.bigcommerce.com\/server3700\/cr4wsh4\/products\/37\/images\/142\/hero-gf-l2s-80031__63154.1405299821.1280.1280.jpg?c=2","thumbnail_url":"https:\/\/cdn2.bigcommerce.com\/server3700\/cr4wsh4\/products\/37\/images\/142\/hero-gf-l2s-80031__63154.1405299821.386.513.jpg?c=2","standard_url":"https:\/\/cdn2.bigcommerce.com\/server3700\/cr4wsh4\/products\/37\/images\/142\/hero-gf-l2s-80031__63154.1405299821.220.290.jpg?c=2","tiny_url":"https:\/\/cdn2.bigcommerce.com\/server3700\/cr4wsh4\/products\/37\/images\/142\/hero-gf-l2s-80031__63154.1405299821.44.58.jpg?c=2","is_thumbnail":true,"sort_order":1,"description":null,"date_created":"Fri,
+        21 Sep 2012 04:28:30 +0000","is_sample":false}]'
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 20 Feb 2015 12:55:41 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - fornax_anonymousId=c3d2326d-1b2e-47ce-8012-e14e27967d7f; path=/; domain=.store-cr4wsh4.mybigcommerce.com
+      X-Bc-Apilimit-Remaining:
+      - '19998'
+      X-Bc-Store-Version:
+      - 7.6.0
+      X-Bc-Is-Ha:
+      - '1'
+    body:
+      encoding: UTF-8
+      string: '[{"id":141,"product_id":37,"image_file":"sample_images\/gf-l2s-80022__72789.jpg","zoom_url":"https:\/\/cdn2.bigcommerce.com\/server3700\/cr4wsh4\/products\/37\/images\/141\/gf-l2s-80022__72789.1405299820.1280.1280.jpg?c=2","thumbnail_url":"https:\/\/cdn2.bigcommerce.com\/server3700\/cr4wsh4\/products\/37\/images\/141\/gf-l2s-80022__72789.1405299820.386.513.jpg?c=2","standard_url":"https:\/\/cdn2.bigcommerce.com\/server3700\/cr4wsh4\/products\/37\/images\/141\/gf-l2s-80022__72789.1405299820.220.290.jpg?c=2","tiny_url":"https:\/\/cdn2.bigcommerce.com\/server3700\/cr4wsh4\/products\/37\/images\/141\/gf-l2s-80022__72789.1405299820.44.58.jpg?c=2","is_thumbnail":false,"sort_order":0,"description":null,"date_created":"Fri,
+        21 Sep 2012 04:28:29 +0000","is_sample":false},{"id":142,"product_id":37,"image_file":"sample_images\/hero-gf-l2s-80031__63154.jpg","zoom_url":"https:\/\/cdn2.bigcommerce.com\/server3700\/cr4wsh4\/products\/37\/images\/142\/hero-gf-l2s-80031__63154.1405299821.1280.1280.jpg?c=2","thumbnail_url":"https:\/\/cdn2.bigcommerce.com\/server3700\/cr4wsh4\/products\/37\/images\/142\/hero-gf-l2s-80031__63154.1405299821.386.513.jpg?c=2","standard_url":"https:\/\/cdn2.bigcommerce.com\/server3700\/cr4wsh4\/products\/37\/images\/142\/hero-gf-l2s-80031__63154.1405299821.220.290.jpg?c=2","tiny_url":"https:\/\/cdn2.bigcommerce.com\/server3700\/cr4wsh4\/products\/37\/images\/142\/hero-gf-l2s-80031__63154.1405299821.44.58.jpg?c=2","is_thumbnail":true,"sort_order":1,"description":null,"date_created":"Fri,
+        21 Sep 2012 04:28:30 +0000","is_sample":false}]'
+    http_version: 
+  recorded_at: Fri, 20 Feb 2015 12:56:19 GMT
 recorded_with: VCR 2.5.0
