@@ -109,11 +109,11 @@ module MadCart
       end
 
       def create_connection(args={})
-        @connection = Faraday.new(:url => api_url_for(args[:store_url]))
-        @connection.basic_auth(args[:username], args[:api_key])
-        @connection.response :json
-        @connection.adapter Faraday.default_adapter
-        @connection
+        Faraday.new(DEFAULT_CONNECTION_OPTIONS.merge(:url => api_url_for(args[:store_url]))) do |connection|
+          connection.basic_auth(args[:username], args[:api_key])
+          connection.response :json
+          connection.adapter Faraday.default_adapter
+        end
       end
     end
   end

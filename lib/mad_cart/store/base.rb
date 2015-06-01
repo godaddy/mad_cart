@@ -15,6 +15,10 @@ module MadCart
     InvalidCredentials = Class.new(StandardError)
 
     module Base
+      DEFAULT_CONNECTION_OPTIONS = {
+        :request => { :open_timeout => 30, :timeout => 60 }
+      }
+
       def self.included(base)
         base.extend ClassMethods
         base.class_eval do

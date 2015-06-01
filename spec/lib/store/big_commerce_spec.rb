@@ -19,7 +19,7 @@ describe MadCart::Store::BigCommerce do
 
     it "authenticates via basic auth" do
       connection = Faraday.new
-      Faraday.stub(:new).and_return(connection)
+      Faraday.stub(:new).and_yield(connection)
 
       connection.should_receive(:basic_auth).with('username', 'api_key')
 

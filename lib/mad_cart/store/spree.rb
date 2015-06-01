@@ -131,7 +131,7 @@ module MadCart
       end
 
       def create_connection(args={})
-        Faraday.new(:url => api_url_for(args[:store_url])) do |connection|
+        Faraday.new(DEFAULT_CONNECTION_OPTIONS.merge(:url => api_url_for(args[:store_url]))) do |connection|
           connection.response :json
           connection.adapter Faraday.default_adapter
           connection.headers['X-Spree-Token'] = args[:api_key]
