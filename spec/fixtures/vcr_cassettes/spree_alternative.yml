@@ -46,7 +46,7 @@ http_interactions:
       - miss
     body:
       encoding: UTF-8
-      string: '{"count":50,"total_count":83990,"current_page":1,"pages":1680,"products":[{"id":24050,"name":"Homemade
+      string: '{"count":50,"total_count":148,"current_page":1,"pages":3,"products":[{"id":24050,"name":"Homemade
         for Sale: How to Set Up and Market a Food Business from Your Home Kitchen","description":"\u003CP\u003EFrom
         farm-to-fork and \"Buy Local\" to slow food and hand-made artisan breads,
         more people than ever are demanding real food made with real ingredients by
@@ -2594,7 +2594,7 @@ http_interactions:
       - miss
     body:
       encoding: UTF-8
-      string: '{"count":50,"total_count":83990,"current_page":2,"pages":1680,"products":[{"id":67839,"name":"Planning
+      string: '{"count":50,"total_count":148,"current_page":2,"pages":3,"products":[{"id":67839,"name":"Planning
         Classroom Management: A Five-Step Process to Creating a Positive Learning
         Environment","description":"","price":"76.95","available_on":"2015-01-12T03:18:52.781-06:00","permalink":"planning-classroom-management-illustrated-karen-bosch-english","count_on_hand":0,"meta_description":"\u003CP\u003EIncrease
         student learning with an effective classroom management plan! This resource
@@ -5221,7 +5221,7 @@ http_interactions:
       - miss
     body:
       encoding: UTF-8
-      string: '{"count":50,"total_count":83990,"current_page":3,"pages":1680,"products":[{"id":11209,"name":"Cocktail
+      string: '{"count":50,"total_count":83990,"current_page":3,"pages":3,"products":[{"id":11209,"name":"Cocktail
         Time","description":"If Lord Ickenham had not dislodged the hat of Beefy Bastable
         with a well-aimed Brazil nut, the latter''s famous legal mind might never
         have been stimulated to literature. But the incident provoked Beefy to write
@@ -7697,7 +7697,7 @@ http_interactions:
       - miss
     body:
       encoding: UTF-8
-      string: '{"count":50,"total_count":83990,"current_page":1,"pages":1680,"products":[{"id":24050,"name":"Homemade
+      string: '{"count":50,"total_count":83990,"current_page":1,"pages":3,"products":[{"id":24050,"name":"Homemade
         for Sale: How to Set Up and Market a Food Business from Your Home Kitchen","description":"\u003CP\u003EFrom
         farm-to-fork and \"Buy Local\" to slow food and hand-made artisan breads,
         more people than ever are demanding real food made with real ingredients by
@@ -10245,7 +10245,7 @@ http_interactions:
       - miss
     body:
       encoding: UTF-8
-      string: '{"count":50,"total_count":83990,"current_page":2,"pages":1680,"products":[{"id":67839,"name":"Planning
+      string: '{"count":50,"total_count":83990,"current_page":2,"pages":3,"products":[{"id":67839,"name":"Planning
         Classroom Management: A Five-Step Process to Creating a Positive Learning
         Environment","description":"","price":"76.95","available_on":"2015-01-12T03:18:52.781-06:00","permalink":"planning-classroom-management-illustrated-karen-bosch-english","count_on_hand":0,"meta_description":"\u003CP\u003EIncrease
         student learning with an effective classroom management plan! This resource
@@ -12872,7 +12872,7 @@ http_interactions:
       - miss
     body:
       encoding: UTF-8
-      string: '{"count":50,"total_count":83990,"current_page":3,"pages":1680,"products":[{"id":11209,"name":"Cocktail
+      string: '{"count":50,"total_count":148,"current_page":3,"pages":3,"products":[{"id":11209,"name":"Cocktail
         Time","description":"If Lord Ickenham had not dislodged the hat of Beefy Bastable
         with a well-aimed Brazil nut, the latter''s famous legal mind might never
         have been stimulated to literature. But the incident provoked Beefy to write
