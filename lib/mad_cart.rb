@@ -21,5 +21,6 @@ require 'mad_cart/model/store'
 # stores
 require 'mad_cart/store/base'
 require 'mad_cart/store/big_commerce'
+require 'mad_cart/store/o_auth_big_commerce'
 require 'mad_cart/store/etsy'
 require 'mad_cart/store/spree'
