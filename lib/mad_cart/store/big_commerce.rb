@@ -46,13 +46,12 @@ module MadCart
         product_hashes.map do |p|
 
           product_images = images.find { |i| i.first['product_id'] == p['id'] }
-          thumbnail = product_images.find { |i| i["is_thumbnail"] }
-          image     = product_images.sort_by{|i| i["sort_order"] }.find { |i| i["is_thumbnail"] }
+          image          = product_images.sort_by{|i| i["sort_order"] }.find { |i| i["is_thumbnail"] }
 
           p.merge({
             :url              => connection.build_url("#{p['custom_url']}").to_s,
-            :image_square_url => connection.build_url("/product_images/#{thumbnail['image_file']}").to_s,
-            :image_url        => connection.build_url("/product_images/#{image['image_file']}").to_s
+            :image_square_url => image.try(:[], "thumbnail_url"),
+            :image_url        => image.try(:[], "standard_url")
           })
         end
       end

@@ -1,0 +1,48 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.bigcommerce.com/stores/cr4wsh4/v2/store.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      X-Auth-Client:
+      - db7uvk7wc5vstd3f1pw5ma1af13p93n
+      X-Auth-Token:
+      - q3l1fqfz08jqlxtvmavzgr8cjhmqaww
+      User-Agent:
+      - Faraday v0.9.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 02 Jul 2015 12:43:32 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '735'
+      Connection:
+      - keep-alive
+      X-Bc-Apilimit-Remaining:
+      - '20000'
+      X-Bc-Is-Ha:
+      - '1'
+      X-Bc-Store-Version:
+      - 7.6.0
+    body:
+      encoding: UTF-8
+      string: '{"id":"cr4wsh4","domain":"mimi.mybigcommerce.com","name":"","address":"","phone":"","admin_email":"stuart@siyelo.com","order_email":"stuart@siyelo.com","timezone":{"name":"Europe\/London","raw_offset":0,"dst_offset":0,"dst_correction":false,"date_format":{"display":"jS
+        M Y","export":"jS M Y","extended_display":"jS M Y @ g:i A"}},"language":"en","currency":"USD","currency_symbol":"$","decimal_separator":".","thousands_separator":",","decimal_places":2,"currency_symbol_location":"left","weight_units":"LBS","dimension_units":"Inches","dimension_decimal_places":"2","dimension_decimal_token":".","dimension_thousands_token":",","plan_name":"Partner
+        Sandbox","logo":[],"is_price_entered_with_tax":false,"active_comparison_modules":[]}'
+    http_version: 
+  recorded_at: Thu, 02 Jul 2015 12:43:41 GMT
+recorded_with: VCR 2.5.0
