@@ -12,7 +12,7 @@ module MadCart
       return MadCart::Configuration.instance.data
     end
   end
-  
+
   class Configuration
     include Singleton
 
@@ -47,13 +47,6 @@ module MadCart
       @data[:included_attributes] ||= {}
     end
 
-    class Data < OpenStruct
-      class ConfigurationError < NoMethodError; end
-
-      def method_missing(meth, *args)
-        return nil
-      end
-
-    end
+    Data = Class.new(OpenStruct)
   end
 end
