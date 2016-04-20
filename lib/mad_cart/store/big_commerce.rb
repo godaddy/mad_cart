@@ -44,16 +44,16 @@ module MadCart
         threads.each { |t| t.join }
 
         product_hashes.map do |p|
-
-          product_images = images.find { |i| i.first['product_id'] == p['id'] }
+          product_images = images.find { |i| i.first.try(:[], 'product_id') == p['id'] } || []
           image          = product_images.sort_by{|i| i["sort_order"] }.find { |i| i["is_thumbnail"] }
+          next if image.nil?
 
           p.merge({
             :url              => connection.build_url("#{p['custom_url']}").to_s,
             :image_square_url => image.try(:[], "thumbnail_url"),
             :image_url        => image.try(:[], "standard_url")
           })
-        end
+        end.compact
       end
 
       def get_customer_hashes

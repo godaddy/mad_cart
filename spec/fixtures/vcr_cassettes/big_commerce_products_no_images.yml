@@ -1,0 +1,201 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://support%40madmimi.com:0ff0e3939f5f160f36047cf0caa6f699fe24bdeb@store-cr4wsh4.mybigcommerce.com/api/v2/products.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 21 Aug 2014 21:10:22 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Last-Modified:
+      - Wed, 26 Sep 2012 00:06:10 +0000
+      X-Bc-Apilimit-Remaining:
+      - '19992'
+      X-Bc-Store-Version:
+      - 7.6.0
+    body:
+      encoding: UTF-8
+      string: '[{
+                  "id": 32,
+                  "keyword_filter": null,
+                  "name": "[Sample] Tomorrow is today, Red printed scarf",
+                  "type": "physical",
+                  "sku": "",
+                  "description": "<p><strong>How to write product descriptions that sell<\/strong><br \/>One of the best things you can do to make your store successful is invest some time in writing great product descriptions. You want to provide detailed yet concise information that will entice potential customers to buy.<br \/><br \/>Keep three things in mind:<br \/><br \/><strong>Think like a consumer<\/strong><br \/>Think about what you as a consumer would want to know, then include those features in your description. For clothes: materials and fit. For food: ingredients and how it was prepared. Bullets are your friends when listing features &mdash; try to limit each one to 5-8 words.<br \/><br \/><strong>Find differentiators<\/strong><br \/>Pepper your features with details that show how the product stands out against similar offerings. For clothes: is it vintage or hard to find? For art: is the artist well known? For home d&eacute;cor: is it a certain style like mid-century modern? Unique product descriptions not only help you stand out, they improve your SEO.<br \/><br \/><strong>Keep it simple<\/strong><br \/>Provide enough detail to help consumers make an informed decision, but don&rsquo;t overwhelm with a laundry list of features or flowery language. Densely pack your descriptions with useful information and watch products fly off the shelf.<\/p>",
+                  "search_keywords": null,
+                  "availability_description": "",
+                  "price": "89.0000",
+                  "cost_price": "0.0000",
+                  "retail_price": "0.0000",
+                  "sale_price": "0.0000",
+                  "calculated_price": "89.0000",
+                  "sort_order": 0,
+                  "is_visible": true,
+                  "is_featured": true,
+                  "related_products": "-1",
+                  "inventory_level": 0,
+                  "inventory_warning_level": 0,
+                  "warranty": null,
+                  "weight": "0.3000",
+                  "width": "0.0000",
+                  "height": "0.0000",
+                  "depth": "0.0000",
+                  "fixed_cost_shipping_price": "10.0000",
+                  "is_free_shipping": false,
+                  "inventory_tracking": "none",
+                  "rating_total": 0,
+                  "rating_count": 0,
+                  "total_sold": 0,
+                  "date_created": "Fri, 21 Sep 2012 02:31:01 +0000",
+                  "brand_id": 17,
+                  "view_count": 7,
+                  "page_title": "",
+                  "meta_keywords": null,
+                  "meta_description": null,
+                  "layout_file": "product.html",
+                  "is_price_hidden": false,
+                  "price_hidden_label": "",
+                  "categories": [14],
+                  "date_modified": "Mon, 24 Sep 2012 01:34:57 +0000",
+                  "event_date_field_name": "Delivery Date",
+                  "event_date_type": "none",
+                  "event_date_start": "",
+                  "event_date_end": "",
+                  "myob_asset_account": "",
+                  "myob_income_account": "",
+                  "myob_expense_account": "",
+                  "peachtree_gl_account": "",
+                  "condition": "New",
+                  "is_condition_shown": false,
+                  "preorder_release_date": "",
+                  "is_preorder_only": false,
+                  "preorder_message": "",
+                  "order_quantity_minimum": 0,
+                  "order_quantity_maximum": 0,
+                  "open_graph_type": "product",
+                  "open_graph_title": "",
+                  "open_graph_description": null,
+                  "is_open_graph_thumbnail": true,
+                  "upc": null,
+                  "date_last_imported": "",
+                  "option_set_id": null,
+                  "tax_class_id": 0,
+                  "option_set_display": "right",
+                  "bin_picking_number": "",
+                  "custom_url": "\/tomorrow-is-today-red-printed-scarf\/",
+                  "primary_image": {
+                    "id": 247,
+                    "zoom_url": "https:\/\/cdn2.bigcommerce.com\/server3700\/cr4wsh4\/products\/32\/images\/247\/in_123__14581.1405299822.1280.1280.jpg?c=2",
+                    "thumbnail_url": "https:\/\/cdn2.bigcommerce.com\/server3700\/cr4wsh4\/products\/32\/images\/247\/in_123__14581.1405299822.220.290.jpg?c=2",
+                    "standard_url": "https:\/\/cdn2.bigcommerce.com\/server3700\/cr4wsh4\/products\/32\/images\/247\/in_123__14581.1405299822.386.513.jpg?c=2",
+                    "tiny_url": "https:\/\/cdn2.bigcommerce.com\/server3700\/cr4wsh4\/products\/32\/images\/247\/in_123__14581.1405299822.44.58.jpg?c=2"
+                  },
+                  "availability": "available",
+                  "brand": {
+                    "url": "https:\/\/store-cr4wsh4.mybigcommerce.com\/api\/v2\/brands\/17.json",
+                    "resource": "\/brands\/17"
+                  },
+                  "downloads": {
+                    "url": "https:\/\/store-cr4wsh4.mybigcommerce.com\/api\/v2\/products\/32\/downloads.json",
+                    "resource": "\/products\/32\/downloads"
+                  },
+                  "images": {
+                    "url": "https:\/\/store-cr4wsh4.mybigcommerce.com\/api\/v2\/products\/32\/images.json",
+                    "resource": "\/products\/32\/images"
+                  },
+                  "discount_rules": {
+                    "url": "https:\/\/store-cr4wsh4.mybigcommerce.com\/api\/v2\/products\/32\/discountrules.json",
+                    "resource": "\/products\/32\/discountrules"
+                  },
+                  "configurable_fields": {
+                    "url": "https:\/\/store-cr4wsh4.mybigcommerce.com\/api\/v2\/products\/32\/configurablefields.json",
+                    "resource": "\/products\/32\/configurablefields"
+                  },
+                  "custom_fields": {
+                    "url": "https:\/\/store-cr4wsh4.mybigcommerce.com\/api\/v2\/products\/32\/customfields.json",
+                    "resource": "\/products\/32\/customfields"
+                  },
+                  "videos": {
+                    "url": "https:\/\/store-cr4wsh4.mybigcommerce.com\/api\/v2\/products\/32\/videos.json",
+                    "resource": "\/products\/32\/videos"
+                  },
+                  "skus": {
+                    "url": "https:\/\/store-cr4wsh4.mybigcommerce.com\/api\/v2\/products\/32\/skus.json",
+                    "resource": "\/products\/32\/skus"
+                  },
+                  "rules": {
+                    "url": "https:\/\/store-cr4wsh4.mybigcommerce.com\/api\/v2\/products\/32\/rules.json",
+                    "resource": "\/products\/32\/rules"
+                  },
+                  "option_set": null,
+                  "options": {
+                    "url": "https:\/\/store-cr4wsh4.mybigcommerce.com\/api\/v2\/products\/32\/options.json",
+                    "resource": "\/products\/32\/options"
+                  },
+                  "tax_class": {
+                    "url": "https:\/\/store-cr4wsh4.mybigcommerce.com\/api\/v2\/taxclasses\/0.json",
+                    "resource": "\/taxclasses\/0"
+                  }
+                }]'
+  http_version:
+  recorded_at: Thu, 21 Aug 2014 21:10:23 GMT
+- request:
+    method: get
+    uri: https://support%40madmimi.com:0ff0e3939f5f160f36047cf0caa6f699fe24bdeb@store-cr4wsh4.mybigcommerce.com/api/v2/products/32/images.json
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 20 Feb 2015 12:55:41 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - fornax_anonymousId=c3d2326d-1b2e-47ce-8012-e14e27967d7f; path=/; domain=.store-cr4wsh4.mybigcommerce.com
+      X-Bc-Apilimit-Remaining:
+      - '19998'
+      X-Bc-Store-Version:
+      - 7.6.0
+      X-Bc-Is-Ha:
+      - '1'
+    body:
+      encoding: UTF-8
+      string: '[]'
+    http_version:
+  recorded_at: Fri, 20 Feb 2015 12:56:19 GMT
+recorded_with: VCR 2.5.0
