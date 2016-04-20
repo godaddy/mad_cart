@@ -51,6 +51,13 @@ describe MadCart::Store::BigCommerce do
         end
       end
 
+
+      it "returns an empty array when there are no images for any products" do
+        VCR.use_cassette('big_commerce_products_no_images') do
+          subject.products.should == []
+        end
+      end
+
     end
 
     context "count" do
