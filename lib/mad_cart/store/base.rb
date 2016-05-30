@@ -42,6 +42,41 @@ module MadCart
         @connection ||= execute_delegate(klass.connection_delegate, @init_args)
       end
 
+      def validate_by_path(path)
+        check_for_errors do
+          connection.get(path)
+        end
+        return true
+      rescue InvalidCredentials, InvalidStore, ServerError
+        return false
+      end
+
+      def parse_response(&block)
+        response = check_for_errors &block
+        return [] if empty_body?(response)
+
+        response.body
+      end
+
+      def check_for_errors(&block)
+        response = yield
+
+        case response.status
+          when 401
+            raise InvalidCredentials
+          when 500
+            raise ServerError
+        end
+
+        response
+      rescue Faraday::Error::ConnectionFailed, Faraday::ParsingError, Faraday::SSLError
+        raise InvalidStore
+      end
+
+      def empty_body?(response)
+        response.status == 204 || response.body.nil?
+      end
+
       def klass
         self.class
       end
