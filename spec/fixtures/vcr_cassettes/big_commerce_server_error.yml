@@ -1,0 +1,43 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://support%40madmimi.com:an-invalid-key@store-cr4wsh4.mybigcommerce.com/api/v2/time.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 500
+      message: Internal Server Error
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Tue, 31 May 2016 10:09:21 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - fornax_anonymousId=1bc2ddc4-69b4-43ec-a7e7-6fca029c0eea; expires=Sun, 27-Nov-2016
+        10:09:21 GMT; path=/; domain=.store-cr4wsh4.mybigcommerce.com
+      Www-Authenticate:
+      - Basic
+      X-Bc-Store-Version:
+      - 7.6.0
+    body:
+      encoding: UTF-8
+      string: '[{"status":401,"message":"The specified credentials were invalid."}]'
+    http_version: 
+  recorded_at: Tue, 31 May 2016 10:09:23 GMT
+recorded_with: VCR 2.5.0
