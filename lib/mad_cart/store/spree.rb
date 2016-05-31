@@ -11,7 +11,7 @@ module MadCart
       fetch :products, :with => :get_products
 
       def valid?
-        validate_by_path('orders.json')
+        valid_by_path?('orders.json')
       end
 
       def products_count

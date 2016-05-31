@@ -42,13 +42,13 @@ module MadCart
         @connection ||= execute_delegate(klass.connection_delegate, @init_args)
       end
 
-      def validate_by_path(path)
+      def valid_by_path?(path)
         check_for_errors do
           connection.get(path)
         end
-        return true
+        true
       rescue InvalidCredentials, InvalidStore, ServerError
-        return false
+        false
       end
 
       def parse_response(&block)

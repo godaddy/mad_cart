@@ -9,7 +9,7 @@ module MadCart
       fetch :store, :with => :get_store
 
       def valid?
-        validate_by_path('time.json')
+        valid_by_path?('time.json')
       end
 
       def products_count
