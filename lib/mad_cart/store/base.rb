@@ -55,9 +55,7 @@ module MadCart
 
       def parse_response(&block)
         response = check_for_errors &block
-        return [] if empty_body?(response)
-
-        response.body
+        empty_body?(response) ? [] : response.body
       end
       private :parse_response
 

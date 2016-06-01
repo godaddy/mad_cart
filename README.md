@@ -114,7 +114,8 @@ MadCart throws several types of exceptions:
 ```ruby
 MadCart::Store::ServerError        #=> when Store's API returns server error response (status code: 500).
 MadCart::Store::InvalidCredentials #=> when Store's API returns unauthorized response (status code: 401).
-MadCart::Store::InvalidStore       #=> when there is a problem with connection to Store's API.
+MadCart::Store::InvalidStore       #=> when there is a problem reaching the Store's API.
+MadCart::Store::UnavailableStore   #=> when there is a possibly temporary problem with the connection to the Store's API.
 ```
 
 ## Contributing
