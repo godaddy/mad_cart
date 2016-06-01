@@ -65,10 +65,10 @@ module MadCart
         response = yield
 
         case response.status
-          when 401
-            raise InvalidCredentials
-          when 500
-            raise ServerError
+        when 401
+          raise InvalidCredentials
+        when 500
+          raise ServerError
         end
 
         response
