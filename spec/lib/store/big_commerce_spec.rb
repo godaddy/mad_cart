@@ -123,6 +123,24 @@ describe MadCart::Store::BigCommerce do
       end
     end
 
+    it "fails if it cannot connect to the big commerce server" do
+      VCR.use_cassette('big_commerce_server_error') do
+        api = MadCart::Store::BigCommerce.new(
+          :api_key => 'an-invalid-key',
+          :store_url => 'store-cr4wsh4.mybigcommerce.com',
+          :username => 'support@madmimi.com'
+        )
+
+        api.should_not be_valid
+      end
+    end
+
+    it "fails if it cannot parse the response from the big commerce server" do
+      VCR.use_cassette('big_commerce_time') do
+        subject.connection.stub(:get) { raise Faraday::ParsingError, "" }
+        subject.should_not be_valid
+      end
+    end
   end
 
 end

@@ -13,6 +13,7 @@ module MadCart
     InvalidStore       = Class.new(StandardError)
     ServerError        = Class.new(StandardError)
     InvalidCredentials = Class.new(StandardError)
+    UnavailableStore   = Class.new(StandardError)
 
     module Base
       DEFAULT_CONNECTION_OPTIONS = {
@@ -41,6 +42,45 @@ module MadCart
       def init_connection
         @connection ||= execute_delegate(klass.connection_delegate, @init_args)
       end
+
+      def valid_by_path?(path)
+        check_for_errors do
+          connection.get(path)
+        end
+        true
+      rescue InvalidCredentials, InvalidStore, ServerError, UnavailableStore
+        false
+      end
+      private :valid_by_path?
+
+      def parse_response(&block)
+        response = check_for_errors &block
+        return [] if empty_body?(response)
+
+        response.body
+      end
+      private :parse_response
+
+      def check_for_errors(&block)
+        response = yield
+
+        case response.status
+        when 401
+          raise InvalidCredentials
+        when 500
+          raise ServerError
+        end
+
+        response
+      rescue Faraday::Error::ConnectionFailed, Faraday::ParsingError, Faraday::SSLError
+        raise UnavailableStore
+      end
+      private :check_for_errors
+
+      def empty_body?(response)
+        response.status == 204 || response.body.nil?
+      end
+      private :empty_body?
 
       def klass
         self.class

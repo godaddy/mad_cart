@@ -9,13 +9,7 @@ module MadCart
       fetch :store, :with => :get_store
 
       def valid?
-        check_for_errors do
-          connection.get('time.json')
-        end
-        return true
-
-      rescue InvalidCredentials => e
-        return false
+        valid_by_path?('time.json')
       end
 
       def products_count
@@ -59,7 +53,7 @@ module MadCart
       def get_customer_hashes
         result = []
         loop(:make_customer_request) {|c| result << c }
-        return result
+        result
       end
 
       def loop(source, &block)
@@ -78,33 +72,8 @@ module MadCart
         parse_response { connection.get('store.json') }
       end
 
-      def parse_response(&block)
-        response = check_for_errors &block
-        return [] if empty_body?(response)
-        return response.body
-      end
-
-      def check_for_errors(&block)
-        response = yield
-
-        case response.status
-        when 401
-          raise InvalidCredentials
-        when 500
-          raise ServerError
-        end
-
-        response
-      rescue Faraday::Error::ConnectionFailed => e
-        raise InvalidStore
-      end
-
       def api_url_for(store_domain)
        "https://#{store_domain}/api/v2/"
-      end
-
-      def empty_body?(response)
-        true if response.status == 204 || response.body.nil?
       end
 
       def create_connection(args={})
