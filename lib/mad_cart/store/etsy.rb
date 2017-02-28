@@ -6,7 +6,7 @@ module MadCart
   module Store
     class Etsy
       include MadCart::Store::Base
-      
+
       create_connection_with :create_connection, :requires => [:store_name, :api_key]
       fetch :products, :with => :get_products
       format :products, :with => :format_products
@@ -28,9 +28,13 @@ module MadCart
            :price => listing.price.to_money(listing.currency).dollars,
            :url => listing.url,
            :currency_code => listing.currency,
-           :image_url => listing.result["MainImage"].try(:[], "url_570xN"),
-           :square_image_url => listing.result["MainImage"].try(:[], "url_75x75")
+           :image_url => image_size_url(listing, "url_570xN"),
+           :square_image_url => image_size_url(listing, "url_75x75")
         }
+      end
+
+      def image_size_url(listing, format)
+        listing.result["MainImage"].try(:[], format) || listing.image.try(:result).try(:[], format)
       end
 
       def create_connection(args)
