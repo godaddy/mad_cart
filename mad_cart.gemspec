@@ -21,9 +21,9 @@ Gem::Specification.new do |spec|
   spec.add_dependency "faraday"
   spec.add_dependency "faraday_middleware"
   spec.add_dependency "etsy", "0.2.6"
-  spec.add_dependency "money", "6.7.1"
-  spec.add_dependency "monetize", "1.4.0"
-  spec.add_dependency 'activesupport', ">= 3.2"
+  spec.add_dependency "money", "~> 6.7"
+  spec.add_dependency "monetize", "~> 1.4"
+  spec.add_dependency 'activesupport', "~> 4.2"
 
   spec.add_development_dependency "bundler", "~> 1.3"
   spec.add_development_dependency "rake"

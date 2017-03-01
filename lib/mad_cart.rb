@@ -3,6 +3,7 @@ require 'json'
 require 'singleton'
 
 # gems
+require 'active_support'
 require 'active_support/core_ext'
 require 'faraday'
 require 'faraday_middleware'
