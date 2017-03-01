@@ -37,7 +37,26 @@ describe MadCart::Store::Etsy do
           first_product.name.should_not be_nil
           first_product.description.should_not be_nil
           first_product.image_url.should_not be_nil
-          first_product.additional_attributes['price'].should == BigDecimal.new('6.00')
+          puts first_product.image_url
+          first_product.additional_attributes['price'].should == BigDecimal.new('2.5')
+        end
+      end
+
+      context "new format image api" do
+        it "returns products" do
+          VCR.use_cassette('etsy_store_listings_new_format_image') do
+            api = MadCart::Store::Etsy.new(:store_name => 'TheBeadsofDreams')
+            products = api.products(:includes => "MainImage")
+            products.size.should == 25 # the etsy product limit
+
+            first_product = products.first
+
+            first_product.should be_a(MadCart::Model::Product)
+            first_product.name.should_not be_nil
+            first_product.description.should_not be_nil
+            first_product.image_url.should_not be_nil
+            first_product.additional_attributes['price'].should == BigDecimal.new('2.2')
+          end
         end
       end
 

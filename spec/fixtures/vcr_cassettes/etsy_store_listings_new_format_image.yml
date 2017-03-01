@@ -1,0 +1,523 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://openapi.etsy.com/v2/shops/TheBeadsofDreams?api_key=4j3amz573gly866229iixzri
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Apache
+      X-Etsy-Request-Uuid:
+      - 3hXM0Fly2DVExL71Dmr14OQ6-OSw
+      X-Ratelimit-Limit:
+      - '10000'
+      X-Ratelimit-Remaining:
+      - '9836'
+      Cache-Control:
+      - private
+      Content-Type:
+      - application/json
+      Vary:
+      - Accept-Encoding
+      Date:
+      - Tue, 28 Feb 2017 20:29:16 GMT
+      Content-Length:
+      - '5603'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - user_prefs=1tQs19Nhy4DdEQ1w63d-reYbKDBjZACCiK1358Do6LzSnBwdkolYBgA.; expires=Wed,
+        28-Feb-2018 20:29:16 GMT; Max-Age=31536000; path=/; domain=.etsy.com
+    body:
+      encoding: UTF-8
+      string: '{"count":1,"results":[{"shop_id":6477564,"shop_name":"TheBeadsofDreams","user_id":15640316,"creation_tsz":1313536881,"title":"Jewelry
+        supplies and beads ~ The Beads of Dreams","announcement":"NEWSLETTER: We run
+        frequent limited-time Sales for our Etsy store - Be the first to know when
+        they go live - Signup for our Newsletter at thebeadsofdreams.com\/etsy\n\nCOUPON
+        CODES: make sure to use the coupon code at checkout to get the sale price:
+        (We do not refund once payment is made.)\n\nWHOLESALE5 for 5% Off, Minimum
+        purchase $100 USD\nWHOLESALE10 for 10% Off, Minimum purchase $175 USD\nWHOLESALE15
+        for 15% Off, Minimum purchase $250 USD\n\n\n~ Subscribe to our newsletter:
+        thebeadsofdreams.com\/etsy\n~ Facebook: www.facebook.com\/TheBeadsofDreams\n~
+        Twitter: @Thebeadsofdreams\n~ Instagram: instagram.com\/thebeadsofdreams\/\n\nJe
+        parle fran\u00e7ais alors n&#39;h\u00e9sitez pas si vous avez des questions.\n\n\n~
+        ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~\nDELIVERY TIME:\n\nCanada: 1 - 2 weeks\nUSA:
+        1 - 3 weeks\nInternational: 1 - 6 weeks\n\nTo keep our postage costs down,
+        the shipping cost do not include insurance or tracking. If you would like
+        faster or insured shipping, please convo me for details and shipping quotes.","currency_code":"USD","is_vacation":false,"vacation_message":null,"sale_message":"Thank
+        you for your purchase. Your purchase will be send in the following two business
+        days after receiving your payment. \r\n\r\nNEWSLETTER: We run frequent limited-time
+        Sales for our Etsy store - Be the first to know when they go live - Signup
+        for our Newsletter at thebeadsofdreams.com\/etsy\r\n\r\n~ Facebook: www.facebook.com\/TheBeadsofDreams\r\n~
+        Twitter: @Thebeadsofdreams\r\n~ Instagram: instagram.com\/thebeadsofdreams\/\r\n\r\nCaroline
+        ~ The Beads of Dreams","digital_sale_message":"Thank you for your purchase
+        from The Beads of Dreams. :)\r\n\r\nAfter purchasing a digital file, you will
+        see a link to the Downloads page. From there you can download all the files
+        associated with your order. Downloads are available once your payment is confirmed.
+        If you paid with PayPal or a credit card on Etsy, confirmation may take a
+        few minutes. \r\n\r\nTo read more on how to download a digital file through
+        Etsy, go to:  &quot;How do I download a digital item I purchased?&quot;\r\nhttps:\/\/www.etsy.com\/help\/article\/3949\r\n\r\nDue
+        to the nature of digital items, all Sales Are Final.\r\n\r\n~ Subscribe to
+        our newsletter: http:\/\/eepurl.com\/i-whD \r\n~ Facebook: www.facebook.com\/TheBeadsofDreams\r\n~
+        Twitter: @Thebeadsofdreams\r\n\r\nCaroline ~ The Beads of Dreams\r\n","last_updated_tsz":1488298819,"listing_active_count":1521,"digital_listing_count":0,"login_name":"TheBeadsofDreams","accepts_custom_requests":true,"policy_welcome":"Welcome
+        to my Etsy shop. :)\n\n~ Subscribe to our newsletter: http:\/\/www.thebeadsofdreams.com\/etsy\n~
+        Facebook: www.facebook.com\/TheBeadsofDreams\n~ Twitter: @Thebeadsofdreams\n~
+        Instagram: instagram.com\/thebeadsofdreams\/","policy_payment":"I accept payment
+        through Paypal, credit cards and Etsy gift cards.","policy_shipping":"FAST
+        SHIPPING ~ Shipping is daily Monday through Friday\n\nWhen I receive payment,
+        I ship. All packages will be shipped only to the address provided with Paypal
+        or Etsy. If you are ordering outside of Canada, your order may be charged
+        customs fees ~ taxes, duties, processing fees, etc. ~ when it arrives. The
+        shipping charges you pay do not include customs fees. If you are not familiar
+        with the customs fees in your country, please check with your local customs
+        office for more information. My shipping and handling fees cover the cost
+        for mailing, packaging, and handling.\n\nThe shipping times are estimates
+        NOT guarantees.\n\nCanada: I ship Canada Post lettermail\nUSA: I ship light
+        packet (Canada Post advises 1 - 3 weeks for delivery)\nInternational: I ship
+        light packet (Canada Post advises 1 - 6 weeks for delivery)\n\nThese methods
+        do not include insurance or tracking. If you would like faster or insured
+        shipping, please convo me for details and shipping quotes.\n\nI will inform
+        you when I&#39;ll post your purchase.\n\n***Please make sure that your shipping
+        address is current and correct. it is the buyers responsibility to pay &quot;re-shipping&quot;
+        fees if an incorrect address was provided.","policy_refunds":"If you are unhappy
+        with your purchase, please convo me and return it within 14 days upon reception.
+        You will be reimbursed for your purchasing price only - not shipping. Products
+        must be in condition received. Buyer is responsible for paying return shipping.
+        Once returned item is received, I will issue a credit within 3 days.","policy_additional":"Dear
+        Canadian customers, please note that due to various government rules \r\nand
+        regulations, I must collect the appropriate taxes based on your \r\nprovince.
+        (GST or HST or TVQ)","policy_seller_info":"","policy_updated_tsz":1486953914,"policy_has_private_receipt_info":false,"vacation_autoreply":null,"url":"https:\/\/www.etsy.com\/shop\/TheBeadsofDreams?utm_source=madmimi&utm_medium=api&utm_campaign=api","image_url_760x100":"https:\/\/img1.etsystatic.com\/158\/0\/6477564\/iusb_760x100.24535715_pm9n.jpg","num_favorers":7196,"languages":["en-US","fr"],"upcoming_local_event_id":null,"icon_url_fullxfull":"https:\/\/img0.etsystatic.com\/177\/0\/6477564\/isla_fullxfull.23633032_o1z2qk4c.jpg","is_using_structured_policies":false,"has_onboarded_structured_policies":true,"has_unstructured_policies":true,"custom_shops_state":0,"include_dispute_form_link":false}],"params":{"shop_id":"TheBeadsofDreams"},"type":"Shop","pagination":{}}'
+    http_version: 
+  recorded_at: Tue, 28 Feb 2017 20:29:16 GMT
+- request:
+    method: get
+    uri: https://openapi.etsy.com/v2/shops/6477564/listings/active?api_key=4j3amz573gly866229iixzri&includes=MainImage&page=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Apache
+      X-Etsy-Request-Uuid:
+      - WBPm6k5irJd533zyPUQ9LTYAsnw4
+      X-Ratelimit-Limit:
+      - '10000'
+      X-Ratelimit-Remaining:
+      - '9835'
+      Cache-Control:
+      - private
+      Content-Type:
+      - application/json
+      Vary:
+      - Accept-Encoding
+      Date:
+      - Tue, 28 Feb 2017 20:29:16 GMT
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - Transfer-Encoding
+      - keep-alive
+      Set-Cookie:
+      - user_prefs=1tQs19Nhy4DdEQ1w63d-reYbKDBjZACCiK1358Do6LzSnBwdkolYBgA.; expires=Wed,
+        28-Feb-2018 20:29:16 GMT; Max-Age=31536000; path=/; domain=.etsy.com
+    body:
+      encoding: UTF-8
+      string: '{"count":1521,"results":[{"listing_id":269803730,"state":"active","user_id":15640316,"category_id":69150433,"title":"13mm
+        Mixed color button - resin button - craft button - Round buttons - 4 holes
+        (1608) - Flat rate shipping","description":"\u2665 \u2665 \u2665 Flat rate
+        shipping! (United States and Canada)\n\n\n\nMaterial: Resin\nColor: Mixed
+        colors\nSize: about 13mm, 2mm thick, hole: 1.5mm\n\n*** Color combinations
+        can vary from lot to lot ***\nButtons will be randomly selected so we can&#39;t
+        garantee the colors you will receive. We will try to mix as many colors as
+        we are able. This is a mixed listing only. No color choosing.\n\nPlease note
+        that colors may appear differently depending on your computer monitor.\n\nThank
+        you for looking, please contact me with any questions.\n\nClick here to see
+        more buttons from this shop: http:\/\/etsy.me\/191FqDS\n\n-:~:-\u2022**\u2022-:~:-\n\n\n~~~***~~~
+        \n\nWant to upgrade the shipping to USA or to Canada? http:\/\/etsy.me\/28SSmC5\n\n\u2600
+        Return to my shop here:\nhttps:\/\/www.etsy.com\/shop\/thebeadsofdreams\n\n\ud83d\udc8c
+        Signup for our Newsletter at  http:\/\/thebeadsofdreams.com\/etsy","creation_tsz":1488298818,"ending_tsz":1498663218,"original_creation_tsz":1456415741,"last_modified_tsz":1488298818,"price":"2.20","currency_code":"USD","quantity":10,"tags":["button","sew","sewing","fun
+        button","jewelry buttons","crafting buttons","mixed color button","wholesale
+        button","mix button","round flat button","13mm round button","13mm","four
+        holes button"],"category_path":["Supplies"],"category_path_ids":[69150433],"materials":["resin"],"shop_section_id":18041389,"featured_rank":null,"state_tsz":1456415741,"url":"https:\/\/www.etsy.com\/listing\/269803730\/13mm-mixed-color-button-resin-button?utm_source=madmimi&utm_medium=api&utm_campaign=api","views":19,"num_favorers":219,"shipping_template_id":11775798,"processing_min":1,"processing_max":2,"who_made":"someone_else","is_supply":"true","when_made":"2010_2017","item_weight":null,"item_weight_units":null,"item_length":null,"item_width":null,"item_height":null,"item_dimensions_unit":"in","is_private":false,"recipient":null,"occasion":null,"style":null,"non_taxable":false,"is_customizable":false,"is_digital":false,"file_data":"","language":"en-US","has_variations":true,"taxonomy_id":744,"taxonomy_path":["Craft
+        Supplies & Tools","Sewing & Needlecraft Supplies","Buttons & Fasteners"],"used_manufacturer":false,"MainImage":{"listing_image_id":929001800,"hex_code":null,"red":null,"green":null,"blue":null,"hue":null,"saturation":null,"brightness":null,"is_black_and_white":null,"creation_tsz":null,"listing_id":269803730,"rank":null,"url_75x75":"https:\/\/img0.etsystatic.com\/121\/0\/6477564\/il_75x75.929001800_fn4a.jpg","url_170x135":"https:\/\/img0.etsystatic.com\/121\/0\/6477564\/il_170x135.929001800_fn4a.jpg","url_570xN":"https:\/\/img0.etsystatic.com\/121\/0\/6477564\/il_570xN.929001800_fn4a.jpg","url_fullxfull":"https:\/\/img0.etsystatic.com\/121\/0\/6477564\/il_fullxfull.929001800_fn4a.jpg","full_height":null,"full_width":null}},{"listing_id":269696685,"state":"active","user_id":15640316,"category_id":69150433,"title":"13mm
+        Mixed color button - resin button - craft button - Round buttons - 4 holes
+        (1603) - Flat rate shipping","description":"\u2665 \u2665 \u2665 Flat rate
+        shipping! (United States and Canada)\n\n\n\nMaterial: Resin\nColor: Mixed
+        colors\nSize: about 13mm, 2mm thick, hole: 1.5mm\n\n*** Color combinations
+        can vary from lot to lot ***\nButtons will be randomly selected so we can&#39;t
+        garantee the colors you will receive. We will try to mix as many colors as
+        we are able. This is a mixed listing only. No color choosing.\n\nPlease note
+        that colors may appear differently depending on your computer monitor.\n\nThank
+        you for looking, please contact me with any questions.\n\nClick here to see
+        more buttons from this shop: http:\/\/etsy.me\/191FqDS\n\n-:~:-\u2022**\u2022-:~:-\n\n\n~~~***~~~
+        \n\nWant to upgrade the shipping to USA or to Canada? http:\/\/etsy.me\/28SSmC5\n\n\u2600
+        Return to my shop here:\nhttps:\/\/www.etsy.com\/shop\/thebeadsofdreams\n\n\ud83d\udc8c
+        Signup for our Newsletter at  http:\/\/thebeadsofdreams.com\/etsy","creation_tsz":1488297624,"ending_tsz":1498662024,"original_creation_tsz":1456414428,"last_modified_tsz":1488297624,"price":"2.25","currency_code":"USD","quantity":10,"tags":["button","sew","sewing","fun
+        button","jewelry buttons","crafting buttons","mixed color button","wholesale
+        button","mix button","round flat button","13mm round button","13mm","four
+        holes button"],"category_path":["Supplies"],"category_path_ids":[69150433],"materials":["resin"],"shop_section_id":18041389,"featured_rank":null,"state_tsz":1456414428,"url":"https:\/\/www.etsy.com\/listing\/269696685\/13mm-mixed-color-button-resin-button?utm_source=madmimi&utm_medium=api&utm_campaign=api","views":7,"num_favorers":93,"shipping_template_id":11775798,"processing_min":1,"processing_max":2,"who_made":"someone_else","is_supply":"true","when_made":"2010_2017","item_weight":null,"item_weight_units":null,"item_length":null,"item_width":null,"item_height":null,"item_dimensions_unit":"in","is_private":false,"recipient":null,"occasion":null,"style":null,"non_taxable":false,"is_customizable":false,"is_digital":false,"file_data":"","language":"en-US","has_variations":true,"taxonomy_id":744,"taxonomy_path":["Craft
+        Supplies & Tools","Sewing & Needlecraft Supplies","Buttons & Fasteners"],"used_manufacturer":false,"MainImage":{"listing_image_id":928731655,"hex_code":null,"red":null,"green":null,"blue":null,"hue":null,"saturation":null,"brightness":null,"is_black_and_white":null,"creation_tsz":null,"listing_id":269696685,"rank":null,"url_75x75":"https:\/\/img1.etsystatic.com\/128\/0\/6477564\/il_75x75.928731655_dune.jpg","url_170x135":"https:\/\/img1.etsystatic.com\/128\/0\/6477564\/il_170x135.928731655_dune.jpg","url_570xN":"https:\/\/img1.etsystatic.com\/128\/0\/6477564\/il_570xN.928731655_dune.jpg","url_fullxfull":"https:\/\/img1.etsystatic.com\/128\/0\/6477564\/il_fullxfull.928731655_dune.jpg","full_height":null,"full_width":null}},{"listing_id":269797950,"state":"active","user_id":15640316,"category_id":69150433,"title":"11mm
+        Mixed color button - resin button - craft button - Round buttons - 2 holes
+        (1602) - Flat rate shipping","description":"\u2665 \u2665 \u2665 Flat rate
+        shipping! (United States and Canada)\n\n\n\nMaterial: Resin\nColor: Mixed
+        colors\nSize: about 11mm, 1.5mm thick, hole: 1.6mm\n\n*** Color combinations
+        can vary from lot to lot ***\nButtons will be randomly selected so we can&#39;t
+        garantee the colors you will receive. We will try to mix as many colors as
+        we are able. This is a mixed listing only. No color choosing.\n\nPlease note
+        that colors may appear differently depending on your computer monitor.\n\nThank
+        you for looking, please contact me with any questions.\n\nClick here to see
+        more buttons from this shop: http:\/\/etsy.me\/191FqDS\n\n-:~:-\u2022**\u2022-:~:-\n\n\n~~~***~~~
+        \n\nWant to upgrade the shipping to USA or to Canada? http:\/\/etsy.me\/28SSmC5\n\n\u2600
+        Return to my shop here:\nhttps:\/\/www.etsy.com\/shop\/thebeadsofdreams\n\n\ud83d\udc8c
+        Signup for our Newsletter at  http:\/\/thebeadsofdreams.com\/etsy","creation_tsz":1488295819,"ending_tsz":1498660219,"original_creation_tsz":1456412885,"last_modified_tsz":1488295819,"price":"2.20","currency_code":"USD","quantity":20,"tags":["button","sew","sewing","11mm","fun
+        button","jewelry buttons","crafting buttons","mixed color button","wholesale
+        button","mix button","11mm round button","round flat button","two holes button"],"category_path":["Supplies"],"category_path_ids":[69150433],"materials":["resin"],"shop_section_id":18041389,"featured_rank":null,"state_tsz":1456412885,"url":"https:\/\/www.etsy.com\/listing\/269797950\/11mm-mixed-color-button-resin-button?utm_source=madmimi&utm_medium=api&utm_campaign=api","views":8,"num_favorers":364,"shipping_template_id":11775798,"processing_min":1,"processing_max":2,"who_made":"someone_else","is_supply":"true","when_made":"2010_2017","item_weight":null,"item_weight_units":null,"item_length":null,"item_width":null,"item_height":null,"item_dimensions_unit":"in","is_private":false,"recipient":null,"occasion":null,"style":null,"non_taxable":false,"is_customizable":false,"is_digital":false,"file_data":"","language":"en-US","has_variations":true,"taxonomy_id":744,"taxonomy_path":["Craft
+        Supplies & Tools","Sewing & Needlecraft Supplies","Buttons & Fasteners"],"used_manufacturer":false,"MainImage":{"listing_image_id":928715163,"hex_code":null,"red":null,"green":null,"blue":null,"hue":null,"saturation":null,"brightness":null,"is_black_and_white":null,"creation_tsz":null,"listing_id":269797950,"rank":null,"url_75x75":"https:\/\/img1.etsystatic.com\/122\/0\/6477564\/il_75x75.928715163_s1nc.jpg","url_170x135":"https:\/\/img1.etsystatic.com\/122\/0\/6477564\/il_170x135.928715163_s1nc.jpg","url_570xN":"https:\/\/img1.etsystatic.com\/122\/0\/6477564\/il_570xN.928715163_s1nc.jpg","url_fullxfull":"https:\/\/img1.etsystatic.com\/122\/0\/6477564\/il_fullxfull.928715163_s1nc.jpg","full_height":null,"full_width":null}},{"listing_id":269794080,"state":"active","user_id":15640316,"category_id":69150433,"title":"11mm
+        Orange heart button - resin button - craft button - Heart shape buttons -
+        2 holes - 6 pieces (1606) - Flat rate shipping","description":"\u2665 \u2665
+        \u2665 Flat rate shipping! (United States and Canada)\n\n\n Quantity: 6\nMaterial:
+        Resin\nColor: Orange\nSize: about 11mm wide, 12mm long, 3mm thick, hole: 1.6mm\n\nPlease
+        note that colours may appear differently depending on your computer monitor.\n\nThank
+        you for looking, please contact me with any questions.\n\nClick here to see
+        more buttons from this shop: http:\/\/etsy.me\/191FqDS\n\n-:~:-\u2022**\u2022-:~:-\n\n\n~~~***~~~
+        \n\nWant to upgrade the shipping to USA or to Canada? http:\/\/etsy.me\/28SSmC5\n\n\u2600
+        Return to my shop here:\nhttps:\/\/www.etsy.com\/shop\/thebeadsofdreams\n\n\ud83d\udc8c
+        Signup for our Newsletter at  http:\/\/thebeadsofdreams.com\/etsy","creation_tsz":1488294025,"ending_tsz":1498658425,"original_creation_tsz":1456410663,"last_modified_tsz":1488294025,"price":"2.20","currency_code":"USD","quantity":8,"tags":["button","sew","sewing","heart
+        button","orange button","11mm","12mm","bright heart button","12mm heart button","11mm
+        heart button","fun button","jewelry buttons","crafting buttons"],"category_path":["Supplies"],"category_path_ids":[69150433],"materials":["resin"],"shop_section_id":18041389,"featured_rank":null,"state_tsz":1456410663,"url":"https:\/\/www.etsy.com\/listing\/269794080\/11mm-orange-heart-button-resin-button?utm_source=madmimi&utm_medium=api&utm_campaign=api","views":23,"num_favorers":554,"shipping_template_id":11775798,"processing_min":1,"processing_max":2,"who_made":"someone_else","is_supply":"true","when_made":"2010_2017","item_weight":null,"item_weight_units":null,"item_length":null,"item_width":null,"item_height":null,"item_dimensions_unit":"in","is_private":false,"recipient":null,"occasion":null,"style":null,"non_taxable":false,"is_customizable":false,"is_digital":false,"file_data":"","language":"en-US","has_variations":false,"taxonomy_id":744,"taxonomy_path":["Craft
+        Supplies & Tools","Sewing & Needlecraft Supplies","Buttons & Fasteners"],"used_manufacturer":false,"MainImage":{"listing_image_id":928698097,"hex_code":null,"red":null,"green":null,"blue":null,"hue":null,"saturation":null,"brightness":null,"is_black_and_white":null,"creation_tsz":null,"listing_id":269794080,"rank":null,"url_75x75":"https:\/\/img1.etsystatic.com\/109\/2\/6477564\/il_75x75.928698097_gpmf.jpg","url_170x135":"https:\/\/img1.etsystatic.com\/109\/2\/6477564\/il_170x135.928698097_gpmf.jpg","url_570xN":"https:\/\/img1.etsystatic.com\/109\/2\/6477564\/il_570xN.928698097_gpmf.jpg","url_fullxfull":"https:\/\/img1.etsystatic.com\/109\/2\/6477564\/il_fullxfull.928698097_gpmf.jpg","full_height":null,"full_width":null}},{"listing_id":151746811,"state":"active","user_id":15640316,"category_id":69150433,"title":"10mm
+        Sparkle silver ribbon - 10mm 3\/8 Inch - 25 yards - 75 feet (1088) - Flat
+        rate shipping","description":"\u2665 \u2665 \u2665 Flat rate shipping! (United
+        States and Canada)\n\n\n You will receive 75 feet of organza ribbon.\n\nQuantity:
+        1 roll of 75 feet (25 yards) (22.86 meters)\nMaterial: Organza\nColor: Silver\nSize:
+        about 10mm in diameter  (3\/8 Inch)\n\n\nPlease note that colours may appear
+        differently depending on your computer monitor.\n\nThank you for looking,
+        please contact me with any questions.\n\nClick here to see more ribbon from
+        this shop: http:\/\/www.etsy.com\/shop\/TheBeadsofDreams\/search?search_query=ribbon\u2134=date_desc&amp;view_type=gallery&amp;ref=shop_search\n\n\n~~~***~~~
+        \n\nWant to upgrade the shipping to USA or to Canada? http:\/\/etsy.me\/28SSmC5\n\n\u2600
+        Return to my shop here:\nhttps:\/\/www.etsy.com\/shop\/thebeadsofdreams\n\n\ud83d\udc8c
+        Signup for our Newsletter at  http:\/\/thebeadsofdreams.com\/etsy","creation_tsz":1488287189,"ending_tsz":1498651589,"original_creation_tsz":1369090178,"last_modified_tsz":1488287189,"price":"4.90","currency_code":"USD","quantity":2,"tags":["canada","10mm","organza","ribbon","organza
+        ribbon","stringing material","Sparkle Ribbon","silver ribbon","silver","10
+        mm"],"category_path":["Supplies"],"category_path_ids":[69150433],"materials":["organza"],"shop_section_id":11298008,"featured_rank":null,"state_tsz":1475130414,"url":"https:\/\/www.etsy.com\/listing\/151746811\/10mm-sparkle-silver-ribbon-10mm-38-inch?utm_source=madmimi&utm_medium=api&utm_campaign=api","views":1201,"num_favorers":824,"shipping_template_id":11775798,"processing_min":1,"processing_max":2,"who_made":"someone_else","is_supply":"true","when_made":"2010_2017","item_weight":null,"item_weight_units":null,"item_length":null,"item_width":null,"item_height":null,"item_dimensions_unit":"in","is_private":false,"recipient":null,"occasion":null,"style":null,"non_taxable":false,"is_customizable":true,"is_digital":false,"file_data":"","language":"en-US","has_variations":false,"taxonomy_id":706,"taxonomy_path":["Craft
+        Supplies & Tools","Jewelry & Beading Supplies","Findings & Hardware","Cord
+        & Thread"],"used_manufacturer":false,"MainImage":{"listing_image_id":461131784,"hex_code":null,"red":null,"green":null,"blue":null,"hue":null,"saturation":null,"brightness":null,"is_black_and_white":null,"creation_tsz":null,"listing_id":151746811,"rank":null,"url_75x75":"https:\/\/img0.etsystatic.com\/013\/0\/6477564\/il_75x75.461131784_2jew.jpg","url_170x135":"https:\/\/img0.etsystatic.com\/013\/0\/6477564\/il_170x135.461131784_2jew.jpg","url_570xN":"https:\/\/img0.etsystatic.com\/013\/0\/6477564\/il_570xN.461131784_2jew.jpg","url_fullxfull":"https:\/\/img0.etsystatic.com\/013\/0\/6477564\/il_fullxfull.461131784_2jew.jpg","full_height":null,"full_width":null}},{"listing_id":107198713,"state":"active","user_id":15640316,"category_id":69151309,"title":"80
+        Bead hot pink round glass bead 4mm (743) - Flat rate shipping","description":"\u2665
+        \u2665 \u2665 Flat rate shipping! (United States and Canada)\n\n\n You will
+        receive approximately 80pc of 4mm glass beads\n\nQuantity:  80\nMaterial:
+        Glass\nColor: Hot pink \nSize: 4mm; hole: 1mm\n\n\nPlease note that colours
+        may appear differently depending on your computer monitor.\n\nThe coin in
+        the picture is the same size as a US quarter.\n\nThank you for looking, please
+        contact me with any questions.\n\nClick here to see more 4mm glass beads from
+        this shop: http:\/\/www.etsy.com\/shop\/TheBeadsofDreams\/search?search_query=4mm+glass&amp;search_submit=&amp;search_type=user_shop_ttt_id_6477564&amp;shopname=TheBeadsofDreams\n\n\n~~~***~~~
+        \n\nWant to upgrade the shipping to USA or to Canada? http:\/\/etsy.me\/28SSmC5\n\n\u2600
+        Return to my shop here:\nhttps:\/\/www.etsy.com\/shop\/thebeadsofdreams\n\n\ud83d\udc8c
+        Signup for our Newsletter at  http:\/\/thebeadsofdreams.com\/etsy","creation_tsz":1488235822,"ending_tsz":1498600222,"original_creation_tsz":1345327733,"last_modified_tsz":1488235822,"price":"2.35","currency_code":"USD","quantity":27,"tags":["glass","bead","round","transparent","4mm","strand","crystal","tiny","small","pink","4
+        mm","hot pink"],"category_path":["Supplies","Bead"],"category_path_ids":[69150433,69151309],"materials":["glass","verre"],"shop_section_id":10345307,"featured_rank":null,"state_tsz":1371833278,"url":"https:\/\/www.etsy.com\/listing\/107198713\/80-bead-hot-pink-round-glass-bead-4mm?utm_source=madmimi&utm_medium=api&utm_campaign=api","views":149,"num_favorers":37,"shipping_template_id":11775798,"processing_min":1,"processing_max":2,"who_made":"someone_else","is_supply":"true","when_made":"2010_2017","item_weight":null,"item_weight_units":null,"item_length":null,"item_width":null,"item_height":null,"item_dimensions_unit":null,"is_private":false,"recipient":null,"occasion":null,"style":null,"non_taxable":false,"is_customizable":true,"is_digital":false,"file_data":"","language":"en-US","has_variations":false,"taxonomy_id":2248,"taxonomy_path":["Craft
+        Supplies & Tools","Jewelry & Beading Supplies","Beads","Round & Ball Beads"],"used_manufacturer":false,"MainImage":{"listing_image_id":366892117,"hex_code":null,"red":null,"green":null,"blue":null,"hue":null,"saturation":null,"brightness":null,"is_black_and_white":null,"creation_tsz":null,"listing_id":107198713,"rank":null,"url_75x75":"https:\/\/img1.etsystatic.com\/003\/2\/6477564\/il_75x75.366892117_6qdt.jpg","url_170x135":"https:\/\/img1.etsystatic.com\/003\/2\/6477564\/il_170x135.366892117_6qdt.jpg","url_570xN":"https:\/\/img1.etsystatic.com\/003\/2\/6477564\/il_570xN.366892117_6qdt.jpg","url_fullxfull":"https:\/\/img1.etsystatic.com\/003\/2\/6477564\/il_fullxfull.366892117_6qdt.jpg","full_height":null,"full_width":null}},{"listing_id":161260958,"state":"active","user_id":15640316,"category_id":69155215,"title":"Sale
+        Clearance 20% OFF - mixed color faceted teardrop acrylic beads - 39mm x 9mm
+        - 10 pieces (1129)","description":"You will receive 10 resin beads.\n\nQuantity:
+        10\nMaterial: resin\nColor: Mixed color\nSize: about 39x9mm, hole: 1.5mm\n\n***
+        Color combinations can vary from lot to lot, but will always be in sets of
+        2 ***\nBeads will be randomly selected so we can&#39;t garantee the colors
+        you will receive. We will try to mix as many colors as we are able. This is
+        a mixed listing only, no color choosing.\n\nPlease note that colours may appear
+        differently depending on your computer monitor.\n\nThank you for looking,
+        please contact me with any questions.\n\nClick here to see more beads from
+        the Sale section: http:\/\/etsy.me\/YfyEIw\n\n\n~~~***~~~ \n\nWant to upgrade
+        the shipping to USA or to Canada? http:\/\/etsy.me\/28SSmC5\n\n\u2600 Return
+        to my shop here:\nhttps:\/\/www.etsy.com\/shop\/thebeadsofdreams\n\n\ud83d\udc8c
+        Signup for our Newsletter at  http:\/\/thebeadsofdreams.com\/etsy","creation_tsz":1488231621,"ending_tsz":1498596021,"original_creation_tsz":1377966697,"last_modified_tsz":1488231621,"price":"2.70","currency_code":"USD","quantity":13,"tags":["mixed
+        color","tear drop","drop","teardrop","faceted","bead","canada","quebec","pendant","charm","39mm","9mm","mix"],"category_path":["Accessories","Charm"],"category_path_ids":[69150467,69155215],"materials":["acrylic","acrylique"],"shop_section_id":13538228,"featured_rank":null,"state_tsz":1377966696,"url":"https:\/\/www.etsy.com\/listing\/161260958\/sale-clearance-20-off-mixed-color?utm_source=madmimi&utm_medium=api&utm_campaign=api","views":154,"num_favorers":669,"shipping_template_id":4291351275,"processing_min":1,"processing_max":2,"who_made":"someone_else","is_supply":"true","when_made":"2010_2017","item_weight":null,"item_weight_units":null,"item_length":null,"item_width":null,"item_height":null,"item_dimensions_unit":"in","is_private":false,"recipient":null,"occasion":null,"style":null,"non_taxable":false,"is_customizable":false,"is_digital":false,"file_data":"","language":"en-US","has_variations":false,"taxonomy_id":697,"taxonomy_path":["Craft
+        Supplies & Tools","Jewelry & Beading Supplies","Charms"],"used_manufacturer":false,"MainImage":{"listing_image_id":496415047,"hex_code":null,"red":null,"green":null,"blue":null,"hue":null,"saturation":null,"brightness":null,"is_black_and_white":null,"creation_tsz":null,"listing_id":161260958,"rank":null,"url_75x75":"https:\/\/img1.etsystatic.com\/020\/0\/6477564\/il_75x75.496415047_nhql.jpg","url_170x135":"https:\/\/img1.etsystatic.com\/020\/0\/6477564\/il_170x135.496415047_nhql.jpg","url_570xN":"https:\/\/img1.etsystatic.com\/020\/0\/6477564\/il_570xN.496415047_nhql.jpg","url_fullxfull":"https:\/\/img1.etsystatic.com\/020\/0\/6477564\/il_fullxfull.496415047_nhql.jpg","full_height":null,"full_width":null}},{"listing_id":269588855,"state":"active","user_id":15640316,"category_id":69150433,"title":"10mm
+        blue organza ribbon - 3\/8 Inch ribbon - 50 yards - 150 feet (R048) - Flat
+        rate shipping","description":"\u2665 \u2665 \u2665 Flat rate shipping! (United
+        States and Canada)\n\n\n You will receive 150 feet of organza ribbon.\n\nQuantity:
+        1 roll of 150 feet (50 yards) (47 meters)\nMaterial: Organza\nColor: Blue\nSize:
+        about 10mm in diameter (3\/8 Inch)\n\nPlease note that colours may appear
+        differently depending on your computer monitor.\n\nThank you for looking,
+        please contact me with any questions.\n\nClick here to see more ribbon from
+        this shop: http:\/\/etsy.me\/14vnoc6\n\n\n~~~***~~~ \n\nWant to upgrade the
+        shipping to USA or to Canada? http:\/\/etsy.me\/28SSmC5\n\n\u2600 Return to
+        my shop here:\nhttps:\/\/www.etsy.com\/shop\/thebeadsofdreams\n\n\ud83d\udc8c
+        Signup for our Newsletter at  http:\/\/thebeadsofdreams.com\/etsy","creation_tsz":1488227424,"ending_tsz":1498591824,"original_creation_tsz":1456344039,"last_modified_tsz":1488227424,"price":"4.90","currency_code":"USD","quantity":8,"tags":["canada","10mm","organza","ribbon","organza
+        ribbon","stringing material","10mm ribbon","spool","gift wrap","bow","baby
+        blue","blue","baby boy ribbon"],"category_path":["Supplies"],"category_path_ids":[69150433],"materials":["organza"],"shop_section_id":11298008,"featured_rank":null,"state_tsz":1456344039,"url":"https:\/\/www.etsy.com\/listing\/269588855\/10mm-blue-organza-ribbon-38-inch-ribbon?utm_source=madmimi&utm_medium=api&utm_campaign=api","views":18,"num_favorers":203,"shipping_template_id":11775798,"processing_min":1,"processing_max":2,"who_made":"someone_else","is_supply":"true","when_made":"2010_2017","item_weight":null,"item_weight_units":null,"item_length":null,"item_width":null,"item_height":null,"item_dimensions_unit":"in","is_private":false,"recipient":null,"occasion":null,"style":null,"non_taxable":false,"is_customizable":false,"is_digital":false,"file_data":"","language":"en-US","has_variations":false,"taxonomy_id":706,"taxonomy_path":["Craft
+        Supplies & Tools","Jewelry & Beading Supplies","Findings & Hardware","Cord
+        & Thread"],"used_manufacturer":false,"MainImage":{"listing_image_id":928268281,"hex_code":null,"red":null,"green":null,"blue":null,"hue":null,"saturation":null,"brightness":null,"is_black_and_white":null,"creation_tsz":null,"listing_id":269588855,"rank":null,"url_75x75":"https:\/\/img1.etsystatic.com\/121\/0\/6477564\/il_75x75.928268281_qgag.jpg","url_170x135":"https:\/\/img1.etsystatic.com\/121\/0\/6477564\/il_170x135.928268281_qgag.jpg","url_570xN":"https:\/\/img1.etsystatic.com\/121\/0\/6477564\/il_570xN.928268281_qgag.jpg","url_fullxfull":"https:\/\/img1.etsystatic.com\/121\/0\/6477564\/il_fullxfull.928268281_qgag.jpg","full_height":null,"full_width":null}},{"listing_id":269692284,"state":"active","user_id":15640316,"category_id":69150433,"title":"10mm
+        orange organza ribbon - 3\/8 Inch ribbon - 50 yards - 150 feet (R047) - Flat
+        rate shipping","description":"\u2665 \u2665 \u2665 Flat rate shipping! (United
+        States and Canada)\n\n\n You will receive 150 feet of organza ribbon.\n\nQuantity:
+        1 roll of 150 feet (50 yards) (47 meters)\nMaterial: Organza\nColor: Orange\nSize:
+        about 10mm in diameter (3\/8 Inch)\n\nPlease note that colours may appear
+        differently depending on your computer monitor.\n\nThank you for looking,
+        please contact me with any questions.\n\nClick here to see more ribbon from
+        this shop: http:\/\/etsy.me\/14vnoc6\n\n\n~~~***~~~ \n\nWant to upgrade the
+        shipping to USA or to Canada? http:\/\/etsy.me\/28SSmC5\n\n\u2600 Return to
+        my shop here:\nhttps:\/\/www.etsy.com\/shop\/thebeadsofdreams\n\n\ud83d\udc8c
+        Signup for our Newsletter at  http:\/\/thebeadsofdreams.com\/etsy","creation_tsz":1488226817,"ending_tsz":1498591217,"original_creation_tsz":1456343633,"last_modified_tsz":1488226817,"price":"4.90","currency_code":"USD","quantity":8,"tags":["canada","10mm","organza","ribbon","organza
+        ribbon","stringing material","10mm ribbon","spool","gift wrap","bow","orange
+        ribbon","orange organza","pumpkin"],"category_path":["Supplies"],"category_path_ids":[69150433],"materials":["organza"],"shop_section_id":11298008,"featured_rank":null,"state_tsz":1456343633,"url":"https:\/\/www.etsy.com\/listing\/269692284\/10mm-orange-organza-ribbon-38-inch?utm_source=madmimi&utm_medium=api&utm_campaign=api","views":21,"num_favorers":43,"shipping_template_id":11775798,"processing_min":1,"processing_max":2,"who_made":"someone_else","is_supply":"true","when_made":"2010_2017","item_weight":null,"item_weight_units":null,"item_length":null,"item_width":null,"item_height":null,"item_dimensions_unit":"in","is_private":false,"recipient":null,"occasion":null,"style":null,"non_taxable":false,"is_customizable":false,"is_digital":false,"file_data":"","language":"en-US","has_variations":false,"taxonomy_id":706,"taxonomy_path":["Craft
+        Supplies & Tools","Jewelry & Beading Supplies","Findings & Hardware","Cord
+        & Thread"],"used_manufacturer":false,"MainImage":{"listing_image_id":928263691,"hex_code":null,"red":null,"green":null,"blue":null,"hue":null,"saturation":null,"brightness":null,"is_black_and_white":null,"creation_tsz":null,"listing_id":269692284,"rank":null,"url_75x75":"https:\/\/img1.etsystatic.com\/106\/0\/6477564\/il_75x75.928263691_73kd.jpg","url_170x135":"https:\/\/img1.etsystatic.com\/106\/0\/6477564\/il_170x135.928263691_73kd.jpg","url_570xN":"https:\/\/img1.etsystatic.com\/106\/0\/6477564\/il_570xN.928263691_73kd.jpg","url_fullxfull":"https:\/\/img1.etsystatic.com\/106\/0\/6477564\/il_fullxfull.928263691_73kd.jpg","full_height":null,"full_width":null}},{"listing_id":269588461,"state":"active","user_id":15640316,"category_id":69150433,"title":"10mm
+        green organza ribbon - 3\/8 Inch ribbon - 50 yards - 150 feet (R048) - Flat
+        rate shipping","description":"\u2665 \u2665 \u2665 Flat rate shipping! (United
+        States and Canada)\n\n\n You will receive 150 feet of organza ribbon.\n\nQuantity:
+        1 roll of 150 feet (50 yards) (47 meters)\nMaterial: Organza\nColor: Green
+        (a little darker than in the image)\nSize: about 10mm in diameter (3\/8 Inch)\n\nPlease
+        note that colours may appear differently depending on your computer monitor.\n\nThank
+        you for looking, please contact me with any questions.\n\nClick here to see
+        more ribbon from this shop: http:\/\/etsy.me\/14vnoc6\n\n\n~~~***~~~ \n\nWant
+        to upgrade the shipping to USA or to Canada? http:\/\/etsy.me\/28SSmC5\n\n\u2600
+        Return to my shop here:\nhttps:\/\/www.etsy.com\/shop\/thebeadsofdreams\n\n\ud83d\udc8c
+        Signup for our Newsletter at  http:\/\/thebeadsofdreams.com\/etsy","creation_tsz":1488226817,"ending_tsz":1498591217,"original_creation_tsz":1456343882,"last_modified_tsz":1488226817,"price":"4.90","currency_code":"USD","quantity":8,"tags":["canada","10mm","organza","ribbon","organza
+        ribbon","stringing material","10mm ribbon","spool","gift wrap","bow","green","green
+        ribbon","pastel green ribbon"],"category_path":["Supplies"],"category_path_ids":[69150433],"materials":["organza"],"shop_section_id":11298008,"featured_rank":null,"state_tsz":1456343882,"url":"https:\/\/www.etsy.com\/listing\/269588461\/10mm-green-organza-ribbon-38-inch-ribbon?utm_source=madmimi&utm_medium=api&utm_campaign=api","views":15,"num_favorers":288,"shipping_template_id":11775798,"processing_min":1,"processing_max":2,"who_made":"someone_else","is_supply":"true","when_made":"2010_2017","item_weight":null,"item_weight_units":null,"item_length":null,"item_width":null,"item_height":null,"item_dimensions_unit":"in","is_private":false,"recipient":null,"occasion":null,"style":null,"non_taxable":false,"is_customizable":false,"is_digital":false,"file_data":"","language":"en-US","has_variations":false,"taxonomy_id":706,"taxonomy_path":["Craft
+        Supplies & Tools","Jewelry & Beading Supplies","Findings & Hardware","Cord
+        & Thread"],"used_manufacturer":false,"MainImage":{"listing_image_id":928524140,"hex_code":null,"red":null,"green":null,"blue":null,"hue":null,"saturation":null,"brightness":null,"is_black_and_white":null,"creation_tsz":null,"listing_id":269588461,"rank":null,"url_75x75":"https:\/\/img0.etsystatic.com\/131\/0\/6477564\/il_75x75.928524140_qgq6.jpg","url_170x135":"https:\/\/img0.etsystatic.com\/131\/0\/6477564\/il_170x135.928524140_qgq6.jpg","url_570xN":"https:\/\/img0.etsystatic.com\/131\/0\/6477564\/il_570xN.928524140_qgq6.jpg","url_fullxfull":"https:\/\/img0.etsystatic.com\/131\/0\/6477564\/il_fullxfull.928524140_qgq6.jpg","full_height":null,"full_width":null}},{"listing_id":269584155,"state":"active","user_id":15640316,"category_id":69150433,"title":"10mm
+        salmon pink organza ribbon - 3\/8 Inch ribbon - 50 yards - 150 feet (R043)
+        - Flat rate shipping","description":"\u2665 \u2665 \u2665 Flat rate shipping!
+        (United States and Canada)\n\n\n You will receive 150 feet of organza ribbon.\n\nQuantity:
+        1 roll of 150 feet (50 yards) (47 meters)\nMaterial: Organza\nColor: Salmon
+        (more peach than in the image)\nSize: about 10mm in diameter (3\/8 Inch)\n\nPlease
+        note that colours may appear differently depending on your computer monitor.\n\nThank
+        you for looking, please contact me with any questions.\n\nClick here to see
+        more ribbon from this shop: http:\/\/etsy.me\/14vnoc6\n\n\n~~~***~~~ \n\nWant
+        to upgrade the shipping to USA or to Canada? http:\/\/etsy.me\/28SSmC5\n\n\u2600
+        Return to my shop here:\nhttps:\/\/www.etsy.com\/shop\/thebeadsofdreams\n\n\ud83d\udc8c
+        Signup for our Newsletter at  http:\/\/thebeadsofdreams.com\/etsy","creation_tsz":1488225623,"ending_tsz":1498590023,"original_creation_tsz":1456342315,"last_modified_tsz":1488225623,"price":"4.90","currency_code":"USD","quantity":8,"tags":["canada","10mm","organza","ribbon","organza
+        ribbon","stringing material","10mm ribbon","spool","gift wrap","bow","peach
+        ribbon","pink orange","pastel ribbon"],"category_path":["Supplies"],"category_path_ids":[69150433],"materials":["organza"],"shop_section_id":11298008,"featured_rank":null,"state_tsz":1456342315,"url":"https:\/\/www.etsy.com\/listing\/269584155\/10mm-salmon-pink-organza-ribbon-38-inch?utm_source=madmimi&utm_medium=api&utm_campaign=api","views":12,"num_favorers":181,"shipping_template_id":11775798,"processing_min":1,"processing_max":2,"who_made":"someone_else","is_supply":"true","when_made":"2010_2017","item_weight":null,"item_weight_units":null,"item_length":null,"item_width":null,"item_height":null,"item_dimensions_unit":"in","is_private":false,"recipient":null,"occasion":null,"style":null,"non_taxable":false,"is_customizable":false,"is_digital":false,"file_data":"","language":"en-US","has_variations":false,"taxonomy_id":706,"taxonomy_path":["Craft
+        Supplies & Tools","Jewelry & Beading Supplies","Findings & Hardware","Cord
+        & Thread"],"used_manufacturer":false,"MainImage":{"listing_image_id":928506384,"hex_code":null,"red":null,"green":null,"blue":null,"hue":null,"saturation":null,"brightness":null,"is_black_and_white":null,"creation_tsz":null,"listing_id":269584155,"rank":null,"url_75x75":"https:\/\/img0.etsystatic.com\/133\/0\/6477564\/il_75x75.928506384_n6xz.jpg","url_170x135":"https:\/\/img0.etsystatic.com\/133\/0\/6477564\/il_170x135.928506384_n6xz.jpg","url_570xN":"https:\/\/img0.etsystatic.com\/133\/0\/6477564\/il_570xN.928506384_n6xz.jpg","url_fullxfull":"https:\/\/img0.etsystatic.com\/133\/0\/6477564\/il_fullxfull.928506384_n6xz.jpg","full_height":null,"full_width":null}},{"listing_id":269582757,"state":"active","user_id":15640316,"category_id":69150433,"title":"10mm
+        raspberry organza ribbon - 3\/8 Inch ribbon - 50 yards - 150 feet (R041) -
+        Flat rate shipping","description":"\u2665 \u2665 \u2665 Flat rate shipping!
+        (United States and Canada)\n\n\n You will receive 150 feet of organza ribbon.\n\nQuantity:
+        1 roll of 150 feet (50 yards) (47 meters)\nMaterial: Organza\nColor: raspberry\nSize:
+        about 10mm in diameter (3\/8 Inch)\n\nPlease note that colours may appear
+        differently depending on your computer monitor.\n\nThank you for looking,
+        please contact me with any questions.\n\nClick here to see more ribbon from
+        this shop: http:\/\/etsy.me\/14vnoc6\n\n\n~~~***~~~ \n\nWant to upgrade the
+        shipping to USA or to Canada? http:\/\/etsy.me\/28SSmC5\n\n\u2600 Return to
+        my shop here:\nhttps:\/\/www.etsy.com\/shop\/thebeadsofdreams\n\n\ud83d\udc8c
+        Signup for our Newsletter at  http:\/\/thebeadsofdreams.com\/etsy","creation_tsz":1488225018,"ending_tsz":1498589418,"original_creation_tsz":1456341800,"last_modified_tsz":1488225018,"price":"4.90","currency_code":"USD","quantity":8,"tags":["canada","10mm","organza","ribbon","organza
+        ribbon","stringing material","10mm ribbon","spool","gift wrap","bow","hot
+        pink","raspberry","pink ribbon"],"category_path":["Supplies"],"category_path_ids":[69150433],"materials":["organza"],"shop_section_id":11298008,"featured_rank":null,"state_tsz":1456341800,"url":"https:\/\/www.etsy.com\/listing\/269582757\/10mm-raspberry-organza-ribbon-38-inch?utm_source=madmimi&utm_medium=api&utm_campaign=api","views":22,"num_favorers":50,"shipping_template_id":11775798,"processing_min":1,"processing_max":2,"who_made":"someone_else","is_supply":"true","when_made":"2010_2017","item_weight":null,"item_weight_units":null,"item_length":null,"item_width":null,"item_height":null,"item_dimensions_unit":"in","is_private":false,"recipient":null,"occasion":null,"style":null,"non_taxable":false,"is_customizable":false,"is_digital":false,"file_data":"","language":"en-US","has_variations":false,"taxonomy_id":706,"taxonomy_path":["Craft
+        Supplies & Tools","Jewelry & Beading Supplies","Findings & Hardware","Cord
+        & Thread"],"used_manufacturer":false,"MainImage":{"listing_image_id":928499642,"hex_code":null,"red":null,"green":null,"blue":null,"hue":null,"saturation":null,"brightness":null,"is_black_and_white":null,"creation_tsz":null,"listing_id":269582757,"rank":null,"url_75x75":"https:\/\/img0.etsystatic.com\/122\/0\/6477564\/il_75x75.928499642_oj6f.jpg","url_170x135":"https:\/\/img0.etsystatic.com\/122\/0\/6477564\/il_170x135.928499642_oj6f.jpg","url_570xN":"https:\/\/img0.etsystatic.com\/122\/0\/6477564\/il_570xN.928499642_oj6f.jpg","url_fullxfull":"https:\/\/img0.etsystatic.com\/122\/0\/6477564\/il_fullxfull.928499642_oj6f.jpg","full_height":null,"full_width":null}},{"listing_id":269565639,"state":"active","user_id":15640316,"category_id":69150433,"title":"10mm
+        Hot pink organza ribbon - 3\/8 Inch ribbon - 50 yards - 150 feet (R040) -
+        Flat rate shipping","description":"\u2665 \u2665 \u2665 Flat rate shipping!
+        (United States and Canada)\n\n\n You will receive 150 feet of organza ribbon.\n\nQuantity:
+        1 roll of 150 feet (50 yards) (47 meters)\nMaterial: Organza\nColor: Hot pink\nSize:
+        about 10mm in diameter (3\/8 Inch)\n\nPlease note that colours may appear
+        differently depending on your computer monitor.\n\nThank you for looking,
+        please contact me with any questions.\n\nClick here to see more ribbon from
+        this shop: http:\/\/etsy.me\/14vnoc6\n\n\n~~~***~~~ \n\nWant to upgrade the
+        shipping to USA or to Canada? http:\/\/etsy.me\/28SSmC5\n\n\u2600 Return to
+        my shop here:\nhttps:\/\/www.etsy.com\/shop\/thebeadsofdreams\n\n\ud83d\udc8c
+        Signup for our Newsletter at  http:\/\/thebeadsofdreams.com\/etsy","creation_tsz":1488218426,"ending_tsz":1498582826,"original_creation_tsz":1456335185,"last_modified_tsz":1488218426,"price":"4.90","currency_code":"USD","quantity":8,"tags":["canada","10mm","organza","ribbon","organza
+        ribbon","stringing material","10mm ribbon","spool","gift wrap","bow","scrapbooking","hot
+        pink","fuschia fuchia"],"category_path":["Supplies"],"category_path_ids":[69150433],"materials":["organza"],"shop_section_id":11298008,"featured_rank":null,"state_tsz":1456335185,"url":"https:\/\/www.etsy.com\/listing\/269565639\/10mm-hot-pink-organza-ribbon-38-inch?utm_source=madmimi&utm_medium=api&utm_campaign=api","views":21,"num_favorers":1,"shipping_template_id":11775798,"processing_min":1,"processing_max":2,"who_made":"someone_else","is_supply":"true","when_made":"2010_2017","item_weight":null,"item_weight_units":null,"item_length":null,"item_width":null,"item_height":null,"item_dimensions_unit":"in","is_private":false,"recipient":null,"occasion":null,"style":null,"non_taxable":false,"is_customizable":false,"is_digital":false,"file_data":"","language":"en-US","has_variations":false,"taxonomy_id":706,"taxonomy_path":["Craft
+        Supplies & Tools","Jewelry & Beading Supplies","Findings & Hardware","Cord
+        & Thread"],"used_manufacturer":false,"MainImage":{"listing_image_id":928425780,"hex_code":null,"red":null,"green":null,"blue":null,"hue":null,"saturation":null,"brightness":null,"is_black_and_white":null,"creation_tsz":null,"listing_id":269565639,"rank":null,"url_75x75":"https:\/\/img0.etsystatic.com\/111\/0\/6477564\/il_75x75.928425780_c7gh.jpg","url_170x135":"https:\/\/img0.etsystatic.com\/111\/0\/6477564\/il_170x135.928425780_c7gh.jpg","url_570xN":"https:\/\/img0.etsystatic.com\/111\/0\/6477564\/il_570xN.928425780_c7gh.jpg","url_fullxfull":"https:\/\/img0.etsystatic.com\/111\/0\/6477564\/il_fullxfull.928425780_c7gh.jpg","full_height":null,"full_width":null}},{"listing_id":100634402,"state":"active","user_id":15640316,"category_id":69151309,"title":"Mixed
+        color flower tulip acrylic lucite frosted lily trumpet beads 18x12mm - 10
+        pieces (606) - Flat rate shipping","description":"\u2665 \u2665 \u2665 Flat
+        rate shipping! (United States and Canada)\n\n\n Transparent acrylic beads
+        have a frosted and soft look. \n\nQuantity: 10\nMaterial: Resin\nColor: mixed
+        color\nSize: 18x12mm\n\n*** Color combinations can vary from lot to lot, but
+        will always be in sets of 2 ***\nBeads will be randomly selected so we can&#39;t
+        garantee the colors you will receive. We will try to mix as many colors as
+        we are able, but you may receive more than one pair of some of the colors.
+        This is a mixed listing only, no color choosing.\n\n\nPlease note that colours
+        may appear differently depending on your computer monitor.\n\nThe coin in
+        the picture is the same size as a US quarter.\n\nThank you for looking, please
+        contact me with any questions.\n\nClick here to see more 18mm lily flower
+        beads from this shop: http:\/\/www.etsy.com\/shop\/TheBeadsofDreams\/search?search_query=lily+18mm&amp;search_submit=&amp;search_type=user_shop_ttt_id_6477564&amp;shopname=TheBeadsofDreams&amp;langid_override=-1\n\n\n~~~***~~~
+        \n\nWant to upgrade the shipping to USA or to Canada? http:\/\/etsy.me\/28SSmC5\n\n\u2600
+        Return to my shop here:\nhttps:\/\/www.etsy.com\/shop\/thebeadsofdreams\n\n\ud83d\udc8c
+        Signup for our Newsletter at  http:\/\/thebeadsofdreams.com\/etsy","creation_tsz":1488217223,"ending_tsz":1498581623,"original_creation_tsz":1337964958,"last_modified_tsz":1488217223,"price":"2.25","currency_code":"USD","quantity":1,"tags":["supplies","commercial","resin","lucite","flower","floral","18mm
+        12mm","frosted","trumpet","tulip","bead cap","mixed color"],"category_path":["Supplies","Bead"],"category_path_ids":[69150433,69151309],"materials":["acrylic","resin","lucite","plastic"],"shop_section_id":10345307,"featured_rank":null,"state_tsz":1477437889,"url":"https:\/\/www.etsy.com\/listing\/100634402\/mixed-color-flower-tulip-acrylic-lucite?utm_source=madmimi&utm_medium=api&utm_campaign=api","views":577,"num_favorers":444,"shipping_template_id":11775798,"processing_min":1,"processing_max":2,"who_made":"someone_else","is_supply":"true","when_made":"2010_2017","item_weight":null,"item_weight_units":null,"item_length":null,"item_width":null,"item_height":null,"item_dimensions_unit":"in","is_private":false,"recipient":null,"occasion":null,"style":null,"non_taxable":false,"is_customizable":false,"is_digital":false,"file_data":"","language":"en-US","has_variations":false,"taxonomy_id":2248,"taxonomy_path":["Craft
+        Supplies & Tools","Jewelry & Beading Supplies","Beads","Round & Ball Beads"],"used_manufacturer":false,"MainImage":{"listing_image_id":305240111,"hex_code":null,"red":null,"green":null,"blue":null,"hue":null,"saturation":null,"brightness":null,"is_black_and_white":null,"creation_tsz":null,"listing_id":100634402,"rank":null,"url_75x75":"https:\/\/img1.etsystatic.com\/000\/0\/6477564\/il_75x75.305240111.jpg","url_170x135":"https:\/\/img1.etsystatic.com\/000\/0\/6477564\/il_170x135.305240111.jpg","url_570xN":"https:\/\/img1.etsystatic.com\/000\/0\/6477564\/il_570xN.305240111.jpg","url_fullxfull":"https:\/\/img1.etsystatic.com\/000\/0\/6477564\/il_fullxfull.305240111.jpg","full_height":null,"full_width":null}},{"listing_id":269563211,"state":"active","user_id":15640316,"category_id":69150433,"title":"10mm
+        Olive green organza ribbon - 3\/8 Inch ribbon - 50 yards - 150 feet (R038)
+        - Flat rate shipping","description":"\u2665 \u2665 \u2665 Flat rate shipping!
+        (United States and Canada)\n\n\n You will receive 150 feet of organza ribbon.\n\nQuantity:
+        1 roll of 150 feet (50 yards) (47 meters)\nMaterial: Organza\nColor: Green\nSize:
+        about 10mm in diameter (3\/8 Inch)\n\nPlease note that colours may appear
+        differently depending on your computer monitor.\n\nThank you for looking,
+        please contact me with any questions.\n\nClick here to see more ribbon from
+        this shop: http:\/\/etsy.me\/14vnoc6\n\n\n~~~***~~~ \n\nWant to upgrade the
+        shipping to USA or to Canada? http:\/\/etsy.me\/28SSmC5\n\n\u2600 Return to
+        my shop here:\nhttps:\/\/www.etsy.com\/shop\/thebeadsofdreams\n\n\ud83d\udc8c
+        Signup for our Newsletter at  http:\/\/thebeadsofdreams.com\/etsy","creation_tsz":1488217222,"ending_tsz":1498581622,"original_creation_tsz":1456334123,"last_modified_tsz":1488217222,"price":"4.90","currency_code":"USD","quantity":8,"tags":["canada","10mm","organza","ribbon","organza
+        ribbon","stringing material","10mm ribbon","spool","gift wrap","bow","scrapbooking","olivine
+        green","yellow green"],"category_path":["Supplies"],"category_path_ids":[69150433],"materials":["organza"],"shop_section_id":11298008,"featured_rank":null,"state_tsz":1456334123,"url":"https:\/\/www.etsy.com\/listing\/269563211\/10mm-olive-green-organza-ribbon-38-inch?utm_source=madmimi&utm_medium=api&utm_campaign=api","views":19,"num_favorers":71,"shipping_template_id":11775798,"processing_min":1,"processing_max":2,"who_made":"someone_else","is_supply":"true","when_made":"2010_2017","item_weight":null,"item_weight_units":null,"item_length":null,"item_width":null,"item_height":null,"item_dimensions_unit":"in","is_private":false,"recipient":null,"occasion":null,"style":null,"non_taxable":false,"is_customizable":false,"is_digital":false,"file_data":"","language":"en-US","has_variations":false,"taxonomy_id":706,"taxonomy_path":["Craft
+        Supplies & Tools","Jewelry & Beading Supplies","Findings & Hardware","Cord
+        & Thread"],"used_manufacturer":false,"MainImage":{"listing_image_id":928411748,"hex_code":null,"red":null,"green":null,"blue":null,"hue":null,"saturation":null,"brightness":null,"is_black_and_white":null,"creation_tsz":null,"listing_id":269563211,"rank":null,"url_75x75":"https:\/\/img0.etsystatic.com\/135\/0\/6477564\/il_75x75.928411748_hai3.jpg","url_170x135":"https:\/\/img0.etsystatic.com\/135\/0\/6477564\/il_170x135.928411748_hai3.jpg","url_570xN":"https:\/\/img0.etsystatic.com\/135\/0\/6477564\/il_570xN.928411748_hai3.jpg","url_fullxfull":"https:\/\/img0.etsystatic.com\/135\/0\/6477564\/il_fullxfull.928411748_hai3.jpg","full_height":null,"full_width":null}},{"listing_id":269131122,"state":"active","user_id":15640316,"category_id":69150433,"title":"35mm
+        Gunmetal Ribbon ends - Clamps Crimp Ribbon End - Clasps - Bracelet Ends -
+        Black ribbon ends (1586) - Flat rate shipping","description":"\u2665 \u2665
+        \u2665 Flat rate shipping! (United States and Canada)\n\n\n\nMaterial: Iron\nColor:
+        Gunmetal\nSize: about 35mm x 8mm, Hole size: 1.5mm\n\nPlease note that colors
+        may appear differently depending on your computer monitor.\n\nThe coin in
+        the picture is the same size as a US quarter.\n\nThank you for looking, please
+        contact me with any questions.\n\nClick here to see more ribbon ends from
+        this shop: http:\/\/etsy.me\/10uxJET\n\n~~~***~~~\n\n\n~~~***~~~ \n\nWant
+        to upgrade the shipping to USA or to Canada? http:\/\/etsy.me\/28SSmC5\n\n\u2600
+        Return to my shop here:\nhttps:\/\/www.etsy.com\/shop\/thebeadsofdreams\n\n\ud83d\udc8c
+        Signup for our Newsletter at  http:\/\/thebeadsofdreams.com\/etsy","creation_tsz":1488216991,"ending_tsz":1498581391,"original_creation_tsz":1456000330,"last_modified_tsz":1488216991,"price":"2.60","currency_code":"USD","quantity":7,"tags":["ribbon","ribbon
+        end","ribbon crimps","ribbon clamps","clamps","pinch ends","8mm","crimp","gunmetal","black
+        ribbon ends","Bracelet Ends","making tool","alligator"],"category_path":["Supplies"],"category_path_ids":[69150433],"materials":["metal","iron"],"shop_section_id":10509957,"featured_rank":null,"state_tsz":1456000330,"url":"https:\/\/www.etsy.com\/listing\/269131122\/35mm-gunmetal-ribbon-ends-clamps-crimp?utm_source=madmimi&utm_medium=api&utm_campaign=api","views":297,"num_favorers":840,"shipping_template_id":11775798,"processing_min":1,"processing_max":2,"who_made":"someone_else","is_supply":"true","when_made":"2010_2017","item_weight":null,"item_weight_units":null,"item_length":null,"item_width":null,"item_height":null,"item_dimensions_unit":"in","is_private":false,"recipient":null,"occasion":null,"style":null,"non_taxable":false,"is_customizable":false,"is_digital":false,"file_data":"","language":"en-US","has_variations":true,"taxonomy_id":706,"taxonomy_path":["Craft
+        Supplies & Tools","Jewelry & Beading Supplies","Findings & Hardware","Cord
+        & Thread"],"used_manufacturer":false,"MainImage":{"listing_image_id":925835747,"hex_code":null,"red":null,"green":null,"blue":null,"hue":null,"saturation":null,"brightness":null,"is_black_and_white":null,"creation_tsz":null,"listing_id":269131122,"rank":null,"url_75x75":"https:\/\/img1.etsystatic.com\/134\/1\/6477564\/il_75x75.925835747_msb7.jpg","url_170x135":"https:\/\/img1.etsystatic.com\/134\/1\/6477564\/il_170x135.925835747_msb7.jpg","url_570xN":"https:\/\/img1.etsystatic.com\/134\/1\/6477564\/il_570xN.925835747_msb7.jpg","url_fullxfull":"https:\/\/img1.etsystatic.com\/134\/1\/6477564\/il_fullxfull.925835747_msb7.jpg","full_height":null,"full_width":null}},{"listing_id":185227056,"state":"active","user_id":15640316,"category_id":69150433,"title":"35mm
+        Ribbon ends antique copper - Ribbon End Cap Crimp Beads - Bracelet Ends -
+        Ribbon Crimps - 10 pieces (1383) - Flat rate shipping","description":"\u2665
+        \u2665 \u2665 Flat rate shipping! (United States and Canada)\n\n\n This listing
+        is for 10 ribbon ends.\n\nQuantity: 10\nMaterial: Alloy, Lead ,Nickel and
+        Cadmium Free\nColor: Antique copper\nSize: 35mm x 8mm, Hole size: 3.5mm x
+        1.2mm\n\nPlease note that colours may appear differently depending on your
+        computer monitor.\n\nThe coin in the picture is the same size as a US quarter.\n\nThank
+        you for looking, please contact me with any questions.\n\nClick here to see
+        more ribbon ends from this shop: http:\/\/etsy.me\/10uxJET\n\n~~~***~~~\n\n\n~~~***~~~
+        \n\nWant to upgrade the shipping to USA or to Canada? http:\/\/etsy.me\/28SSmC5\n\n\u2600
+        Return to my shop here:\nhttps:\/\/www.etsy.com\/shop\/thebeadsofdreams\n\n\ud83d\udc8c
+        Signup for our Newsletter at  http:\/\/thebeadsofdreams.com\/etsy","creation_tsz":1488216991,"ending_tsz":1498581391,"original_creation_tsz":1396740933,"last_modified_tsz":1488216991,"price":"2.60","currency_code":"USD","quantity":11,"tags":["ribbon
+        end","ribbon crimps","ribbon clamps","clamps","pinch ends","antique copper","copper
+        ribbon cap","ribbon crimp beads","bracelet connector","bracelet clamp","bookmark
+        ends","ribbon crimp"],"category_path":["Supplies"],"category_path_ids":[69150433],"materials":["metal","cadmium
+        free","lead free","nickel free"],"shop_section_id":10509957,"featured_rank":null,"state_tsz":1396740933,"url":"https:\/\/www.etsy.com\/listing\/185227056\/35mm-ribbon-ends-antique-copper-ribbon?utm_source=madmimi&utm_medium=api&utm_campaign=api","views":150,"num_favorers":417,"shipping_template_id":11775798,"processing_min":1,"processing_max":2,"who_made":"someone_else","is_supply":"true","when_made":"2010_2017","item_weight":null,"item_weight_units":null,"item_length":null,"item_width":null,"item_height":null,"item_dimensions_unit":"in","is_private":false,"recipient":null,"occasion":null,"style":null,"non_taxable":false,"is_customizable":false,"is_digital":false,"file_data":"","language":"en-US","has_variations":false,"taxonomy_id":706,"taxonomy_path":["Craft
+        Supplies & Tools","Jewelry & Beading Supplies","Findings & Hardware","Cord
+        & Thread"],"used_manufacturer":false,"MainImage":{"listing_image_id":585973563,"hex_code":null,"red":null,"green":null,"blue":null,"hue":null,"saturation":null,"brightness":null,"is_black_and_white":null,"creation_tsz":null,"listing_id":185227056,"rank":null,"url_75x75":"https:\/\/img1.etsystatic.com\/026\/1\/6477564\/il_75x75.585973563_ix2d.jpg","url_170x135":"https:\/\/img1.etsystatic.com\/026\/1\/6477564\/il_170x135.585973563_ix2d.jpg","url_570xN":"https:\/\/img1.etsystatic.com\/026\/1\/6477564\/il_570xN.585973563_ix2d.jpg","url_fullxfull":"https:\/\/img1.etsystatic.com\/026\/1\/6477564\/il_fullxfull.585973563_ix2d.jpg","full_height":null,"full_width":null}},{"listing_id":269666454,"state":"active","user_id":15640316,"category_id":69150433,"title":"10mm
+        Old red organza ribbon - 3\/8 Inch ribbon - 50 yards - 150 feet (R037) - Flat
+        rate shipping","description":"\u2665 \u2665 \u2665 Flat rate shipping! (United
+        States and Canada)\n\n\n You will receive 150 feet of organza ribbon.\n\nQuantity:
+        1 roll of 150 feet (50 yards) (47 meters)\nMaterial: Organza\nColor: Red\nSize:
+        about 10mm in diameter (3\/8 Inch)\n\nPlease note that colours may appear
+        differently depending on your computer monitor.\n\nThank you for looking,
+        please contact me with any questions.\n\nClick here to see more ribbon from
+        this shop: http:\/\/etsy.me\/14vnoc6\n\n\n~~~***~~~ \n\nWant to upgrade the
+        shipping to USA or to Canada? http:\/\/etsy.me\/28SSmC5\n\n\u2600 Return to
+        my shop here:\nhttps:\/\/www.etsy.com\/shop\/thebeadsofdreams\n\n\ud83d\udc8c
+        Signup for our Newsletter at  http:\/\/thebeadsofdreams.com\/etsy","creation_tsz":1488216624,"ending_tsz":1498581024,"original_creation_tsz":1456333601,"last_modified_tsz":1488216624,"price":"4.90","currency_code":"USD","quantity":8,"tags":["canada","10mm","organza","ribbon","organza
+        ribbon","stringing material","10mm ribbon","red","spool","gift wrap","bow","scrapbooking","dark
+        red"],"category_path":["Supplies"],"category_path_ids":[69150433],"materials":["organza"],"shop_section_id":11298008,"featured_rank":null,"state_tsz":1456333601,"url":"https:\/\/www.etsy.com\/listing\/269666454\/10mm-old-red-organza-ribbon-38-inch?utm_source=madmimi&utm_medium=api&utm_campaign=api","views":86,"num_favorers":132,"shipping_template_id":11775798,"processing_min":1,"processing_max":2,"who_made":"someone_else","is_supply":"true","when_made":"2010_2017","item_weight":null,"item_weight_units":null,"item_length":null,"item_width":null,"item_height":null,"item_dimensions_unit":"in","is_private":false,"recipient":null,"occasion":null,"style":null,"non_taxable":false,"is_customizable":false,"is_digital":false,"file_data":"","language":"en-US","has_variations":false,"taxonomy_id":706,"taxonomy_path":["Craft
+        Supplies & Tools","Jewelry & Beading Supplies","Findings & Hardware","Cord
+        & Thread"],"used_manufacturer":false,"MainImage":{"listing_image_id":928406752,"hex_code":null,"red":null,"green":null,"blue":null,"hue":null,"saturation":null,"brightness":null,"is_black_and_white":null,"creation_tsz":null,"listing_id":269666454,"rank":null,"url_75x75":"https:\/\/img0.etsystatic.com\/117\/0\/6477564\/il_75x75.928406752_kowo.jpg","url_170x135":"https:\/\/img0.etsystatic.com\/117\/0\/6477564\/il_170x135.928406752_kowo.jpg","url_570xN":"https:\/\/img0.etsystatic.com\/117\/0\/6477564\/il_570xN.928406752_kowo.jpg","url_fullxfull":"https:\/\/img0.etsystatic.com\/117\/0\/6477564\/il_fullxfull.928406752_kowo.jpg","full_height":null,"full_width":null}},{"listing_id":85583001,"state":"active","user_id":15640316,"category_id":69151309,"title":"7mm
+        Orange cube beads- pumpkin beads - opaque cube beads (191) - Flat rate shipping","description":"\u2665
+        \u2665 \u2665 Flat rate shipping! (United States and Canada)\n\n\n Cube resin
+        beads \n\nMaterial: resin\nSize: 7mm; hole: 1.5mm\n\n\nPlease note that colours
+        may appear differently depending on your computer monitor.\n\nThe coin in
+        the picture is the same size as a US quarter.\n\nThank you for looking, please
+        contact me with any questions.\n\nClick here to see more cube beads from this
+        shop: http:\/\/www.etsy.com\/shop\/TheBeadsofDreams\/search?search_query=cube+beads&amp;search_submit=&amp;search_type=user_shop_ttt_id_6477564&amp;shopname=TheBeadsofDreams&amp;page=1\n\n\n~~~***~~~
+        \n\nWant to upgrade the shipping to USA or to Canada? http:\/\/etsy.me\/28SSmC5\n\n\u2600
+        Return to my shop here:\nhttps:\/\/www.etsy.com\/shop\/thebeadsofdreams\n\n\ud83d\udc8c
+        Signup for our Newsletter at  http:\/\/thebeadsofdreams.com\/etsy","creation_tsz":1488216019,"ending_tsz":1498580419,"original_creation_tsz":1320703465,"last_modified_tsz":1488216019,"price":"2.35","currency_code":"USD","quantity":6,"tags":["supplies","bead","canada","cube","orange","lucite
+        bead","resin bead","7mm 7 mm","pumpkin","carrot","cube bead","opaque bead","in
+        Canada"],"category_path":["Supplies","Bead"],"category_path_ids":[69150433,69151309],"materials":["resin","lucite"],"shop_section_id":10345307,"featured_rank":null,"state_tsz":1371833526,"url":"https:\/\/www.etsy.com\/listing\/85583001\/7mm-orange-cube-beads-pumpkin-beads?utm_source=madmimi&utm_medium=api&utm_campaign=api","views":236,"num_favorers":234,"shipping_template_id":11775798,"processing_min":1,"processing_max":2,"who_made":"someone_else","is_supply":"true","when_made":"2010_2017","item_weight":null,"item_weight_units":null,"item_length":null,"item_width":null,"item_height":null,"item_dimensions_unit":"in","is_private":false,"recipient":null,"occasion":null,"style":null,"non_taxable":false,"is_customizable":false,"is_digital":false,"file_data":"","language":"en-US","has_variations":true,"taxonomy_id":2253,"taxonomy_path":["Craft
+        Supplies & Tools","Jewelry & Beading Supplies","Beads","Cube Beads"],"used_manufacturer":false,"MainImage":{"listing_image_id":284292813,"hex_code":null,"red":null,"green":null,"blue":null,"hue":null,"saturation":null,"brightness":null,"is_black_and_white":null,"creation_tsz":null,"listing_id":85583001,"rank":null,"url_75x75":"https:\/\/img1.etsystatic.com\/000\/0\/6477564\/il_75x75.284292813.jpg","url_170x135":"https:\/\/img1.etsystatic.com\/000\/0\/6477564\/il_170x135.284292813.jpg","url_570xN":"https:\/\/img1.etsystatic.com\/000\/0\/6477564\/il_570xN.284292813.jpg","url_fullxfull":"https:\/\/img1.etsystatic.com\/000\/0\/6477564\/il_fullxfull.284292813.jpg","full_height":null,"full_width":null}},{"listing_id":269550251,"state":"active","user_id":15640316,"category_id":69151309,"title":"3mm
+        orange faceted glass beads - opaque beads - petite beads - two tones of orange
+        beads - 30 pieces (1596) - Flat rate shipping","description":"\u2665 \u2665
+        \u2665 Flat rate shipping! (United States and Canada)\n\n\n\nQuantity: 30\nMaterial:
+        Glass\nColor: Two tones of orange\nSize: about 3mm in diameter, hole: 0.5mm\n\n\nPlease
+        note that colours may appear differently depending on your computer monitor.\n\nThank
+        you for looking, please contact me with any questions.\n\nClick here to see
+        more 3mm glass beads from this shop: http:\/\/etsy.me\/1T6SrFz\n\n\n~~~***~~~
+        \n\nWant to upgrade the shipping to USA or to Canada? http:\/\/etsy.me\/28SSmC5\n\n\u2600
+        Return to my shop here:\nhttps:\/\/www.etsy.com\/shop\/thebeadsofdreams\n\n\ud83d\udc8c
+        Signup for our Newsletter at  http:\/\/thebeadsofdreams.com\/etsy","creation_tsz":1488211226,"ending_tsz":1498575626,"original_creation_tsz":1456328413,"last_modified_tsz":1488211226,"price":"3.25","currency_code":"USD","quantity":15,"tags":["bead","canada","glass","faceted","round","faceted
+        bead","petite","tiny","opaque","glass beads","orange","pumpkin bead","dark
+        orange"],"category_path":["Supplies","Bead"],"category_path_ids":[69150433,69151309],"materials":["glass"],"shop_section_id":10345307,"featured_rank":null,"state_tsz":1456328413,"url":"https:\/\/www.etsy.com\/listing\/269550251\/3mm-orange-faceted-glass-beads-opaque?utm_source=madmimi&utm_medium=api&utm_campaign=api","views":22,"num_favorers":480,"shipping_template_id":11775798,"processing_min":1,"processing_max":2,"who_made":"someone_else","is_supply":"true","when_made":"2010_2017","item_weight":null,"item_weight_units":null,"item_length":null,"item_width":null,"item_height":null,"item_dimensions_unit":"in","is_private":false,"recipient":null,"occasion":null,"style":null,"non_taxable":false,"is_customizable":false,"is_digital":false,"file_data":"","language":"en-US","has_variations":false,"taxonomy_id":2248,"taxonomy_path":["Craft
+        Supplies & Tools","Jewelry & Beading Supplies","Beads","Round & Ball Beads"],"used_manufacturer":false,"MainImage":{"listing_image_id":928355680,"hex_code":null,"red":null,"green":null,"blue":null,"hue":null,"saturation":null,"brightness":null,"is_black_and_white":null,"creation_tsz":null,"listing_id":269550251,"rank":null,"url_75x75":"https:\/\/img0.etsystatic.com\/101\/1\/6477564\/il_75x75.928355680_4x5n.jpg","url_170x135":"https:\/\/img0.etsystatic.com\/101\/1\/6477564\/il_170x135.928355680_4x5n.jpg","url_570xN":"https:\/\/img0.etsystatic.com\/101\/1\/6477564\/il_570xN.928355680_4x5n.jpg","url_fullxfull":"https:\/\/img0.etsystatic.com\/101\/1\/6477564\/il_fullxfull.928355680_4x5n.jpg","full_height":null,"full_width":null}},{"listing_id":104835681,"state":"active","user_id":15640316,"category_id":69155215,"title":"Antique
+        copper anchor charm - Antique copper anchor pendant - antique copper nautical
+        charm - 23mm x 21mm - 8 pieces (723)","description":"This listing is for a
+        very pretty set of 8 charms\n\nQuantity: 8\nMaterial: metal; lead, cadmium
+        and nickel free\nColor: Antique copper\nSize: 23mm long, 21mm wide, 3mm thick,
+        hole:2.5mm\n\n\nPlease note that colours may appear differently depending
+        on your computer monitor.\n\nThe coin in the picture is the same size as a
+        US quarter.\n\nThank you for looking, please contact me with any questions.\n\nClick
+        here to see more charms from this shop: http:\/\/www.etsy.com\/shop\/TheBeadsofDreams\/search?search_query=charms&amp;search_submit=&amp;search_type=user_shop_ttt_id_6477564&amp;shopname=TheBeadsofDreams\n\n\n~~~***~~~
+        \n\nWant to upgrade the shipping to USA or to Canada? http:\/\/etsy.me\/28SSmC5\n\n\u2600
+        Return to my shop here:\nhttps:\/\/www.etsy.com\/shop\/thebeadsofdreams\n\n\ud83d\udc8c
+        Signup for our Newsletter at  http:\/\/thebeadsofdreams.com\/etsy","creation_tsz":1488211225,"ending_tsz":1498575625,"original_creation_tsz":1342758334,"last_modified_tsz":1488211225,"price":"3.15","currency_code":"USD","quantity":19,"tags":["pendant","nickel
+        free","metal","charm","embellishments","component","anchor","sailor","boat","nautical","copper","antique
+        copper","Skipper"],"category_path":["Accessories","Charm"],"category_path_ids":[69150467,69155215],"materials":["metal"],"shop_section_id":11381236,"featured_rank":null,"state_tsz":1371835042,"url":"https:\/\/www.etsy.com\/listing\/104835681\/antique-copper-anchor-charm-antique?utm_source=madmimi&utm_medium=api&utm_campaign=api","views":211,"num_favorers":647,"shipping_template_id":135916533,"processing_min":1,"processing_max":2,"who_made":"someone_else","is_supply":"true","when_made":"2010_2017","item_weight":null,"item_weight_units":null,"item_length":null,"item_width":null,"item_height":null,"item_dimensions_unit":"in","is_private":false,"recipient":null,"occasion":null,"style":null,"non_taxable":false,"is_customizable":false,"is_digital":false,"file_data":"","language":"en-US","has_variations":false,"taxonomy_id":697,"taxonomy_path":["Craft
+        Supplies & Tools","Jewelry & Beading Supplies","Charms"],"used_manufacturer":false,"MainImage":{"listing_image_id":358132706,"hex_code":null,"red":null,"green":null,"blue":null,"hue":null,"saturation":null,"brightness":null,"is_black_and_white":null,"creation_tsz":null,"listing_id":104835681,"rank":null,"url_75x75":"https:\/\/img0.etsystatic.com\/004\/1\/6477564\/il_75x75.358132706_1tjx.jpg","url_170x135":"https:\/\/img0.etsystatic.com\/004\/1\/6477564\/il_170x135.358132706_1tjx.jpg","url_570xN":"https:\/\/img0.etsystatic.com\/004\/1\/6477564\/il_570xN.358132706_1tjx.jpg","url_fullxfull":"https:\/\/img0.etsystatic.com\/004\/1\/6477564\/il_fullxfull.358132706_1tjx.jpg","full_height":null,"full_width":null}},{"listing_id":120267451,"state":"active","user_id":15640316,"category_id":69150433,"title":"1mm
+        Yellow cotton cord (868) - Flat rate shipping","description":"\u2665 \u2665
+        \u2665 Flat rate shipping! (United States and Canada)\n\n\n Material: 100%
+        cotton\nColor: Yellow\nSize: about 1mm in diameter (0.04 inch)\n\nPlease note
+        that colours may appear differently depending on your computer monitor.\n\nThank
+        you for looking, please contact me with any questions.\n\nClick here to see
+        more cotton cord from this shop: http:\/\/etsy.me\/TXwkQB\n\n\n~~~***~~~ \n\nWant
+        to upgrade the shipping to USA or to Canada? http:\/\/etsy.me\/28SSmC5\n\n\u2600
+        Return to my shop here:\nhttps:\/\/www.etsy.com\/shop\/thebeadsofdreams\n\n\ud83d\udc8c
+        Signup for our Newsletter at  http:\/\/thebeadsofdreams.com\/etsy","creation_tsz":1488207017,"ending_tsz":1498571417,"original_creation_tsz":1358012195,"last_modified_tsz":1488207017,"price":"2.25","currency_code":"USD","quantity":6,"tags":["cord","canada","round","1mm","eco
+        friendly","cordage","string","macrame","cotton","unwaxed","thebeads","yellow"],"category_path":["Supplies"],"category_path_ids":[69150433],"materials":["cotton","coton"],"shop_section_id":11298008,"featured_rank":null,"state_tsz":1371833966,"url":"https:\/\/www.etsy.com\/listing\/120267451\/1mm-yellow-cotton-cord-868-flat-rate?utm_source=madmimi&utm_medium=api&utm_campaign=api","views":171,"num_favorers":403,"shipping_template_id":11775798,"processing_min":1,"processing_max":2,"who_made":"someone_else","is_supply":"true","when_made":"2010_2017","item_weight":null,"item_weight_units":null,"item_length":null,"item_width":null,"item_height":null,"item_dimensions_unit":"in","is_private":false,"recipient":null,"occasion":null,"style":null,"non_taxable":false,"is_customizable":false,"is_digital":false,"file_data":"","language":"en-US","has_variations":true,"taxonomy_id":706,"taxonomy_path":["Craft
+        Supplies & Tools","Jewelry & Beading Supplies","Findings & Hardware","Cord
+        & Thread"],"used_manufacturer":false,"MainImage":{"listing_image_id":415178229,"hex_code":null,"red":null,"green":null,"blue":null,"hue":null,"saturation":null,"brightness":null,"is_black_and_white":null,"creation_tsz":null,"listing_id":120267451,"rank":null,"url_75x75":"https:\/\/img1.etsystatic.com\/011\/0\/6477564\/il_75x75.415178229_qsqg.jpg","url_170x135":"https:\/\/img1.etsystatic.com\/011\/0\/6477564\/il_170x135.415178229_qsqg.jpg","url_570xN":"https:\/\/img1.etsystatic.com\/011\/0\/6477564\/il_570xN.415178229_qsqg.jpg","url_fullxfull":"https:\/\/img1.etsystatic.com\/011\/0\/6477564\/il_fullxfull.415178229_qsqg.jpg","full_height":null,"full_width":null}},{"listing_id":449430336,"state":"active","user_id":15640316,"category_id":68888142,"title":"12mm
+        Blue Leopard cabochon - Animal print cabochons - Cheetah cabochon - 12mm faceted
+        cameos - Glitter cabochons (1720) - Flat rate shipping","description":"\u2665
+        \u2665 \u2665 Flat rate shipping! (United States and Canada)\n\n\n These faceted
+        cabochons have a side that is completely flat. It&#39;s perfect for adhering
+        to flat components to make beautiful pendants, rings and decorations.\n\nMaterial:
+        Resin\nColor: Blue\nSize: about 12mm long, 4.4mm thick\n\n\u2665 If you bought
+        these cabochons earlier, please note that the color may be slightly different.\n\nThank
+        you for looking, please contact me with any questions.\n\nWant to see more
+        of these cabochons? http:\/\/etsy.me\/290mrCN\n\n~~~***~~~\n\n\n~~~***~~~
+        \n\nWant to upgrade the shipping to USA or to Canada? http:\/\/etsy.me\/28SSmC5\n\n\u2600
+        Return to my shop here:\nhttps:\/\/www.etsy.com\/shop\/thebeadsofdreams\n\n\ud83d\udc8c
+        Signup for our Newsletter at  http:\/\/thebeadsofdreams.com\/etsy","creation_tsz":1488202219,"ending_tsz":1498566619,"original_creation_tsz":1467125543,"last_modified_tsz":1488202219,"price":"2.30","currency_code":"USD","quantity":10,"tags":["12mm","round","cab","cabochon","canada","12mm
+        cabochon","flatback cabochon","blue","faux drusy","faux druzy","rockabilly","animal
+        print","iridescent"],"category_path":["Supplies","Cabochon"],"category_path_ids":[69150433,68888142],"materials":["resin"],"shop_section_id":10509185,"featured_rank":null,"state_tsz":1467125543,"url":"https:\/\/www.etsy.com\/listing\/449430336\/12mm-blue-leopard-cabochon-animal-print?utm_source=madmimi&utm_medium=api&utm_campaign=api","views":124,"num_favorers":837,"shipping_template_id":11775798,"processing_min":1,"processing_max":2,"who_made":"someone_else","is_supply":"true","when_made":"2010_2017","item_weight":null,"item_weight_units":null,"item_length":null,"item_width":null,"item_height":null,"item_dimensions_unit":"in","is_private":false,"recipient":null,"occasion":null,"style":null,"non_taxable":false,"is_customizable":false,"is_digital":false,"file_data":"","language":"en-US","has_variations":true,"taxonomy_id":696,"taxonomy_path":["Craft
+        Supplies & Tools","Jewelry & Beading Supplies","Cabochons"],"used_manufacturer":false,"MainImage":{"listing_image_id":1046413383,"hex_code":null,"red":null,"green":null,"blue":null,"hue":null,"saturation":null,"brightness":null,"is_black_and_white":null,"creation_tsz":null,"listing_id":449430336,"rank":null,"url_75x75":"https:\/\/img1.etsystatic.com\/112\/1\/6477564\/il_75x75.1046413383_16dk.jpg","url_170x135":"https:\/\/img1.etsystatic.com\/112\/1\/6477564\/il_170x135.1046413383_16dk.jpg","url_570xN":"https:\/\/img1.etsystatic.com\/112\/1\/6477564\/il_570xN.1046413383_16dk.jpg","url_fullxfull":"https:\/\/img1.etsystatic.com\/112\/1\/6477564\/il_fullxfull.1046413383_16dk.jpg","full_height":null,"full_width":null}},{"listing_id":188395282,"state":"active","user_id":15640316,"category_id":69151309,"title":"Antique
+        brass striped round beads - spacers beads - antique brass round beads - round
+        beads - 6mm x 5mm (1393) - Flat rate shipping","description":"\u2665 \u2665
+        \u2665 Flat rate shipping! (United States and Canada)\n\n\n Material: Zinc,
+        lead and nickel free\nColor: Antique bronze antique brass\nSize: width : about
+        6mm, height: about 5mm\n\n\nPlease note that colours may appear differently
+        depending on your computer monitor.\n\nThe coin in the picture is the same
+        size as a US quarter.\n\nThank you for looking, please contact me with any
+        questions.\n\nClick here to see more metal beads from this shop: http:\/\/www.etsy.com\/shop\/TheBeadsofDreams\/search?search_query=metal+bead&search_submit=&search_type=user_shop_ttt_id_6477564&shopname=TheBeadsofDreams\n\n\n~~~***~~~
+        \n\nWant to upgrade the shipping to USA or to Canada? http:\/\/etsy.me\/28SSmC5\n\n\u2600
+        Return to my shop here:\nhttps:\/\/www.etsy.com\/shop\/thebeadsofdreams\n\n\ud83d\udc8c
+        Signup for our Newsletter at  http:\/\/thebeadsofdreams.com\/etsy","creation_tsz":1488191882,"ending_tsz":1498556282,"original_creation_tsz":1399148433,"last_modified_tsz":1488304235,"price":"2.25","currency_code":"USD","quantity":10,"tags":["bead","accent
+        beads","quebec","canada","antique bronze","antique brass","antique","brass","bronze","melon","spacer","lantern
+        bead","antique brass spacer"],"category_path":["Supplies","Bead"],"category_path_ids":[69150433,69151309],"materials":["zinc","lead
+        free","nickel free"],"shop_section_id":10345307,"featured_rank":null,"state_tsz":1399148432,"url":"https:\/\/www.etsy.com\/listing\/188395282\/antique-brass-striped-round-beads?utm_source=madmimi&utm_medium=api&utm_campaign=api","views":161,"num_favorers":577,"shipping_template_id":11775798,"processing_min":1,"processing_max":2,"who_made":"someone_else","is_supply":"true","when_made":"2010_2017","item_weight":null,"item_weight_units":null,"item_length":null,"item_width":null,"item_height":null,"item_dimensions_unit":"in","is_private":false,"recipient":null,"occasion":null,"style":null,"non_taxable":false,"is_customizable":false,"is_digital":false,"file_data":"","language":"en-US","has_variations":true,"taxonomy_id":2248,"taxonomy_path":["Craft
+        Supplies & Tools","Jewelry & Beading Supplies","Beads","Round & Ball Beads"],"used_manufacturer":false,"MainImage":{"listing_image_id":597932784,"hex_code":null,"red":null,"green":null,"blue":null,"hue":null,"saturation":null,"brightness":null,"is_black_and_white":null,"creation_tsz":null,"listing_id":188395282,"rank":null,"url_75x75":"https:\/\/img0.etsystatic.com\/037\/1\/6477564\/il_75x75.597932784_67e4.jpg","url_170x135":"https:\/\/img0.etsystatic.com\/037\/1\/6477564\/il_170x135.597932784_67e4.jpg","url_570xN":"https:\/\/img0.etsystatic.com\/037\/1\/6477564\/il_570xN.597932784_67e4.jpg","url_fullxfull":"https:\/\/img0.etsystatic.com\/037\/1\/6477564\/il_fullxfull.597932784_67e4.jpg","full_height":null,"full_width":null}},{"listing_id":130761735,"state":"active","user_id":15640316,"category_id":69151309,"title":"10
+        Pink lucite heart resin beads 9mm 10pcs (972) - Flat rate shipping","description":"\u2665
+        \u2665 \u2665 Flat rate shipping! (United States and Canada)\n\n\n You will
+        receive 10pc of resin heart beads.\n\nQuantity: 10\nMaterial: resin\nColor:
+        Pink\nSize: 9x8x3mm, Hole: 1mm\n\nPlease note that colours may appear differently
+        depending on your computer monitor.\n\nThe coin in the picture is the same
+        size as a US quarter.\n\nThank you for looking, please contact me with any
+        questions.\n\nClick here to see more 9mm heart beads from this shop: http:\/\/etsy.me\/11qnRbC\n\n~~~***~~~\n\n\n~~~***~~~
+        \n\nWant to upgrade the shipping to USA or to Canada? http:\/\/etsy.me\/28SSmC5\n\n\u2600
+        Return to my shop here:\nhttps:\/\/www.etsy.com\/shop\/thebeadsofdreams\n\n\ud83d\udc8c
+        Signup for our Newsletter at  http:\/\/thebeadsofdreams.com\/etsy","creation_tsz":1488182418,"ending_tsz":1498546818,"original_creation_tsz":1367246020,"last_modified_tsz":1488182418,"price":"2.50","currency_code":"USD","quantity":18,"tags":["resin","lucite","heart","bead","canada","quebec","frosted","9mm","acrylic","love","pink","9
+        mm"],"category_path":["Supplies","Bead"],"category_path_ids":[69150433,69151309],"materials":["acrylic","resin","lucite","plastic"],"shop_section_id":10345307,"featured_rank":null,"state_tsz":1371833702,"url":"https:\/\/www.etsy.com\/listing\/130761735\/10-pink-lucite-heart-resin-beads-9mm?utm_source=madmimi&utm_medium=api&utm_campaign=api","views":186,"num_favorers":256,"shipping_template_id":11775798,"processing_min":1,"processing_max":2,"who_made":"someone_else","is_supply":"true","when_made":"2010_2017","item_weight":null,"item_weight_units":null,"item_length":null,"item_width":null,"item_height":null,"item_dimensions_unit":null,"is_private":false,"recipient":null,"occasion":null,"style":null,"non_taxable":false,"is_customizable":true,"is_digital":false,"file_data":"","language":"en-US","has_variations":false,"taxonomy_id":2248,"taxonomy_path":["Craft
+        Supplies & Tools","Jewelry & Beading Supplies","Beads","Round & Ball Beads"],"used_manufacturer":false,"MainImage":{"listing_image_id":453989204,"hex_code":null,"red":null,"green":null,"blue":null,"hue":null,"saturation":null,"brightness":null,"is_black_and_white":null,"creation_tsz":null,"listing_id":130761735,"rank":null,"url_75x75":"https:\/\/img0.etsystatic.com\/011\/0\/6477564\/il_75x75.453989204_96pq.jpg","url_170x135":"https:\/\/img0.etsystatic.com\/011\/0\/6477564\/il_170x135.453989204_96pq.jpg","url_570xN":"https:\/\/img0.etsystatic.com\/011\/0\/6477564\/il_570xN.453989204_96pq.jpg","url_fullxfull":"https:\/\/img0.etsystatic.com\/011\/0\/6477564\/il_fullxfull.453989204_96pq.jpg","full_height":null,"full_width":null}}],"params":{"limit":25,"offset":0,"page":"1","shop_id":"6477564","keywords":null,"sort_on":"created","sort_order":"down","min_price":null,"max_price":null,"color":null,"color_accuracy":0,"tags":null,"category":null,"translate_keywords":"false","include_private":0},"type":"Listing","pagination":{"effective_limit":25,"effective_offset":0,"next_offset":25,"effective_page":1,"next_page":2}}'
+    http_version: 
+  recorded_at: Tue, 28 Feb 2017 20:29:16 GMT
+recorded_with: VCR 2.5.0
