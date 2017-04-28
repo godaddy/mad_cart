@@ -1,49 +1,72 @@
-require "spec_helper"
+require 'spec_helper'
 
-describe MadCart::Store::Base do
+describe MadCart::Store::Base do # rubocop:disable Metrics/BlockLength
   before(:each) do
     clear_config
     Object.send(:remove_const, :MyModel) if Object.const_defined?(:MyModel)
+
+    # Model for testing
     class MyModel
       include MadCart::Model::Base
       required_attributes :name, :description
     end
   end
 
-  describe "attributes" do
-    it "can be configured to include additional attributes" do
+  describe 'attributes' do # rubocop:disable Metrics/BlockLength
+    it 'can be configured to include additional attributes' do
       MadCart.configure do |config|
-        config.include_attributes :my_models => [:external_id, :url]
+        config.include_attributes my_models: %i[external_id url]
       end
-      
-      o = MyModel.new(:name => 'whiskey', :description => 'tasty', :external_id => 2, :url => 'path/to/whiskey', :discarded => 'property')
-      o.attributes.should == {"name" => 'whiskey', "description" => 'tasty', "external_id" => 2, "url" => 'path/to/whiskey'}
+
+      o = MyModel.new(name: 'whiskey',
+                      description: 'tasty',
+                      external_id: 2,
+                      url: 'path/to/whiskey',
+                      discarded: 'property')
+      expect(o.attributes).to eq('name' => 'whiskey',
+                                 'description' => 'tasty',
+                                 'external_id' => 2,
+                                 'url' => 'path/to/whiskey')
     end
-    
-    it "includes mapped attributes" do
+
+    it 'includes mapped attributes' do
       MadCart.configure do |config|
-        config.attribute_map :my_models, :old_name => :new_name
+        config.attribute_map :my_models, old_name: :new_name
       end
-      
-      o = MyModel.new(:name => 'whiskey', :description => 'tasty', :discarded => 'property', :old_name => 'is included')
-      o.attributes.should == {"name" => 'whiskey', "description" => 'tasty', "new_name" => 'is included'}
+
+      o = MyModel.new(name: 'whiskey',
+                      description: 'tasty',
+                      discarded: 'property',
+                      old_name: 'is included')
+      expect(o.attributes).to eq('name' => 'whiskey',
+                                 'description' => 'tasty',
+                                 'new_name' => 'is included')
     end
-    
-    it "allows two sources to map to the same model" do
+
+    it 'allows two sources to map to the same model' do
       MadCart.configure do |config|
-        config.include_attributes :my_models => [:external_id]
-        config.attribute_map :my_models, :id => :external_id
+        config.include_attributes my_models: [:external_id]
+        config.attribute_map :my_models, id: :external_id
       end
-      
-      source_a = {:name => 'whiskey', :description => 'tasty', :discarded => 'property', :id => 'has been renamed'}
-      source_b = {:name => 'whiskey', :description => 'tasty', :discarded => 'property', :external_id => 'is included'}
-      
+
+      source_a = { name: 'whiskey',
+                   description: 'tasty',
+                   discarded: 'property',
+                   id: 'has been renamed' }
+      source_b = { name: 'whiskey',
+                   description: 'tasty',
+                   discarded: 'property',
+                   external_id: 'is included' }
+
       model_a = MyModel.new(source_a)
-      model_a.attributes.should == {"name" => 'whiskey', "description" => 'tasty', "external_id" => 'has been renamed'}
-      
+      expect(model_a.attributes).to eq('name' => 'whiskey',
+                                       'description' => 'tasty',
+                                       'external_id' => 'has been renamed')
+
       model_b = MyModel.new(source_b)
-      model_b.attributes.should == {"name" => 'whiskey', "description" => 'tasty', "external_id" => 'is included'}
+      expect(model_b.attributes).to eq('name' => 'whiskey',
+                                       'description' => 'tasty',
+                                       'external_id' => 'is included')
     end
   end
-
 end
