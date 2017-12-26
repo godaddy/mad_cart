@@ -13,15 +13,19 @@ describe MadCart::Store::BigCommerce do
   describe "store" do
 
     it "expects to be instantiated with an api key, username and store url" do
-      lambda { MadCart::Store::BigCommerce.new(:username => 'test', :store_url => 'test').connection }.should raise_error(ArgumentError)
-      lambda { MadCart::Store::BigCommerce.new(:api_key => 'test', :username => 'test', :store_url => 'test').connection }.should_not raise_error
+      expect {
+        MadCart::Store::BigCommerce.new(:username => 'test', :store_url => 'test').connection
+      }.to raise_error(ArgumentError)
+      expect {
+        MadCart::Store::BigCommerce.new(:api_key => 'test', :username => 'test', :store_url => 'test').connection
+      }.not_to raise_error
     end
 
     it "authenticates via basic auth" do
       connection = Faraday.new
-      Faraday.stub(:new).and_yield(connection)
+      allow(Faraday).to receive(:new).and_yield(connection)
 
-      connection.should_receive(:basic_auth).with('username', 'api_key')
+      expect(connection).to receive(:basic_auth).with('username', 'api_key')
 
       MadCart::Store::BigCommerce.new(:api_key => 'api_key', :username => 'username', :store_url => 'url').connection
     end
@@ -35,26 +39,26 @@ describe MadCart::Store::BigCommerce do
       it "returns products" do
         VCR.use_cassette('big_commerce_products') do
           products = subject.products(limit: 10)
-          products.size.should == 10
+          expect(products.size).to eql(10)
 
           first_product = products.first
-          first_product.should be_a(MadCart::Model::Product)
-          first_product.name.should_not be_nil
-          first_product.description.should_not be_nil
-          first_product.image_url.should_not be_nil
+          expect(first_product).to be_a(MadCart::Model::Product)
+          expect(first_product.name).not_to be_nil
+          expect(first_product.description).not_to be_nil
+          expect(first_product.image_url).not_to be_nil
         end
       end
 
       it "returns an empty array when there are no products" do
         VCR.use_cassette('big_commerce_no_records') do
-          subject.products.should == []
+          expect(subject.products).to eql([])
         end
       end
 
 
       it "returns an empty array when there are no images for any products" do
         VCR.use_cassette('big_commerce_products_no_images') do
-          subject.products.should == []
+          expect(subject.products).to eql([])
         end
       end
 
@@ -64,7 +68,7 @@ describe MadCart::Store::BigCommerce do
 
       it "returns how many products there are" do
         VCR.use_cassette('big_commerce_products_count') do
-          subject.products_count.should == 45
+          expect(subject.products_count).to eql(45)
         end
       end
 
@@ -79,14 +83,14 @@ describe MadCart::Store::BigCommerce do
         VCR.use_cassette('big_commerce_customers') do
           customers = subject.customers
 
-          customers.size.should be > 0
-          customers.first.should be_a(MadCart::Model::Customer)
+          expect(customers.size).to be > 0
+          expect(customers.first).to be_a(MadCart::Model::Customer)
         end
       end
 
       it "returns an empty array whern there are no customers" do
         VCR.use_cassette('big_commerce_no_records') do
-          subject.customers.should eql([])
+          expect(subject.customers).to eql([])
         end
       end
 
@@ -97,7 +101,7 @@ describe MadCart::Store::BigCommerce do
     context "retrieval" do
       it "returns the store" do
         VCR.use_cassette('big_commerce_store') do
-          subject.store.should_not be_nil
+          expect(subject.store).not_to be_nil
         end
       end
     end
@@ -107,7 +111,7 @@ describe MadCart::Store::BigCommerce do
 
     it "succeeds if it can get time.json from big commerce" do
       VCR.use_cassette('big_commerce_time') do
-        subject.should be_valid
+        expect(subject).to be_valid
       end
     end
 
@@ -119,7 +123,7 @@ describe MadCart::Store::BigCommerce do
           :username => 'support@madmimi.com'
         )
 
-        api.should_not be_valid
+        expect(api).not_to be_valid
       end
     end
 
@@ -131,14 +135,14 @@ describe MadCart::Store::BigCommerce do
           :username => 'support@madmimi.com'
         )
 
-        api.should_not be_valid
+        expect(api).not_to be_valid
       end
     end
 
     it "fails if it cannot parse the response from the big commerce server" do
       VCR.use_cassette('big_commerce_time') do
-        subject.connection.stub(:get) { raise Faraday::ParsingError, "" }
-        subject.should_not be_valid
+        allow(subject.connection).to receive(:get).and_raise(Faraday::ParsingError.new(""))
+        expect(subject).not_to be_valid
       end
     end
   end

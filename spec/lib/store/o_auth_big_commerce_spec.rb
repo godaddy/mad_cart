@@ -30,7 +30,7 @@ describe MadCart::Store::OAuthBigCommerce do
     context "retrieval" do
       it "returns the store" do
         VCR.use_cassette('o_auth_big_commerce_store') do
-          subject.store.should_not be_nil
+          expect(subject.store).not_to be_nil
         end
       end
     end

@@ -8,9 +8,8 @@ describe "configuration" do
   end
 
   describe "stores" do
-
     it "does not require store to be added if credentials are passed to constructor" do
-      lambda{ MadCart::Store::BigCommerce.new({:api_key => 'a_fake_key', :store_url => '/path/to/store', :username => 'bob'}) }.should_not raise_error
+      expect { MadCart::Store::BigCommerce.new({:api_key => 'a_fake_key', :store_url => '/path/to/store', :username => 'bob'}) }.not_to raise_error
     end
 
     it "allows config values to be set for a store" do
@@ -19,24 +18,23 @@ describe "configuration" do
         config.add_store :big_commerce, config_data
       end
 
-      MadCart.config.big_commerce.should == config_data
+      expect(MadCart.config.big_commerce).to eql(config_data)
     end
 
     it "gives returns nil if there's no config" do
-      MadCart.config.missing_store.should be_nil
+      expect(MadCart.config.missing_store).to be_nil
     end
-
   end
 
   describe "models" do
     it "allows custom attribute names to be set" do
-      lambda {
+      expect {
         MadCart.configure do |config|
           config.attribute_map :products, {"name" => "title"}
         end
-      }.should_not raise_error
+      }.not_to raise_error
 
-      MadCart.config.attribute_maps["products"].should == {"name" => "title"}
+      expect(MadCart.config.attribute_maps["products"]).to eql({"name" => "title"})
     end
 
     it "allows additional attributes to be included in models" do
@@ -44,9 +42,7 @@ describe "configuration" do
         config.include_attributes :products => [:external_id, :url]
       end
 
-      MadCart.config.included_attributes[:products].should == [:external_id, :url]
+      expect(MadCart.config.included_attributes[:products]).to eql([:external_id, :url])
     end
-
   end
-
 end

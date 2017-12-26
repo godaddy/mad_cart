@@ -22,32 +22,28 @@ describe MadCart::Store::Spree do
   }
 
   describe "store" do
-
     it "expects to be instantiated with an api key and store url" do
-      lambda { MadCart::Store::Spree.new(:store_url => 'test').connection }.should raise_error(ArgumentError)
-      lambda { MadCart::Store::Spree.new(:api_key => 'test', :store_url => 'test').connection }.should_not raise_error
+      expect { MadCart::Store::Spree.new(:store_url => 'test').connection }.to raise_error(ArgumentError)
+      expect { MadCart::Store::Spree.new(:api_key => 'test', :store_url => 'test').connection }.not_to raise_error
     end
-
   end
 
   describe "products" do
-
     context "retrieval" do
-
       context "basic spree installation" do
         it "returns all products" do
           VCR.use_cassette(spree_cassette, :record => :new_episodes) do
             api = MadCart::Store::Spree.new(valid_credentials)
 
-            api.products.size.should == 58
+            expect(api.products.size).to eql(58)
 
             first_product = api.products.first
 
-            first_product.should be_a(MadCart::Model::Product)
-            first_product.name.should_not be_nil
-            first_product.description.should_not be_nil
-            first_product.image_url.should_not be_nil
-            first_product.additional_attributes['price'].should_not be_nil
+            expect(first_product).to be_a(MadCart::Model::Product)
+            expect(first_product.name).not_to be_nil
+            expect(first_product.description).not_to be_nil
+            expect(first_product.image_url).not_to be_nil
+            expect(first_product.additional_attributes['price']).not_to be_nil
           end
         end
       end
@@ -57,15 +53,15 @@ describe MadCart::Store::Spree do
           VCR.use_cassette(spree_alternative_cassette, :record => :new_episodes) do
             api = MadCart::Store::Spree.new(valid_alternative_credentials)
 
-            api.products.size.should == 148
+            expect(api.products.size).to eql(148)
 
             first_product = api.products.first
 
-            first_product.should be_a(MadCart::Model::Product)
-            first_product.name.should_not be_nil
-            first_product.description.should_not be_nil
-            first_product.image_url.should_not be_nil
-            first_product.additional_attributes['price'].should_not be_nil
+            expect(first_product).to be_a(MadCart::Model::Product)
+            expect(first_product.name).not_to be_nil
+            expect(first_product.description).not_to be_nil
+            expect(first_product.image_url).not_to be_nil
+            expect(first_product.additional_attributes['price']).not_to be_nil
           end
         end
       end
@@ -73,7 +69,7 @@ describe MadCart::Store::Spree do
       it "returns an empty array when there are no products" do
         VCR.use_cassette(spree_no_records_cassette) do
           api = MadCart::Store::Spree.new(valid_credentials)
-          api.products.should == []
+          expect(api.products).to eql([])
         end
       end
 
@@ -84,7 +80,7 @@ describe MadCart::Store::Spree do
       it "returns how many products there are" do
         VCR.use_cassette(spree_cassette, :record => :new_episodes) do
           api = MadCart::Store::Spree.new(valid_credentials)
-          api.products_count.should == 58
+          expect(api.products_count).to eql(58)
         end
       end
 
@@ -99,8 +95,8 @@ describe MadCart::Store::Spree do
         VCR.use_cassette(spree_cassette, :record => :new_episodes) do
           api = MadCart::Store::Spree.new(valid_credentials)
 
-          api.customers.size.should be > 0
-          api.customers.first.should be_a(MadCart::Model::Customer)
+          expect(api.customers.size).to be > 0
+          expect(api.customers.first).to be_a(MadCart::Model::Customer)
         end
       end
 
@@ -108,19 +104,18 @@ describe MadCart::Store::Spree do
         VCR.use_cassette(spree_no_records_cassette) do
           api = MadCart::Store::Spree.new(valid_credentials)
 
-          api.customers.should eql([])
+          expect(api.customers).to eql([])
         end
       end
 
     end
 
     describe "validating credentials" do
-
       it "succeeds if it can get orders.json from Spree" do
         VCR.use_cassette(spree_cassette, :record => :new_episodes) do
           api = MadCart::Store::Spree.new(valid_credentials)
 
-          api.should be_valid
+          expect(api).to be_valid
         end
       end
 
@@ -131,11 +126,9 @@ describe MadCart::Store::Spree do
             :store_url => valid_credentials[:store_url]
           )
 
-          api.should_not be_valid
+          expect(api).not_to be_valid
         end
       end
-
     end
   end
-
 end
