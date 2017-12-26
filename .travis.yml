@@ -1,0 +1,7 @@
+language: ruby
+rvm:
+  - 2.3.5
+cache:
+  - bundler
+script:
+  - bundle exec rspec spec
