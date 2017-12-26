@@ -9,7 +9,7 @@ describe MadCart::Store::Base do
 
   describe "connection" do
     it "adds a create_connection_with method" do
-      MyStore.should respond_to(:create_connection_with)
+      expect(MyStore).to respond_to(:create_connection_with)
     end
 
     it "accepts a method reference" do
@@ -21,7 +21,7 @@ describe MadCart::Store::Base do
         end
       end
 
-      MyStore.new.connection.should == TestResult
+      expect(MyStore.new.connection).to eql(TestResult)
     end
 
     it "accepts a proc" do
@@ -29,7 +29,7 @@ describe MadCart::Store::Base do
         create_connection_with Proc.new {|args| TestResult }
       end
 
-      MyStore.new.connection.should == TestResult
+      expect(MyStore.new.connection).to eql(TestResult)
     end
 
     it "raises an error if any required connection arguments are not present" do
@@ -37,7 +37,9 @@ describe MadCart::Store::Base do
         create_connection_with Proc.new { }, :requires => [:api_key, :username]
       end
 
-      lambda { MyStore.new(:api_key => 'key').connection }.should raise_error(ArgumentError, "Missing connection arguments: username")
+      expect {
+        MyStore.new(:api_key => 'key').connection
+      }.to raise_error(ArgumentError, "Missing connection arguments: username")
     end
 
     it "retrieves configured connection arguments" do
@@ -49,7 +51,7 @@ describe MadCart::Store::Base do
         config.add_store :my_store, {:several => 'of', :args => 'yes?'}
       end
 
-      lambda { MyStore.new().connection }.should_not raise_error
+      expect { MyStore.new().connection }.not_to raise_error
     end
 
     it "retrieves a combination of configured and initialised connection arguments" do
@@ -61,13 +63,13 @@ describe MadCart::Store::Base do
         config.add_store :my_store, {:several => 'only'}
       end
 
-      lambda { MyStore.new(:args => 'too').connection }.should_not raise_error
+      expect { MyStore.new(:args => 'too').connection }.not_to raise_error
     end
   end
 
   describe "fetch" do
     it "adds a fetch method" do
-      MyStore.should respond_to(:fetch)
+      expect(MyStore).to respond_to(:fetch)
     end
 
     it "accepts a method reference" do
@@ -80,8 +82,8 @@ describe MadCart::Store::Base do
       end
 
       result = double(MadCart::Model::Product)
-      MadCart::Model::Product.should_receive(:new).with({:some => 'attrs'}).and_return(result)
-      MyStore.new.products.should == [result]
+      expect(MadCart::Model::Product).to receive(:new).with({:some => 'attrs'}).and_return(result)
+      expect(MyStore.new.products).to eql([result])
     end
 
     it "accepts a proc" do
@@ -90,8 +92,8 @@ describe MadCart::Store::Base do
       end
 
       result = double(MadCart::Model::Product)
-      MadCart::Model::Product.should_receive(:new).twice.with({:some => 'attrs'}).and_return(result)
-      MyStore.new.products.should == [result, result]
+      expect(MadCart::Model::Product).to receive(:new).twice.with({:some => 'attrs'}).and_return(result)
+      expect(MyStore.new.products).to eql([result, result])
     end
 
     it "converts hashes into instances of the mad cart model" do
@@ -102,7 +104,7 @@ describe MadCart::Store::Base do
         fetch :products, :with => Proc.new { [attrs, attrs] }
       end
 
-      MyStore.new.products.each{|p| p.should be_a(MadCart::Model::Product) }
+      MyStore.new.products.each { |p| expect(p).to be_a(MadCart::Model::Product) }
     end
 
     it "returns instances of the mad cart model if the fetch method returns them" do
@@ -113,7 +115,7 @@ describe MadCart::Store::Base do
         fetch :products, :with => Proc.new { [MadCart::Model::Product.new(attrs), MadCart::Model::Product.new(attrs)] }
       end
 
-      MyStore.new.products.each{|p| p.should be_a(MadCart::Model::Product) }
+      MyStore.new.products.each { |p| expect(p).to be_a(MadCart::Model::Product) }
     end
 
     it "returns instances of the mad cart model if the format method returns them" do
@@ -125,7 +127,7 @@ describe MadCart::Store::Base do
         format :products, :with => Proc.new {|p| MadCart::Model::Product.new(p) }
       end
 
-      MyStore.new.products.each{|p| p.should be_a(MadCart::Model::Product) }
+      MyStore.new.products.each { |p| expect(p).to be_a(MadCart::Model::Product) }
     end
 
     it "can be configured to retrieve additional attributes" do
@@ -141,7 +143,7 @@ describe MadCart::Store::Base do
 
   describe "format" do
     it "adds a format method" do
-      MyStore.should respond_to(:format)
+      expect(MyStore).to respond_to(:format)
     end
 
     it "accepts a method reference" do
@@ -155,8 +157,8 @@ describe MadCart::Store::Base do
       end
 
       store = MyStore.new
-      store.should_receive(:format_method).with(:one => 1).and_return(double(MadCart::Model::Product))
-      store.stub(:ensure_model_format)
+      expect(store).to receive(:format_method).with(:one => 1).and_return(double(MadCart::Model::Product))
+      allow(store).to receive(:ensure_model_format)
       store.products
     end
 
@@ -167,7 +169,7 @@ describe MadCart::Store::Base do
       end
 
       store = MyStore.new
-      store.should_receive(:ensure_model_format).with(:products, ["1"])
+      expect(store).to receive(:ensure_model_format).with(:products, ["1"])
       store.products
     end
   end
@@ -183,7 +185,7 @@ describe MadCart::Store::Base do
       end
 
       o = MyStore.new
-      lambda { o.connection }.should raise_error(MadCart::Store::SetupError,
+      expect { o.connection }.to raise_error(MadCart::Store::SetupError,
           "It appears MyStore has overrided the default MadCart::Base initialize method. " +
           "That's fine, but please store any required connection arguments as @init_args " +
           "for the #connection method to use later. Remember to call #after_initialize " +
@@ -193,7 +195,7 @@ describe MadCart::Store::Base do
 
   describe "after_initialize" do
     it "adds an after_initialize method" do
-      MyStore.should respond_to(:after_initialize)
+      expect(MyStore).to respond_to(:after_initialize)
     end
 
     it "accepts a method reference" do
@@ -210,7 +212,7 @@ describe MadCart::Store::Base do
         end
       end
 
-      MyStore.new(:connection => TestResult).connection.should == TestResult
+      expect(MyStore.new(:connection => TestResult).connection).to eql(TestResult)
     end
 
     it "accepts a proc" do
@@ -223,7 +225,7 @@ describe MadCart::Store::Base do
         end
       end
 
-      TestResult.should_receive(:new)
+      expect(TestResult).to receive(:new)
 
       MyStore.new(:connection => TestResult)
     end

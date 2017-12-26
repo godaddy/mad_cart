@@ -15,7 +15,7 @@ describe MadCart::Model::Product do
 
     c = MadCart::Model::Product.new(default_attrs.merge(extra_attrs))
 
-    c.attributes.should eql(default_attrs)
+    expect(c.attributes).to eql(default_attrs)
   end
 
   it "allows attribute names to be overwritten" do
@@ -29,7 +29,7 @@ describe MadCart::Model::Product do
 
     c = MadCart::Model::Product.new(attrs.merge(:name => "product name", :square_image_url => 'path/to/square/image'))
 
-    c.attributes.should eql(attrs.merge("title" => "product name",
+    expect(c.attributes).to eql(attrs.merge("title" => "product name",
                                         "thumbnail" => 'path/to/square/image'))
   end
 
@@ -39,11 +39,10 @@ describe MadCart::Model::Product do
 
     c = MadCart::Model::Product.new(attrs.merge(:with => 'some', :additional => 'fields'))
 
-    c.additional_attributes.should eql({"with" => 'some', "additional" => 'fields'})
+    expect(c.additional_attributes).to eql({"with" => 'some', "additional" => 'fields'})
   end
 
   describe "validation" do
-
     before(:each) do
       @args = {:name => 'name',
                :external_id => 'external_id',
@@ -58,17 +57,17 @@ describe MadCart::Model::Product do
 
     it "requires name" do
       @args.delete(:name)
-      lambda{ MadCart::Model::Product.new(@args)  }.should raise_error(ArgumentError)
+      expect { MadCart::Model::Product.new(@args) }.to raise_error(ArgumentError)
     end
 
     it "requires description" do
       @args.delete(:description)
-      lambda{ MadCart::Model::Product.new(@args)  }.should raise_error(ArgumentError)
+      expect { MadCart::Model::Product.new(@args) }.to raise_error(ArgumentError)
     end
 
     it "requires image_url" do
       @args.delete(:image_url)
-      lambda{ MadCart::Model::Product.new(@args)  }.should raise_error(ArgumentError)
+      expect { MadCart::Model::Product.new(@args) }.to raise_error(ArgumentError)
     end
   end
 end

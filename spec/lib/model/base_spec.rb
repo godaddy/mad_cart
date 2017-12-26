@@ -1,6 +1,7 @@
 require "spec_helper"
 
 describe MadCart::Store::Base do
+
   before(:each) do
     clear_config
     Object.send(:remove_const, :MyModel) if Object.const_defined?(:MyModel)
@@ -15,35 +16,34 @@ describe MadCart::Store::Base do
       MadCart.configure do |config|
         config.include_attributes :my_models => [:external_id, :url]
       end
-      
+
       o = MyModel.new(:name => 'whiskey', :description => 'tasty', :external_id => 2, :url => 'path/to/whiskey', :discarded => 'property')
-      o.attributes.should == {"name" => 'whiskey', "description" => 'tasty', "external_id" => 2, "url" => 'path/to/whiskey'}
+      expect(o.attributes).to eql({"name" => 'whiskey', "description" => 'tasty', "external_id" => 2, "url" => 'path/to/whiskey'})
     end
-    
+
     it "includes mapped attributes" do
       MadCart.configure do |config|
         config.attribute_map :my_models, :old_name => :new_name
       end
-      
+
       o = MyModel.new(:name => 'whiskey', :description => 'tasty', :discarded => 'property', :old_name => 'is included')
-      o.attributes.should == {"name" => 'whiskey', "description" => 'tasty', "new_name" => 'is included'}
+      expect(o.attributes).to eql({"name" => 'whiskey', "description" => 'tasty', "new_name" => 'is included'})
     end
-    
+
     it "allows two sources to map to the same model" do
       MadCart.configure do |config|
         config.include_attributes :my_models => [:external_id]
         config.attribute_map :my_models, :id => :external_id
       end
-      
+
       source_a = {:name => 'whiskey', :description => 'tasty', :discarded => 'property', :id => 'has been renamed'}
       source_b = {:name => 'whiskey', :description => 'tasty', :discarded => 'property', :external_id => 'is included'}
-      
+
       model_a = MyModel.new(source_a)
-      model_a.attributes.should == {"name" => 'whiskey', "description" => 'tasty', "external_id" => 'has been renamed'}
-      
+      expect(model_a.attributes).to eql({"name" => 'whiskey', "description" => 'tasty', "external_id" => 'has been renamed'})
+
       model_b = MyModel.new(source_b)
-      model_b.attributes.should == {"name" => 'whiskey', "description" => 'tasty', "external_id" => 'is included'}
+      expect(model_b.attributes).to eql({"name" => 'whiskey', "description" => 'tasty', "external_id" => 'is included'})
     end
   end
-
 end
