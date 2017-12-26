@@ -11,7 +11,6 @@ describe MadCart::Store::BigCommerce do
   }
 
   describe "store" do
-
     it "expects to be instantiated with an api key, username and store url" do
       expect {
         MadCart::Store::BigCommerce.new(:username => 'test', :store_url => 'test').connection
@@ -22,20 +21,13 @@ describe MadCart::Store::BigCommerce do
     end
 
     it "authenticates via basic auth" do
-      connection = Faraday.new
-      allow(Faraday).to receive(:new).and_yield(connection)
-
-      expect(connection).to receive(:basic_auth).with('username', 'api_key')
-
-      MadCart::Store::BigCommerce.new(:api_key => 'api_key', :username => 'username', :store_url => 'url').connection
+      connection = MadCart::Store::BigCommerce.new(:api_key => 'api_key', :username => 'username', :store_url => 'url').connection
+      expect(connection.headers['Authorization']).not_to be_nil
     end
-
   end
 
   describe "products" do
-
     context "retrieval" do
-
       it "returns products" do
         VCR.use_cassette('big_commerce_products') do
           products = subject.products(limit: 10)
@@ -55,30 +47,24 @@ describe MadCart::Store::BigCommerce do
         end
       end
 
-
       it "returns an empty array when there are no images for any products" do
         VCR.use_cassette('big_commerce_products_no_images') do
           expect(subject.products).to eql([])
         end
       end
-
     end
 
     context "count" do
-
       it "returns how many products there are" do
         VCR.use_cassette('big_commerce_products_count') do
           expect(subject.products_count).to eql(45)
         end
       end
-
     end
-
   end
 
   describe "customers" do
     context "retrieval" do
-
       it "returns all customers" do
         VCR.use_cassette('big_commerce_customers') do
           customers = subject.customers
@@ -93,7 +79,6 @@ describe MadCart::Store::BigCommerce do
           expect(subject.customers).to eql([])
         end
       end
-
     end
   end
 
@@ -108,7 +93,6 @@ describe MadCart::Store::BigCommerce do
   end
 
   describe "validating credentials" do
-
     it "succeeds if it can get time.json from big commerce" do
       VCR.use_cassette('big_commerce_time') do
         expect(subject).to be_valid
@@ -146,5 +130,4 @@ describe MadCart::Store::BigCommerce do
       end
     end
   end
-
 end
