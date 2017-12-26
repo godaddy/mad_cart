@@ -37,7 +37,6 @@ describe MadCart::Store::Etsy do
           first_product.name.should_not be_nil
           first_product.description.should_not be_nil
           first_product.image_url.should_not be_nil
-          puts first_product.image_url
           first_product.additional_attributes['price'].should == BigDecimal.new('2.5')
         end
       end
