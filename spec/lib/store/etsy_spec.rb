@@ -39,7 +39,7 @@ describe MadCart::Store::Etsy do # rubocop:disable Metrics/BlockLength
           expect(first_product.description).not_to be_nil
           expect(first_product.image_url).not_to be_nil
           expect(first_product.additional_attributes['price'])
-            .to eq(BigDecimal.new('2.5'))
+            .to eq(BigDecimal('2.5'))
         end
       end
 
@@ -57,7 +57,7 @@ describe MadCart::Store::Etsy do # rubocop:disable Metrics/BlockLength
             expect(first_product.description).not_to be_nil
             expect(first_product.image_url).not_to be_nil
             expect(first_product.additional_attributes['price'])
-              .to eq(BigDecimal.new('2.2'))
+              .to eq(BigDecimal('2.2'))
           end
         end
       end
