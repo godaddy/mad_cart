@@ -24,6 +24,11 @@ RSpec.configure do |config|
   config.order = 'random'
 
   config.include WebMock::API
+
+  config.after(:each) do
+    # Re-initialize the MadCart::Configuration singleton instance
+    Singleton.__init__(MadCart::Configuration)
+  end
 end
 
 VCR.configure do |c|
@@ -31,11 +36,4 @@ VCR.configure do |c|
   c.hook_into :webmock
   #c.default_cassette_options = { :record => :new_episodes }
   #c.debug_logger = File.open('vcr.log', 'w')
-end
-
-
-# helper methods
-def clear_config
-  # Re-initialize the MadCart::Configuration singleton instance
-  Singleton.__init__(MadCart::Configuration)
 end

@@ -1,9 +1,6 @@
 require "spec_helper"
 
 describe MadCart::Store::Etsy do
-
-  before(:each) { clear_config }
-
   describe "retrieving products" do
     context "the store doesn't exist" do
       let(:invalid_store_name) { 'MadeUpStore' }
