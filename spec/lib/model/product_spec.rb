@@ -1,11 +1,6 @@
 require "spec_helper"
 
 describe MadCart::Model::Product do
-
-  before(:each) do
-    clear_config
-  end
-
   it "returns the default attributes" do
     extra_attrs = {"external_id" => 'id', "price" => '12USD',
                    "url" => 'path/to/product', "currency_code" => 'ZAR',

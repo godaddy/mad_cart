@@ -54,12 +54,12 @@ module MadCart
       private :valid_by_path?
 
       def parse_response(&block)
-        response = check_for_errors &block
+        response = check_for_errors(&block)
         empty_body?(response) ? [] : response.body
       end
       private :parse_response
 
-      def check_for_errors(&block)
+      def check_for_errors
         response = yield
 
         case response.status

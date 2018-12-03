@@ -30,10 +30,10 @@ module MadCart
         parse_response { connection.get('products.json', params) }
       end
 
-      def get_products(options={})
+      def get_products(_options={})
         product_hashes = []
 
-        loop(:make_product_request, :products) do |r|
+        for_each(:make_product_request, :products) do |r|
           product_hashes << r
         end
 
@@ -64,7 +64,7 @@ module MadCart
       def get_customer_hashes
         orders = []
 
-        loop(:make_order_request, :orders) do |r|
+        for_each(:make_order_request, :orders) do |r|
           orders << {
             order_number: r["number"],
             user_email:   r["email"]
@@ -84,7 +84,7 @@ module MadCart
         end.compact
       end
 
-      def loop(source, items_key, &block)
+      def for_each(source, items_key, &block)
         response    = send(source, { :page => 1 })
         items       = response[items_key.to_s]
         pages_count = response['pages']

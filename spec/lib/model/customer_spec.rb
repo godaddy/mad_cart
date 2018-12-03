@@ -1,11 +1,6 @@
 require "spec_helper"
 
 describe MadCart::Model::Customer do
-
-  before(:each) do
-    clear_config
-  end
-
   it "returns the default attributes" do
     attrs = {"first_name" => 'Bob', "last_name" => 'Sagat', "email" => 'bob@sagat.com'}
     c = MadCart::Model::Customer.new(attrs)

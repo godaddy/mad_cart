@@ -3,7 +3,6 @@ require "spec_helper"
 describe MadCart::Store::Base do
 
   before(:each) do
-    clear_config
     Object.send(:remove_const, :MyModel) if Object.const_defined?(:MyModel)
     class MyModel
       include MadCart::Model::Base

@@ -1,12 +1,6 @@
 require "spec_helper"
 
 describe "configuration" do
-
-  # use a clean instance for each test
-  before(:each) do
-    clear_config
-  end
-
   describe "stores" do
     it "does not require store to be added if credentials are passed to constructor" do
       expect { MadCart::Store::BigCommerce.new({:api_key => 'a_fake_key', :store_url => '/path/to/store', :username => 'bob'}) }.not_to raise_error
