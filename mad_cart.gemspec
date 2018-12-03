@@ -28,7 +28,7 @@ Gem::Specification.new do |gem| # rubocop:disable Metrics/BlockLength
   gem.add_dependency 'etsy', '0.2.6'
   gem.add_dependency 'money', '~> 6.7'
   gem.add_dependency 'monetize', '~> 1.4'
-  gem.add_dependency 'activesupport', '~> 5.0'
+  gem.add_dependency 'activesupport', '> 4.2'
 
   gem.add_development_dependency 'bundler', '~> 1.3'
   gem.add_development_dependency 'rake'
