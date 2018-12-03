@@ -16,7 +16,7 @@ describe MadCart::Store::Base do
       MyStore.class_eval do
         create_connection_with :connection_method
 
-        def connection_method(args={})
+        def connection_method(_args={})
           return TestResult
         end
       end
@@ -26,7 +26,7 @@ describe MadCart::Store::Base do
 
     it "accepts a proc" do
       MyStore.class_eval do
-        create_connection_with Proc.new {|args| TestResult }
+        create_connection_with(Proc.new {|_args| TestResult })
       end
 
       expect(MyStore.new.connection).to eql(TestResult)
@@ -207,7 +207,7 @@ describe MadCart::Store::Base do
           @my_instance_var = args.first[:connection]
         end
 
-        def connect_method(*args)
+        def connect_method(*_args)
           return @my_instance_var
         end
       end
@@ -217,10 +217,10 @@ describe MadCart::Store::Base do
 
     it "accepts a proc" do
       MyStore.class_eval do
-        after_initialize Proc.new {|arg| TestResult.new }
+        after_initialize(Proc.new { |_arg| TestResult.new })
         create_connection_with :connect_method
 
-        def connect_method(*args)
+        def connect_method(*_args)
           return @my_instance_var
         end
       end

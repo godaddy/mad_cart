@@ -52,16 +52,15 @@ module MadCart
 
       def get_customer_hashes
         result = []
-        loop(:make_customer_request) {|c| result << c }
+        for_each(:make_customer_request) {|c| result << c }
         result
       end
 
-      def loop(source, &block)
-
+      def for_each(source, &block)
         items = send(source, :min_id => 1)
 
-        while true
-          items.each &block
+        loop do
+          items.each(&block)
           break if items.count < 50
           items = send(source, :min_id => items.last['id'] + 1 )
         end

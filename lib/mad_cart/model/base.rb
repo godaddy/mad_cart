@@ -14,7 +14,7 @@ module MadCart
           include InheritableAttributes
           attr_accessor :additional_attributes
           inheritable_attributes :required_attrs
-          attr_accessor *exposed_attributes
+          attr_accessor(*exposed_attributes)
         end
       end
 
@@ -54,7 +54,7 @@ module MadCart
       module ClassMethods
         def required_attributes(*args)
           @required_attrs = args.map{|a| a.to_s }
-          attr_accessor *args
+          attr_accessor(*args)
         end
 
         def exposed_attributes

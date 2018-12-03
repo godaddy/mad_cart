@@ -35,7 +35,7 @@ describe MadCart::Store::Etsy do
           expect(first_product.name).not_to be_nil
           expect(first_product.description).not_to be_nil
           expect(first_product.image_url).not_to be_nil
-          expect(first_product.additional_attributes['price']).to eql(BigDecimal.new('2.5'))
+          expect(first_product.additional_attributes['price']).to eql(BigDecimal('2.5'))
         end
       end
 
@@ -52,7 +52,7 @@ describe MadCart::Store::Etsy do
             expect(first_product.name).not_to be_nil
             expect(first_product.description).not_to be_nil
             expect(first_product.image_url).not_to be_nil
-            expect(first_product.additional_attributes['price']).to eql(BigDecimal.new('2.2'))
+            expect(first_product.additional_attributes['price']).to eql(BigDecimal('2.2'))
           end
         end
       end
