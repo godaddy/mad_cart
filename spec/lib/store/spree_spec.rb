@@ -32,7 +32,7 @@ describe MadCart::Store::Spree do
     context "retrieval" do
       context "basic spree installation" do
         it "returns all products" do
-          VCR.use_cassette(spree_cassette, :record => :new_episodes) do
+          VCR.use_cassette(spree_cassette) do
             api = MadCart::Store::Spree.new(valid_credentials)
 
             expect(api.products.size).to eql(58)
@@ -50,7 +50,7 @@ describe MadCart::Store::Spree do
 
       context "alternative spree installation" do
         it "returns all products" do
-          VCR.use_cassette(spree_alternative_cassette, :record => :new_episodes) do
+          VCR.use_cassette(spree_alternative_cassette) do
             api = MadCart::Store::Spree.new(valid_alternative_credentials)
 
             expect(api.products.size).to eql(148)
@@ -78,7 +78,7 @@ describe MadCart::Store::Spree do
     context "count" do
 
       it "returns how many products there are" do
-        VCR.use_cassette(spree_cassette, :record => :new_episodes) do
+        VCR.use_cassette(spree_cassette) do
           api = MadCart::Store::Spree.new(valid_credentials)
           expect(api.products_count).to eql(58)
         end
@@ -92,7 +92,7 @@ describe MadCart::Store::Spree do
     context "retrieval" do
 
       it "returns all customers" do
-        VCR.use_cassette(spree_cassette, :record => :new_episodes) do
+        VCR.use_cassette(spree_cassette) do
           api = MadCart::Store::Spree.new(valid_credentials)
 
           expect(api.customers.size).to be > 0
@@ -112,7 +112,7 @@ describe MadCart::Store::Spree do
 
     describe "validating credentials" do
       it "succeeds if it can get orders.json from Spree" do
-        VCR.use_cassette(spree_cassette, :record => :new_episodes) do
+        VCR.use_cassette(spree_cassette) do
           api = MadCart::Store::Spree.new(valid_credentials)
 
           expect(api).to be_valid
