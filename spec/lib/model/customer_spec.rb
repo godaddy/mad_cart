@@ -27,10 +27,11 @@ describe MadCart::Model::Customer do # rubocop:disable Metrics/BlockLength
       email: 'bob@sagat.com'
     )
 
-    expect(c.attributes)
-      .to eql('name' => 'Bob',
-              'last_name' => 'Sagat',
-              'email' => 'bob@sagat.com')
+    expect(c.attributes).to eql(
+      'name' => 'Bob',
+      'last_name' => 'Sagat',
+      'email' => 'bob@sagat.com'
+    )
   end
 
   it 'exposes all additional attributes provided by the api' do
@@ -57,19 +58,19 @@ describe MadCart::Model::Customer do # rubocop:disable Metrics/BlockLength
 
     it 'requires first_name' do
       @args.delete(:first_name)
-      expect(-> { MadCart::Model::Customer.new(@args) })
+      expect { MadCart::Model::Customer.new(@args) }
         .to raise_error(ArgumentError)
     end
 
     it 'requires last_name' do
       @args.delete(:last_name)
-      expect(-> { MadCart::Model::Customer.new(@args) })
+      expect { MadCart::Model::Customer.new(@args) }
         .to raise_error(ArgumentError)
     end
 
     it 'requires email' do
       @args.delete(:email)
-      expect(-> { MadCart::Model::Customer.new(@args) })
+      expect { MadCart::Model::Customer.new(@args) }
         .to raise_error(ArgumentError)
     end
   end

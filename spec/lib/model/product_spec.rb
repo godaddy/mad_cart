@@ -39,9 +39,10 @@ describe MadCart::Model::Product do # rubocop:disable Metrics/BlockLength
                   square_image_url: 'path/to/square/image')
     )
 
-    expect(c.attributes)
-      .to eql(attrs.merge('title' => 'product name',
-                          'thumbnail' => 'path/to/square/image'))
+    expect(c.attributes).to eql(attrs.merge(
+      'title' => 'product name',
+      'thumbnail' => 'path/to/square/image'
+    ))
   end
 
   it 'exposes all additional attributes provided by the api' do
@@ -55,8 +56,10 @@ describe MadCart::Model::Product do # rubocop:disable Metrics/BlockLength
       attrs.merge(with: 'some', additional: 'fields')
     )
 
-    expect(c.additional_attributes)
-      .to eql('with' => 'some', 'additional' => 'fields')
+    expect(c.additional_attributes).to eql(
+      'with' => 'some',
+      'additional' => 'fields'
+    )
   end
 
   describe 'validation' do # rubocop:disable Metrics/BlockLength
@@ -75,19 +78,19 @@ describe MadCart::Model::Product do # rubocop:disable Metrics/BlockLength
 
     it 'requires name' do
       @args.delete(:name)
-      expect(-> { MadCart::Model::Product.new(@args) })
+      expect { MadCart::Model::Product.new(@args) }
         .to raise_error(ArgumentError)
     end
 
     it 'requires description' do
       @args.delete(:description)
-      expect(-> { MadCart::Model::Product.new(@args) })
+      expect { MadCart::Model::Product.new(@args) }
         .to raise_error(ArgumentError)
     end
 
     it 'requires image_url' do
       @args.delete(:image_url)
-      expect(-> { MadCart::Model::Product.new(@args) })
+      expect { MadCart::Model::Product.new(@args) }
         .to raise_error(ArgumentError)
     end
   end

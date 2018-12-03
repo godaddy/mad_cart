@@ -18,15 +18,19 @@ describe MadCart::Store::Base do # rubocop:disable Metrics/BlockLength
         config.include_attributes my_models: %i[external_id url]
       end
 
-      o = MyModel.new(name: 'whiskey',
-                      description: 'tasty',
-                      external_id: 2,
-                      url: 'path/to/whiskey',
-                      discarded: 'property')
-      expect(o.attributes).to eq('name' => 'whiskey',
-                                 'description' => 'tasty',
-                                 'external_id' => 2,
-                                 'url' => 'path/to/whiskey')
+      o = MyModel.new(
+        name: 'whiskey',
+        description: 'tasty',
+        external_id: 2,
+        url: 'path/to/whiskey',
+        discarded: 'property'
+      )
+      expect(o.attributes).to eq(
+        'name' => 'whiskey',
+        'description' => 'tasty',
+        'external_id' => 2,
+        'url' => 'path/to/whiskey'
+      )
     end
 
     it 'includes mapped attributes' do
@@ -34,13 +38,17 @@ describe MadCart::Store::Base do # rubocop:disable Metrics/BlockLength
         config.attribute_map :my_models, old_name: :new_name
       end
 
-      o = MyModel.new(name: 'whiskey',
-                      description: 'tasty',
-                      discarded: 'property',
-                      old_name: 'is included')
-      expect(o.attributes).to eq('name' => 'whiskey',
-                                 'description' => 'tasty',
-                                 'new_name' => 'is included')
+      o = MyModel.new(
+        name: 'whiskey',
+        description: 'tasty',
+        discarded: 'property',
+        old_name: 'is included'
+      )
+      expect(o.attributes).to eq(
+        'name' => 'whiskey',
+        'description' => 'tasty',
+        'new_name' => 'is included'
+      )
     end
 
     it 'allows two sources to map to the same model' do
@@ -49,24 +57,32 @@ describe MadCart::Store::Base do # rubocop:disable Metrics/BlockLength
         config.attribute_map :my_models, id: :external_id
       end
 
-      source_a = { name: 'whiskey',
-                   description: 'tasty',
-                   discarded: 'property',
-                   id: 'has been renamed' }
-      source_b = { name: 'whiskey',
-                   description: 'tasty',
-                   discarded: 'property',
-                   external_id: 'is included' }
+      source_a = {
+        name: 'whiskey',
+        description: 'tasty',
+        discarded: 'property',
+        id: 'has been renamed'
+      }
+      source_b = {
+        name: 'whiskey',
+        description: 'tasty',
+        discarded: 'property',
+        external_id: 'is included'
+      }
 
       model_a = MyModel.new(source_a)
-      expect(model_a.attributes).to eq('name' => 'whiskey',
-                                       'description' => 'tasty',
-                                       'external_id' => 'has been renamed')
+      expect(model_a.attributes).to eq(
+        'name' => 'whiskey',
+        'description' => 'tasty',
+        'external_id' => 'has been renamed'
+      )
 
       model_b = MyModel.new(source_b)
-      expect(model_b.attributes).to eq('name' => 'whiskey',
-                                       'description' => 'tasty',
-                                       'external_id' => 'is included')
+      expect(model_b.attributes).to eq(
+        'name' => 'whiskey',
+        'description' => 'tasty',
+        'external_id' => 'is included'
+      )
     end
   end
 end

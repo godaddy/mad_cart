@@ -65,6 +65,8 @@ module MadCart
         case response.status
         when 401
           raise InvalidCredentials
+        when 404
+          raise InvalidStore
         when 500
           raise ServerError
         end

@@ -28,10 +28,7 @@ describe MadCart::Store::BigCommerce do # rubocop:disable Metrics/BlockLength
     end
 
     it 'authenticates via basic auth' do
-      connection = Faraday.new
-      allow(Faraday).to receive(:new).and_yield(connection)
-
-      expect(connection).to receive(:basic_auth).with('username', 'api_key')
+      expect_any_instance_of(Faraday::Connection).to receive(:basic_auth).with('username', 'api_key')
 
       BigCommerce
         .new(api_key: 'api_key', username: 'username', store_url: 'url')

@@ -7,7 +7,7 @@ describe 'configuration' do # rubocop:disable Metrics/BlockLength
   end
 
   describe 'stores' do
-    it 'does not require store be added if creds are passed to constructor' do
+    it 'does not require store to be added if credentials are passed to constructor' do
       expect(lambda {
         MadCart::Store::BigCommerce.new(
           api_key: 'a_fake_key',
@@ -23,7 +23,7 @@ describe 'configuration' do # rubocop:disable Metrics/BlockLength
         config.add_store :big_commerce, config_data
       end
 
-      expect(MadCart.config.big_commerce).to eq(config_data)
+      expect(MadCart.config.big_commerce).to eql(config_data)
     end
 
     it "gives returns nil if there's no config" do
@@ -33,11 +33,11 @@ describe 'configuration' do # rubocop:disable Metrics/BlockLength
 
   describe 'models' do
     it 'allows custom attribute names to be set' do
-      expect(lambda {
+      expect {
         MadCart.configure do |config|
           config.attribute_map :products, 'name' => 'title'
         end
-      }).not_to raise_error
+      }.not_to raise_error
 
       expect(MadCart.config.attribute_maps['products']).to eq('name' => 'title')
     end

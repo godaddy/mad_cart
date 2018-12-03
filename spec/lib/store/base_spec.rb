@@ -37,7 +37,7 @@ describe MadCart::Store::Base do # rubocop:disable Metrics/BlockLength
         create_connection_with(proc {}, requires: %i[api_key username])
       end
 
-      expect(-> { MyStore.new(api_key: 'key').connection })
+      expect { MyStore.new(api_key: 'key').connection }
         .to raise_error(ArgumentError, 'Missing connection arguments: username')
     end
 
@@ -50,7 +50,7 @@ describe MadCart::Store::Base do # rubocop:disable Metrics/BlockLength
         config.add_store :my_store, several: 'of', args: 'yes?'
       end
 
-      expect(-> { MyStore.new.connection }).not_to raise_error
+      expect { MyStore.new.connection }.not_to raise_error
     end
 
     it 'retrieves combination configured & initialised connection arguments' do
@@ -62,7 +62,7 @@ describe MadCart::Store::Base do # rubocop:disable Metrics/BlockLength
         config.add_store :my_store, several: 'only'
       end
 
-      expect(-> { MyStore.new(args: 'too').connection }).not_to raise_error
+      expect { MyStore.new(args: 'too').connection }.not_to raise_error
     end
   end
 
@@ -117,9 +117,7 @@ describe MadCart::Store::Base do # rubocop:disable Metrics/BlockLength
         fetch :products, with: proc { [attrs, attrs] }
       end
 
-      MyStore.new.products.each do |p|
-        expect(p).to be_a(MadCart::Model::Product)
-      end
+      MyStore.new.products.each { |p| expect(p).to be_a(MadCart::Model::Product) }
     end
 
     it 'returns instances of the model if the fetch method returns them' do
